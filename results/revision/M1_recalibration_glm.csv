@@ -1,0 +1,13 @@
+metric,value
+recalibration_intercept,3.74608073666712
+recalibration_slope,3.55930466485801
+Eavg_recal,0.032579350377017
+Emax_recal,0.452192734739804
+E90_recal,0.0600264502588768
+Brier_recal,0.0312530874314394
+Spiegelhalter_z_recal,0.142826708032955
+Spiegelhalter_p_recal,0.886427043365018
+Eavg_frozenprob,0.0837846604026341
+Emax_frozenprob,0.309390057870372
+Brier_frozenprob,0.0616448625662679
+Spiegelhalter_p_frozenprob,0.488002364104592
