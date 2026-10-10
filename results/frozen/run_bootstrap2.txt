@@ -1,0 +1,43 @@
+During startup - Warning message:
+Setting LC_CTYPE=C.UTF-8 failed 
+canonical: (Intercept)=1.8598 ACSF2=0.0000 HIST1H4B=0.0000 ME1=0.0000 PDK2=-1.7699 PDK4=-2.4369 
+Training        AUC=1.000000 sens=1.0000 spec=1.0000 ok=TRUE
+GSE30528        AUC=0.905983 sens=0.7778 spec=1.0000 ok=TRUE
+GSE30529        AUC=0.650000 sens=0.6000 spec=1.0000 ok=TRUE
+GSE142025_all   AUC=0.991770 sens=0.9630 spec=1.0000 ok=TRUE
+GSE142025_early AUC=0.888889 sens=1.0000 spec=0.7778 ok=TRUE
+GSE104948       AUC=1.000000 sens=1.0000 spec=1.0000 ok=TRUE
+canonical系数复现Table2+Table3全部一致: TRUE 
+bootstrap 25/200 elapsed 37s
+bootstrap 50/200 elapsed 135s
+bootstrap 75/200 elapsed 213s
+bootstrap 100/200 elapsed 239s
+bootstrap 125/200 elapsed 267s
+bootstrap 150/200 elapsed 295s
+bootstrap 200/200 elapsed 351s
+
+M4 summary:
+                  metric        value
+1                      B 2.000000e+02
+2                valid_B 1.680000e+02
+3           apparent_AUC 1.000000e+00
+4          mean_test_AUC 9.972997e-01
+5            sd_test_AUC 7.995365e-03
+6               optimism 1.824996e-03
+7 optimism_corrected_AUC 9.981750e-01
+8    exact_PDK2PDK4_freq 1.488095e-01
+9             mean_n_hub 3.767857e+00
+Selection frequency top8:
+       gene selection_freq
+13     PDK4      1.1428571
+16     PDK2      0.7380952
+3      GLO1      0.3750000
+6      MPC1      0.2619048
+1     ALDOC      0.2321429
+8    PGM2L1      0.1964286
+12 HIST1H4B      0.1904762
+20     LDHB      0.1488095
+[1] TRUE
+[1] TRUE
+
+BOOTSTRAP_DONE
