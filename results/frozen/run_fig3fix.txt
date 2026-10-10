@@ -1,0 +1,48 @@
+During startup - Warning message:
+Setting LC_CTYPE=C.UTF-8 failed 
+null device 
+          1 
+Fig1 done
+   Power SFT.R.sq  slope truncated.R.sq mean.k. median.k. max.k.
+1      1  0.00845  4.850          0.951  2520.0   2520.00   2650
+2      2  0.04080  2.280          0.863  1410.0   1400.00   1630
+3      3  0.04450 -0.982          0.758   850.0    844.00   1160
+4      4  0.21400 -1.360          0.719   548.0    539.00    885
+5      5  0.35800 -1.340          0.727   372.0    360.00    704
+6      6  0.46100 -1.270          0.744   264.0    249.00    575
+7      7  0.54700 -1.180          0.783   193.0    176.00    479
+8      8  0.65800 -1.080          0.861   146.0    127.00    404
+9      9  0.69900 -1.120          0.890   113.0     92.80    353
+10    10  0.73600 -1.170          0.910    89.5     69.20    313
+11    12  0.77800 -1.250          0.939    58.9     39.80    253
+12    14  0.82300 -1.300          0.963    40.8     23.90    211
+13    16  0.83700 -1.360          0.973    29.4     14.90    179
+14    18  0.84800 -1.410          0.977    21.9      9.44    155
+15    20  0.87000 -1.440          0.984    16.7      6.11    135
+Warning message:
+executing %dopar% sequentially: no parallel backend registered 
+null device 
+          1 
+Fig3 done
+Fig6 done
+Fig7A done; AUCs: 1.000, 0.906, 0.650, 0.992, 0.889, 1.000 
+Warning message:
+glm.fit: fitted probabilities numerically 0 or 1 occurred 
+null device 
+          1 
+Fig7B stats: Eavg 0.03257935 Emax 0.4521927 Brier 0.03125309 S:p 0.886427 
+Assuming '1' is [Event] and '0' is [non-Event]
+Scale for x is already present.
+Adding another scale for x, which will replace the existing scale.
+null device 
+          1 
+Fig7C done
+Fig8A done; stars: Neutrophils=*** T_helper_cells=*** Eosinophils=*** Tcm=*** NK_CD56dim_cells=*** Tem=*** Th2_cells=*** Macrophages=*** CD8_T_cells=*** iDC=** Cytotoxic_cells=* 
+null device 
+          1 
+Fig8B done; columns: 18 
+null device 
+          1 
+Fig2C done: 50 rows
+
+FIG_ROUND3_DONE
