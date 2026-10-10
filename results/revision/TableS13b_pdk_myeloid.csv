@@ -1,0 +1,16 @@
+gene_or_subset,cell_or_scope,PDK2_rho,PDK4_rho,note
+PDK2,Macrophages,-0.844,,all-sample Spearman
+PDK2,Neutrophils,0.323,,all-sample Spearman
+PDK2,DC,-0.582,,all-sample Spearman
+PDK2,iDC,-0.695,,all-sample Spearman
+PDK2,Eosinophils,0.592,,all-sample Spearman
+PDK4,Macrophages,,-0.341,all-sample Spearman
+PDK4,Neutrophils,,0.287,all-sample Spearman
+PDK4,DC,,-0.132,all-sample Spearman
+PDK4,iDC,,-0.486,all-sample Spearman
+PDK4,Eosinophils,,0.604,all-sample Spearman
+PDK2+PDK4,All (DN+Ctrl n=36),-0.844,-0.341,within-group Spearman
+PDK2+PDK4,DN only (n=27),-0.784,-0.144,within-group Spearman
+PDK2+PDK4,Control only (n=9),-0.517,0.200,within-group Spearman
+PDK2+PDK4,Early DN (n=6),-0.371,0.429,within-group Spearman
+PDK2+PDK4,Advanced DN (n=21),-0.581,-0.188,within-group Spearman
