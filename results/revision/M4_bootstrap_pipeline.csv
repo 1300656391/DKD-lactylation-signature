@@ -1,0 +1,10 @@
+metric,value
+B,200
+valid_B,168
+apparent_AUC,1
+mean_test_AUC,0.997299651567944
+sd_test_AUC,0.00799536477035416
+optimism,0.00182499606086672
+optimism_corrected_AUC,0.998175003939133
+exact_PDK2PDK4_freq,0.148809523809524
+mean_n_hub,3.76785714285714
