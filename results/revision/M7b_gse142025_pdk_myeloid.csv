@@ -1,0 +1,11 @@
+gene,cell,rho
+PDK2,Macrophages,-0.844
+PDK2,Neutrophils,0.323
+PDK2,DC,-0.582
+PDK2,iDC,-0.695
+PDK2,Eosinophils,0.592
+PDK4,Macrophages,-0.341
+PDK4,Neutrophils,0.287
+PDK4,DC,-0.132
+PDK4,iDC,-0.486
+PDK4,Eosinophils,0.604
