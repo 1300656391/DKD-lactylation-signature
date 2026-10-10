@@ -1,0 +1,5 @@
+comparison,n_case,n_ctrl,AUC_signature,CI_lower,CI_upper,AUC_PDK4,youden_sens,youden_spec,note
+DN_vs_LD_GPL22945,7,18,1,1,1,1,1,1,living-donor control (per-platform)
+DN_vs_LD_GPL24120,5,3,1,1,1,1,1,1,living-donor control (per-platform)
+DN_vs_HT_GPL24120,5,15,0.68,0.44,0.92,0.573,1,0.667,hypertensive-nephropathy disease control (per-platform)
+DN_vs_LD_pooled,12,21,1,1,1,,1,1,"living-donor control (pooled, per-platform z)"
