@@ -1,0 +1,20 @@
+During startup - Warning message:
+Setting LC_CTYPE=C.UTF-8 failed 
+Warning message:
+Too few (< 10) observations per fold for type.measure='auc' in cv.lognet; changed to type.measure='deviance'. Alternatively, use smaller value for nfolds 
+冻结模型系数(auc): (Intercept)=1.8598 ACSF2=0.0000 HIST1H4B=0.0000 ME1=0.0000 PDK2=-1.7699 PDK4=-2.4369 
+两准则系数最大绝对差: 0.09005759 
+表观AUC=1.000  10折CV-AUC=1.000±0.000
+Training               复算AUC=1.000000 参考=1.000000 一致=TRUE
+GSE30528               复算AUC=0.905983 参考=0.905983 一致=TRUE
+GSE30529               复算AUC=0.650000 参考=0.650000 一致=TRUE
+GSE142025_all          复算AUC=0.991770 参考=0.991770 一致=TRUE
+GSE142025_early        复算AUC=0.888889 参考=0.888889 一致=TRUE
+GSE104948              复算AUC=1.000000 参考=1.000000 一致=TRUE
+Warning message:
+glm.fit: fitted probabilities numerically 0 or 1 occurred 
+训练集冻结概率分位数(证明0/1退化): 0.00443 0.954 0.999 
+Error: unexpected symbol in:
+"             factor(yb[fb != f], levels = c(0, 1), labels = c("Ctrl", "DN")))
+  sz"
+Execution halted
