@@ -1,0 +1,7 @@
+type_or_group,pct_DN_or_median,pct_Ctrl_or_n,source
+Macro,0,0,GSE131882 snRNA immune proportions (pct of total nuclei)
+T/NK,0,0,GSE131882 snRNA immune proportions (pct of total nuclei)
+B,3.15,0.41,GSE131882 snRNA immune proportions (pct of total nuclei)
+Control,0.165,9,GSE142025 per-stage macrophage medians (median, n)
+Early DN,0.131,6,GSE142025 per-stage macrophage medians (median, n)
+Advanced DN,0.244,21,GSE142025 per-stage macrophage medians (median, n)
