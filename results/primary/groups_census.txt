@@ -1,0 +1,28 @@
+================================================
+数据集: GSE104948-GPL22945
+  !Sample_title 前4字符频数: !Sam=1, H7-G=71
+  !Sample_source_name_ch1 前4字符频数: !Sam=1, Kidn=71
+================================================
+数据集: GSE104948-GPL24120
+  !Sample_title 前4字符频数: !Sam=1, H1-G=12, H2-G=15, H3-G=7, H4-G=27, H5-G=64
+  !Sample_source_name_ch1 前4字符频数: !Sam=1, Kidn=125
+================================================
+数据集: GSE30528
+  !Sample_title 前4字符频数: !Sam=1, Cont=13, Diab=9
+  !Sample_source_name_ch1 前4字符频数: !Sam=1, Glom=22
+================================================
+数据集: GSE30529
+  !Sample_title 前4字符频数: !Sam=1, Cont=12, Diab=10
+  !Sample_source_name_ch1 前4字符频数: !Sam=1, Tubu=22
+================================================
+数据集: GSE96804
+  !Sample_title 前4字符频数: !Sam=1, Huma=61
+  !Sample_source_name_ch1 前4字符频数: !Sam=1, diab=41, unaf=20
+================================================
+GSE142025 RNA-seq 合并中...
+  样本文件数: 36
+  Symbol列完全一致: TRUE
+  合并矩阵: 17184基因 x 36样本
+  值域: [0.4, 19.29]
+  分组: !Sample_characteristics_ch1=1, group: Advanced_DN=21, group: Control=9, group: Early_DN=6
+  已保存: data/GSE142025_expr.rds + data/GSE142025_pheno.csv
