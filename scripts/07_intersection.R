@@ -10,7 +10,9 @@ degs <- fread("results/A_DEGs.csv")
 wgc  <- fread("results/wgcna_sigmodule_genes.csv")
 
 # 别名展开（新symbol→旧symbol，兼容芯片注释）
-lrg_keys <- unique(c(lrg$symbol, na.omit(lrg$alias)))
+# R11-S1 fix: fread reads empty alias cells as "", not NA; na.omit kept "" as a phantom key (178 vs true 177)
+lrg_alias <- lrg$alias[!is.na(lrg$alias) & nzchar(trimws(lrg$alias))]
+lrg_keys <- unique(c(lrg$symbol, lrg_alias))
 lrg_keys <- toupper(lrg_keys)
 cat("LRG键数(含别名):", length(lrg_keys), "\n")
 
