@@ -119,9 +119,11 @@ p3 <- ggplot(topg, aes(NES, lab, fill = p.adjust)) + geom_col(width = .7) +
   labs(tag = "C")
 save_fig(p1 / p2 / p3 + plot_layout(heights = c(1, 1, .75)), "Fig4_enrichment_rev", 9, 10)
 
-# ---------- Fig5A: Venn（178键口径+标签修复） ----------
+# ---------- Fig5A: Venn（177键口径+标签修复；空别名不再计入键集） ----------
+lrg_alias <- lrg$alias[!is.na(lrg$alias) & nzchar(trimws(lrg$alias))]
+lrg_keys5 <- toupper(unique(c(lrg$symbol, lrg_alias)))
 venn_list <- list(
-  `LRG keys (178)` = unique(c(lrg$symbol, na.omit(lrg$alias))),
+  `LRG keys (177)` = lrg_keys5,
   `DEGs (2645)` = deg$gene,
   `Modules (4210)` = fread("results/wgcna_sigmodule_genes.csv")$gene
 )
