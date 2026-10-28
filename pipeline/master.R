@@ -1,6 +1,6 @@
 # master.R ----
 # Reproduces the full analysis for the DKD lactylation-signature paper.
-# seed = 42 throughout. Run from the clean_pipeline/ directory.
+# seed = 42 throughout. Run from the pipeline/ directory.
 # Each step is skipped if its primary output already exists.
 
 cat("=== DKD Lactylation-Signature Pipeline ===\n")
