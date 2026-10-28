@@ -53,6 +53,7 @@ Random seed = 42 throughout. Each step checks for its output before running; del
 
 ## Key outputs
 
+- `frozen/` — shipped archive of the frozen model objects (final_model_coefficients.csv, verify_report.txt, selection curves, sessionInfo.txt); regenerated at `results/frozen/` by step 8
 - `results/frozen/final_model_coefficients.csv` — frozen model (intercept, PDK2, PDK4)
 - `results/frozen/verify_report.txt` — AUC / sensitivity / specificity verification
 - `results/hub_genes.txt` — 5 hub genes
