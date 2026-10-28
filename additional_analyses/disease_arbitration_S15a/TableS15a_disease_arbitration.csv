@@ -1,0 +1,20 @@
+analysis,estimate,lo,hi,n1,n2,note
+HT_vs_LD_GPL24120,1,1,1,15,3,"frozen signature, subset-internal z"
+median_score_DN_GPL24120,3.61,,,5,,descriptive
+median_score_HT_GPL24120,1.488,,,15,,descriptive
+median_score_LD_GPL24120,-9.43,,,3,,descriptive
+median_score_TN_GPL24120,0.333,,,2,,descriptive
+HT_vs_LD_GPL24120_PDK4,1,1,1,15,3,not cited in text; PDK4 single gene
+score_vs_tub_GSE96804,-0.452,,,61,,P=0.0002948
+score_vs_fib_GSE96804,0.62,,,61,,P=2.104e-07
+score_vs_tub_GSE96804_DNonly,-0.383,,,41,,P=0.01393
+score_vs_fib_GSE96804_DNonly,0.472,,,41,,P=0.002063
+score_vs_tub_GSE142025,-0.543,,,36,,P=0.0006139
+score_vs_fib_GSE142025,0.74,,,36,,P=1.011e-06
+PDK2mac_minus_PDK4mac_GSE142025,-0.504,-0.85,-0.154,36,10000,bootstrap two-sided P=0.0028
+PDK2mac_vs_PDK4mac_Steiger_GSE142025,-4.72,,,36,,P=2.309e-06
+PDK2mac_controlsub_GSE142025,-0.517,-0.947,0.217,9,10000,bootstrap CI
+PDK2mac_partial_GSE142025,-0.524,,,36,,raw=-0.844 (training: -0.585 -> -0.305)
+score_vs_tub_GSE273763,-0.271,,,63,,"P=0.032; FFPE cohort; counts-caliber rho -0.179, P=0.161 (direction consistent, sensitivity ns)"
+score_vs_fib_GSE273763,-0.045,,,63,,"P=0.724; FFPE cohort; counts-caliber rho +0.137, P=0.284"
+score_vs_tub_GSE294519,-0.465,,,36,,P=0.004; tubular-region DSP cohort (scoring in Table S15c); direction consistent with S15a dilution theme

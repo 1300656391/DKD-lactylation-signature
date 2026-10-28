@@ -1,0 +1,21 @@
+verify_report_gse273763.txt
+=============================
+Sixth-cohort (GSE273763) and GSE294519 scoring - frozen-pipeline cross-check note
+Generated: 2026-10-25 (integration round)
+
+Discrimination statistics for GSE273763 added to Tables 2-3 were computed with the
+frozen coefficients (intercept 1.8598, PDK2 -1.7699, PDK4 -2.4369; cohort-internal
+z-standardization; seed 42) and independently recomputed throughout the evidence_gain audit
+trail (see the root README.md pipeline table):
+  - Signature AUC 0.805 (95% CI 0.700-0.909; P = 0.0008; submitter-normalized matrix)
+  - Sensitivity normalizations: counts log2CPM 0.740 (P = 0.0083); DESeq2 median-of-ratios
+    0.726 (P = 0.013); all as-trained direction, all P < 0.05
+  - Youden: sens 0.660 (0.512-0.788) / spec 1.000 (0.753-1.000)
+  - Training-cutoff (0.123) transfer: sens 0.840 / spec 0.308 / PPV 0.824 / NPV 0.333
+  - PDK2 single-gene 0.925-0.963; DeLong signature-vs-PDK2 P = 0.0006; vs PDK4 0.123
+  - Calibration dual report and 18-cell dual-caliber immune panel: Tables S16/S17
+Pipeline scripts and per-step outputs: evidence_gain/ within this archive (flattened; see README pipeline table).
+GSE294519 (tubular-region DSP, not a validation cohort): scoring in
+evidence_gain/score_gse294519.py + Table S15c.
+Note: the public GitHub mirror is pending resync; this archive is the authoritative
+code deposit accompanying the submission.

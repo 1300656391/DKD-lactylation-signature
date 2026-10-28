@@ -1,0 +1,187 @@
+block,caliber,feature,scope,median_DN,median_Ctrl,rho,p,BH_p,direction
+group_test,submitter,B_cells,DN_vs_Ctrl,0.445851925352264,0.332922352069192,,1.13902235532315e-06,6.8341341319389e-06,up
+group_test,submitter,T_cells,DN_vs_Ctrl,0.365592741795399,0.122712319049037,,1.33787684930553e-07,1.20408916437498e-06,up
+group_test,submitter,T_helper_cells,DN_vs_Ctrl,0.793196289233069,0.757081401208769,,1.66621468715711e-05,4.99864406147133e-05,up
+group_test,submitter,Tcm,DN_vs_Ctrl,0.930328525930366,0.881846785965041,,0.000269372703670001,0.000538745407340002,up
+group_test,submitter,Tem,DN_vs_Ctrl,0.749404167742952,0.639142449450406,,4.74783844353066e-05,0.000122087274262217,up
+group_test,submitter,Th1_cells,DN_vs_Ctrl,0.360876948483785,0.344917391455492,,0.0478549621736399,0.0574259546083679,up
+group_test,submitter,Th2_cells,DN_vs_Ctrl,0.542992710205116,0.48192368828169,,3.56074698615316e-08,6.40934457507569e-07,up
+group_test,submitter,TFH,DN_vs_Ctrl,0.529120757867186,0.510212764709887,,0.000147073949713805,0.000330916386856062,up
+group_test,submitter,CD8_T_cells,DN_vs_Ctrl,0.70490813444906,0.694665173158513,,0.0878392226132427,0.0988191254398981,up
+group_test,submitter,Cytotoxic_cells,DN_vs_Ctrl,0.378337232022708,0.317156853646412,,0.00058323887474443,0.00095439088594543,up
+group_test,submitter,NK_cells,DN_vs_Ctrl,0.642004651756566,0.669255643025681,,0.0122394994623454,0.0169469992555551,down
+group_test,submitter,NK_CD56dim_cells,DN_vs_Ctrl,0.217980906603955,0.213835341088885,,0.592649235887182,0.592649235887182,up
+group_test,submitter,DC,DN_vs_Ctrl,0.35538276987297,0.283911551693378,,1.32197390134703e-05,4.7591060448493e-05,up
+group_test,submitter,iDC,DN_vs_Ctrl,0.544622932483551,0.481088865200318,,2.65151106448869e-06,1.19317997901991e-05,up
+group_test,submitter,Eosinophils,DN_vs_Ctrl,0.608167273309292,0.598121869134122,,0.280813413686602,0.297331849785814,up
+group_test,submitter,Macrophages,DN_vs_Ctrl,0.553903157069741,0.504904926187783,,0.00217204613079525,0.00325806919619287,up
+group_test,submitter,Mast_cells,DN_vs_Ctrl,0.288376923566631,0.214395343301105,,0.000327962368857682,0.000590332263943827,up
+group_test,submitter,Neutrophils,DN_vs_Ctrl,0.468415562959825,0.442497808713628,,0.0244235266187614,0.0314016770812646,up
+group_test,log2cpm,B_cells,DN_vs_Ctrl,0.149101616655125,0.0913066509494566,,5.10937897901798e-06,1.53281369370539e-05,up
+group_test,log2cpm,T_cells,DN_vs_Ctrl,-0.0130707668676537,-0.162638972826119,,4.35411057653212e-07,3.11942328767856e-06,up
+group_test,log2cpm,T_helper_cells,DN_vs_Ctrl,0.415572260017208,0.397880870037011,,1.22315055441913e-05,3.14524428279204e-05,up
+group_test,log2cpm,Tcm,DN_vs_Ctrl,0.632971599088584,0.59221528593945,,5.90055671940704e-05,0.000132762526186658,up
+group_test,log2cpm,Tem,DN_vs_Ctrl,0.423620323233578,0.420699252185021,,0.628351497485705,0.706895434671419,up
+group_test,log2cpm,Th1_cells,DN_vs_Ctrl,-0.0541362597105406,-0.105120185152247,,4.0035454507148e-06,1.44127636225733e-05,up
+group_test,log2cpm,Th2_cells,DN_vs_Ctrl,0.0604995744757564,0.0259619044598353,,5.1990388127976e-07,3.11942328767856e-06,up
+group_test,log2cpm,TFH,DN_vs_Ctrl,0.181145862921475,0.190265299032759,,0.628351497485705,0.706895434671419,down
+group_test,log2cpm,CD8_T_cells,DN_vs_Ctrl,0.16207880675224,0.170727167563762,,0.0498009212042002,0.0814924165159641,down
+group_test,log2cpm,Cytotoxic_cells,DN_vs_Ctrl,-0.0739499605394434,-0.140244427577423,,2.54049230985487e-07,3.11942328767856e-06,up
+group_test,log2cpm,NK_cells,DN_vs_Ctrl,0.146568684769757,0.207960766936818,,3.68889091357368e-06,1.44127636225733e-05,down
+group_test,log2cpm,NK_CD56dim_cells,DN_vs_Ctrl,-0.169951366886131,-0.16037567343937,,0.858460966923269,0.858460966923269,down
+group_test,log2cpm,DC,DN_vs_Ctrl,-0.192401571282719,-0.18212291338754,,0.0141194313854414,0.0254149764937945,down
+group_test,log2cpm,iDC,DN_vs_Ctrl,0.00333750612297291,-0.00663588061275214,,0.805473034102557,0.852853800814472,up
+group_test,log2cpm,Eosinophils,DN_vs_Ctrl,0.174319423263385,0.171269228523043,,0.363533679818146,0.490816110089086,up
+group_test,log2cpm,Macrophages,DN_vs_Ctrl,0.0866786482368199,0.0457546315188849,,0.00128864107803461,0.00257728215606923,up
+group_test,log2cpm,Mast_cells,DN_vs_Ctrl,-0.188709001169865,-0.173712822178113,,0.205756788416031,0.308635182624047,down
+group_test,log2cpm,Neutrophils,DN_vs_Ctrl,0.0360953772969859,0.0235542379103094,,0.381745863402622,0.490816110089086,up
+pdk_corr,submitter,PDK2 x B_cells,all,,,-0.602,0.0,,
+pdk_corr,submitter,PDK2 x B_cells,DN_only,,,-0.376,0.007099,,
+pdk_corr,submitter,PDK2 x T_cells,all,,,-0.483,6e-05,,
+pdk_corr,submitter,PDK2 x T_cells,DN_only,,,-0.141,0.327754,,
+pdk_corr,submitter,PDK2 x T_helper_cells,all,,,-0.452,0.0002,,
+pdk_corr,submitter,PDK2 x T_helper_cells,DN_only,,,-0.205,0.153445,,
+pdk_corr,submitter,PDK2 x Tcm,all,,,-0.523,1.1e-05,,
+pdk_corr,submitter,PDK2 x Tcm,DN_only,,,-0.373,0.007679,,
+pdk_corr,submitter,PDK2 x Tem,all,,,-0.369,0.002958,,
+pdk_corr,submitter,PDK2 x Tem,DN_only,,,-0.057,0.696143,,
+pdk_corr,submitter,PDK2 x Th1_cells,all,,,0.007,0.958309,,
+pdk_corr,submitter,PDK2 x Th1_cells,DN_only,,,0.244,0.088356,,
+pdk_corr,submitter,PDK2 x Th2_cells,all,,,-0.645,0.0,,
+pdk_corr,submitter,PDK2 x Th2_cells,DN_only,,,-0.419,0.002449,,
+pdk_corr,submitter,PDK2 x TFH,all,,,-0.485,5.7e-05,,
+pdk_corr,submitter,PDK2 x TFH,DN_only,,,-0.287,0.043355,,
+pdk_corr,submitter,PDK2 x CD8_T_cells,all,,,0.242,0.05621,,
+pdk_corr,submitter,PDK2 x CD8_T_cells,DN_only,,,0.482,0.000393,,
+pdk_corr,submitter,PDK2 x Cytotoxic_cells,all,,,-0.069,0.588412,,
+pdk_corr,submitter,PDK2 x Cytotoxic_cells,DN_only,,,0.264,0.064324,,
+pdk_corr,submitter,PDK2 x NK_cells,all,,,0.41,0.000841,,
+pdk_corr,submitter,PDK2 x NK_cells,DN_only,,,0.318,0.024464,,
+pdk_corr,submitter,PDK2 x NK_CD56dim_cells,all,,,-0.116,0.365473,,
+pdk_corr,submitter,PDK2 x NK_CD56dim_cells,DN_only,,,-0.1,0.491355,,
+pdk_corr,submitter,PDK2 x DC,all,,,-0.455,0.000176,,
+pdk_corr,submitter,PDK2 x DC,DN_only,,,-0.178,0.216024,,
+pdk_corr,submitter,PDK2 x iDC,all,,,-0.239,0.059088,,
+pdk_corr,submitter,PDK2 x iDC,DN_only,,,0.206,0.150512,,
+pdk_corr,submitter,PDK2 x Eosinophils,all,,,0.045,0.727849,,
+pdk_corr,submitter,PDK2 x Eosinophils,DN_only,,,0.12,0.406854,,
+pdk_corr,submitter,PDK2 x Macrophages,all,,,-0.161,0.206426,,
+pdk_corr,submitter,PDK2 x Macrophages,DN_only,,,0.075,0.602573,,
+pdk_corr,submitter,PDK2 x Mast_cells,all,,,-0.251,0.047063,,
+pdk_corr,submitter,PDK2 x Mast_cells,DN_only,,,-0.004,0.979404,,
+pdk_corr,submitter,PDK2 x Neutrophils,all,,,0.011,0.931708,,
+pdk_corr,submitter,PDK2 x Neutrophils,DN_only,,,0.275,0.053156,,
+pdk_corr,submitter,PDK4 x B_cells,all,,,-0.153,0.231801,,
+pdk_corr,submitter,PDK4 x B_cells,DN_only,,,-0.355,0.011459,,
+pdk_corr,submitter,PDK4 x T_cells,all,,,0.06,0.638778,,
+pdk_corr,submitter,PDK4 x T_cells,DN_only,,,-0.097,0.504685,,
+pdk_corr,submitter,PDK4 x T_helper_cells,all,,,0.165,0.194897,,
+pdk_corr,submitter,PDK4 x T_helper_cells,DN_only,,,0.048,0.738523,,
+pdk_corr,submitter,PDK4 x Tcm,all,,,-0.176,0.166755,,
+pdk_corr,submitter,PDK4 x Tcm,DN_only,,,-0.359,0.010536,,
+pdk_corr,submitter,PDK4 x Tem,all,,,-0.071,0.57966,,
+pdk_corr,submitter,PDK4 x Tem,DN_only,,,-0.246,0.085425,,
+pdk_corr,submitter,PDK4 x Th1_cells,all,,,0.066,0.604914,,
+pdk_corr,submitter,PDK4 x Th1_cells,DN_only,,,0.095,0.511092,,
+pdk_corr,submitter,PDK4 x Th2_cells,all,,,0.035,0.782961,,
+pdk_corr,submitter,PDK4 x Th2_cells,DN_only,,,-0.168,0.244698,,
+pdk_corr,submitter,PDK4 x TFH,all,,,-0.207,0.103333,,
+pdk_corr,submitter,PDK4 x TFH,DN_only,,,-0.356,0.011059,,
+pdk_corr,submitter,PDK4 x CD8_T_cells,all,,,0.259,0.040331,,
+pdk_corr,submitter,PDK4 x CD8_T_cells,DN_only,,,0.302,0.033313,,
+pdk_corr,submitter,PDK4 x Cytotoxic_cells,all,,,0.185,0.145916,,
+pdk_corr,submitter,PDK4 x Cytotoxic_cells,DN_only,,,0.15,0.296853,,
+pdk_corr,submitter,PDK4 x NK_cells,all,,,-0.144,0.25982,,
+pdk_corr,submitter,PDK4 x NK_cells,DN_only,,,-0.029,0.844114,,
+pdk_corr,submitter,PDK4 x NK_CD56dim_cells,all,,,-0.292,0.020438,,
+pdk_corr,submitter,PDK4 x NK_CD56dim_cells,DN_only,,,-0.316,0.025346,,
+pdk_corr,submitter,PDK4 x DC,all,,,-0.024,0.849096,,
+pdk_corr,submitter,PDK4 x DC,DN_only,,,-0.2,0.164363,,
+pdk_corr,submitter,PDK4 x iDC,all,,,0.237,0.061054,,
+pdk_corr,submitter,PDK4 x iDC,DN_only,,,0.169,0.23993,,
+pdk_corr,submitter,PDK4 x Eosinophils,all,,,0.271,0.031685,,
+pdk_corr,submitter,PDK4 x Eosinophils,DN_only,,,0.203,0.158336,,
+pdk_corr,submitter,PDK4 x Macrophages,all,,,0.261,0.038838,,
+pdk_corr,submitter,PDK4 x Macrophages,DN_only,,,0.147,0.308216,,
+pdk_corr,submitter,PDK4 x Mast_cells,all,,,0.184,0.148591,,
+pdk_corr,submitter,PDK4 x Mast_cells,DN_only,,,0.083,0.565361,,
+pdk_corr,submitter,PDK4 x Neutrophils,all,,,0.15,0.240746,,
+pdk_corr,submitter,PDK4 x Neutrophils,DN_only,,,0.178,0.216413,,
+pdk_corr,log2cpm,PDK2 x B_cells,all,,,-0.607,0.0,,
+pdk_corr,log2cpm,PDK2 x B_cells,DN_only,,,-0.366,0.008979,,
+pdk_corr,log2cpm,PDK2 x T_cells,all,,,-0.679,0.0,,
+pdk_corr,log2cpm,PDK2 x T_cells,DN_only,,,-0.431,0.001767,,
+pdk_corr,log2cpm,PDK2 x T_helper_cells,all,,,-0.652,0.0,,
+pdk_corr,log2cpm,PDK2 x T_helper_cells,DN_only,,,-0.452,0.00097,,
+pdk_corr,log2cpm,PDK2 x Tcm,all,,,-0.544,4e-06,,
+pdk_corr,log2cpm,PDK2 x Tcm,DN_only,,,-0.291,0.040655,,
+pdk_corr,log2cpm,PDK2 x Tem,all,,,0.228,0.072469,,
+pdk_corr,log2cpm,PDK2 x Tem,DN_only,,,0.366,0.008921,,
+pdk_corr,log2cpm,PDK2 x Th1_cells,all,,,-0.583,1e-06,,
+pdk_corr,log2cpm,PDK2 x Th1_cells,DN_only,,,-0.341,0.015475,,
+pdk_corr,log2cpm,PDK2 x Th2_cells,all,,,-0.674,0.0,,
+pdk_corr,log2cpm,PDK2 x Th2_cells,DN_only,,,-0.448,0.001099,,
+pdk_corr,log2cpm,PDK2 x TFH,all,,,0.093,0.467874,,
+pdk_corr,log2cpm,PDK2 x TFH,DN_only,,,0.058,0.687835,,
+pdk_corr,log2cpm,PDK2 x CD8_T_cells,all,,,0.46,0.000147,,
+pdk_corr,log2cpm,PDK2 x CD8_T_cells,DN_only,,,0.395,0.004521,,
+pdk_corr,log2cpm,PDK2 x Cytotoxic_cells,all,,,-0.475,8.3e-05,,
+pdk_corr,log2cpm,PDK2 x Cytotoxic_cells,DN_only,,,-0.096,0.507253,,
+pdk_corr,log2cpm,PDK2 x NK_cells,all,,,0.781,0.0,,
+pdk_corr,log2cpm,PDK2 x NK_cells,DN_only,,,0.611,2e-06,,
+pdk_corr,log2cpm,PDK2 x NK_CD56dim_cells,all,,,-0.106,0.41051,,
+pdk_corr,log2cpm,PDK2 x NK_CD56dim_cells,DN_only,,,-0.178,0.216172,,
+pdk_corr,log2cpm,PDK2 x DC,all,,,0.368,0.003013,,
+pdk_corr,log2cpm,PDK2 x DC,DN_only,,,0.231,0.106942,,
+pdk_corr,log2cpm,PDK2 x iDC,all,,,0.275,0.029421,,
+pdk_corr,log2cpm,PDK2 x iDC,DN_only,,,0.384,0.00589,,
+pdk_corr,log2cpm,PDK2 x Eosinophils,all,,,-0.221,0.081609,,
+pdk_corr,log2cpm,PDK2 x Eosinophils,DN_only,,,-0.156,0.280185,,
+pdk_corr,log2cpm,PDK2 x Macrophages,all,,,-0.445,0.000254,,
+pdk_corr,log2cpm,PDK2 x Macrophages,DN_only,,,-0.301,0.033941,,
+pdk_corr,log2cpm,PDK2 x Mast_cells,all,,,-0.078,0.544898,,
+pdk_corr,log2cpm,PDK2 x Mast_cells,DN_only,,,-0.221,0.123273,,
+pdk_corr,log2cpm,PDK2 x Neutrophils,all,,,0.03,0.814568,,
+pdk_corr,log2cpm,PDK2 x Neutrophils,DN_only,,,0.106,0.463868,,
+pdk_corr,log2cpm,PDK4 x B_cells,all,,,-0.153,0.229816,,
+pdk_corr,log2cpm,PDK4 x B_cells,DN_only,,,-0.326,0.020707,,
+pdk_corr,log2cpm,PDK4 x T_cells,all,,,-0.068,0.595802,,
+pdk_corr,log2cpm,PDK4 x T_cells,DN_only,,,-0.249,0.080746,,
+pdk_corr,log2cpm,PDK4 x T_helper_cells,all,,,-0.083,0.519287,,
+pdk_corr,log2cpm,PDK4 x T_helper_cells,DN_only,,,-0.231,0.106044,,
+pdk_corr,log2cpm,PDK4 x Tcm,all,,,-0.237,0.061574,,
+pdk_corr,log2cpm,PDK4 x Tcm,DN_only,,,-0.408,0.003268,,
+pdk_corr,log2cpm,PDK4 x Tem,all,,,0.138,0.28007,,
+pdk_corr,log2cpm,PDK4 x Tem,DN_only,,,0.138,0.339703,,
+pdk_corr,log2cpm,PDK4 x Th1_cells,all,,,0.087,0.49596,,
+pdk_corr,log2cpm,PDK4 x Th1_cells,DN_only,,,-0.011,0.940638,,
+pdk_corr,log2cpm,PDK4 x Th2_cells,all,,,0.079,0.5372,,
+pdk_corr,log2cpm,PDK4 x Th2_cells,DN_only,,,-0.067,0.641553,,
+pdk_corr,log2cpm,PDK4 x TFH,all,,,-0.035,0.786269,,
+pdk_corr,log2cpm,PDK4 x TFH,DN_only,,,-0.034,0.816485,,
+pdk_corr,log2cpm,PDK4 x CD8_T_cells,all,,,-0.039,0.763654,,
+pdk_corr,log2cpm,PDK4 x CD8_T_cells,DN_only,,,0.064,0.658763,,
+pdk_corr,log2cpm,PDK4 x Cytotoxic_cells,all,,,0.11,0.389215,,
+pdk_corr,log2cpm,PDK4 x Cytotoxic_cells,DN_only,,,-0.013,0.928005,,
+pdk_corr,log2cpm,PDK4 x NK_cells,all,,,-0.01,0.937797,,
+pdk_corr,log2cpm,PDK4 x NK_cells,DN_only,,,0.126,0.38161,,
+pdk_corr,log2cpm,PDK4 x NK_CD56dim_cells,all,,,-0.102,0.425001,,
+pdk_corr,log2cpm,PDK4 x NK_CD56dim_cells,DN_only,,,-0.072,0.619363,,
+pdk_corr,log2cpm,PDK4 x DC,all,,,-0.051,0.691522,,
+pdk_corr,log2cpm,PDK4 x DC,DN_only,,,0.048,0.740782,,
+pdk_corr,log2cpm,PDK4 x iDC,all,,,0.192,0.131264,,
+pdk_corr,log2cpm,PDK4 x iDC,DN_only,,,0.221,0.122273,,
+pdk_corr,log2cpm,PDK4 x Eosinophils,all,,,0.306,0.01464,,
+pdk_corr,log2cpm,PDK4 x Eosinophils,DN_only,,,0.285,0.045152,,
+pdk_corr,log2cpm,PDK4 x Macrophages,all,,,0.065,0.613315,,
+pdk_corr,log2cpm,PDK4 x Macrophages,DN_only,,,-0.026,0.857356,,
+pdk_corr,log2cpm,PDK4 x Mast_cells,all,,,-0.014,0.913472,,
+pdk_corr,log2cpm,PDK4 x Mast_cells,DN_only,,,-0.018,0.899648,,
+pdk_corr,log2cpm,PDK4 x Neutrophils,all,,,0.136,0.288243,,
+pdk_corr,log2cpm,PDK4 x Neutrophils,DN_only,,,0.164,0.256555,,
+nnls_B_proxy,submitter,B_fraction,DN_vs_Ctrl,0.1439,0.0042,,0.0,,
+nnls_B_proxy,submitter,PDK2_x_B,all,,,-0.656,0.0,,
+nnls_B_proxy,submitter,PDK2_x_B,DN_only,,,-0.402,0.00377,,
+nnls_B_proxy,log2cpm,B_fraction,DN_vs_Ctrl,0.1224,0.0,,0.0,,
+nnls_B_proxy,log2cpm,PDK2_x_B,all,,,-0.543,4e-06,,
+nnls_B_proxy,log2cpm,PDK2_x_B,DN_only,,,-0.183,0.202149,,
