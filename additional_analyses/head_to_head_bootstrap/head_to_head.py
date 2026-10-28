@@ -1,6 +1,6 @@
-# evidence_gain/5_head_to_head/head_to_head.py (v2) ----
-# 任务#5 头对头：ref52（PTGS2/NFE2L2）vs 本文签名，同一批队列同一预处理。
-# 口径修正（v2）：
+# evidence_gain/5_head_to_head/head_to_head.py ----
+# 头对头比较：ref52（PTGS2/NFE2L2）vs 本文签名，同一批队列同一预处理。
+# 口径说明：
 #   - 子组分析（early/advanced）用子集内 z（与原管线一致，复得 0.889/1.000）
 #   - 同时报告 as-trained 方向的原始 AUC 与 auto-oriented AUC（=max(A,1-A)，与 pROC direction='auto' 对齐，
 #     即 Table 2 口径）；标记签名方向反转的语境
@@ -143,4 +143,4 @@ rev = res[res.direction_reversed][["context", "feature", "AUC_as_trained"]]
 print(rev.to_string(index=False) if len(rev) else "（无）")
 print("\n== 签名 vs PTGS2 配对 bootstrap（B=2000） ==")
 print(bt.to_string(index=False))
-print("\nHEADTOHEAD_V2_DONE")
+print("\nHEADTOHEAD_DONE")

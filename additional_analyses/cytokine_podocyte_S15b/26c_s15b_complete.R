@@ -1,5 +1,5 @@
 # 26c_s15b_complete.R ----
-# Round-2 fixes: complete the S15b evidence base.
+# Complete S15b evidence-base analyses (cytokine axis + podocyte modules).
 #   - cytokine panel: replication-cohort within-DKD rows for IL6/IL1B (TNF absent) with all readouts
 #   - p values for ALL readouts (score/PDK2/PDK4; podocyte PDK4/score) in every context
 # Output: results/revision/M9c_s15b_complete.csv (tidy, pure CSV)

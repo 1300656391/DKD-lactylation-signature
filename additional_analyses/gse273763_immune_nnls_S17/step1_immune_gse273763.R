@@ -76,9 +76,8 @@ run_ssgsea(norm, "submitter")
 run_ssgsea(cpm, "log2cpm")
 
 # 导出 NNLS B 代理子集（marker 基因 + PDK 基因，双口径）
-# 注：本尾段已被 step1b_immune_nnls_gate.py 取代（后者直接在内存中加载矩阵并使用 #2 原始 422-marker 参照
-#     evidence_gain/2_cross_deconv/ref_signature_marker_linear.csv）；此处仅留作溯源，重跑 step1 时此段可跳过。
-#     路径修正（P4A-1）：合并 marker 清单实际位于 2x_myeloid_ref（此前误指 2_cross_deconv，该路径不存在）。
+# 注：step1b_immune_nnls_gate.py 在内存中完成等价计算（422-marker 参照 evidence_gain/2_cross_deconv/
+#     ref_signature_marker_linear.csv）；本段导出的合并 marker 清单位于 2x_myeloid_ref。
 markers <- read.csv("evidence_gain/2x_myeloid_ref/ref_marker_list_combined.csv", stringsAsFactors = FALSE)
 mk <- unique(markers$gene)
 for (mobj in list(list(nm = "submitter", m = norm), list(nm = "log2cpm", m = cpm))) {

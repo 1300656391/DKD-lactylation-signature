@@ -1,5 +1,5 @@
 # evidence_gain/2_cross_deconv/step2_deconv.py ----
-# 任务#2 交叉去卷积（与主稿 ssGSEA+Bindea 方法学独立）：
+# 交叉去卷积（与主稿 ssGSEA+Bindea 方法学独立）：
 #   参照 = GSE131882 肾 snRNA 10 型线性 CP10K 均值（marker 矩阵，本步输入）
 #   混合 = 各 bulk 队列表达（队列内 per-gene z 标准化，尺度无关，规避 log/线性与平台差异）
 #   求解 = scipy NNLS（CIBERSORT 同类的参照约束去卷积；系数归一化为分数）

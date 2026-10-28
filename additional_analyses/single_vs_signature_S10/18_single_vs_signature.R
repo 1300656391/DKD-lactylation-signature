@@ -1,4 +1,4 @@
-# 18_round5_fixes.R ----
+# 18_single_vs_signature.R ----
 # Round-5 修复分析：
 #   M2: 各队列 PDK2-only / PDK4-only / 两基因签名 AUC 并列 + DeLong(签名 vs PDK4)
 #       同时输出 PDK4/PDK2 中位数方向（供 M1 方向冲突讨论：区室解释的直接证据）
@@ -107,4 +107,4 @@ ic <- read.csv("results/immune_gene_corr.csv", stringsAsFactors = FALSE, check.n
 cm <- as.matrix(ic[, setdiff(colnames(ic), c("gene", "Normal_mucosa"))])
 ar <- sort(round(colMeans(abs(cm)), 3), decreasing = TRUE)
 cat("\nMean |rho| by cell:\n"); print(head(ar, 6))
-cat("\nROUND5_FIXES_DONE\n")
+cat("\nS10_SINGLE_VS_SIGNATURE_DONE\n")
