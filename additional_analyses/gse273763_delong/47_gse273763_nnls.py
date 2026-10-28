@@ -1,5 +1,5 @@
 # evidence_gain/4_new_cohort/step1b_immune_nnls_gate.py ----
-# 执行①补全：相关 p 值 + NNLS B 代理（与 #2 同法：GSE131882 十型参照 + 422 marker）+ 预注册判定
+# S17 follow-up: correlation p values + NNLS B-cell proxy (same method as the cross-deconvolution analysis: GSE131882 ten-type reference + 422 markers) + pre-specified decision gate
 import numpy as np, pandas as pd, os
 from scipy.optimize import nnls
 from scipy.stats import spearmanr, mannwhitneyu
@@ -7,13 +7,13 @@ from scipy.stats import spearmanr, mannwhitneyu
 BASE = os.path.dirname(os.path.abspath(__file__))
 REF = os.path.join(BASE, "..", "2_cross_deconv")
 
-# ---- ssGSEA 相关 p 值（读 R 已导出的逐样本分数）----
+# ---- ssGSEA correlation p values (per-sample scores exported by the R step) ----
 rows = []
 for tag in ("submitter", "log2cpm"):
     ss = pd.read_csv(os.path.join(BASE, f"gse273763_ssgsea_{tag}.csv"))
     bulk = pd.read_csv(os.path.join(BASE, f"gse273763_bulk_subset_{tag}.csv")).set_index("gene") \
         if os.path.exists(os.path.join(BASE, f"gse273763_bulk_subset_{tag}.csv")) else None
-    # PDK 表达直接从矩阵取
+    # PDK expression taken directly from the matrix
     import gzip
     if tag == "submitter":
         with gzip.open(os.path.join(BASE, "GSE273763_DKD_GRCH38_forGEO_July2026_v2.txt.gz"), "rt", encoding="utf-8", errors="replace") as f:
@@ -33,9 +33,9 @@ for tag in ("submitter", "log2cpm"):
             rows.append(dict(caliber=tag, cell=cell, scope=label, rho=round(r, 3), p=round(p, 6)))
 cor = pd.DataFrame(rows)
 cor.to_csv(os.path.join(BASE, "gse273763_pdk_corr_pvalues.csv"), index=False)
-print("== PDK2 x ssGSEA cells（含 p）=="); print(cor.to_string(index=False))
+print("== PDK2 x ssGSEA cells (with p) =="); print(cor.to_string(index=False))
 
-# ---- NNLS B 代理（#2 同法）----
+# ---- NNLS B-cell proxy (same method as the cross-deconvolution analysis) ----
 ref = pd.read_csv(os.path.join(REF, "ref_signature_marker_linear.csv"), index_col=0)
 mk = list(ref.index)
 def zscore(df):
@@ -44,7 +44,7 @@ def zscore(df):
 ref_z = zscore(ref)
 nrows = []
 for tag, Mm in (("submitter", M),):
-    pass  # M 已在上方构造（log2cpm）；submitter 版本单独构造
+    pass  # M constructed above (log2cpm); submitter version built separately
 with gzip.open(os.path.join(BASE, "GSE273763_DKD_GRCH38_forGEO_July2026_v2.txt.gz"), "rt", encoding="utf-8", errors="replace") as f:
     S = pd.read_csv(f, sep="\t", index_col=0)
 S.columns = S.columns.str.replace(r"\s+", "", regex=True)
@@ -73,9 +73,9 @@ for tag, E in (("submitter", S), ("log2cpm", M)):
                       PDK2xB_DN_rho=round(r_dn, 3), PDK2xB_DN_p=round(p_dn, 6)))
 nn = pd.DataFrame(nrows)
 nn.to_csv(os.path.join(BASE, "gse273763_nnls_B_proxy.csv"), index=False)
-print("\n== NNLS B 代理（#2 同法，十型参照）=="); print(nn.to_string(index=False))
+print("\n== NNLS B-cell proxy (same method, ten-type reference) =="); print(nn.to_string(index=False))
 
-# ---- 预注册判定（锚点 B 节；主口径=submitter）----
+# ---- Pre-specified decision gate (anchor B; primary caliber = submitter) ----
 pri = cor[(cor.caliber == "submitter")]
 mac_pri = pri[(pri.cell == "Macrophages") & (pri.scope == "all")].iloc[0]
 mac_up = (mac_pri.rho < 0)
@@ -87,8 +87,8 @@ mac_sens = sens[(sens.cell == "Macrophages") & (sens.scope == "all")].iloc[0]
 tests_s = pd.read_csv(os.path.join(BASE, "gse273763_immune_tests_log2cpm.csv"))
 mac_bh_s = tests_s[tests_s.cell == "Macrophages"].iloc[0]
 gate_sens = (mac_bh_s["direction"] == "up") and (mac_bh_s["p.adj_BH18"] < 0.05) and (mac_sens.rho < 0) and (mac_sens.p < 0.05)
-print("\n== 预注册判定 ==")
-print(f"主终点（宏噬 DN↑, BH18）: submitter p.adj={mac_bh['p.adj_BH18']:.4g} 方向={mac_bh['direction']} | log2cpm p.adj={mac_bh_s['p.adj_BH18']:.4g} 方向={mac_bh_s['direction']}")
-print(f"升格判据（主口径全样本 PDK2x宏噬 rho<0 & p<0.05）: submitter rho={mac_pri.rho} p={mac_pri.p} -> {'通过' if gate_primary else '未通过'}")
-print(f"（敏感性口径同判据: log2cpm rho={mac_sens.rho} p={mac_sens.p} -> {'通过' if gate_sens else '未通过'}）")
-print(f"最终判定: {'升格为第三免疫队列' if gate_primary else '混合/口径依赖 -> 必报规则：全表进补充表 + FFPE/试剂盒限定句，不升格 §3.7'}")
+print("\n== Pre-specified decision gate ==")
+print(f"Primary endpoint (macrophage DN-up, BH18): submitter p.adj={mac_bh['p.adj_BH18']:.4g} direction={mac_bh['direction']} | log2cpm p.adj={mac_bh_s['p.adj_BH18']:.4g} direction={mac_bh_s['direction']}")
+print(f"Promotion criterion (primary caliber, all-sample PDK2 x macrophage rho<0 & p<0.05): submitter rho={mac_pri.rho} p={mac_pri.p} -> {'pass' if gate_primary else 'not passed'}")
+print(f"(sensitivity caliber, same criterion: log2cpm rho={mac_sens.rho} p={mac_sens.p} -> {'pass' if gate_sens else 'not passed'}）")
+print(f"Final decision: {'promote to third immune cohort' if gate_primary else 'mixed/normalization-dependent -> mandatory full reporting in the supplementary table with FFPE/library qualifiers; no upgrade to section 3.7'}")

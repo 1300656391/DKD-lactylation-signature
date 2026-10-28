@@ -1,14 +1,14 @@
 # 19_ld_sensitivity.R ----
-# Round-6 A5/B7 修复：GSE104948 对照来源敏感性分析
-#   DN vs LD（活体供肾，21例）——直接检验"肿瘤切除对照"混杂：活体供肾无肿瘤/热缺血混杂
-#   DN vs HT（高血压肾病，15例）——疾病特异性对照：签名是否区分 DKD 与另一肾脏病
-#   全部使用冻结系数（canonical deviance），z标准化在各自分析子集内（与正文口径一致）
+# GSE104948 control-source sensitivity analysis
+#   DN vs LD (living donors, n = 21) -- direct test of the tumor-nephrectomy control confounding: living donors carry no tumor or warm-ischemia confounders
+#   DN vs HT (hypertensive nephropathy, n = 15) -- disease-specificity control: does the signature separate DKD from another kidney disease
+#   All use the frozen coefficients (canonical deviance); z-standardization within each analysis subset (same convention as the main text)
 suppressWarnings(suppressMessages({ library(data.table); library(pROC) }))
 hub <- readLines("results/hub_genes.txt")
 fm <- fread("results/frozen/final_model_coefficients.csv")
 bh <- setNames(fm$canonical_deviance, fm$term)
 zrows <- function(m) t(apply(m, 1, function(r) (r - mean(r)) / sd(r)))
-sig_of <- function(e) {  # e: genes x samples (DN+对照子集), 内部z标准化; 缺失基因系数为0自动跳过
+sig_of <- function(e) {  # e: genes x samples (DN + control subset), within-subset z; missing genes contribute 0 and are skipped
   hg <- intersect(hub, rownames(e))
   Xv <- t(zrows(e[hg, , drop = FALSE]))
   as.vector(Xv %*% bh[hg] + bh[["(Intercept)"]])
@@ -48,7 +48,7 @@ for (p in c("GPL22945", "GPL24120")) {
   if (length(ld) > 0) add(paste0("DN_vs_LD_", p), e, dn, ld, "living-donor control (per-platform)")
   if (length(ht) > 0) add(paste0("DN_vs_HT_", p), e, dn, ht, "hypertensive-nephropathy disease control (per-platform)")
 }
-# 池化（两平台各自z标准化后合并分数）
+# Pooling (each platform z-standardized, then scores combined)
 g1 <- grp_from_title("GPL22945"); e1 <- load_expr("GPL22945")
 g2 <- grp_from_title("GPL24120"); e2 <- load_expr("GPL24120")
 pool <- function(grp1, grp2, label, note) {
@@ -61,7 +61,7 @@ pool <- function(grp1, grp2, label, note) {
     s_list[[length(s_list) + 1]] <- sig_of(es)
     y_list[[length(y_list) + 1]] <- c(rep(1, length(idx_c)), rep(0, length(idx_n)))
   }
-  if (length(s_list) < 2) { cat(label, ": 单平台，跳过池化\n"); return(invisible()) }
+  if (length(s_list) < 2) { cat(label, ": single platform, pooling skipped\n"); return(invisible()) }
   s <- unlist(s_list); y <- unlist(y_list)
   r <- roc(y, s, quiet = TRUE)
   ci <- coords(r, "best", ret = c("sensitivity", "specificity"), best.method = "youden")

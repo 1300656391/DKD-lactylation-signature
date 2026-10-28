@@ -1,16 +1,16 @@
 # evidence_gain/4_new_cohort/step1_immune_gse273763.R ----
-# 执行①：免疫复现到 GSE273763（v6 方案）
-#   ssGSEA+Bindea 18 细胞（主稿同法），双口径：提交者归一化矩阵（主）与 counts->log2CPM（敏感性）
-#   预注册判定（锚点 B 节）：主终点=宏噬 DN↑ 且 BH<0.05（18 家族）；升格判据=主终点成立且全样本 PDK2x宏噬 rho<0、p<0.05
-#   列名清洗：去除全部空白（含内部），assert 63 样本
-#   附：导出 NNLS B 代理所需 marker 子集（与 2_cross_deconv 参照同基因集）
+# Immune replication extended to GSE273763
+#   ssGSEA + Bindea 18 cell types (as in the main pipeline), two calibers: submitter-normalized matrix (primary) and counts -> log2CPM (sensitivity)
+#   Pre-specified gate (anchor B): primary endpoint = macrophage DN-up with BH < 0.05 (family of 18); promotion criterion = endpoint met AND all-sample PDK2 x macrophage rho < 0, p < 0.05
+#   Column-name cleaning: remove all whitespace (including internal), assert 63 samples
+#   Also exports the marker subset needed for the NNLS B-cell proxy (same gene set as the 2_cross_deconv reference)
 suppressWarnings(suppressMessages({ library(GSVA); library(data.table) }))
 set.seed(42)
 OUT <- "evidence_gain/4_new_cohort"
 
 clean_cols <- function(m) { colnames(m) <- gsub("\\s+", "", colnames(m)); m }
 
-# 两个矩阵
+# the two matrices
 norm <- read.table(gzfile(file.path(OUT, "GSE273763_DKD_GRCH38_forGEO_July2026_v2.txt.gz")),
                    sep = "\t", header = TRUE, row.names = 1, check.names = FALSE)
 cnt <- read.table(gzfile(file.path(OUT, "GSE273763_countsmatrix.txt.gz")),
@@ -20,16 +20,16 @@ stopifnot(ncol(norm) == 63, ncol(cnt) == 63)
 grp <- ifelse(grepl("^DKD", colnames(norm)) | grepl("_DKD$", colnames(norm)), "DKD", "Donor")
 stopifnot(sum(grp == "DKD") == 50, sum(grp == "Donor") == 13)
 
-# counts -> log2CPM（敏感性口径），ENSG -> symbol（用已映射文件）
+# counts -> log2CPM (sensitivity caliber), ENSG -> symbol (using the pre-mapped file)
 sym_map <- cnt
-# 已有符号化 counts（step: map_gse273763_symbols.R 产物）
+# symbolized counts already available (from map_gse273763_symbols.R)
 cntsym <- read.csv(gzfile(file.path(OUT, "GSE273763_counts_symbol.csv.gz")), row.names = 1, check.names = FALSE)
 cntsym <- clean_cols(cntsym)
 cpm <- log2(t(t(cntsym) / colSums(cntsym)) * 1e6 + 1)
 norm <- as.matrix(norm); storage.mode(norm) <- "numeric"
 cpm <- as.matrix(cpm); storage.mode(cpm) <- "numeric"
 
-# Bindea 18 签名（与 21_immune_replication.R 同法）
+# Bindea 18 signatures (as in 21_immune_replication.R)
 e <- new.env(); load("data/signature_collection.rda", envir = e)
 sc <- get("signature_collection", envir = e)
 cn <- grep("_Bindea_et_al$", names(sc), value = TRUE)
@@ -49,7 +49,7 @@ run_ssgsea <- function(expr, tag) {
   ss <- gsva(par, verbose = FALSE)
   ss <- as.data.frame(t(ss)); ss$group <- grp; ss$sample <- colnames(expr)
   fwrite(ss, file.path(OUT, paste0("gse273763_ssgsea_", tag, ".csv")))
-  # 18 细胞组间检验（Wilcoxon + BH18），与主稿同法
+  # group tests for the 18 cell types (Wilcoxon + BH18), as in the main pipeline
   is_dn <- grp != "Donor"
   res <- do.call(rbind, lapply(bindea_cells, function(cc) {
     x <- ss[[cc]]
@@ -61,7 +61,7 @@ run_ssgsea <- function(expr, tag) {
   setorder(as.data.table(res), p.adj_BH18)
   fwrite(res, file.path(OUT, paste0("gse273763_immune_tests_", tag, ".csv")))
   cat("\n== ", tag, " 18-cell DN vs Donor (BH18) ==\n"); print(res)
-  # PDK2/PDK4 x 全部细胞分数 Spearman（全样本 + DN 内）
+  # PDK2/PDK4 x all cell-type scores, Spearman (all-sample + within DN)
   for (g in c("PDK2", "PDK4")) {
     ge <- as.numeric(expr[g, ])
     cr <- do.call(rbind, lapply(bindea_cells, function(cc)
@@ -75,9 +75,9 @@ run_ssgsea <- function(expr, tag) {
 run_ssgsea(norm, "submitter")
 run_ssgsea(cpm, "log2cpm")
 
-# 导出 NNLS B 代理子集（marker 基因 + PDK 基因，双口径）
-# 注：step1b_immune_nnls_gate.py 在内存中完成等价计算（422-marker 参照 evidence_gain/2_cross_deconv/
-#     ref_signature_marker_linear.csv）；本段导出的合并 marker 清单位于 2x_myeloid_ref。
+# Export the NNLS B-cell-proxy subset (marker genes + PDK genes, both calibers)
+# Note: step1b_immune_nnls_gate.py performs the equivalent computation in memory (422-marker reference evidence_gain/2_cross_deconv/
+#     ref_signature_marker_linear.csv); the combined marker list exported here is the one in 2x_myeloid_ref.
 markers <- read.csv("evidence_gain/2x_myeloid_ref/ref_marker_list_combined.csv", stringsAsFactors = FALSE)
 mk <- unique(markers$gene)
 for (mobj in list(list(nm = "submitter", m = norm), list(nm = "log2cpm", m = cpm))) {

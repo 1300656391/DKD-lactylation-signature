@@ -1,6 +1,6 @@
 # evidence_gain/2x_myeloid_ref/step2_build_ref.R ----
-# 合并参照：GSE131882 九个肾实质型（剔除其 B 型以避免共线）+ GSE209781 免疫型（>=50 细胞）
-# 输出：合并 marker 参照矩阵、类型计数、（可行时）仅对照巨噬参照、以及按合并 marker 集重导出的 bulk 子集
+# Combined reference: nine GSE131882 kidney parenchymal types (its B type dropped to avoid collinearity) + GSE209781 immune types (>= 50 cells)
+# Outputs: combined marker reference matrix, type counts, (when feasible) control-only macrophage profile, and bulk subsets re-exported on the combined marker set
 suppressWarnings(suppressMessages({ library(Seurat); library(Matrix) }))
 set.seed(42)
 OUT <- "evidence_gain/2x_myeloid_ref"
@@ -19,8 +19,8 @@ type_means <- function(obj, types_wanted) {
 }
 
 ktab <- table(as.character(kid$celltype))
-kid_types <- names(ktab)[ktab >= 50]   # GSE131882 全部 10 型（含 B：GSE209781 无 B 簇，无共线）
-IMM_WHITELIST <- c("Macro", "MonoNeu", "DC", "T/NK", "B", "Plasma", "Mast")  # 仅并入免疫型，肾型仍锚定 GSE131882
+kid_types <- names(ktab)[ktab >= 50]   # all 10 GSE131882 types (B included: GSE209781 has no B cluster, no collinearity)
+IMM_WHITELIST <- c("Macro", "MonoNeu", "DC", "T/NK", "B", "Plasma", "Mast")  # immune types merged in; kidney types stay anchored to GSE131882
 itab <- table(as.character(imm$celltype))
 imm_types <- intersect(names(itab)[itab >= 50], IMM_WHITELIST)
 cat("kidney types (GSE131882):", paste(kid_types, collapse = ", "), "\n")
@@ -29,7 +29,7 @@ cat("immune types (GSE209781):", paste(imm_types, collapse = ", "), "\n")
 K <- type_means(kid, kid_types); I2 <- type_means(imm, imm_types)
 stopifnot("Macro" %in% imm_types)
 
-# 组合 log 均值（基因并集）
+# Combined log means (union of genes)
 allg <- union(rownames(K$log), rownames(I2$log))
 comb_log <- matrix(NA_real_, length(allg), length(kid_types) + length(imm_types),
                    dimnames = list(allg, c(kid_types, imm_types)))
@@ -37,7 +37,7 @@ comb_log[rownames(K$log), kid_types] <- K$log
 comb_log[rownames(I2$log), imm_types] <- I2$log
 comb_log[is.na(comb_log)] <- 0
 
-# 每型 top50 特异标记（in - out，全类型联合计算），排除线粒体
+# top50 specific markers per type (in - out, computed jointly over all types), mitochondria excluded
 marker_list <- lapply(colnames(comb_log), function(t) {
   spec <- comb_log[, t] - rowMeans(comb_log[, setdiff(colnames(comb_log), t), drop = FALSE])
   cand <- names(spec)[!grepl("^MT-", names(spec)) & !is.na(spec)]
@@ -47,7 +47,7 @@ names(marker_list) <- colnames(comb_log)
 markers <- unique(unlist(marker_list))
 cat("combined marker union:", length(markers), "\n")
 
-# 线性参照矩阵
+# Linear reference matrix
 comb_lin <- matrix(0, length(markers), ncol(comb_log), dimnames = list(markers, colnames(comb_log)))
 comb_lin[rownames(K$lin)[rownames(K$lin) %in% markers], kid_types] <-
   K$lin[rownames(K$lin)[rownames(K$lin) %in% markers], kid_types, drop = FALSE]
@@ -62,7 +62,7 @@ write.csv(do.call(rbind, lapply(names(marker_list), function(t)
   data.frame(gene = marker_list[[t]], type = t, stringsAsFactors = FALSE))),
   file.path(OUT, "ref_marker_list_combined.csv"), row.names = FALSE)
 
-# 宏噬的供体拆分（疾病/对照核数）+ 可行时仅对照巨噬 profile
+# Donor split of macrophages (disease/control nuclei) + control-only macrophage profile when feasible
 igm <- imm$celltype == "Macro"
 cat("\nMacro cells x group:\n"); print(table(imm$group[igm]))
 n_macro_ctl <- sum(imm$group[igm] == "Control")
@@ -74,10 +74,10 @@ if (n_macro_ctl >= 30) {
             file.path(OUT, "ref_macro_control_profile.csv"), row.names = FALSE)
   cat("control-only macrophage profile exported (n=", n_macro_ctl, ")\n", sep = "")
 } else {
-  cat("control-only macrophage infeasible (n=", n_macro_ctl, " < 30) -> 仅用混合参照\n", sep = "")
+  cat("control-only macrophage infeasible (n=", n_macro_ctl, " < 30) -> using the combined reference\n", sep = "")
 }
 
-# ---- 按合并 marker 集重导出 bulk 子集（只读 data/） ----
+# ---- Re-export bulk subsets on the combined marker set (read-only on data/) ----
 genes_need <- union(markers, c("PDK2", "PDK4", "PTGS2", "NFE2L2"))
 cohorts <- list(
   list(id = "GSE96804",         expr = "data/GSE96804_expr_symbol.rds",           pheno = "data/GSE96804_pheno.csv"),
@@ -103,7 +103,7 @@ for (co in cohorts) {
   }
   ok <- !is.na(mi); e <- e[, ok]
   hit <- intersect(genes_need, rownames(e))
-  cat(sprintf("[%s] samples=%d | marker hit=%d/%d | Macro基因命中(CD68/CSF1R/LST1): %s\n",
+  cat(sprintf("[%s] samples=%d | marker hit=%d/%d | Macro marker hits (CD68/CSF1R/LST1): %s\n",
               co$id, ncol(e), length(intersect(markers, rownames(e))), length(markers),
               paste(intersect(c("CD68","CSF1R","LST1"), rn), collapse = ",")))
   df <- as.data.frame(e[hit, ]); df$gene <- rownames(df)

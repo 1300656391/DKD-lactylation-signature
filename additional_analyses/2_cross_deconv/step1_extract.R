@@ -65,7 +65,7 @@ for (co in cohorts) {
   ph$group <- sub("^group:\\s*", "", ph$group)
   pref <- sub("_.*$", "", colnames(e))
   mi <- match(pref, ph$sample)
-  if (all(is.na(mi))) {  # 双段式列名（如 GSM4217781_A11A.txt）：取 GSM 之后的第二段
+  if (all(is.na(mi))) {  # two-part column names (e.g., GSM4217781_A11A.txt): use the segment after the GSM id
     alt <- sub("\\.txt$", "", colnames(e))
     alt <- sub("^GSM[0-9]+_", "", alt)
     mi <- match(alt, ph$sample)

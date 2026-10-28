@@ -1,11 +1,11 @@
 # evidence_gain/2_cross_deconv/step2_deconv.py ----
-# 交叉去卷积（与主稿 ssGSEA+Bindea 方法学独立）：
-#   参照 = GSE131882 肾 snRNA 10 型线性 CP10K 均值（marker 矩阵，本步输入）
-#   混合 = 各 bulk 队列表达（队列内 per-gene z 标准化，尺度无关，规避 log/线性与平台差异）
-#   求解 = scipy NNLS（CIBERSORT 同类的参照约束去卷积；系数归一化为分数）
-#   检验 = 各型分数 DN vs Ctrl（Wilcoxon, BH10）；PDK2/PDK4/签名分 vs 各型分数 Spearman（全样本 + DN 内）
-# 注：GSE131882 参照不含 Macro/T-NK（0 核），B 细胞为唯一免疫型 → 免疫结论以 B 细胞分数为代理，
-#     宏噬细胞特异复现不在此参照能力范围内（如实报告）。
+# Reference-constrained NNLS deconvolution (methodologically independent of the ssGSEA/Bindea analysis):
+#   reference = linear CP10K means of the 10 GSE131882 kidney snRNA types (marker matrix, input of this step)
+#   mixtures = per-cohort bulk expression (within-cohort per-gene z; scale-free, robust to log/linear and platform differences)
+#   solver = scipy NNLS (CIBERSORT-like reference-constrained deconvolution; coefficients normalized to fractions)
+#   tests = per-type fraction DN vs Ctrl (Wilcoxon, BH10); PDK2/PDK4/signature vs fractions, Spearman (all-sample + within DN)
+# Note: the GSE131882 reference has no Macro/T-NK (0 nuclei) and B cells are the only immune type -> immune conclusions use the B-cell fraction as proxy,
+#     macrophage-specific replication is beyond this reference (reported as is).
 import numpy as np, pandas as pd
 from scipy.optimize import nnls
 from scipy.stats import spearmanr, mannwhitneyu
@@ -53,7 +53,7 @@ for coh in COHORTS:
                                median_DN=float(x[is_dn].median()), median_Ctrl=float(x[~is_dn].median()),
                                direction="up" if x[is_dn].median() > x[~is_dn].median() else "down",
                                p=float(u.pvalue)))
-    # PDK 表达与签名分（队列内 z）
+    # PDK expression and signature score (within-cohort z)
     def gene_row(g): return expr.loc[g] if g in expr.index else None
     zp = {g: (gene_row(g) - gene_row(g).mean()) / gene_row(g).std(ddof=0) for g in ("PDK2", "PDK4") if gene_row(g) is not None}
     if len(zp) == 2:

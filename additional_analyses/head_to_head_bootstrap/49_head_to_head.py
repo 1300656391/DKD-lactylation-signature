@@ -1,10 +1,10 @@
 # evidence_gain/5_head_to_head/head_to_head.py ----
-# 头对头比较：ref52（PTGS2/NFE2L2）vs 本文签名，同一批队列同一预处理。
-# 口径说明：
-#   - 子组分析（early/advanced）用子集内 z（与原管线一致，复得 0.889/1.000）
-#   - 同时报告 as-trained 方向的原始 AUC 与 auto-oriented AUC（=max(A,1-A)，与 pROC direction='auto' 对齐，
-#     即 Table 2 口径）；标记签名方向反转的语境
-#   - 单基因按训练队列 rank-AUC 定向；mean-z 对按同定向合成；PTGS2/NFE2L2 冻结 logistic 镜像本文管线
+# Head-to-head comparison: ref52 (PTGS2/NFE2L2) vs this signature, same cohorts and same preprocessing.
+# Conventions:
+#   - subgroup analyses (early/advanced) use within-subset z (as in the main pipeline; reproduces 0.889/1.000)
+#   - both the as-trained raw AUC and the auto-oriented AUC (= max(A, 1-A), aligned with pROC direction='auto',
+#     i.e. the Table 2 convention) are reported; contexts with reversed signature direction are flagged
+#   - single genes oriented by training-cohort rank-AUC; mean-z pairs combined with the same orientation; PTGS2/NFE2L2 frozen logistic mirrors this pipeline
 import numpy as np, pandas as pd, os
 from scipy.stats import mannwhitneyu
 
@@ -37,7 +37,7 @@ def logistic_fit(X, y, iters=100):
         if np.max(np.abs(step)) < 1e-10: break
     return b
 
-# ---- 训练队列：定向 + PTGS2/NFE2L2 冻结 logistic ----
+# ---- Training cohort: orientation + PTGS2/NFE2L2 frozen logistic ----
 e_tr, ph_tr = load("GSE96804")
 Z_tr = zmat(e_tr.loc[GENES]); y_tr = (ph_tr["group"] != "Control").values.astype(int)
 orient = {}
@@ -45,8 +45,8 @@ for g in GENES:
     a0, _ = auc_raw(Z_tr.loc[g].values, y_tr.astype(bool))
     orient[g] = 1 if a0 > 0.5 else -1
 b_pair = logistic_fit(Z_tr.loc[["PTGS2", "NFE2L2"]].T.values, y_tr)
-print("训练定向 orient:", orient)
-print("PTGS2/NFE2L2 冻结 logistic: intercept=%.3f PTGS2=%.3f NFE2L2=%.3f" % tuple(b_pair))
+print("training orientation:", orient)
+print("PTGS2/NFE2L2 frozen logistic: intercept=%.3f PTGS2=%.3f NFE2L2=%.3f" % tuple(b_pair))
 
 CONTEXTS = [
     ("GSE96804_train",        "GSE96804",         None),
@@ -68,7 +68,7 @@ for ctx, coh, subgrp in CONTEXTS:
     if coh not in cache:
         e, ph = load(coh); cache[coh] = (zmat(e.loc[GENES]), ph)
     Z, ph = cache[coh]
-    if subgrp:  # 子集内 z（原管线口径）：先截取样本再 z
+    if subgrp:  # within-subset z (main-pipeline convention): subset samples first, then z
         keep = ((ph["group"] == subgrp) | (ph["group"] == "Control")).values
         sub = pd.read_csv(os.path.join(BASE, f"bulk_{coh}_subset.csv")).set_index("gene")
         sub = sub[~sub.index.duplicated(keep="first")]
@@ -94,7 +94,7 @@ for ctx, coh, subgrp in CONTEXTS:
 res = pd.DataFrame(rows)
 res.to_csv(os.path.join(OUTD, "head_to_head_auc.csv"), index=False)
 
-# ---- 配对 bootstrap：签名 vs PTGS2（ref52 最强特征），B=2000，方向用 oriented 口径 ----
+# ---- Paired bootstrap: signature vs PTGS2 (strongest ref52 feature), B = 2000, oriented convention ----
 rng = np.random.default_rng(42)
 bt_rows = []
 for ctx, coh, subgrp in CONTEXTS:
@@ -133,14 +133,14 @@ for ctx, coh, subgrp in CONTEXTS:
 bt = pd.DataFrame(bt_rows)
 bt.to_csv(os.path.join(OUTD, "signature_vs_PTGS2_bootstrap.csv"), index=False)
 
-print("\n== 本文签名复现检查（AUC_oriented 对照 Table 2） ==")
+print("\n== Signature reproduction check (AUC_oriented vs Table 2) ==")
 chk = res[res.feature == "PDK2/PDK4_signature"][["context", "AUC_as_trained", "AUC_oriented", "Table2", "direction_reversed"]]
 print(chk.to_string(index=False))
-print("\n== AUC 矩阵（AUC_oriented，Table 2 口径） ==")
+print("\n== AUC matrix (AUC_oriented, Table 2 convention) ==")
 print(res.pivot_table(index="feature", columns="context", values="AUC_oriented").round(3).to_string())
-print("\n== 方向反转标记（as-trained AUC<0.5 的语境 x 特征） ==")
+print("\n== Direction-reversal flags (contexts x features with as-trained AUC < 0.5) ==")
 rev = res[res.direction_reversed][["context", "feature", "AUC_as_trained"]]
-print(rev.to_string(index=False) if len(rev) else "（无）")
-print("\n== 签名 vs PTGS2 配对 bootstrap（B=2000） ==")
+print(rev.to_string(index=False) if len(rev) else "(none)")
+print("\n== Signature vs PTGS2 paired bootstrap (B = 2000) ==")
 print(bt.to_string(index=False))
 print("\nHEADTOHEAD_DONE")

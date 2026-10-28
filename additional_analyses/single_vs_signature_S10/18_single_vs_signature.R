@@ -1,9 +1,9 @@
 # 18_single_vs_signature.R ----
-# Round-5 修复分析：
-#   M2: 各队列 PDK2-only / PDK4-only / 两基因签名 AUC 并列 + DeLong(签名 vs PDK4)
-#       同时输出 PDK4/PDK2 中位数方向（供 M1 方向冲突讨论：区室解释的直接证据）
-#   M4: Table3 sens/spec 精确二项 95% CI（Youden 截断为样本内最优，题注说明）
-#   m3: immune_gene_corr 各细胞平均|r|（验证"myeloid and T-helper"措辞）
+# Single-gene versus signature analyses:
+#   Per-cohort AUCs of PDK2-only / PDK4-only / the two-gene signature + DeLong (signature vs PDK4);
+#       also the median direction of PDK4/PDK2 (direct evidence for the compartment interpretation of the direction conflict)
+#   Exact binomial 95% CIs for the Table 3 sensitivity/specificity (in-sample optimal Youden cutoff, noted in the caption)
+#   Mean |rho| per cell type from immune_gene_corr (supports the "myeloid and T-helper" wording)
 suppressWarnings(suppressMessages({ library(data.table); library(pROC) }))
 hub <- readLines("results/hub_genes.txt")
 fm <- fread("results/frozen/final_model_coefficients.csv")
@@ -21,7 +21,7 @@ row_out <- list(); i <- 0
 addrow <- function(label, e, yy, n_case, n_ctrl) {
   s <- sig(e); p4 <- one(e, "PDK4"); p2 <- one(e, "PDK2")
   m4v <- med(e, "PDK4", yy); m2v <- med(e, "PDK2", yy)
-  p4o <- p4 * ifelse(m4v[1] < m4v[2], -1, 1)   # 方向对齐：病例侧高分，DeLong 有效
+  p4o <- p4 * ifelse(m4v[1] < m4v[2], -1, 1)   # orientation aligned: case side high, DeLong valid
   r_s <- roc(yy, s, quiet = TRUE); r4 <- roc(yy, p4o, quiet = TRUE)
   r2 <- roc(yy, p2, direction = "auto", quiet = TRUE)
   dl <- tryCatch(roc.test(r_s, r4, method = "delong")$p.value, error = function(e) NA)
@@ -67,7 +67,7 @@ file.copy("results/revision/M2_single_vs_signature.csv",
           "manuscript/supplement/TableS10_single_vs_signature.csv", overwrite = TRUE)
 print(m2)
 
-# M4: Table3 精确二项 CI
+# Exact binomial CIs for Table 3
 youd <- fread("results/revision/M6_within_cohort_youden.csv")
 ci_row <- function(tab) {
   y <- as.integer(train_ph$group == "DN"); s <- sig(train_expr)
@@ -102,7 +102,7 @@ m4 <- rbindlist(out)
 fwrite(m4, "results/revision/M4b_youden_ci.csv")
 print(m4)
 
-# m3: 各细胞平均|r|
+# Mean |rho| per cell type
 ic <- read.csv("results/immune_gene_corr.csv", stringsAsFactors = FALSE, check.names = FALSE)
 cm <- as.matrix(ic[, setdiff(colnames(ic), c("gene", "Normal_mucosa"))])
 ar <- sort(round(colMeans(abs(cm)), 3), decreasing = TRUE)

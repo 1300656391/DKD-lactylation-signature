@@ -1,7 +1,7 @@
 # evidence_gain/2x_myeloid_ref/step1_annotate.R ----
-# GSE209781（人类 DKD scRNA 图谱，3 DKD + 3 正常肾，6 样本 10x）
-# 目的：解包 -> Seurat 标准 QC/聚类（与主稿 GSE131882 管线同参）-> 细胞类型注释（肾 13 型 + 免疫亚型）
-# 输出仅写 evidence_gain/2x_myeloid_ref/
+# GSE209781 (human DKD scRNA atlas, 3 DKD + 3 normal kidneys, 6 10x samples)
+# Goal: unpack -> standard Seurat QC/clustering (same parameters as the GSE131882 pipeline) -> cell-type annotation (13 kidney types + immune subtypes)
+# Outputs are written only to evidence_gain/2x_myeloid_ref/
 suppressWarnings(suppressMessages({ library(Seurat); library(Matrix) }))
 set.seed(42)
 OUT <- "evidence_gain/2x_myeloid_ref"
@@ -42,7 +42,7 @@ merged <- FindClusters(merged, resolution = 0.6, verbose = FALSE)
 merged <- RunUMAP(merged, dims = 1:20, verbose = FALSE)
 cat("total cells:", ncol(merged), "| clusters:", nlevels(merged$seurat_clusters), "\n")
 
-# ---- 注释：肾 13 型（同主稿）+ 免疫亚型 ----
+# ---- Annotation: 13 kidney types (as in the main pipeline) + immune subtypes ----
 markers <- c(Podo = "NPHS1,NPHS2,WT1,PLCE1", PT = "LRP2,CUBN,VCAM1,SLC34A1",
              `TAL/LOH` = "UMOD,SLC12A1", DCT = "SLC12A3,TRPV5,CALB1",
              `CD-PC` = "AQP2,AQP3", `CD-IC` = "ATP6V1B1,SLC26A4",

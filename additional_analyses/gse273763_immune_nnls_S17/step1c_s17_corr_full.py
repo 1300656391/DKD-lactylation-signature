@@ -1,5 +1,5 @@
 # evidence_gain/4_new_cohort/step1c_s17_corr_full.py ----
-# P1A 建议采纳：S17 免疫必报表的 PDK x 18 细胞相关全表（双口径 x 全样本/DN 内，含 p 值）
+# Full PDK x 18-cell-type correlation table for the mandatory S17 immune report (both normalizations x all-sample/DN-only, with p values)
 import gzip, os
 import numpy as np, pandas as pd
 from scipy.stats import spearmanr
