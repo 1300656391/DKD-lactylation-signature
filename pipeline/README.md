@@ -1,6 +1,6 @@
 # DKD Lactylation-Signature Analysis Pipeline
 
-Code for: *A lactate–lactylation axis gene signature for diabetic kidney disease: diagnostic model development, six-cohort evaluation, and immune microenvironment correlates* (Frontiers in Immunology, submitted).
+Code for: *A lactate–lactylation axis gene signature for diabetic kidney disease: diagnostic model development, six-cohort evaluation, and immune microenvironment correlates*.
 
 ## Requirements
 

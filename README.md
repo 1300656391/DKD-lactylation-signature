@@ -2,7 +2,7 @@
 
 Analysis code for the manuscript *"A lactate–lactylation axis gene signature for diabetic
 kidney disease: diagnostic model development, six-cohort evaluation, and immune
-microenvironment correlates"* (Frontiers in Immunology, submitted).
+microenvironment correlates"*.
 
 ## Repository layout
 
