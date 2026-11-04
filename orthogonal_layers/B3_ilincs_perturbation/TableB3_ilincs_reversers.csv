@@ -1,0 +1,51 @@
+﻿rank,compound_name,lincsSigID,cellline,dose,timepoint,similarity,pValue,nGenes_mapped,MoA_category,n_signatures_of_compound_in_top120,compound_median_similarity_top120,also_in_top120_variantA
+1,SPECTRUM_001645,CPC004_HCC515_24H:BRD-A66559694-001-03-8:10,HCC515,10uM,24h,-0.5355,8.34e-10,114,Opioid receptor antagonist,1,-0.5355,no
+2,IMD-0354,REP.A024_HA1E_24H:C15,HA1E,1.11uM,24h,-0.5136,5.1e-09,114,IKK inhibitor|NFkB pathway inhibitor,3,-0.5126,yes
+3,IMD-0354,REP.A024_HA1E_24H:C14,HA1E,3.33uM,24h,-0.5126,5.54e-09,114,IKK inhibitor|NFkB pathway inhibitor,3,-0.5126,yes
+4,SPECTRUM_000898,CPC004_HCC515_24H:BRD-A10188456-001-03-1:10,HCC515,10uM,24h,-0.5076,8.19e-09,114,Glucocorticoid receptor agonist,1,-0.5076,no
+5,"9-Fluoro-11,17,21-trihydroxy-16-methylpregna-1,4-diene-3,20-dione",CPC006_HCC515_24H:BRD-A35108200-001-04-7:10,HCC515,10uM,24h,-0.5066,8.89e-09,114,Glucocorticoid receptor agonist,1,-0.5066,no
+6,Hexachlorophene,REP.A026_HA1E_24H:M20,HA1E,3.33uM,24h,-0.5029,1.18e-08,114,Potassium channel activator,2,-0.4810,yes
+7,Omacetaxine Mepesuccinate,REP.A025_HA1E_24H:L12,HA1E,0.04uM,24h,-0.4910,2.93e-08,114,Protein synthesis inhibitor,1,-0.4910,no
+8,AC1O8PYD,CPC001_HCC515_24H:BRD-A63894585-001-03-4:10,HCC515,10uM,24h,-0.4879,3.66e-08,114,Glucocorticoid receptor agonist,1,-0.4879,no
+9,Brefeldin A,CPC016_SKB_24H:BRD-A17065207-001-06-9:10,SKB,10uM,24h,-0.4778,7.61e-08,114,Brefeldin A inhibited guanine nucleotide exchange protein inhibitors|Golgi-specific brefeldin A-resistance guanine nucleotide exchange factor inhibitor|Protein synthesis inhibitor,4,-0.4324,yes
+10,Fluticasone Propionate,CPC001_HCC515_24H:BRD-K62310379-001-03-0:10,HCC515,10uM,24h,-0.4775,7.8e-08,114,Glucocorticoid receptor agonist,2,-0.4480,no
+11,HMS2093J15,CPC003_HCC515_24H:BRD-A25143711-001-01-4:10,HCC515,10uM,24h,-0.4770,8.09e-08,114,Corticosteroid agonist|Glucocorticoid receptor agonist,1,-0.4770,no
+12,282089-49-0,CPC001_HCC515_24H:BRD-K63150726-001-01-3:10,HCC515,10uM,24h,-0.4769,8.16e-08,114,Cannabinoid receptor inverse agonist,1,-0.4769,no
+13,BRD-K38477985,CPC003_HA1E_24H:BRD-K38477985-001-01-8:10,HA1E,10uM,24h,-0.4759,8.75e-08,114,Protein tyrosine kinase inhibitor,1,-0.4759,yes
+14,L-690330,CPC006_HCC515_24H:BRD-K28470988-001-01-2:10,HCC515,10uM,24h,-0.4723,1.12e-07,114,Inositol monophosphatase inhibitor,1,-0.4723,no
+15,Mometasone Furoate,CPC002_HCC515_24H:BRD-K60640630-001-03-7:10,HCC515,10uM,24h,-0.4674,1.58e-07,114,Glucocorticoid receptor agonist,1,-0.4674,no
+16,Sirolimus,CPC006_HCC515_24H:BRD-A79768653-001-02-1:10,HCC515,10uM,24h,-0.4657,1.77e-07,114,MTOR inhibitor,2,-0.4550,no
+17,Lenalidomide,CPC006_HCC515_24H:BRD-A17883755-001-02-0:177.6,HCC515,100uM,24h,-0.4623,2.24e-07,114,Anticancer agent,1,-0.4623,yes
+18,Flumethasone,CPC003_HCC515_6H:BRD-K61496577-001-03-8:10,HCC515,10uM,6h,-0.4597,2.68e-07,114,Glucocorticoid receptor agonist,2,-0.4393,no
+19,Hexachlorophene,REP.A026_HA1E_24H:M19,HA1E,10uM,24h,-0.4590,2.81e-07,114,Potassium channel activator,2,-0.4810,no
+20,Betamethasone,CPC002_HCC515_24H:BRD-K39188321-001-03-9:10,HCC515,10uM,24h,-0.4562,3.38e-07,114,Glucocorticoid receptor agonist,1,-0.4562,no
+21,CHEMBL2143628,PCLB002_HA1E_24H:BRD-K83694683:10,HA1E,10uM,24h,-0.4560,3.43e-07,114,,1,-0.4560,no
+22,ST056354,NMH002_FIBRNPC_24H:BRD-A84228258-001-03-6:10,FIBRNPC,10uM,24h,-0.4524,4.35e-07,114,Brefeldin A inhibited guanine nucleotide exchange protein inhibitors|Golgi-specific brefeldin A-resistance guanine nucleotide exchange factor inhibitor|Protein synthesis inhibitor,1,-0.4524,no
+23,Quiflapon,CPC006_HA1E_24H:BRD-K39503511-001-02-1:80,HA1E,80uM,24h,-0.4515,4.61e-07,114,Leukotriene inhibitor,1,-0.4515,yes
+24,Nafronyl,CPC004_HCC515_24H:BRD-A67862938-034-09-9:10,HCC515,10uM,24h,-0.4502,5.01e-07,114,Adrenergic receptor antagonist,1,-0.4502,no
+25,TIE2 Kinase Inhibitor,LJP009_HUVEC_24H:P07,HUVEC,10uM,24h,-0.4500,5.09e-07,114,,1,-0.4500,no
+26,3-(4-Pyridyl)indole,CPC006_HCC515_24H:BRD-K23875128-001-04-2:10,HCC515,10uM,24h,-0.4490,5.41e-07,114,Rho associated kinase inhibitor,1,-0.4490,no
+27,Rottlerin,CPC001_HA1E_24H:BRD-K03816923-001-04-7:10,HA1E,10uM,24h,-0.4466,6.32e-07,114,MAP kinase inhibitor|Protein kinase inhibitor,1,-0.4466,yes
+28,CHEMBL2360967,CPC013_SKB_24H:BRD-K18163752-001-01-9:10,SKB,10uM,24h,-0.4460,6.57e-07,114,,1,-0.4460,no
+29,"4,11-Diethyl-4,9-dihydroxy-1H-pyrano[3',4':6,7]indolizino[1,2-b]quinoline-3,14(4H,12H)-dione",CPC006_SKLU1_6H:BRD-A36630025-001-02-6:0.35,SKLU1,0.5uM,6h,-0.4453,6.88e-07,114,Topoisomerase inhibitor,1,-0.4453,yes
+30,Rimexolone,CPC003_HCC515_24H:BRD-K31627533-001-03-8:10,HCC515,10uM,24h,-0.4453,6.91e-07,114,Glucocorticoid receptor agonist,1,-0.4453,no
+31,Dacomitinib,LJP007_SKL.C_24H:G07,SKL.C,10uM,24h,-0.4443,7.37e-07,114,Epidermal growth factor receptor erbB1 inhibitor|Epidermal growth factor receptor inhibitor|Receptor protein-tyrosine kinase erbB-2 inhibitor|Receptor protein-tyrosine kinase erbB-4 inhibitor,3,-0.4055,no
+32,Sirolimus,CPC004_HCC515_24H:BRD-A79768653-001-02-1:10,HCC515,10uM,24h,-0.4442,7.38e-07,114,MTOR inhibitor,2,-0.4550,no
+33,Betamethasone Acetate,CPC004_HCC515_6H:BRD-A92177080-001-01-3:10,HCC515,10uM,6h,-0.4433,7.86e-07,114,Glucocorticoid receptor agonist,1,-0.4433,no
+34,Medrysone,CPC002_HCC515_24H:BRD-K56515112-001-03-4:10,HCC515,10uM,24h,-0.4419,8.58e-07,114,Glucocorticoid receptor agonist,1,-0.4419,no
+35,MLS002703118,CPC007_A549_24H:BRD-K33305493-001-02-9:10,A549,10uM,24h,-0.4410,9.08e-07,114,,1,-0.4410,no
+36,COT-10B,CPC006_MDST8_6H:BRD-K18190982-002-01-2:44.4,MDST8,40uM,6h,-0.4399,9.73e-07,114,,2,-0.4312,no
+37,"(8Xi,11beta,14xi,16beta)-21-Chloro-9-fluoro-11-hydroxy-16-methyl-3,20-dioxopregna-1,4-dien-17-yl propanoate",CPC004_HCC515_24H:BRD-A26095496-001-03-2:10,HCC515,10uM,24h,-0.4398,9.76e-07,114,Glucocorticoid receptor agonist,1,-0.4398,no
+38,Brefeldin A,CPC016_A549_24H:BRD-A17065207-001-06-9:10,A549,10uM,24h,-0.4398,9.81e-07,114,Brefeldin A inhibited guanine nucleotide exchange protein inhibitors|Golgi-specific brefeldin A-resistance guanine nucleotide exchange factor inhibitor|Protein synthesis inhibitor,4,-0.4324,no
+39,Bosutinib,REP.A002_HA1E_24H:N19,HA1E,10uM,24h,-0.4379,1.1e-06,114,Abl kinase inhibitor|Bcr-Abl kinase inhibitor|Src inhibitor,1,-0.4379,no
+40,IMD-0354,REP.A024_HA1E_24H:C13,HA1E,10uM,24h,-0.4378,1.11e-06,114,IKK inhibitor|NFkB pathway inhibitor,3,-0.5126,no
+41,Flunisolide,CPC002_HCC515_6H:BRD-K49577446-001-03-1:10,HCC515,10uM,6h,-0.4371,1.16e-06,114,Glucocorticoid receptor agonist,2,-0.4239,no
+42,BIX01294,LJP008_SKL.C_24H:I13,SKL.C,10uM,24h,-0.4357,1.27e-06,114,DNA methyltransferase inhibitor|Histone lysine methyltransferase inhibitor,1,-0.4357,no
+43,BAY 61-3606,LJP009_ASC_24H:H03,ASC,1.11uM,24h,-0.4347,1.34e-06,114,SYK inhibitor,1,-0.4347,no
+44,CGK733,CPC015_SKB_24H:BRD-A50737080-001-01-4:10,SKB,10uM,24h,-0.4346,1.35e-06,114,ATM kinase inhibitor|ATR kinase inhibitor,2,-0.4231,no
+45,BRD-A69951442-001-01-3,CPC006_HCC515_24H:BRD-A69951442-001-01-3:10,HCC515,10uM,24h,-0.4343,1.38e-06,114,Glucocorticoid receptor agonist,1,-0.4343,no
+46,Carbamazepine,CPC020_HCC515_6H:BRD-K71799949-001-28-1:10,HCC515,10uM,6h,-0.4330,1.5e-06,114,Sodium channel alpha subunit blocker,1,-0.4330,no
+47,Budesonide,CPC004_HCC515_24H:BRD-A60571864-001-03-3:10,HCC515,10uM,24h,-0.4326,1.53e-06,114,Glucocorticoid receptor agonist,2,-0.4232,no
+48,SPECTRUM_000080,CPC004_HCC515_24H:BRD-A02180903-001-03-7:10,HCC515,10uM,24h,-0.4325,1.54e-06,114,Glucocorticoid receptor agonist,1,-0.4325,no
+49,atorvastatin,CVD001_PHH_24H:BRD-U88459701-000-01-8:10,PHH,10uM,24h,-0.4319,1.61e-06,114,HMGCR inhibitor,1,-0.4319,no
+50,Triamcinolone,CPC003_HCC515_24H:BRD-K77554836-001-03-3:10,HCC515,10uM,24h,-0.4309,1.7e-06,114,Glucocorticoid receptor agonist,1,-0.4309,no

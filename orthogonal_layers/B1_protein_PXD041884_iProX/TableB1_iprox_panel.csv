@@ -1,0 +1,48 @@
+gene,detDN_n,detC_n,fisher_p,detection_direction,medDN,medC,log2FC_detected_only,MWU_p,pct_log2FC,interpretation_flag
+LDHA,53/53,26/26,1,equal,28.1162,27.2462,0.870001,2.02609e-05,60.3676,quantified
+LDHB,53/53,26/26,1,equal,27.6008,28.4157,-0.814915,0.000142994,8.05844,quantified
+SLC16A1,0/53,0/26,,,,,,,,absent
+SLC16A3,6/53,0/26,0.170077,more_in_DN,20.4645,,,,,"detection-dominated (sparse control, <30% of controls detected); MWU not computed (<3 detected values in a group)"
+SLC5A12,1/53,2/26,0.250699,more_in_C,23.8113,21.9203,1.89096,,88.2187,"detection-dominated (sparse control, <30% of controls detected); MWU not computed (<3 detected values in a group)"
+PDK1,0/53,0/26,,,,,,,,absent
+PDK2,0/53,0/26,,,,,,,,absent
+PDK3,0/53,0/26,,,,,,,,absent
+PDK4,0/53,0/26,,,,,,,,absent
+PDHA1,49/53,9/26,1.27857e-07,more_in_DN,23.7908,24.6696,-0.878846,0.0782385,7.63431,quantified
+PDHB,53/53,21/26,0.00291869,more_in_DN,24.9018,24.4545,0.447356,0.275241,39.1612,quantified
+DLAT,51/53,15/26,4.23182e-05,more_in_DN,22.6811,22.1686,0.512439,0.358584,42.0829,quantified
+DLD,53/53,20/26,0.000828277,more_in_DN,24.8552,23.6458,1.2094,0.00330816,72.5259,quantified
+MPC1,0/53,0/26,,,,,,,,absent
+MPC2,12/53,1/26,0.0504365,more_in_DN,22.6311,23.1957,-0.564669,,10.7446,"detection-dominated (sparse control, <30% of controls detected); MWU not computed (<3 detected values in a group)"
+PFKFB3,0/53,0/26,,,,,,,,absent
+PFKL,53/53,25/26,0.329114,more_in_DN,23.1395,23.6875,-0.547977,0.202615,11.3572,quantified
+PFKM,50/53,25/26,1,more_in_C,23.2867,22.2854,1.00129,0.040255,65.8341,quantified
+PFKP,47/53,13/26,0.000438897,more_in_DN,21.5277,20.9315,0.596246,0.0342324,46.607,quantified
+PKM,53/53,26/26,1,equal,28.1721,27.7845,0.387606,0.0364498,35.9566,quantified
+PKLR,11/53,18/26,4.72744e-05,more_in_C,23.8142,23.1558,0.658343,0.910533,49.5759,"detection-dominated (sparse DN, <30% of DN detected)"
+ALDOB,51/53,26/26,1,more_in_C,24.9403,28.8751,-3.9349,3.46066e-09,0.0471254,quantified
+ACLY,53/53,25/26,0.329114,more_in_DN,24.5595,21.7701,2.78937,6.50565e-09,95.7116,quantified
+ACSS2,12/53,1/26,0.0504365,more_in_DN,20.4537,19.6108,0.842914,,59.0952,"detection-dominated (sparse control, <30% of controls detected); MWU not computed (<3 detected values in a group)"
+EP300,0/53,0/26,,,,,,,,absent
+HDAC1,16/53,1/26,0.0078405,more_in_DN,21.4197,21.0282,0.391507,,36.1923,"detection-dominated (sparse control, <30% of controls detected); MWU not computed (<3 detected values in a group)"
+HDAC2,17/53,0/26,0.000792086,more_in_DN,21.3569,,,,,"detection-dominated (sparse control, <30% of controls detected); MWU not computed (<3 detected values in a group)"
+HDAC3,0/53,0/26,,,,,,,,absent
+SIRT1,0/53,0/26,,,,,,,,absent
+SIRT2,1/53,0/26,1,more_in_DN,18.3288,,,,,"detection-dominated (sparse control, <30% of controls detected); MWU not computed (<3 detected values in a group)"
+SIRT3,1/53,0/26,1,more_in_DN,22.1256,,,,,"detection-dominated (sparse control, <30% of controls detected); MWU not computed (<3 detected values in a group)"
+SIRT5,11/53,0/26,0.0129929,more_in_DN,20.4735,,,,,"detection-dominated (sparse control, <30% of controls detected); MWU not computed (<3 detected values in a group)"
+ME1,23/53,5/26,0.0458618,more_in_DN,20.8184,20.3687,0.449749,0.90755,39.2083,"detection-dominated (sparse control, <30% of controls detected); low-n MWU (5 vs 23)"
+ME2,24/53,1/26,9.68214e-05,more_in_DN,21.2193,21.3943,-0.175017,,18.7559,"detection-dominated (sparse control, <30% of controls detected); MWU not computed (<3 detected values in a group)"
+KRT18,50/53,25/26,1,more_in_C,25.8783,23.7163,2.16203,1.4652e-06,91.4703,quantified
+HIST1H4B,0/53,0/26,,,,,,,,absent
+PTGS2,0/53,0/26,,,,,,,,absent
+NFE2L2,0/53,0/26,,,,,,,,absent
+MMP7,0/53,0/26,,,,,,,,absent
+POSTN,53/53,22/26,0.00995008,more_in_DN,27.7904,21.7533,6.03707,8.07657e-11,99.9529,quantified
+VIM,53/53,26/26,1,equal,32.4651,32.6614,-0.196315,0.758248,18.2375,quantified
+COL1A1,52/53,6/26,1.64684e-12,more_in_DN,27.2156,21.9768,5.23887,0.000747171,99.8115,"detection-dominated (sparse control, <30% of controls detected); low-n MWU (6 vs 52)"
+COL3A1,35/53,0/26,2.76034e-09,more_in_DN,21.7169,,,,,"detection-dominated (sparse control, <30% of controls detected); MWU not computed (<3 detected values in a group)"
+NPHS1,45/53,25/26,0.258119,more_in_C,21.8992,23.2151,-1.31592,0.00132117,4.19416,quantified
+NPHS2,50/53,23/26,0.389199,more_in_DN,25.4589,25.5414,-0.0824318,0.938475,20.5938,quantified
+PODXL,53/53,25/26,0.329114,more_in_DN,26.5462,27.0998,-0.553652,0.0441228,11.0745,quantified
+SYNPO,53/53,26/26,1,equal,26.392,26.3644,0.0276153,0.921046,23.7041,quantified

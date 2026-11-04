@@ -1,0 +1,18 @@
+gene,uniprot,protein_name,median_DKD,median_ctrl,log2FC,wilcox_p,test,detected_n,peptide_count,percentile_log2FC
+PDK4,Q16654,NOT DETECTED in PXD041884,,,,,,0,,
+PDK2,Q15119,NOT DETECTED in PXD041884,,,,,,0,,
+PTGS2,P35354,NOT DETECTED in PXD041884,,,,,,0,,
+NFE2L2,Q16236,NOT DETECTED in PXD041884,,,,,,0,,
+PDK1,Q15118,NOT DETECTED in PXD041884,,,,,,0,,
+PDK3,Q15120,NOT DETECTED in PXD041884,,,,,,0,,
+CS,O75390,"Citrate synthase, mitochondrial",24.2283,24.1808,0.0475046,0.876263,exact,12,9,47.9543
+DLAT,P10515,"Dihydrolipoyllysine-residue acetyltransferase component of pyruvate dehydrogenase complex, mitochondrial",21.82,22.5584,-0.738347,0.00505051,exact,12,4,12.515
+DLD,P09622,"Dihydrolipoyl dehydrogenase, mitochondrial",24.2865,24.8206,-0.534047,0.0176768,exact,12,14,21.2395
+IDH2,P48735,"Isocitrate dehydrogenase [NADP], mitochondrial",25.8571,26.9379,-1.08089,0.00252525,exact,12,21,4.51264
+LDHA,P00338,L-lactate dehydrogenase A chain,25.4843,25.6687,-0.184391,0.20202,exact,12,16,38.1468
+LDHB,P07195,L-lactate dehydrogenase B chain,26.6458,27.2637,-0.617852,0.0732323,exact,12,21,17.9904
+PDHA1,P08559,"Pyruvate dehydrogenase E1 component subunit alpha, somatic form, mitochondrial",22.4158,22.8373,-0.421486,0.20202,exact,12,3,26.775
+PDHB,P11177,"Pyruvate dehydrogenase E1 component subunit beta, mitochondrial",22.8577,23.2294,-0.371667,0.0176768,exact,12,7,28.941
+PKLR,P30613,Pyruvate kinase isozymes R/L,21.4857,21.1339,0.3518,0.755051,exact,12,3,66.8472
+PKM,P14618,Pyruvate kinase isozymes M1/M2,26.5987,26.7269,-0.128224,0.530303,exact,12,27,40.4934
+SDHA,P31040,"Succinate dehydrogenase [ubiquinone] flavoprotein subunit, mitochondrial",24.0682,24.5363,-0.468077,0.0732323,exact,12,10,24.9097

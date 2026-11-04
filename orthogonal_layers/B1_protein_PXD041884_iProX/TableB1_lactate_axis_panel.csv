@@ -1,0 +1,37 @@
+gene,node_class,note,status,uniprot,protein_name,median_DKD,median_ctrl,log2FC,wilcox_p,detected_n,peptide_count,percentile_log2FC
+LDHA,lactate_generation,lactate dehydrogenase A,quantified,P00338,L-lactate dehydrogenase A chain,25.4843,25.6687,-0.184391,0.20202,12,16,38.1468
+LDHB,lactate_generation,lactate dehydrogenase B,quantified,P07195,L-lactate dehydrogenase B chain,26.6458,27.2637,-0.617852,0.0732323,12,21,17.9904
+SLC16A1,lactate_transport,MCT1,absent_from_matrix,,,,,,,0,,
+SLC16A3,lactate_transport,MCT4,absent_from_matrix,,,,,,,0,,
+SLC5A12,lactate_transport,SMCT2 (Na-coupled monocarboxylate),absent_from_matrix,,,,,,,0,,
+PDK1,pyruvate_gate_PDK,,not_detected,Q15118,NOT DETECTED in PXD041884,,,,,0,,
+PDK2,pyruvate_gate_PDK,module candidate,not_detected,Q15119,NOT DETECTED in PXD041884,,,,,0,,
+PDK3,pyruvate_gate_PDK,,not_detected,Q15120,NOT DETECTED in PXD041884,,,,,0,,
+PDK4,pyruvate_gate_PDK,module candidate,not_detected,Q16654,NOT DETECTED in PXD041884,,,,,0,,
+PDHA1,PDH_complex,,quantified,P08559,"Pyruvate dehydrogenase E1 component subunit alpha, somatic form, mitochondrial",22.4158,22.8373,-0.421486,0.20202,12,3,26.775
+PDHB,PDH_complex,,quantified,P11177,"Pyruvate dehydrogenase E1 component subunit beta, mitochondrial",22.8577,23.2294,-0.371667,0.0176768,12,7,28.941
+DLAT,PDH_complex,,quantified,P10515,"Dihydrolipoyllysine-residue acetyltransferase component of pyruvate dehydrogenase complex, mitochondrial",21.82,22.5584,-0.738347,0.00505051,12,4,12.515
+DLD,PDH_complex,,quantified,P09622,"Dihydrolipoyl dehydrogenase, mitochondrial",24.2865,24.8206,-0.534047,0.0176768,12,14,21.2395
+MPC1,mitochondrial_pyruvate_import,,absent_from_matrix,,,,,,,0,,
+MPC2,mitochondrial_pyruvate_import,,quantified,O95563,Brain protein 44,20.15,20.9601,-0.810132,0.00252525,12,2,10.349
+PFKFB3,glycolysis,"6-phosphofructo-2-kinase/fructose-2,6-bisphosphatase 3",absent_from_matrix,,,,,,,0,,
+PFKL,glycolysis,,quantified,P17858,"6-phosphofructokinase, liver type",25.6458,25.8478,-0.201948,0.431818,12,4,37.5451
+PFKM,glycolysis,,quantified,P08237,"6-phosphofructokinase, muscle type",22.14,21.9677,0.172233,0.267677,12,4,55.5355
+PFKP,glycolysis,,absent_from_matrix,,,,,,,0,,
+PKM,glycolysis,,quantified,P14618,Pyruvate kinase isozymes M1/M2,26.5987,26.7269,-0.128224,0.530303,12,27,40.4934
+PKLR,glycolysis,,quantified,P30613,Pyruvate kinase isozymes R/L,21.4857,21.1339,0.3518,0.755051,12,3,66.8472
+ALDOB,glycolysis,fructose-bisphosphate aldolase B,quantified,P05062,Fructose-bisphosphate aldolase B,26.5886,27.6392,-1.0506,0.14899,12,27,4.87365
+ACLY,acetylCoA_source,ATP citrate lyase,absent_from_matrix,,,,,,,0,,
+ACSS2,acetylCoA_source,acetyl-CoA synthetase 2,absent_from_matrix,,,,,,,0,,
+EP300,KAT_lactyltransferase_candidate,p300 KAT; lysine lactyltransferase candidate,absent_from_matrix,,,,,,,0,,
+HDAC1,deacylase,,absent_from_matrix,,,,,,,0,,
+HDAC2,deacylase,,absent_from_matrix,,,,,,,0,,
+HDAC3,deacylase,,absent_from_matrix,,,,,,,0,,
+SIRT1,deacylase,NAD-dependent,absent_from_matrix,,,,,,,0,,
+SIRT2,deacylase,NAD-dependent,absent_from_matrix,,,,,,,0,,
+SIRT3,deacylase,mitochondrial NAD-dependent,absent_from_matrix,,,,,,,0,,
+SIRT5,deacylase,mitochondrial; demalonylase/desuccinylase,absent_from_matrix,,,,,,,0,,
+ME1,malic_enzyme_NADPH,,absent_from_matrix,,,,,,,0,,
+ME2,malic_enzyme_NADPH,,absent_from_matrix,,,,,,,0,,
+KRT18,tubule_injury_marker,,quantified,P05783,"Keratin, type I cytoskeletal 18",26.5504,26.1389,0.411567,0.343434,12,29,71.1191
+HIST1H4B,histone_H4,H4 family quantified as single sequence-identical entry (P62805; gene-level attribution to HIST1H4B/H4C2 impossible),quantified,P62805,Histone H4,28.7345,27.6962,1.03835,0.00252525,12,22,93.8026

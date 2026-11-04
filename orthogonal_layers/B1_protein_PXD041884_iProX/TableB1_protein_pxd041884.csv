@@ -1,0 +1,1669 @@
+gene,uniprot,protein_name,status,median_DKD,median_ctrl,log2FC,wilcox_p,test,detected_n,peptide_count,percentile_log2FC
+PDK4,Q16654,NOT DETECTED in PXD041884,not_detected,,,,,,0,,
+PDK2,Q15119,NOT DETECTED in PXD041884,not_detected,,,,,,0,,
+PTGS2,P35354,NOT DETECTED in PXD041884,not_detected,,,,,,0,,
+NFE2L2,Q16236,NOT DETECTED in PXD041884,not_detected,,,,,,0,,
+PDK1,Q15118,NOT DETECTED in PXD041884,not_detected,,,,,,0,,
+PDK3,Q15120,NOT DETECTED in PXD041884,not_detected,,,,,,0,,
+GBE1,Q04446,"1,4-alpha-glucan-branching enzyme",quantified,20.7671,20.7347,0.0324134,0.876263,exact,12,3,47.2924
+AKR1E2,Q96JD6,"1,5-anhydro-D-fructose reductase",quantified,23.283,23.6159,-0.33289,0.638889,exact,12,1,31.0469
+HSPE1,P61604,"10 kDa heat shock protein, mitochondrial",quantified,25.0666,25.9225,-0.855901,0.0479798,exact,12,11,9.20578
+ALDH1L1,O75891,10-formyltetrahydrofolate dehydrogenase,quantified,22.4455,22.8017,-0.356168,0.267677,exact,12,6,29.9639
+EFTUD2,Q15029,116 kDa U5 small nuclear ribonucleoprotein component,quantified,18.6436,18.3881,0.255524,0.20202,exact,12,1,60.5897
+YWHAB,P31946,14-3-3 protein beta/alpha,quantified,25.2031,24.8407,0.362479,0.030303,exact,12,12,67.5692
+YWHAE,P62258,14-3-3 protein epsilon,quantified,24.0271,23.9567,0.0704042,0.755051,exact,12,8,49.5187
+YWHAH,Q04917,14-3-3 protein eta,quantified,18.4165,17.7186,0.69789,0.0479798,exact,12,1,85.3791
+YWHAG,P61981,14-3-3 protein gamma,quantified,19.7145,19.355,0.359529,0.00252525,exact,12,1,67.3285
+YWHAQ,P27348,14-3-3 protein theta,quantified,19.9011,19.9572,-0.0560716,0.530303,exact,12,2,43.5018
+YWHAZ,P63104,14-3-3 protein zeta/delta,quantified,23.3108,23.0254,0.285423,0.0479798,exact,12,5,62.3947
+CNP,P09543,"2',3'-cyclic-nucleotide 3'-phosphodiesterase",quantified,20.6699,20.8536,-0.183673,0.638889,exact,12,2,38.3273
+DECR1,Q16698,"2,4-dienoyl-CoA reductase, mitochondrial",quantified,24.1888,24.5069,-0.318067,0.030303,exact,12,10,31.6486
+PSMC6,P62333,26S protease regulatory subunit 10B,quantified,23.4617,24.1199,-0.658234,0.431818,exact,12,1,16.1252
+PSMC4,P43686,26S protease regulatory subunit 6B,quantified,20.235,20.924,-0.688982,1,exact,12,1,14.6811
+PSMC2,P35998,26S protease regulatory subunit 7,quantified,19.7057,19.2975,0.40821,0.431818,exact,12,1,70.9386
+PSMC5,P62195,26S protease regulatory subunit 8,quantified,19.8499,19.5372,0.312691,0.00505051,exact,12,1,64.4404
+PSMD1,Q99460,26S proteasome non-ATPase regulatory subunit 1,quantified,19.1477,18.4719,0.675772,0.030303,exact,12,1,84.7774
+PSMD12,O00232,26S proteasome non-ATPase regulatory subunit 12,quantified,19.2655,18.5739,0.691685,0.010101,exact,12,1,85.1986
+PSMD2,Q13200,26S proteasome non-ATPase regulatory subunit 2,quantified,18.9351,18.141,0.794096,0.00505051,exact,12,1,88.9892
+PSMD5,Q16401,26S proteasome non-ATPase regulatory subunit 5,quantified,25.6939,26.2989,-0.605,0.0732323,exact,12,1,18.5319
+PSMD7,P51665,26S proteasome non-ATPase regulatory subunit 7,quantified,19.5399,19.7181,-0.178188,1,exact,12,1,38.568
+MRPS15,P82914,"28S ribosomal protein S15, mitochondrial",quantified,18.58,17.94,0.639986,0.00505051,exact,12,1,83.0325
+MRPS34,P82930,"28S ribosomal protein S34, mitochondrial",quantified,18.7014,18.5097,0.191778,0.530303,exact,12,1,56.6787
+KGD4,P82909,"28S ribosomal protein S36, mitochondrial",quantified,21.4782,22.2828,-0.804608,0.030303,exact,12,1,10.6498
+OGDH,Q02218,"2-oxoglutarate dehydrogenase, mitochondrial",quantified,24.0758,24.5239,-0.448116,0.267677,exact,12,17,25.8123
+OGDHL,Q9ULD0,"2-oxoglutarate dehydrogenase-like, mitochondrial",quantified,21.0118,21.4095,-0.397696,0.267677,exact,12,2,28.0987
+BCKDHA,P12694,"2-oxoisovalerate dehydrogenase subunit alpha, mitochondrial",quantified,17.8735,18.6813,-0.807862,0.267677,exact,12,1,10.5295
+BPNT1,O95861,"3'(2'),5'-bisphosphate nucleotidase 1",quantified,21.7537,21.8009,-0.0471733,0.638889,exact,12,2,43.6823
+ECI1,P42126,"3,2-trans-enoyl-CoA isomerase, mitochondrial",quantified,22.2039,22.9071,-0.703196,0.010101,exact,12,4,13.9591
+MRPL38,Q96DV4,"39S ribosomal protein L38, mitochondrial",quantified,0,17.9132,-17.9132,0.141041,exact,12,1,0.0601685
+HSD17B10,Q99714,3-hydroxyacyl-CoA dehydrogenase type-2,quantified,23.6534,23.9114,-0.25799,0.530303,exact,12,7,34.0554
+BDH2,Q9BUT1,3-hydroxybutyrate dehydrogenase type 2,quantified,24.0682,24.6197,-0.551468,0.343434,exact,12,7,20.6378
+HIBADH,P31937,"3-hydroxyisobutyrate dehydrogenase, mitochondrial",quantified,23.1464,23.3021,-0.155673,0.20202,exact,12,5,39.3502
+HIBCH,Q6NVY1,"3-hydroxyisobutyryl-CoA hydrolase, mitochondrial",quantified,23.8301,24.6848,-0.854705,0.0176768,exact,12,12,9.26594
+ACAA2,P42765,"3-ketoacyl-CoA thiolase, mitochondrial",quantified,25.8745,26.9038,-1.02924,0.0176768,exact,12,22,5.35499
+ACAA1,P09110,"3-ketoacyl-CoA thiolase, peroxisomal",quantified,22.7705,23.0804,-0.309821,0.755051,exact,12,6,31.8893
+MPST,P25325,3-mercaptopyruvate sulfurtransferase,quantified,21.7555,22.2887,-0.533239,0.267677,exact,12,3,21.2996
+RPS10,P46783,40S ribosomal protein S10,quantified,21.0538,20.4526,0.601258,0.00252525,exact,12,1,81.0469
+RPS11,P62280,40S ribosomal protein S11,quantified,22.2614,21.7926,0.468796,0.0479798,exact,12,5,74.1276
+RPS12,P25398,40S ribosomal protein S12,quantified,21.8953,21.7407,0.154533,0.20202,exact,12,2,54.4525
+RPS13,P62277,40S ribosomal protein S13,quantified,22.4019,21.6167,0.785211,0.00252525,exact,12,3,88.5078
+RPS14,P62263,40S ribosomal protein S14,quantified,22.1249,21.5468,0.578085,0.00252525,exact,12,3,80.2046
+RPS15A,P62244,40S ribosomal protein S15a,quantified,21.8931,21.1928,0.700291,0.00252525,exact,12,2,85.4994
+RPS16,P62249,40S ribosomal protein S16,quantified,23.3118,23.044,0.267855,0.343434,exact,12,4,61.4922
+RPS17,P08708,40S ribosomal protein S17,quantified,21.1073,20.6525,0.454779,0.0479798,exact,12,2,73.3454
+RPS18,P62269,40S ribosomal protein S18,quantified,23.1782,22.7823,0.3959,0.00252525,exact,12,5,70.0361
+RPS19,P39019,40S ribosomal protein S19,quantified,21.8361,21.7495,0.0865383,0.267677,exact,12,3,50.7822
+RPS2,P15880,40S ribosomal protein S2,quantified,23.067,22.6219,0.445016,0.030303,exact,12,8,72.7437
+RPS20,P60866,40S ribosomal protein S20,quantified,23.0143,22.6081,0.406277,0.00252525,exact,12,4,70.6378
+RPS23,P62266,40S ribosomal protein S23,quantified,21.3498,21.1942,0.155613,0.343434,exact,12,1,54.633
+RPS25,P62851,40S ribosomal protein S25,quantified,23.3113,22.924,0.387252,0.0479798,exact,12,3,69.4946
+RPS28,P62857,40S ribosomal protein S28,quantified,19.5157,18.786,0.729727,0.00252525,exact,12,1,86.6426
+RPS29,P62273,40S ribosomal protein S29,quantified,19.6524,19.2466,0.405807,0.0176768,exact,12,1,70.5776
+RPS3,P23396,40S ribosomal protein S3,quantified,21.4124,20.7977,0.614678,0.00252525,exact,12,3,81.8291
+FAU,P62861,40S ribosomal protein S30,quantified,22.5363,21.6982,0.838112,0.431818,exact,12,2,90.1324
+RPS3A,P61247,40S ribosomal protein S3a,quantified,21.5012,21.1515,0.349698,0.0479798,exact,12,4,66.6667
+RPS4X,P62701,"40S ribosomal protein S4, X isoform",quantified,24.0048,23.5574,0.447414,0.00252525,exact,12,10,72.9242
+RPS5,P46782,40S ribosomal protein S5,quantified,22.1411,21.5742,0.5669,0.00252525,exact,12,3,79.5427
+RPS6,P62753,40S ribosomal protein S6,quantified,21.2481,20.6036,0.644497,0.00252525,exact,12,2,83.3935
+RPS7,P62081,40S ribosomal protein S7,quantified,22.6993,22.2995,0.399813,0.00252525,exact,12,4,70.2768
+RPS8,P62241,40S ribosomal protein S8,quantified,22.2076,21.4636,0.744035,0.00505051,exact,12,5,87.2443
+RPS9,P46781,40S ribosomal protein S9,quantified,22.6788,22.1381,0.540698,0.00252525,exact,12,6,78.58
+RPSA,P08865,40S ribosomal protein SA,quantified,22.7679,22.0258,0.742098,0.00252525,exact,12,3,87.0638
+ABAT,P80404,"4-aminobutyrate aminotransferase, mitochondrial",quantified,24.0742,24.967,-0.892769,0.343434,exact,12,14,8.12274
+SLC3A2,P08195,4F2 cell-surface antigen heavy chain,quantified,22.355,22.9993,-0.644264,0.20202,exact,12,5,16.6065
+HPD,P32754,4-hydroxyphenylpyruvate dioxygenase,quantified,21.0526,21.9492,-0.896602,0.14899,exact,12,3,7.94224
+ALDH9A1,P49189,4-trimethylaminobutyraldehyde dehydrogenase,quantified,25.0838,25.0404,0.0434501,1,exact,12,12,47.8339
+PRKAG1,P54619,5'-AMP-activated protein kinase subunit gamma-1,quantified,19.0989,25.7256,-6.6267,0.343434,exact,12,1,0.180505
+HTR6,P50406,5-hydroxytryptamine receptor 6,quantified,21.2621,20.7461,0.516039,0.00252525,exact,12,1,77.2563
+HSPD1,P10809,"60 kDa heat shock protein, mitochondrial",quantified,26.1547,27.0222,-0.867479,0.0732323,exact,12,35,8.84477
+RPLP0,P05388,60S acidic ribosomal protein P0,quantified,21.8434,21.0042,0.839239,0.00252525,exact,12,2,90.373
+RPLP0P6,Q8NHW5,60S acidic ribosomal protein P0-like,quantified,21.2855,20.7171,0.568436,0.010101,exact,12,2,79.6631
+RPLP1,P05386,60S acidic ribosomal protein P1,quantified,21.4451,19.9299,1.51512,0.00252525,exact,12,1,97.8941
+RPLP2,P05387,60S acidic ribosomal protein P2,quantified,21.2598,21.0057,0.254083,0.14899,exact,12,2,60.4693
+RPL10A,P62906,60S ribosomal protein L10a,quantified,20.9898,20.279,0.710736,0.00252525,exact,12,2,86.0409
+RPL10L,Q96L21,60S ribosomal protein L10-like,quantified,23.4497,23.0858,0.36387,0.00505051,exact,12,4,67.6895
+RPL11,P62913,60S ribosomal protein L11,quantified,19.9862,19.5787,0.407568,0.00252525,exact,12,1,70.7581
+RPL12,P30050,60S ribosomal protein L12,quantified,19.3785,19.0232,0.355234,0.00252525,exact,12,1,67.0878
+RPL13,P26373,60S ribosomal protein L13,quantified,23.9584,23.1693,0.78912,0.00252525,exact,12,8,88.8087
+RPL13A,P40429,60S ribosomal protein L13a,quantified,22.23,21.4412,0.788847,0.00252525,exact,12,4,88.7485
+RPL14,P50914,60S ribosomal protein L14,quantified,22.6534,22.7479,-0.0944738,0.530303,exact,12,3,41.6968
+RPL15,P61313,60S ribosomal protein L15,quantified,22.429,22.1106,0.318433,0.343434,exact,12,3,64.6209
+RPL17,P18621,60S ribosomal protein L17,quantified,21.1209,20.4643,0.656563,0.00252525,exact,12,2,83.935
+RPL18,Q07020,60S ribosomal protein L18,quantified,20.8008,20.1881,0.612715,0.00252525,exact,12,1,81.6486
+RPL18A,Q02543,60S ribosomal protein L18a,quantified,22.1947,21.4931,0.701628,0.106061,exact,12,3,85.5596
+RPL19,P84098,60S ribosomal protein L19,quantified,22.1654,21.6188,0.546596,0.00252525,exact,12,3,78.941
+RPL21,P46778,60S ribosomal protein L21,quantified,21.5208,21.0012,0.519617,0.010101,exact,12,1,77.4368
+RPL22,P35268,60S ribosomal protein L22,quantified,21.3258,20.6977,0.628096,0.00505051,exact,12,2,82.491
+RPL23A,P62750,60S ribosomal protein L23a,quantified,21.5773,20.9462,0.631147,0.00252525,exact,12,2,82.6715
+RPL24,P83731,60S ribosomal protein L24,quantified,22.0703,21.7829,0.287481,0.0479798,exact,12,3,62.5752
+RPL27,P61353,60S ribosomal protein L27,quantified,21.1996,20.8855,0.314102,0.00252525,exact,12,2,64.5006
+RPL28,P46779,60S ribosomal protein L28,quantified,21.7749,21.707,0.0678363,0.755051,exact,12,2,49.3381
+RPL29,P47914,60S ribosomal protein L29,quantified,21.1442,21.0341,0.110164,0.20202,exact,12,1,52.1661
+RPL3,P39023,60S ribosomal protein L3,quantified,22.6635,22.0941,0.569423,0.00505051,exact,12,4,79.7834
+RPL31,P62899,60S ribosomal protein L31,quantified,20.7481,19.9133,0.834823,0.010101,exact,12,1,90.012
+RPL32,P62910,60S ribosomal protein L32,quantified,22.0374,21.5055,0.531953,0.010101,exact,12,2,78.1588
+RPL34,P49207,60S ribosomal protein L34,quantified,21.7622,21.1992,0.563095,0.0176768,exact,12,1,79.4224
+RPL35,P42766,60S ribosomal protein L35,quantified,21.9077,21.2382,0.669492,0.00252525,exact,12,3,84.4765
+RPL35A,P18077,60S ribosomal protein L35a,quantified,21.1969,20.8578,0.339144,0.00252525,exact,12,1,65.6438
+RPL37A,P61513,60S ribosomal protein L37a,quantified,19.5169,0,19.5169,0.00494857,exact,12,1,99.9398
+RPL38,P63173,60S ribosomal protein L38,quantified,19.7482,19.0345,0.713702,0.00252525,exact,12,1,86.1613
+RPL3L,Q92901,60S ribosomal protein L3-like,quantified,21.6958,22.1387,-0.442889,0.638889,exact,12,2,25.9326
+RPL4,P36578,60S ribosomal protein L4,quantified,23.6012,23.1557,0.445552,0.00252525,exact,12,7,72.864
+RPL5,P46777,60S ribosomal protein L5,quantified,22.6899,21.6891,1.00076,0.00505051,exact,12,2,93.201
+RPL6,Q02878,60S ribosomal protein L6,quantified,23.2528,22.7112,0.541578,0.00505051,exact,12,6,78.6402
+RPL7,P18124,60S ribosomal protein L7,quantified,23.1783,22.5524,0.625916,0.00252525,exact,12,5,82.3105
+RPL7A,P62424,60S ribosomal protein L7a,quantified,22.702,22.0502,0.651767,0.030303,exact,12,5,83.7545
+RPL8,P62917,60S ribosomal protein L8,quantified,23.4574,22.4961,0.961345,0.00252525,exact,12,4,92.4188
+RPL9;,P32969,60S ribosomal protein L9,quantified,20.223,19.5813,0.641695,0.030303,exact,12,1,83.213
+PFKL,P17858,"6-phosphofructokinase, liver type",quantified,25.6458,25.8478,-0.201948,0.431818,exact,12,4,37.5451
+PFKM,P08237,"6-phosphofructokinase, muscle type",quantified,22.14,21.9677,0.172233,0.267677,exact,12,4,55.5355
+PGD,P52209,"6-phosphogluconate dehydrogenase, decarboxylating",quantified,21.3512,20.8715,0.479678,0.030303,exact,12,3,75.0301
+PGLS,O95336,6-phosphogluconolactonase,quantified,22.6695,22.9527,-0.283193,0.20202,exact,12,2,33.1528
+HSPA5,P11021,78 kDa glucose-regulated protein,quantified,25.0527,24.9131,0.139666,0.343434,exact,12,14,53.5499
+MCM3AP,O60318,80 kDa MCM3-associated protein,quantified,24.3478,23.5619,0.785853,0.267677,exact,12,2,88.6282
+ABHD10,Q9NUJ1,"Abhydrolase domain-containing protein 10, mitochondrial",quantified,21.3535,21.4523,-0.0987917,0.343434,exact,12,3,41.3959
+ABHD14B,Q96IU4,Abhydrolase domain-containing protein 14B,quantified,23.6184,23.8514,-0.233047,0.638889,exact,12,5,35.6799
+HACL2,A1L0T0,Acetolactate synthase-like protein,quantified,19.0324,18.4247,0.607633,0.343434,exact,12,1,81.3478
+ACAT2,Q9BWD1,"Acetyl-CoA acetyltransferase, cytosolic",quantified,19.9169,19.8396,0.077216,0.876263,exact,12,1,50
+ACAT1,P24752,"Acetyl-CoA acetyltransferase, mitochondrial",quantified,26.9232,27.6262,-0.703014,0.010101,exact,12,27,14.0193
+ACACA,Q13085,Acetyl-CoA carboxylase 1,quantified,20.7272,22.3241,-1.59687,0.267677,exact,12,1,1.50421
+ASAH1,Q13510,Acid ceramidase,quantified,21.6145,21.1784,0.436179,0.030303,exact,12,2,72.142
+ANP32A,P39687,Acidic leucine-rich nuclear phosphoprotein 32 family member A,quantified,21.378,21.1479,0.23012,0.106061,exact,12,1,59.0253
+ANP32E,Q9BTT0,Acidic leucine-rich nuclear phosphoprotein 32 family member E,quantified,19.4292,18.8977,0.531502,0.0732323,exact,12,1,78.0987
+ACO2,Q99798,"Aconitate hydratase, mitochondrial",quantified,25.5454,26.2341,-0.688788,0.00505051,exact,12,25,14.7413
+AFAP1,Q8N556,Actin filament-associated protein 1,quantified,18.9995,19.2085,-0.209019,0.876263,exact,12,1,37.0638
+ACTC1,P68032,"Actin, alpha cardiac muscle 1",quantified,22.5671,22.8823,-0.315192,1,exact,12,2,31.7088
+ACTA2,P62736,"Actin, aortic smooth muscle",quantified,30.4146,29.7162,0.698332,0.00252525,exact,12,56,85.4392
+ACTB,P60709,"Actin, cytoplasmic 1",quantified,28.2892,28.0979,0.19136,0.0479798,exact,12,19,56.5584
+ACTR2,P61160,Actin-related protein 2,quantified,23.5819,23.1218,0.460101,0.267677,exact,12,5,73.586
+ARPC1B,O15143,Actin-related protein 2/3 complex subunit 1B,quantified,21.3871,20.366,1.02112,0.00252525,exact,12,2,93.562
+ARPC2,O15144,Actin-related protein 2/3 complex subunit 2,quantified,19.9983,19.657,0.341367,0.267677,exact,12,2,66.0048
+ARPC3,O15145,Actin-related protein 2/3 complex subunit 3,quantified,21.0706,20.6753,0.395291,0.0732323,exact,12,2,69.9158
+ARPC4,P59998,Actin-related protein 2/3 complex subunit 4,quantified,23.2079,22.5005,0.707402,0.00252525,exact,12,6,85.9206
+ARPC5,O15511,Actin-related protein 2/3 complex subunit 5,quantified,22.1049,21.3564,0.748504,0.00252525,exact,12,3,87.485
+ACTR3,P61158,Actin-related protein 3,quantified,20.5833,20.792,-0.208637,0.638889,exact,12,1,37.1239
+ACTR3B,Q9P1U1,Actin-related protein 3B,quantified,19.851,19.3221,0.528974,0.010101,exact,12,1,77.7978
+SUB1,P53999,Activated RNA polymerase II transcriptional coactivator p15,quantified,21.5592,21.2618,0.297442,0.010101,exact,12,2,63.2371
+ABR,Q12979,Active breakpoint cluster region-related protein,quantified,20.6302,20.1378,0.492477,0.0732323,exact,12,1,75.8123
+NDUFAB1,O14561,"Acyl carrier protein, mitochondrial",quantified,21.3416,22.0726,-0.73105,0.00252525,exact,12,2,12.6955
+APEH,P13798,Acylamino-acid-releasing enzyme,quantified,20.6174,20.6432,-0.0257493,0.876263,exact,12,2,44.7052
+ACAD11,Q709F0,Acyl-CoA dehydrogenase family member 11,quantified,18.437,18.9673,-0.530224,0.343434,exact,12,1,21.6606
+ACSF2,Q96CM8,"Acyl-CoA synthetase family member 2, mitochondrial",quantified,23.2004,23.9107,-0.710234,0.14899,exact,12,11,13.5981
+ACSS3,Q9H6R3,"Acyl-CoA synthetase short-chain family member 3, mitochondrial",quantified,21.1226,21.2172,-0.0945764,0.267677,exact,12,3,41.6366
+DBI,P07108,Acyl-CoA-binding protein,quantified,19.9456,20.2443,-0.298708,0.431818,exact,12,1,32.3706
+ACOXL,Q9NUZ1,Acyl-coenzyme A oxidase-like protein,quantified,21.4517,21.9176,-0.465822,0.530303,exact,12,1,24.9699
+ACSM2A,Q08AH3,"Acyl-coenzyme A synthetase ACSM2A, mitochondrial",quantified,25.2499,26.2246,-0.97465,0.106061,exact,12,22,6.25752
+ACSM2B,Q68CK6,"Acyl-coenzyme A synthetase ACSM2B, mitochondrial",quantified,24.0646,24.6282,-0.563635,0.106061,exact,12,7,19.9759
+ACSM3,Q53FZ2,"Acyl-coenzyme A synthetase ACSM3, mitochondrial",quantified,20.0339,20.5076,-0.473677,0.431818,exact,12,1,24.4886
+ACOT1,Q86TX2,Acyl-coenzyme A thioesterase 1,quantified,22.0663,22.4511,-0.38474,0.267677,exact,12,5,28.6402
+ACOT13,Q9NPJ3,Acyl-coenzyme A thioesterase 13,quantified,21.1228,21.932,-0.80922,0.0176768,exact,12,2,10.4091
+ACOT2,P49753,"Acyl-coenzyme A thioesterase 2, mitochondrial",quantified,19.0866,20,-0.91343,0.0732323,exact,12,1,7.76173
+LYPLA1,O75608,Acyl-protein thioesterase 1,quantified,18.6148,19.1364,-0.521629,0.00252525,exact,12,1,22.0818
+LYPLA2,O95372,Acyl-protein thioesterase 2,quantified,21.1882,21.2144,-0.0262198,1,exact,12,2,44.645
+APRT,P07741,Adenine phosphoribosyltransferase,quantified,23.6198,22.7356,0.88418,0.00252525,exact,12,5,91.0349
+APC,P25054,Adenomatous polyposis coli protein,quantified,20.4533,20.4892,-0.035904,0.876263,exact,12,1,44.1637
+AHCY,P23526,Adenosylhomocysteinase,quantified,23.6495,24.0981,-0.448592,0.106061,exact,12,9,25.6919
+AK2,P54819,"Adenylate kinase 2, mitochondrial",quantified,22.9733,23.791,-0.817762,0.010101,exact,12,6,10.1685
+AK1,P00568,Adenylate kinase isoenzyme 1,quantified,20.5077,20.703,-0.195355,0.343434,exact,12,2,37.7858
+AK4,P27144,"Adenylate kinase isoenzyme 4, mitochondrial",quantified,24.5464,25.1877,-0.641328,0.0732323,exact,12,11,16.9675
+AK5,Q9Y6K8,Adenylate kinase isoenzyme 5,quantified,18.7324,19.8128,-1.08036,0.00252525,exact,12,1,4.5728
+CAP1,Q01518,Adenylyl cyclase-associated protein 1,quantified,22.1574,21.6206,0.536791,0.030303,exact,12,5,78.5199
+APMAP,Q9HDC9,Adipocyte plasma membrane-associated protein,quantified,19.8758,18.3379,1.53794,0.010101,exact,12,1,98.0746
+SLC25A4,P12235,ADP/ATP translocase 1,quantified,25.3932,25.9669,-0.573692,0.030303,exact,12,11,19.7954
+SLC25A5,P05141,ADP/ATP translocase 2,quantified,23.8143,24.5875,-0.773199,0.0479798,exact,12,6,11.5523
+ARF1,P84077,ADP-ribosylation factor 1,quantified,24.4002,24.2053,0.19499,0.030303,exact,12,8,56.799
+ARF4,P18085,ADP-ribosylation factor 4,quantified,21.2338,20.6299,0.603917,0.00252525,exact,12,2,81.1673
+ARF5,P84085,ADP-ribosylation factor 5,quantified,21.8433,20.7853,1.05807,0.00505051,exact,12,1,94.1637
+FDX1,P10109,"Adrenodoxin, mitochondrial",quantified,18.4168,18.5501,-0.13324,1,exact,12,1,40.1925
+SCIN,Q9Y6U3,Adseverin,quantified,18.7942,19.4128,-0.618606,0.343434,exact,12,1,17.9302
+AFF1,P51825,AF4/FMR2 family member 1,quantified,22.239,20.6764,1.5626,0.0479798,exact,12,1,98.2551
+AFDN,P55196,Afadin,quantified,21.0806,21.6278,-0.547207,0.00252525,exact,12,1,20.8183
+AFG3L2,Q9Y4W6,AFG3-like protein 2,quantified,20.1022,20.7451,-0.642933,0.20202,exact,12,1,16.8171
+AKR7A2,O43488,Aflatoxin B1 aldehyde reductase member 2,quantified,22.0073,22.0642,-0.0569229,0.530303,exact,12,3,43.3213
+AKR7A3,O95154,Aflatoxin B1 aldehyde reductase member 3,quantified,23.1189,23.5103,-0.391393,0.20202,exact,12,5,28.4597
+AGMAT,Q9BSE5,"Agmatinase, mitochondrial",quantified,24.636,25.8766,-1.24067,0.20202,exact,12,12,3.06859
+AGRN,O00468,Agrin,quantified,22.2112,22.0598,0.151391,0.267677,exact,12,4,54.2118
+AKAP12,Q02952,A-kinase anchor protein 12,quantified,22.4577,22.831,-0.373355,0.431818,exact,12,1,28.8809
+AKAP13,Q12802,A-kinase anchor protein 13,quantified,22.1536,21.401,0.752556,0.00252525,exact,12,1,87.6655
+AKAP9,Q99996,A-kinase anchor protein 9,quantified,22.1006,21.591,0.509603,0.638889,exact,12,1,76.8351
+GPT,P24298,Alanine aminotransferase 1,quantified,19.024,20.6739,-1.64988,0.0176768,exact,12,2,1.32371
+AGXT2,Q9BYV1,"Alanine--glyoxylate aminotransferase 2, mitochondrial",quantified,20.9756,21.13,-0.154355,0.431818,exact,12,3,39.4103
+PHYKPL,Q8IUZ5,Alanine--glyoxylate aminotransferase 2-like 2,quantified,19.2762,19.2071,0.069151,0.638889,exact,12,1,49.4585
+AKR1A1,P14550,Alcohol dehydrogenase [NADP+],quantified,25.1452,25.9352,-0.790008,0.106061,exact,12,15,11.0108
+ADH1A,P07327,Alcohol dehydrogenase 1A,quantified,25.376,24.2994,1.07663,0.030303,exact,12,9,94.4645
+ADH1B,P00325,Alcohol dehydrogenase 1B,quantified,24.3602,23.508,0.852168,0.00505051,exact,12,6,90.4332
+ADH6,P28332,Alcohol dehydrogenase 6,quantified,17.2448,19.358,-2.11318,0.010101,exact,12,1,0.601685
+ADH5,P11766,Alcohol dehydrogenase class-3,quantified,22.8578,23.0822,-0.2244,0.431818,exact,12,6,36.4019
+ALDH16A1,Q8IZ83,Aldehyde dehydrogenase family 16 member A1,quantified,18.3511,17.8785,0.472616,0.106061,exact,12,1,74.5487
+ALDH1B1,P30837,"Aldehyde dehydrogenase X, mitochondrial",quantified,23.2054,23.5518,-0.346465,0.14899,exact,12,8,30.5054
+ALDH2,P05091,"Aldehyde dehydrogenase, mitochondrial",quantified,25.3845,25.9947,-0.610195,0.14899,exact,12,18,18.1107
+AOX1,Q06278,Aldehyde oxidase,quantified,17.8965,18.6205,-0.723946,0.431818,exact,12,1,13.1167
+AKR1C1,Q04828,Aldo-keto reductase family 1 member C1,quantified,23.5709,24.0653,-0.494373,0.431818,exact,12,6,23.2852
+AKR1C3,P42330,Aldo-keto reductase family 1 member C3,quantified,21.0029,21.5291,-0.526252,0.14899,exact,12,2,21.781
+GALM,Q96C23,Aldose 1-epimerase,quantified,22.3922,22.6313,-0.239133,0.876263,exact,12,6,35.3791
+AKR1B1,P15121,Aldose reductase,quantified,23.8835,24.5798,-0.696296,0.343434,exact,12,15,14.1998
+ALPP,P05187,"Alkaline phosphatase, placental type",quantified,19.0017,19.0088,-0.007065,0.876263,exact,12,1,45.4272
+MGAT5B,Q3V5L5,"Alpha-1,6-mannosylglycoprotein 6-beta-N-acetylglucosaminyltransferase B",quantified,21.6433,20.9716,0.671636,0.0176768,exact,12,1,84.5969
+ORM1,P02763,Alpha-1-acid glycoprotein 1,quantified,25.3802,24.0342,1.346,0.530303,exact,12,6,97.0517
+ORM2,P19652,Alpha-1-acid glycoprotein 2,quantified,22.8766,21.9665,0.910093,0.755051,exact,12,1,91.6366
+SERPINA3,P01011,Alpha-1-antichymotrypsin,quantified,24.725,24.1953,0.529767,0.267677,exact,12,14,77.9783
+SERPINA1,P01009,Alpha-1-antitrypsin,quantified,26.7509,26.9655,-0.214569,0.20202,exact,12,30,36.7629
+A1BG,P04217,Alpha-1B-glycoprotein,quantified,22.833,22.343,0.490021,0.638889,exact,12,5,75.6919
+AHSG,P02765,Alpha-2-HS-glycoprotein,quantified,22.8606,23.0261,-0.165461,0.343434,exact,12,4,39.0493
+A2M,P01023,Alpha-2-macroglobulin,quantified,24.5065,24.7602,-0.253759,0.20202,exact,12,14,34.4765
+LRPAP1,P30533,Alpha-2-macroglobulin receptor-associated protein,quantified,19.6632,19.7201,-0.056841,0.638889,exact,12,1,43.3815
+ACTN1,P12814,Alpha-actinin-1,quantified,26.1041,25.746,0.358136,0.010101,exact,12,25,67.2684
+ACTN2,P35609,Alpha-actinin-2,quantified,21.2341,21.1462,0.087922,0.638889,exact,12,1,50.8424
+ACTN4,O43707,Alpha-actinin-4,quantified,25.5418,25.4708,0.0709966,1,exact,12,26,49.5788
+ADD1,P35611,Alpha-adducin,quantified,19.9564,20.2617,-0.30529,0.030303,exact,12,1,32.13
+ALDH7A1,P49419,Alpha-aminoadipic semialdehyde dehydrogenase,quantified,24.3715,25.0162,-0.644692,0.0732323,exact,12,12,16.5463
+ACTR1A,P61163,Alpha-centractin,quantified,27.4625,26.5358,0.92669,0.00252525,exact,12,3,91.9374
+CRYAA,P02489,Alpha-crystallin A chain,quantified,18.1892,20.8802,-2.69099,0.0732323,exact,12,2,0.300842
+CRYAB,P02511,Alpha-crystallin B chain,quantified,26.1081,26.0033,0.104783,0.876263,exact,12,13,51.8051
+ENO1,P06733,Alpha-enolase,quantified,26.8881,27.6248,-0.736642,0.14899,exact,12,39,12.5752
+INA,Q16352,Alpha-internexin,quantified,23.7895,22.6734,1.11611,0.00252525,exact,12,1,95.0662
+AMACR,Q9UHK6,Alpha-methylacyl-CoA racemase,quantified,20.1391,19.6773,0.46175,0.267677,exact,12,1,73.7064
+NAGA,P17050,Alpha-N-acetylgalactosaminidase,quantified,21.0371,21.6359,-0.598843,0.0732323,exact,12,1,18.7124
+PARVA,Q9NVD7,Alpha-parvin,quantified,19.8947,19.5416,0.353142,0.00252525,exact,12,1,66.9675
+NAPA,P54920,Alpha-soluble NSF attachment protein,quantified,19.069,18.8642,0.204803,0.431818,exact,12,1,57.2804
+MAOA,P21397,Amine oxidase [flavin-containing] A,quantified,23.4929,24.3241,-0.831162,0.20202,exact,12,7,9.68712
+MAOB,P27338,Amine oxidase [flavin-containing] B,quantified,23.94,24.689,-0.749011,0.030303,exact,12,14,12.154
+AIMP2,Q13155,Aminoacyl tRNA synthase complex-interacting multifunctional protein 2,quantified,18.7217,18.3492,0.372553,0.106061,exact,12,1,68.4717
+ACY1,Q03154,Aminoacylase-1,quantified,26.2469,27.1653,-0.918466,0.030303,exact,12,32,7.46089
+RNPEP,Q9H4A4,Aminopeptidase B,quantified,19.3306,19.583,-0.252382,0.755051,exact,12,1,34.5969
+ANPEP,P15144,Aminopeptidase N,quantified,25.3627,26.2836,-0.920924,0.14899,exact,12,27,7.40072
+CIAPIN1,Q6FI81,Anamorsin,quantified,19.6704,19.5719,0.098494,1,exact,12,1,51.444
+ANAPC1,Q9H1A4,Anaphase-promoting complex subunit 1,quantified,19.5489,20.6635,-1.11461,0.030303,exact,12,1,4.15162
+AGT,P01019,Angiotensinogen,quantified,20.4078,20.4981,-0.0903381,1,exact,12,2,41.8171
+ANKLE2,Q86XL3,Ankyrin repeat and LEM domain-containing protein 2,quantified,18.6463,19.2737,-0.627319,0.030303,exact,12,1,17.5692
+ANKRD13B,Q86YJ7,Ankyrin repeat domain-containing protein 13B,quantified,21.4031,21.1363,0.266859,0.638889,exact,12,1,61.3718
+ANKRD31,Q8N7Z5,Ankyrin repeat domain-containing protein 31,quantified,23.1259,22.3842,0.741642,0.14899,exact,12,1,86.9434
+ANKRD61,A6NGH8,Ankyrin repeat domain-containing protein 61,quantified,21.2501,22.7191,-1.46901,0.0732323,exact,12,1,1.98556
+ANK1,P16157,Ankyrin-1,quantified,19.1947,19.727,-0.532336,0.20202,exact,12,1,21.4801
+ANK2,Q01484,Ankyrin-2,quantified,19.6011,19.5274,0.073678,1,exact,12,1,49.639
+ANK3,Q12955,Ankyrin-3,quantified,19.6874,20.1185,-0.431083,0.106061,exact,12,2,26.3538
+ANXA1,P04083,Annexin A1,quantified,23.6539,22.2394,1.41444,0.00252525,exact,12,8,97.3526
+ANXA11,P50995,Annexin A11,quantified,22.2818,21.636,0.645777,0.010101,exact,12,4,83.4537
+ANXA13,P27216,Annexin A13,quantified,19.991,19.6242,0.366783,1,exact,12,1,68.0505
+ANXA2,P07355,Annexin A2,quantified,25.9164,25.3172,0.599145,0.030303,exact,12,21,80.8664
+ANXA4,P09525,Annexin A4,quantified,24.4667,24.1252,0.341496,0.106061,exact,12,14,66.1252
+ANXA5,P08758,Annexin A5,quantified,25.8097,25.3366,0.473152,0.010101,exact,12,18,74.6089
+ANXA6,P08133,Annexin A6,quantified,25.4724,24.739,0.733407,0.00252525,exact,12,21,86.7629
+ANXA7,P20073,Annexin A7,quantified,22.8127,22.8441,-0.0314619,1,exact,12,4,44.4645
+SERPINC1,P01008,Antithrombin-III,quantified,24.3881,23.71,0.678093,0.267677,exact,12,7,84.9579
+AP1B1,Q10567,AP-1 complex subunit beta-1,quantified,19.9118,19.6123,0.299562,0.106061,exact,12,1,63.5379
+AP1G1,O43747,AP-1 complex subunit gamma-1,quantified,18.7419,18.6343,0.107588,0.530303,exact,12,1,52.0457
+AP2A2,O94973,AP-2 complex subunit alpha-2,quantified,20.1087,20.0632,0.0454942,1,exact,12,2,47.8941
+AP2B1,P63010,AP-2 complex subunit beta,quantified,22.9798,22.0196,0.960176,0.00252525,exact,12,3,92.3586
+AP2M1,Q96CW1,AP-2 complex subunit mu,quantified,20.5835,19.6893,0.894207,0.00252525,exact,12,1,91.2756
+AP2S1,P53680,AP-2 complex subunit sigma,quantified,21.1934,20.6511,0.54233,0.030303,exact,12,2,78.7004
+APOA1,P02647,Apolipoprotein A-I,quantified,25.4001,26.1325,-0.732412,0.0732323,exact,12,25,12.6354
+APOA4,P06727,Apolipoprotein A-IV,quantified,22.0798,20.9281,1.15165,0.106061,exact,12,4,95.8484
+APOD,P05090,Apolipoprotein D,quantified,21.1746,21.467,-0.292384,0.343434,exact,12,3,32.7316
+APOE,P02649,Apolipoprotein E,quantified,24.7293,23.2587,1.47061,0.00505051,exact,12,14,97.5933
+AIFM1,O95831,"Apoptosis-inducing factor 1, mitochondrial",quantified,25.0953,25.7034,-0.608111,0.14899,exact,12,20,18.3514
+APAF1,O14727,Apoptotic protease-activating factor 1,quantified,23.0011,23.3855,-0.384416,0.343434,exact,12,1,28.7004
+AQP1,P29972,Aquaporin-1,quantified,20.9921,21.5524,-0.560258,0.530303,exact,12,2,20.1564
+ASL,P04424,Argininosuccinate lyase,quantified,19.5917,19.3486,0.243095,0.530303,exact,12,1,59.8075
+ASS1,P00966,Argininosuccinate synthase,quantified,26.4368,27.3037,-0.866971,0.343434,exact,12,29,8.90493
+RARS1,P54136,"Arginyl-tRNA synthetase, cytoplasmic",quantified,21.0906,21.2748,-0.184159,0.343434,exact,12,1,38.207
+ODAD2,Q5T2S8,Armadillo repeat-containing protein 4,quantified,23.5932,23.2781,0.315123,0.530303,exact,12,1,64.5608
+DDC,P20711,Aromatic-L-amino-acid decarboxylase,quantified,23.5456,24.4995,-0.95393,0.106061,exact,12,15,7.09988
+ASNSD1,Q9NWL6,Asparagine synthetase domain-containing protein 1,quantified,20.3815,19.7309,0.650589,0.010101,exact,12,1,83.6943
+NARS1,O43776,"Asparaginyl-tRNA synthetase, cytoplasmic",quantified,22.1759,22.4089,-0.23304,0.343434,exact,12,5,35.8002
+GOT1,P17174,"Aspartate aminotransferase, cytoplasmic",quantified,22.6295,23.3918,-0.762285,0.030303,exact,12,7,11.7329
+GOT2,P00505,"Aspartate aminotransferase, mitochondrial",quantified,24.6735,25.0417,-0.368194,0.343434,exact,12,14,29.2419
+DNPEP,Q9ULA0,Aspartyl aminopeptidase,quantified,21.7224,21.6688,0.0536168,1,exact,12,3,48.4356
+ATXN10,Q9UBB4,Ataxin-10,quantified,21.9935,22.2922,-0.298662,1,exact,12,1,32.4308
+ATXN7L3,Q14CW9,Ataxin-7-like protein 3,quantified,20.6347,20.5553,0.07938,0.755051,exact,12,1,50.2407
+SAMD1,Q6SPF0,Atherin,quantified,20.5162,22.4887,-1.9725,0.00505051,exact,12,1,0.722022
+ATL3,Q6DD88,Atlastin-3,quantified,19.6638,19.067,0.596811,0.0176768,exact,12,1,80.8063
+ATP5MC1,P05496,"ATP synthase lipid-binding protein, mitochondrial",quantified,18.7034,20.2258,-1.52239,0.00252525,exact,12,1,1.80505
+MT-ATP6,P00846,ATP synthase subunit a,quantified,19.9127,20.3338,-0.421171,0.010101,exact,12,1,26.8351
+ATP5F1A,P25705,"ATP synthase subunit alpha, mitochondrial",quantified,27.2573,27.7461,-0.488813,0.030303,exact,12,36,23.6462
+ATP5PB,P24539,"ATP synthase subunit b, mitochondrial",quantified,22.5518,22.9226,-0.370818,0.0176768,exact,12,3,29.0012
+ATP5F1B,P06576,"ATP synthase subunit beta, mitochondrial",quantified,27.4922,28.0128,-0.520639,0.00252525,exact,12,38,22.142
+ATP5PD,O75947,"ATP synthase subunit d, mitochondrial",quantified,22.3987,22.867,-0.468276,0.030303,exact,12,5,24.7894
+ATP5F1D,P30049,"ATP synthase subunit delta, mitochondrial",quantified,22.065,22.8955,-0.830495,0.00252525,exact,12,3,9.74729
+ATP5ME,P56385,"ATP synthase subunit e, mitochondrial",quantified,22.0006,22.1912,-0.190565,0.530303,exact,12,3,37.9663
+ATP5F1EP2,Q5VTU8,"ATP synthase subunit epsilon-like protein, mitochondrial",quantified,21.6943,21.9871,-0.292805,0.638889,exact,12,3,32.6715
+ATP5MF,P56134,"ATP synthase subunit f, mitochondrial",quantified,21.6995,22.2581,-0.558628,0.00505051,exact,12,2,20.2768
+ATP5MGL,Q7Z4Y8,"ATP synthase subunit g 2, mitochondrial",quantified,18.5573,19.2249,-0.667592,0.00252525,exact,12,1,15.5836
+ATP5F1C,P36542,"ATP synthase subunit gamma, mitochondrial",quantified,23.799,24.3032,-0.504163,0.00505051,exact,12,11,22.9844
+ATP5PO,P48047,"ATP synthase subunit O, mitochondrial",quantified,24.4476,24.9268,-0.479197,0.010101,exact,12,11,24.2479
+GET3,O43681,ATPase ASNA1,quantified,20.3487,20.1537,0.194999,0.431818,exact,12,1,56.8592
+ATP5IF1,Q9UII2,"ATPase inhibitor, mitochondrial",quantified,21.2524,21.7007,-0.448292,0.0176768,exact,12,2,25.7521
+ABCB6,Q9NP58,"ATP-binding cassette sub-family B member 6, mitochondrial",quantified,22.0074,21.8901,0.11725,0.267677,exact,12,1,52.4067
+ABCC11,Q96J66,ATP-binding cassette sub-family C member 11,quantified,22.7537,22.4163,0.337429,0.431818,exact,12,1,65.4031
+ABCE1,P61221,ATP-binding cassette sub-family E member 1,quantified,20.5562,20.916,-0.359803,1,exact,12,1,29.8436
+DHX9,Q08211,ATP-dependent RNA helicase A,quantified,21.1818,20.974,0.20781,0.0732323,exact,12,4,57.6414
+DDX1,Q92499,ATP-dependent RNA helicase DDX1,quantified,18.9402,18.8987,0.041491,0.431818,exact,12,1,47.7136
+DDX39A,O00148,ATP-dependent RNA helicase DDX39,quantified,22.3776,21.9983,0.379303,0.00252525,exact,12,3,68.9531
+ATG101,Q9BSB4,Autophagy-related protein 101,quantified,20.2903,19.8248,0.465507,0.755051,exact,12,1,73.8869
+ATG16L1,Q676U5,Autophagy-related protein 16-1,quantified,19.4384,19.4111,0.02726,1,exact,12,1,46.9314
+SLC4A1,P02730,Band 3 anion transport protein,quantified,23.0092,23.373,-0.363812,0.530303,exact,12,7,29.5427
+EPB41L1,Q9H4G0,Band 4.1-like protein 1,quantified,19.0797,18.6623,0.417384,0.106061,exact,12,1,71.42
+BANF1,O75531,Barrier-to-autointegration factor,quantified,20.4834,20.3462,0.137172,0.431818,exact,12,2,53.1889
+BCAM,P50895,Basal cell adhesion molecule,quantified,19.6058,19.7122,-0.106402,0.876263,exact,12,1,41.0951
+HSPG2,P98160,Basement membrane-specific heparan sulfate proteoglycan core protein,quantified,27.4061,27.3261,0.0800403,0.530303,exact,12,61,50.3008
+BZW1,Q7L1Q6,Basic leucine zipper and W2 domain-containing protein 1,quantified,18.4376,17.6299,0.807722,0.00252525,exact,12,1,89.2298
+BCAP31,P51572,B-cell receptor-associated protein 31,quantified,19.9326,19.8466,0.086031,0.530303,exact,12,1,50.722
+BCL2L13,Q9BXK5,Bcl-2-like protein 13,quantified,18.286,19.3958,-1.10981,0.010101,exact,12,1,4.21179
+BEND3,Q5T5X7,BEN domain-containing protein 3,quantified,20.989,21.4385,-0.449411,0.431818,exact,12,1,25.6318
+APOH,P02749,Beta-2-glycoprotein 1,quantified,22.1845,21.795,0.389532,0.267677,exact,12,4,69.7353
+B2M,P61769,Beta-2-microglobulin,quantified,20.1819,19.8509,0.33096,0.0479798,exact,12,1,65.2828
+SNTB2,Q13425,Beta-2-syntrophin,quantified,18.637,18.1046,0.532398,0.030303,exact,12,1,78.2792
+ACTBL2,Q562R1,Beta-actin-like protein 2,quantified,27.7665,27.6882,0.0783081,0.20202,exact,12,5,50.1203
+ARRB1,P49407,Beta-arrestin-1,quantified,22.0264,22.9847,-0.958263,0.0176768,exact,12,1,7.03971
+CTNNBIP1,Q9NSA3,Beta-catenin-interacting protein 1,quantified,20.2446,19.7737,0.470842,0.14899,exact,12,1,74.3081
+ENO3,P13929,Beta-enolase,quantified,22.265,22.9556,-0.690615,0.0732323,exact,12,1,14.6209
+HEXB,P07686,Beta-hexosaminidase subunit beta,quantified,20.0219,19.4529,0.568988,0.106061,exact,12,1,79.7232
+BHMT,Q93088,Betaine--homocysteine S-methyltransferase 1,quantified,25.3447,26.5743,-1.22966,0.0176768,exact,12,22,3.18893
+BHMT2,Q9H2M3,Betaine--homocysteine S-methyltransferase 2,quantified,21.23,22.4151,-1.18506,0.14899,exact,12,5,3.48977
+LACTB2,Q53H82,Beta-lactamase-like protein 2,quantified,18.1749,18.826,-0.651088,0.431818,exact,12,1,16.426
+TKFC,Q3LXA3,Bifunctional ATP-dependent dihydroxyacetone kinase/FAD-AMP lyase (cyclizing),quantified,24.1138,24.435,-0.321212,0.530303,exact,12,14,31.5283
+COASY,Q13057,Bifunctional coenzyme A synthase,quantified,18.7312,19.3549,-0.623661,0.0176768,exact,12,1,17.6294
+ATIC,P31939,Bifunctional purine biosynthesis protein PURH,quantified,21.1619,21.084,0.0778659,0.638889,exact,12,3,50.0602
+BGN,P21810,Biglycan,quantified,23.7772,24.0316,-0.254396,0.106061,exact,12,9,34.296
+BLVRA,P53004,Biliverdin reductase A,quantified,21.0117,20.6626,0.349082,0.0479798,exact,12,1,66.5463
+BPGM,P07738,Bisphosphoglycerate mutase,quantified,18.6723,19.425,-0.752675,0.14899,exact,12,1,11.9134
+MPC2,O95563,Brain protein 44,quantified,20.15,20.9601,-0.810132,0.00252525,exact,12,2,10.349
+BRMS1L,Q5PSV4,Breast cancer metastasis-suppressor 1-like protein,quantified,22.6868,23.3828,-0.696038,0.431818,exact,12,2,14.3803
+KCTD12,Q96CX2,BTB/POZ domain-containing protein KCTD12,quantified,19.9089,18.7851,1.12388,0.00252525,exact,12,1,95.2467
+MTHFD1,P11586,"C-1-tetrahydrofolate synthase, cytoplasmic",quantified,22.8088,23.1644,-0.355618,0.267677,exact,12,6,30.1444
+C4BPA,P04003,C4b-binding protein alpha chain,quantified,19.8346,19.128,0.70662,0.0176768,exact,12,1,85.8002
+CDH16,O75309,Cadherin-16,quantified,23.2033,24.0348,-0.831555,0.267677,exact,12,6,9.56679
+CALB1,P05937,Calbindin,quantified,21.9815,23.5264,-1.54486,0.010101,exact,12,5,1.68472
+CPPED1,Q9BRF8,Calcineurin-like phosphoesterase domain-containing protein 1,quantified,23.664,23.8349,-0.170908,0.755051,exact,12,1,38.8688
+CHERP,Q8IWX8,Calcium homeostasis endoplasmic reticulum protein,quantified,20.9014,21.2015,-0.300153,0.530303,exact,12,1,32.2503
+MICU1,Q9BPX6,"Calcium uptake protein 1, mitochondrial",quantified,21.6805,20.6939,0.986603,0.00505051,exact,12,1,93.0205
+SLC25A12,O75746,Calcium-binding mitochondrial carrier protein Aralar1,quantified,20.6415,20.8689,-0.227424,0.755051,exact,12,3,36.2816
+CARHSP1,Q9Y2V2,Calcium-regulated heat stable protein 1,quantified,20.0861,20.0383,0.047827,0.876263,exact,12,1,48.0144
+CALD1,Q05682,Caldesmon,quantified,23.025,22.4809,0.54407,0.00252525,exact,12,7,78.7605
+,P62158,Calmodulin,quantified,22.7311,22.5753,0.1558,0.20202,exact,12,4,54.6931
+CALML3,P27482,Calmodulin-like protein 3,quantified,22.5633,22.6013,-0.038012,0.876263,exact,12,1,43.923
+CANX,P27824,Calnexin,quantified,23.4819,22.9809,0.500992,0.0732323,exact,12,6,76.1733
+CAPNS1,P04632,Calpain small subunit 1,quantified,22.3998,21.9132,0.486569,0.0732323,exact,12,5,75.6318
+CAPN1,P07384,Calpain-1 catalytic subunit,quantified,22.4346,22.1352,0.29935,0.14899,exact,12,4,63.4777
+CNN1,P51911,Calponin-1,quantified,22.7455,22.7074,0.0380441,0.267677,exact,12,5,47.4128
+CNN3,Q15417,Calponin-3,quantified,19.7892,19.4155,0.373632,0.14899,exact,12,1,68.5319
+CALR,P27797,Calreticulin,quantified,22.3753,22.3578,0.0175665,1,exact,12,4,46.4501
+NAXD,Q8IW45,Carbohydrate kinase domain-containing protein,quantified,19.5111,19.5051,0.005972,1,exact,12,1,45.8484
+CHST2,Q9Y4C5,Carbohydrate sulfotransferase 2,quantified,21.322,21.4395,-0.117525,0.343434,exact,12,1,40.7942
+CA1,P00915,Carbonic anhydrase 1,quantified,25.0811,25.2237,-0.142545,0.431818,exact,12,14,39.8917
+CA12,O43570,Carbonic anhydrase 12,quantified,19.0956,19.7794,-0.683716,0.267677,exact,12,1,15.0421
+CA2,P00918,Carbonic anhydrase 2,quantified,24.2487,25.2247,-0.976008,0.00252525,exact,12,15,6.19735
+CBR1,P16152,Carbonyl reductase [NADPH] 1,quantified,25.067,25.3872,-0.320208,0.343434,exact,12,13,31.5884
+CES2,O00748,Carboxylesterase 2,quantified,18.7141,18.3738,0.340378,0.030303,exact,12,1,65.8243
+CMBL,Q96DG6,Carboxymethylenebutenolidase homolog,quantified,24.8694,25.3886,-0.519211,0.20202,exact,12,8,22.3225
+CPO,Q8IVL8,Carboxypeptidase O,quantified,22.2982,22.6948,-0.39657,0.876263,exact,12,1,28.2792
+CRAT,P43155,Carnitine O-acetyltransferase,quantified,19.4909,19.9378,-0.446829,0.20202,exact,12,1,25.8724
+CPT1A,P50416,"Carnitine O-palmitoyltransferase 1, liver isoform",quantified,20.0824,19.5833,0.499053,0.20202,exact,12,1,75.9928
+CPT2,P23786,"Carnitine O-palmitoyltransferase 2, mitochondrial",quantified,17.8373,18.5649,-0.727612,0.030303,exact,12,1,12.8159
+CASP8,Q14790,Caspase-8,quantified,18.2814,18.6136,-0.3322,0.876263,exact,12,1,31.1071
+CAT,P04040,Catalase,quantified,24.5389,25.0545,-0.515673,0.0732323,exact,12,19,22.5632
+COMT,P21964,Catechol O-methyltransferase,quantified,20.8862,0,20.8862,0.0131481,exact,12,1,100
+CTNNA1,P35221,Catenin alpha-1,quantified,25.7965,24.9358,0.860722,0.00252525,exact,12,4,90.6739
+CTNNA3,Q9UI47,Catenin alpha-3,quantified,21.2019,20.8464,0.355526,0.343434,exact,12,1,67.148
+CTNNB1,P35222,Catenin beta-1,quantified,21.0412,21.1929,-0.151661,0.530303,exact,12,3,39.5307
+CTNND1,O60716,Catenin delta-1,quantified,21.0054,21.2369,-0.23156,0.431818,exact,12,3,35.9206
+CTSB,P07858,Cathepsin B,quantified,22.516,22.4898,0.0261441,0.876263,exact,12,3,46.8712
+CTSD,P07339,Cathepsin D,quantified,24.9574,24.5941,0.363261,0.106061,exact,12,11,67.6294
+CTSG,P08311,Cathepsin G,quantified,21.178,19.5228,1.65523,0.00252525,exact,12,2,98.4958
+CTSL,P07711,Cathepsin L1,quantified,20.1485,20.3971,-0.248602,0.876263,exact,12,1,34.8977
+CTSZ,Q9UBR2,Cathepsin Z,quantified,19.7602,19.6098,0.150377,0.755051,exact,12,2,54.0915
+CD44,P16070,CD44 antigen,quantified,19.8515,18.5708,1.28064,0.00252525,exact,12,1,96.5704
+CD59,P13987,CD59 glycoprotein,quantified,20.1333,20.1239,0.009406,0.530303,exact,12,1,46.2094
+CISD1,Q9NZ45,CDGSH iron-sulfur domain-containing protein 1,quantified,21.7675,22.2293,-0.461841,0.00252525,exact,12,2,25.0301
+CDC42,P60953,Cell division control protein 42 homolog,quantified,21.0432,21.025,0.0182396,0.876263,exact,12,2,46.5102
+CDC5L,Q99459,Cell division cycle 5-like protein,quantified,20.9847,20.7931,0.191579,0.267677,exact,12,2,56.6185
+CENPF,P49454,Centromere protein F,quantified,23.1098,23.3504,-0.24057,0.267677,exact,12,1,35.1384
+CEP63,Q96MT8,Centrosomal protein of 63 kDa,quantified,22.0958,21.9569,0.138963,0.530303,exact,12,1,53.2491
+CEP57L1,Q8IYX8,Cep57-related protein,quantified,21.2124,19.8496,1.36279,0.010101,exact,12,1,97.2323
+CBLN4,Q9NTU7,Cerebellin-4,quantified,20.8533,20.206,0.647287,0.00252525,exact,12,1,83.574
+PDE2A,O00408,"cGMP-dependent 3',5'-cyclic phosphodiesterase",quantified,20.2956,20.8933,-0.597628,0.0479798,exact,12,1,18.8929
+CLIC1,O00299,Chloride intracellular channel protein 1,quantified,23.1703,23.1418,0.0285618,0.638889,exact,12,6,46.9916
+CLIC2,O15247,Chloride intracellular channel protein 2,quantified,19.271,20.0861,-0.815075,0.030303,exact,12,1,10.2888
+CLIC4,Q9Y696,Chloride intracellular channel protein 4,quantified,21.2508,22.0672,-0.816361,0.030303,exact,12,5,10.2286
+CHDH,Q8NE62,"Choline dehydrogenase, mitochondrial",quantified,23.2413,23.1584,0.0828734,0.343434,exact,12,5,50.6017
+SLC44A2,Q8IWA5,Choline transporter-like protein 2,quantified,19.9094,19.3261,0.583267,0.00252525,exact,12,1,80.3851
+CHRDL2,Q6WN34,Chordin-like protein 2,quantified,20.3021,21.0751,-0.773048,0.0732323,exact,12,1,11.6125
+CHD1L,Q86WJ1,Chromodomain-helicase-DNA-binding protein 1-like,quantified,21.5351,22.6288,-1.09367,0.343434,exact,12,1,4.45247
+CLYBL,Q8N0X4,"Citrate lyase subunit beta-like protein, mitochondrial",quantified,20.1462,19.9247,0.221543,0.267677,exact,12,1,58.3032
+CS,O75390,"Citrate synthase, mitochondrial",quantified,24.2283,24.1808,0.0475046,0.876263,exact,12,9,47.9543
+CLTC,Q00610,Clathrin heavy chain 1,quantified,25.7962,25.6477,0.148496,0.343434,exact,12,43,53.9711
+CLINT1,Q14677,Clathrin interactor 1,quantified,0,17.4314,-17.4314,0.252279,exact,12,1,0.120337
+CLTA,P09496,Clathrin light chain A,quantified,20.6032,20.4122,0.190993,1,exact,12,2,56.4982
+NUDT21,O43809,Cleavage and polyadenylation specificity factor subunit 5,quantified,18.7366,18.5089,0.227733,0.343434,exact,12,1,58.9651
+CLU,P10909,Clusterin,quantified,24.6891,23.6176,1.07149,0.0732323,exact,12,8,94.2238
+COTL1,Q14019,Coactosin-like protein,quantified,23.958,24.4119,-0.453948,0.638889,exact,12,6,25.3309
+F9,P00740,Coagulation factor IX,quantified,22.348,21.403,0.945,0.010101,exact,12,2,91.9976
+F13A1,P00488,Coagulation factor XIII A chain,quantified,22.7633,21.5369,1.22638,0.00252525,exact,12,5,96.2696
+COPA,P53621,Coatomer subunit alpha,quantified,20.0516,19.5526,0.498981,0.106061,exact,12,2,75.9326
+COPG1,Q9Y678,Coatomer subunit gamma,quantified,18.4399,17.9728,0.467115,0.0732323,exact,12,1,74.0674
+COPG2,Q9UBF2,Coatomer subunit gamma-2,quantified,19.7995,19.4354,0.364136,0.0176768,exact,12,1,67.8099
+CFL1,P23528,Cofilin-1,quantified,23.8439,23.6963,0.147584,0.14899,exact,12,7,53.911
+CC2D1B,Q5T0F9,Coiled-coil and C2 domain-containing protein 1B,quantified,23.5143,24.1568,-0.642509,0.030303,exact,12,2,16.9073
+CCDC121,Q6ZUS5,Coiled-coil domain-containing protein 121,quantified,19.6773,19.3704,0.306935,0.106061,exact,12,1,64.0794
+CEP89,Q96ST8,"Coiled-coil domain-containing protein 123, mitochondrial",quantified,20.9653,20.4865,0.47883,0.030303,exact,12,1,74.9699
+VPS50,Q96JG6,Coiled-coil domain-containing protein 132,quantified,20.3162,21.4386,-1.12236,0.343434,exact,12,1,4.09146
+CCDC22,O60826,Coiled-coil domain-containing protein 22,quantified,17.979,17.6793,0.299743,0.431818,exact,12,1,63.5981
+CCDC57,Q2TAC2,Coiled-coil domain-containing protein 57,quantified,21.1531,20.0122,1.14086,0.00505051,exact,12,1,95.728
+CHCHD3,Q9NX63,"Coiled-coil-helix-coiled-coil-helix domain-containing protein 3, mitochondrial",quantified,21.121,21.2988,-0.177779,0.638889,exact,12,4,38.6282
+COL1A1,P02452,Collagen alpha-1(I) chain,quantified,24.4727,23.7756,0.697143,0.343434,exact,12,6,85.3189
+COL4A1,P02462,Collagen alpha-1(IV) chain,quantified,26.0449,25.3926,0.65228,0.0732323,exact,12,10,83.8147
+COL6A1,P12109,Collagen alpha-1(VI) chain,quantified,26.3907,25.5572,0.833475,0.20202,exact,12,18,89.8917
+COL14A1,Q05707,Collagen alpha-1(XIV) chain,quantified,22.0693,21.4556,0.613705,0.0479798,exact,12,3,81.7088
+COL15A1,P39059,Collagen alpha-1(XV) chain,quantified,20.0283,19.4323,0.595995,0.0732323,exact,12,1,80.7461
+COL18A1,P39060,Collagen alpha-1(XVIII) chain,quantified,25.3986,24.6444,0.754149,0.00505051,exact,12,16,87.7256
+COL1A2,P08123,Collagen alpha-2(I) chain,quantified,24.9316,24.18,0.751666,0.267677,exact,12,7,87.5451
+COL4A2,P08572,Collagen alpha-2(IV) chain,quantified,25.7477,25.3688,0.378957,0.0732323,exact,12,12,68.8327
+COL6A2,P12110,Collagen alpha-2(VI) chain,quantified,24.7572,23.725,1.0322,0.00505051,exact,12,13,93.7425
+COL6A3,P12111,Collagen alpha-3(VI) chain,quantified,27.9105,26.9318,0.97869,0.00505051,exact,12,78,92.7798
+COL4A4,P53420,Collagen alpha-4(IV) chain,quantified,23.1838,22.8862,0.29751,0.106061,exact,12,1,63.2972
+C1QB,P02746,Complement C1q subcomponent subunit B,quantified,20.615,19.5237,1.09133,0.0732323,exact,12,1,94.645
+C3,P01024,Complement C3,quantified,27.215,26.8273,0.387722,0.20202,exact,12,49,69.5548
+C4A,P0C0L4,Complement C4-A,quantified,24.9103,24.2929,0.617378,0.20202,exact,12,21,82.0096
+C5,P01031,Complement C5,quantified,21.5978,21.3307,0.267096,0.20202,exact,12,4,61.432
+C6,P13671,Complement component C6,quantified,18.9934,17.5075,1.48585,0.0479798,exact,12,1,97.7738
+C8A,P07357,Complement component C8 alpha chain,quantified,19.1774,18.1764,1.00094,0.030303,exact,12,1,93.2611
+C8B,P07358,Complement component C8 beta chain,quantified,20.9344,20.3472,0.587228,0.030303,exact,12,3,80.5656
+C8G,P07360,Complement component C8 gamma chain,quantified,19.5371,19.1955,0.341601,0.343434,exact,12,1,66.1853
+C9,P02748,Complement component C9,quantified,24.9413,23.3949,1.54642,0.010101,exact,12,13,98.1348
+CFB,P00751,Complement factor B,quantified,20.4073,20.2888,0.118468,0.755051,exact,12,2,52.5271
+CFH,P08603,Complement factor H,quantified,21.0398,20.3313,0.708529,0.0732323,exact,12,3,85.9807
+COG5,Q9UP83,Conserved oligomeric Golgi complex subunit 5,quantified,24.2866,25.3804,-1.09376,0.267677,exact,12,1,4.3923
+CNTN1,Q12860,Contactin-1,quantified,19.5306,19.3685,0.162052,0.14899,exact,12,1,55.0542
+CNTNAP4,Q9C0A0,Contactin-associated protein-like 4,quantified,20.8957,20.6066,0.289119,0.14899,exact,12,1,62.7557
+GPS1,Q13098,COP9 signalosome complex subunit 1,quantified,20.925,16.7553,4.16976,0.0054308,exact,12,2,99.8195
+CPNE9,Q8IYJ1,Copine-9,quantified,21.234,20.4201,0.813886,0.00252525,exact,12,1,89.4103
+MACROH2A1,O75367,Core histone macro-H2A.1,quantified,21.2626,21.4165,-0.153896,0.755051,exact,12,2,39.4705
+MACROH2A2,Q9P0M6,Core histone macro-H2A.2,quantified,22.2252,22.0036,0.221619,0.20202,exact,12,2,58.3634
+CNFN,Q9BYD5,Cornifelin,quantified,20.9274,20.6592,0.26819,0.00252525,exact,12,1,61.6125
+CORO1A,P31146,Coronin-1A,quantified,22.4275,21.2999,1.12768,0.00252525,exact,12,5,95.3069
+CORO1B,Q9BR76,Coronin-1B,quantified,26.3425,25.504,0.838538,0.00252525,exact,12,1,90.1925
+CORO1C,Q9ULV4,Coronin-1C,quantified,20.5874,19.9271,0.660299,0.00252525,exact,12,1,84.2359
+HSD11B2,P80365,Corticosteroid 11-beta-dehydrogenase isozyme 2,quantified,22.7337,23.221,-0.487257,0.638889,exact,12,7,23.7064
+CKB,P12277,Creatine kinase B-type,quantified,23.4119,23.8304,-0.418511,0.030303,exact,12,8,27.136
+CUBN,O60494,Cubilin,quantified,23.5465,23.456,0.0904405,0.876263,exact,12,13,51.0229
+CUL1,Q13616,Cullin-1,quantified,20.5297,20.4378,0.091848,0.638889,exact,12,1,51.2034
+CUL2,Q13617,Cullin-2,quantified,19.4244,19.144,0.28042,0.0479798,exact,12,1,62.2744
+CAND1,Q86VP6,Cullin-associated NEDD8-dissociated protein 1,quantified,22.6465,22.1887,0.457748,0.00252525,exact,12,6,73.5259
+CDKL3,Q8IVW4,Cyclin-dependent kinase-like 3,quantified,19.481,20.2202,-0.739262,0.343434,exact,12,1,12.4549
+CCNT2,O60583,Cyclin-T2,quantified,22.8541,23.2033,-0.349188,0.343434,exact,12,1,30.3851
+CSTB,P04080,Cystatin-B,quantified,21.5836,21.4083,0.175329,0.20202,exact,12,1,55.7762
+CSRP1,P21291,Cysteine and glycine-rich protein 1,quantified,21.5035,21.2264,0.277071,0.0479798,exact,12,3,62.0939
+CRIP2,P52943,Cysteine-rich protein 2,quantified,19.2823,18.6683,0.613968,0.431818,exact,12,1,81.769
+CYB5A,P00167,Cytochrome b5,quantified,23.0458,23.6812,-0.635415,0.106061,exact,12,5,17.2082
+CYB5B,O43169,Cytochrome b5 type B,quantified,19.3127,19.5758,-0.263052,1,exact,12,1,33.6943
+UQCRC1,P31930,"Cytochrome b-c1 complex subunit 1, mitochondrial",quantified,23.835,24.3494,-0.514426,0.14899,exact,12,8,22.6835
+UQCRC2,P22695,"Cytochrome b-c1 complex subunit 2, mitochondrial",quantified,24.4899,24.9729,-0.483044,0.0176768,exact,12,10,24.0674
+UQCRH,P07919,"Cytochrome b-c1 complex subunit 6, mitochondrial",quantified,20.4293,21.3955,-0.966197,0.00252525,exact,12,2,6.55836
+UQCRB,P14927,Cytochrome b-c1 complex subunit 7,quantified,20.9015,21.6781,-0.776605,0.010101,exact,12,1,11.4922
+UQCR10,Q9UDW1,Cytochrome b-c1 complex subunit 9,quantified,19.3351,19.0617,0.27339,0.431818,exact,12,1,61.793
+CYCS,P99999,Cytochrome c,quantified,22.9767,23.8009,-0.824158,0.00252525,exact,12,3,10.0481
+MT-CO2,P00403,Cytochrome c oxidase subunit 2,quantified,24.4758,25.0738,-0.598015,0.343434,exact,12,7,18.8327
+COX4I1,P13073,"Cytochrome c oxidase subunit 4 isoform 1, mitochondrial",quantified,22.6209,23.3619,-0.74101,0.00252525,exact,12,4,12.3947
+COX5A,P20674,"Cytochrome c oxidase subunit 5A, mitochondrial",quantified,23.9141,24.7721,-0.858022,0.0176768,exact,12,7,9.08544
+COX5B,P10606,"Cytochrome c oxidase subunit 5B, mitochondrial",quantified,23.5336,24.2188,-0.685259,0.00252525,exact,12,7,14.9218
+COX6A1,P12074,"Cytochrome c oxidase subunit 6A1, mitochondrial",quantified,20.0535,21.7543,-1.70082,0.00252525,exact,12,1,1.20337
+COX6C,P09669,Cytochrome c oxidase subunit 6C,quantified,23.5819,23.2722,0.309711,0.14899,exact,12,4,64.1998
+COX7A2,P14406,"Cytochrome c oxidase subunit 7A2, mitochondrial",quantified,19.5948,20.2619,-0.667141,0.20202,exact,12,1,15.6438
+CYC1,P08574,"Cytochrome c1, heme protein, mitochondrial",quantified,21.2257,21.9222,-0.696477,0.030303,exact,12,3,14.1396
+CYP3A4,P08684,Cytochrome P450 3A4,quantified,21.1208,19.7884,1.3324,0.0479798,exact,12,1,96.9314
+CYP4A11,Q02928,Cytochrome P450 4A11,quantified,20.8878,21.1672,-0.279401,0.638889,exact,12,3,33.2732
+ACO1,P21399,Cytoplasmic aconitate hydratase,quantified,24.33,24.7133,-0.383314,0.530303,exact,12,13,28.7605
+DYNC1H1,Q14204,Cytoplasmic dynein 1 heavy chain 1,quantified,24.8115,23.6236,1.18788,0.00252525,exact,12,10,96.089
+LAP3,P28838,Cytosol aminopeptidase,quantified,23.0139,23.1005,-0.0865478,0.755051,exact,12,6,42.1781
+CNDP2,Q96KP4,Cytosolic non-specific dipeptidase,quantified,25.2839,25.7818,-0.497864,0.267677,exact,12,22,23.225
+NT5C2,P49902,Cytosolic purine 5'-nucleotidase,quantified,20.6753,21.1048,-0.429446,0.20202,exact,12,1,26.414
+PHGDH,O43175,D-3-phosphoglycerate dehydrogenase,quantified,21.1118,21.6656,-0.553791,0.876263,exact,12,4,20.3971
+DAO,P14920,D-amino-acid oxidase,quantified,21.1888,21.5402,-0.351439,0.755051,exact,12,2,30.2046
+BDH1,Q02338,"D-beta-hydroxybutyrate dehydrogenase, mitochondrial",quantified,18.4669,19.0574,-0.590446,0.103771,exact,12,1,19.3141
+DCAF7,P61962,DDB1- and CUL4-associated factor 7,quantified,24.2054,23.8644,0.341053,0.755051,exact,12,1,65.9446
+DDT,P30046,D-dopachrome decarboxylase,quantified,21.2529,21.8469,-0.594009,0.14899,exact,12,1,19.0132
+DDTL,A6NHG4,D-dopachrome decarboxylase-like protein,quantified,22.4396,23.0927,-0.653086,0.010101,exact,12,3,16.3658
+DEDD,O75618,Death effector domain-containing protein,quantified,19.8457,20.7371,-0.891433,0.20202,exact,12,1,8.18291
+DCN,P07585,Decorin,quantified,23.2128,21.9444,1.26836,0.00252525,exact,12,2,96.5102
+DOCK10,Q96BY6,Dedicator of cytokinesis protein 10,quantified,21.8048,21.8914,-0.086645,0.638889,exact,12,2,42.1179
+DHRS4,Q9BTZ2,Dehydrogenase/reductase SDR family member 4,quantified,21.855,22.9183,-1.06325,0.106061,exact,12,6,4.81348
+ECH1,Q13011,"Delta(3,5)-Delta(2,4)-dienoyl-CoA isomerase, mitochondrial",quantified,24.6494,25.3082,-0.658798,0.0732323,exact,12,16,16.065
+ALDH4A1,P30038,"Delta-1-pyrroline-5-carboxylate dehydrogenase, mitochondrial",quantified,25.7452,26.5377,-0.79252,0.14899,exact,12,23,10.8905
+ALAD,P13716,Delta-aminolevulinic acid dehydratase,quantified,22.2118,22.3435,-0.131733,0.530303,exact,12,4,40.2527
+DENND3,A2RUS2,DENN domain-containing protein 3,quantified,20.8827,21.2488,-0.366129,0.20202,exact,12,1,29.3622
+DNPH1,O43598,Deoxyribonucleoside 5'-monophosphate N-glycosidase,quantified,22.9197,23.3085,-0.388857,0.267677,exact,12,4,28.58
+DEPDC7,Q96QD5,DEP domain-containing protein 7,quantified,23.8242,23.3238,0.500429,0.0732323,exact,12,1,76.1131
+DES,P17661,Desmin,quantified,25.3306,24.1953,1.1352,0.00252525,exact,12,10,95.4874
+DSTN,P60981,Destrin,quantified,21.2324,21.4385,-0.206135,0.638889,exact,12,3,37.4248
+DGKG,P49619,Diacylglycerol kinase gamma,quantified,21.7276,20.7703,0.957293,0.00252525,exact,12,1,92.2984
+HOGA1,Q86XE5,"Dihydrodipicolinate synthase-like, mitochondrial",quantified,23.3914,23.8312,-0.439824,0.20202,exact,12,8,26.1131
+DLD,P09622,"Dihydrolipoyl dehydrogenase, mitochondrial",quantified,24.2865,24.8206,-0.534047,0.0176768,exact,12,14,21.2395
+DLAT,P10515,"Dihydrolipoyllysine-residue acetyltransferase component of pyruvate dehydrogenase complex, mitochondrial",quantified,21.82,22.5584,-0.738347,0.00505051,exact,12,4,12.515
+DLST,P36957,"Dihydrolipoyllysine-residue succinyltransferase component of 2-oxoglutarate dehydrogenase complex, mitochondrial",quantified,23.8566,24.312,-0.455384,0.20202,exact,12,8,25.2708
+QDPR,P09417,Dihydropteridine reductase,quantified,21.8558,22.5477,-0.691906,0.106061,exact,12,3,14.5608
+DPYS,Q14117,Dihydropyrimidinase,quantified,22.9369,23.6657,-0.72881,0.267677,exact,12,9,12.7557
+CRMP1,Q14194,Dihydropyrimidinase-related protein 1,quantified,22.664,21.9953,0.66871,0.00252525,exact,12,2,84.4164
+DPYSL2,Q16555,Dihydropyrimidinase-related protein 2,quantified,23.3825,22.9548,0.427692,0.00505051,exact,12,5,71.8412
+DPYSL3,Q14195,Dihydropyrimidinase-related protein 3,quantified,19.5498,18.633,0.916878,0.010101,exact,12,1,91.7569
+FMO1,Q01740,Dimethylaniline monooxygenase [N-oxide-forming] 1,quantified,21.9863,21.9345,0.0518114,0.755051,exact,12,4,48.3755
+DMGDH,Q9UI17,"Dimethylglycine dehydrogenase, mitochondrial",quantified,21.1889,22.5151,-1.32614,0.14899,exact,12,4,2.52708
+DPEP1,P16444,Dipeptidase 1,quantified,23.8416,24.2462,-0.40459,0.106061,exact,12,7,27.858
+CTSC,P53634,Dipeptidyl peptidase 1,quantified,21.7211,21.2488,0.472328,0.267677,exact,12,2,74.4886
+DPP7,Q9UHL4,Dipeptidyl peptidase 2,quantified,20.8021,20.6978,0.104325,0.876263,exact,12,2,51.7449
+DPP4,P27487,Dipeptidyl peptidase 4,quantified,23.0882,22.8396,0.248587,0.530303,exact,12,6,60.2888
+DAB2,P98082,Disabled homolog 2,quantified,21.0015,21.2203,-0.218782,0.530303,exact,12,2,36.5824
+DIXDC1,Q155Q3,Dixin,quantified,17.2285,17.1053,0.123282,0.755051,exact,12,1,52.8279
+DMXL2,Q8TDJ6,DmX-like protein 2,quantified,20.2862,19.918,0.368121,0.755051,exact,12,1,68.1709
+DDB1,Q16531,DNA damage-binding protein 1,quantified,20.5781,20.439,0.139088,0.343434,exact,12,2,53.3093
+RBBP8,Q99708,DNA endonuclease RBBP8,quantified,23.6579,24.6269,-0.969006,0.267677,exact,12,1,6.37786
+POLQ,O75417,DNA polymerase theta,quantified,21.0083,20.7713,0.236917,0.755051,exact,12,1,59.4465
+CDT1,Q9H211,DNA replication factor Cdt1,quantified,20.2447,20.7451,-0.500412,0.010101,exact,12,1,23.1649
+APEX1,P27695,DNA-(apurinic or apyrimidinic site) lyase,quantified,19.5232,19.324,0.199138,0.343434,exact,12,1,56.9795
+PRKDC,P78527,DNA-dependent protein kinase catalytic subunit,quantified,20.4832,20.3398,0.143481,0.755051,exact,12,2,53.7304
+DNAJA1,P31689,DnaJ homolog subfamily A member 1,quantified,18.8993,18.935,-0.035665,1,exact,12,1,44.2238
+DNAJC7,Q99615,DnaJ homolog subfamily C member 7,quantified,21.5232,21.767,-0.243868,0.343434,exact,12,1,35.0782
+DDOST,P39656,Dolichyl-diphosphooligosaccharide--protein glycosyltransferase 48 kDa subunit,quantified,20.201,19.6009,0.600042,0.00252525,exact,12,2,80.9266
+RPN1,P04843,Dolichyl-diphosphooligosaccharide--protein glycosyltransferase subunit 1,quantified,23.9254,24.1832,-0.257785,0.343434,exact,12,6,34.1155
+RPN2,P04844,Dolichyl-diphosphooligosaccharide--protein glycosyltransferase subunit 2,quantified,19.6325,19.1246,0.507911,0.010101,exact,12,1,76.775
+CLK2,P49760,Dual specificity protein kinase CLK2,quantified,20.5922,20.3792,0.212983,0.267677,exact,12,1,57.8821
+CLK4,Q9HAZ1,Dual specificity protein kinase CLK4,quantified,21.5091,22.6346,-1.12551,0.431818,exact,12,1,4.03129
+DUSP3,P51452,Dual specificity protein phosphatase 3,quantified,19.9115,21.2124,-1.3009,0.00252525,exact,12,1,2.64741
+DUSP9,Q99956,Dual specificity protein phosphatase 9,quantified,19.5482,20.3319,-0.783674,0.20202,exact,12,1,11.2515
+CDC14A,Q9UNH5,Dual specificity protein phosphatase CDC14A,quantified,21.3415,22.2887,-0.947212,0.00505051,exact,12,2,7.16005
+DCTN6,O00399,Dynactin subunit 6,quantified,20.7708,20.4764,0.294466,0.876263,exact,12,1,63.1167
+DNM2,P50570,Dynamin-2,quantified,19.5241,19.355,0.169022,0.530303,exact,12,1,55.4152
+DNM3,Q9UQ16,Dynamin-3,quantified,19.3042,19.2287,0.075564,0.267677,exact,12,1,49.9097
+DNAH17,Q9UFH2,"Dynein heavy chain 17, axonemal",quantified,21.7657,22.0204,-0.254665,0.530303,exact,12,1,34.2359
+DNAH2,Q9P225,"Dynein heavy chain 2, axonemal",quantified,23.8431,23.2088,0.634367,0.00505051,exact,12,1,82.7918
+DNAH8,Q96JB1,"Dynein heavy chain 8, axonemal",quantified,21.2183,22.4424,-1.22404,0.00252525,exact,12,1,3.2491
+DYNLL1,P63167,"Dynein light chain 1, cytoplasmic",quantified,19.6073,19.6288,-0.021475,0.755051,exact,12,1,44.9458
+DYNLL2,Q96FJ2,"Dynein light chain 2, cytoplasmic",quantified,19.6055,19.1349,0.47053,0.0176768,exact,12,1,74.2479
+HECTD1,Q9ULT8,E3 ubiquitin-protein ligase HECTD1,quantified,20.7061,18.7859,1.92028,0.00252525,exact,12,1,98.6161
+HERC2,O95714,E3 ubiquitin-protein ligase HERC2,quantified,18.9627,21.2849,-2.32216,0.0176768,exact,12,1,0.421179
+ENTPD4,Q9Y227,Ectonucleoside triphosphate diphosphohydrolase 4,quantified,22.1353,22.4758,-0.340441,0.431818,exact,12,1,30.7461
+ENTPD5,O75356,Ectonucleoside triphosphate diphosphohydrolase 5,quantified,18.6642,18.3102,0.354008,1,exact,12,1,67.0277
+CRACR2A,Q9BSW2,EF-hand calcium-binding domain-containing protein 4B,quantified,21.2945,21.5933,-0.298753,0.530303,exact,12,1,32.3105
+EHD1,Q9H4M9,EH domain-containing protein 1,quantified,20.9591,20.7856,0.17351,0.267677,exact,12,3,55.6558
+EHD2,Q9NZN4,EH domain-containing protein 2,quantified,22.7245,21.5641,1.16039,0.00252525,exact,12,6,95.9085
+ELAVL1,Q15717,ELAV-like protein 1,quantified,21.112,20.2538,0.858191,0.010101,exact,12,1,90.6137
+SLC4A4,Q9Y6R1,Electrogenic sodium bicarbonate cotransporter 1,quantified,22.394,23.0033,-0.609339,0.0732323,exact,12,7,18.231
+ETFA,P13804,"Electron transfer flavoprotein subunit alpha, mitochondrial",quantified,24.2668,24.8899,-0.623119,0.0479798,exact,12,14,17.6895
+ETFB,P38117,Electron transfer flavoprotein subunit beta,quantified,24.5269,25.0936,-0.566659,0.20202,exact,12,12,19.9158
+ETFDH,Q16134,"Electron transfer flavoprotein-ubiquinone oxidoreductase, mitochondrial",quantified,17.7708,18.6169,-0.846062,0.20202,exact,12,1,9.38628
+EEF1A1,P68104,Elongation factor 1-alpha 1,quantified,26.8354,26.5661,0.269283,0.267677,exact,12,20,61.6727
+EEF1D,P29692,Elongation factor 1-delta,quantified,21.0136,20.8255,0.188103,0.20202,exact,12,2,56.3177
+EEF1G,P26641,Elongation factor 1-gamma,quantified,22.8582,22.6196,0.238534,0.030303,exact,12,5,59.627
+EEF2,P13639,Elongation factor 2,quantified,24.3482,24.1454,0.202746,0.0479798,exact,12,17,57.16
+EFL1,Q7Z2Z2,Elongation factor Tu GTP-binding domain-containing protein 1,quantified,18.3397,17.7051,0.634643,0.00252525,exact,12,1,82.852
+TUFM,P49411,"Elongation factor Tu, mitochondrial",quantified,25.0384,25.7458,-0.70736,0.010101,exact,12,16,13.7184
+EMILIN1,Q9Y6C2,EMILIN-1,quantified,24.4035,23.3931,1.01045,0.00252525,exact,12,10,93.3815
+ERP29,P30040,Endoplasmic reticulum resident protein 29,quantified,19.032,18.7412,0.290812,0.106061,exact,12,1,62.8761
+ERGIC1,Q969X5,Endoplasmic reticulum-Golgi intermediate compartment protein 1,quantified,19.6249,18.7158,0.909167,0.00252525,exact,12,1,91.5764
+HSP90B1,P14625,Endoplasmin,quantified,24.8499,24.3656,0.484289,0.0732323,exact,12,15,75.3911
+ELMO2,Q96JJ3,Engulfment and cell motility protein 2,quantified,19.9513,20.3721,-0.420815,0.106061,exact,12,1,26.9555
+EDC4,Q6P2E9,Enhancer of mRNA-decapping protein 4,quantified,21.4516,22.849,-1.39736,0.106061,exact,12,1,2.2864
+ERH,P84090,Enhancer of rudimentary homolog,quantified,20.5119,20.1722,0.339646,0.00252525,exact,12,1,65.704
+ECHDC2,Q86YB7,"Enoyl-CoA hydratase domain-containing protein 2, mitochondrial",quantified,21.4553,21.4929,-0.0376231,0.755051,exact,12,2,43.9832
+ECHDC3,Q96DC8,"Enoyl-CoA hydratase domain-containing protein 3, mitochondrial",quantified,22.7885,23.8347,-1.04627,0.0479798,exact,12,8,4.93381
+ECHS1,P30084,"Enoyl-CoA hydratase, mitochondrial",quantified,24.9982,26.0933,-1.09509,0.0176768,exact,12,15,4.33213
+TMPRSS15,P98073,Enteropeptidase,quantified,22.5881,23.5568,-0.968652,0.267677,exact,12,1,6.43803
+NPC2,P61916,Epididymal secretory protein E1,quantified,20.4121,20.9434,-0.531277,0.106061,exact,12,2,21.6005
+EPHX1,P07099,Epoxide hydrolase 1,quantified,22.7975,22.4912,0.306291,0.106061,exact,12,5,63.9591
+EPHX2,P34913,Epoxide hydrolase 2,quantified,22.0717,21.8592,0.212416,0.755051,exact,12,3,57.8219
+ERLIN1,O75477,Erlin-1,quantified,19.8405,19.4293,0.411203,0.030303,exact,12,1,71.059
+,P30042,"ES1 protein homolog, mitochondrial",quantified,23.4296,24.2543,-0.824684,0.00252525,exact,12,9,9.9278
+BKGD,Q9H0W9,Ester hydrolase C11orf54,quantified,24.3442,25.3888,-1.04464,0.010101,exact,12,10,4.99398
+HSD17B8,Q92506,Estradiol 17-beta-dehydrogenase 8,quantified,20.2935,20.7447,-0.451229,0.343434,exact,12,1,25.5114
+EIF4A1,P60842,Eukaryotic initiation factor 4A-I,quantified,22.512,22.1442,0.367815,0.00252525,exact,12,3,68.1107
+EIF3A,Q14152,Eukaryotic translation initiation factor 3 subunit A,quantified,19.1116,18.6352,0.476394,0.00252525,exact,12,1,74.7292
+EIF3B,P55884,Eukaryotic translation initiation factor 3 subunit B,quantified,18.8259,18.7185,0.107416,0.431818,exact,12,1,51.9856
+EIF3E,P60228,Eukaryotic translation initiation factor 3 subunit E,quantified,20.3401,21.1378,-0.797722,0.106061,exact,12,1,10.8303
+EIF4ENIF1,Q9NRA8,Eukaryotic translation initiation factor 4E transporter,quantified,20.7426,22.5096,-1.76699,0.0479798,exact,12,1,0.902527
+EIF4H,Q15056,Eukaryotic translation initiation factor 4H,quantified,19.6553,18.9914,0.663893,0.0479798,exact,12,1,84.3562
+EIF5A,P63241,Eukaryotic translation initiation factor 5A-1,quantified,23.376,23.2168,0.159138,0.14899,exact,12,6,54.8135
+XPO1,O14980,Exportin-1,quantified,17.8766,17.6961,0.180468,0.530303,exact,12,1,56.0168
+CSE1L,P55060,Exportin-2,quantified,27.1218,25.9841,1.13764,0.00252525,exact,12,1,95.6077
+XPO6,Q96QU8,Exportin-6,quantified,18.94,19.2666,-0.326617,0.431818,exact,12,1,31.2876
+ESYT1,Q9BSJ8,Extended synaptotagmin-1,quantified,19.2804,18.5784,0.701956,0.00252525,exact,12,1,85.6197
+ECM1,Q16610,Extracellular matrix protein 1,quantified,19.5419,19.2514,0.290489,0.343434,exact,12,1,62.8159
+SOD3,P08294,Extracellular superoxide dismutase [Cu-Zn],quantified,22.2746,21.7027,0.571932,0.14899,exact,12,2,79.9037
+EZR,P15311,Ezrin,quantified,25.73,25.7852,-0.0551693,0.530303,exact,12,24,43.562
+CAPZA1,P52907,F-actin-capping protein subunit alpha-1,quantified,21.1209,20.4685,0.652441,0.030303,exact,12,1,83.8748
+CAPZA2,P47755,F-actin-capping protein subunit alpha-2,quantified,21.6443,21.5505,0.0938171,0.267677,exact,12,3,51.2635
+FUBP1,Q96AE4,Far upstream element-binding protein 1,quantified,20.7703,20.556,0.214348,0.267677,exact,12,1,58.0024
+FAF1,Q9UNN5,FAS-associated factor 1,quantified,20.7708,20.4842,0.286633,0.876263,exact,12,1,62.4549
+FSCN1,Q16658,Fascin,quantified,22.3309,21.8364,0.494507,0.0732323,exact,12,2,75.8724
+FABP3,P05413,"Fatty acid-binding protein, heart",quantified,22.1806,22.8031,-0.622512,0.00505051,exact,12,2,17.7497
+FABP1,P07148,"Fatty acid-binding protein, liver",quantified,22.46,24.141,-1.68096,0.106061,exact,12,6,1.26354
+ALDH3A2,P51648,Fatty aldehyde dehydrogenase,quantified,20.6723,20.7461,-0.0737845,1,exact,12,2,42.7196
+FAAH2,Q6GMR7,Fatty-acid amide hydrolase 2,quantified,19.8958,20.1361,-0.240299,0.431818,exact,12,1,35.2587
+FBXO3,Q9UK99,F-box only protein 3,quantified,22.6944,21.9887,0.705715,0.00505051,exact,12,1,85.6799
+FBXO38,Q6PIJ6,F-box only protein 38,quantified,20.2326,20.1697,0.06284,0.876263,exact,12,1,49.1276
+FCRLB,Q6BAA4,Fc receptor-like B,quantified,20.701,21.2273,-0.526224,0.106061,exact,12,1,21.8412
+,A9Z1Z3,Fer-1-like protein 4,quantified,20.2215,19.2441,0.977431,0.00505051,exact,12,1,92.7196
+FRMPD3,Q5JV73,FERM and PDZ domain-containing protein 3,quantified,19.978,19.6139,0.36406,0.876263,exact,12,1,67.7497
+FARP1,Q9Y4F1,"FERM, RhoGEF and pleckstrin domain-containing protein 1",quantified,19.5549,19.4369,0.117947,0.638889,exact,12,2,52.4669
+FERMT2,Q96AC1,Fermitin family homolog 2,quantified,20.5557,20.3801,0.175582,0.20202,exact,12,2,55.8363
+FTH1,P02794,Ferritin heavy chain,quantified,24.1432,23.3189,0.824343,0.030303,exact,12,5,89.7112
+FTL,P02792,Ferritin light chain,quantified,26.1538,25.4665,0.687251,0.14899,exact,12,9,85.1384
+FECH,P22830,"Ferrochelatase, mitochondrial",quantified,19.8112,20.4901,-0.678949,0.030303,exact,12,2,15.4031
+FBN1,P35555,Fibrillin-1,quantified,26.3598,24.7651,1.59462,0.00505051,exact,12,31,98.3755
+FGA,P02671,Fibrinogen alpha chain,quantified,25.244,25.1427,0.101233,1,exact,12,18,51.5644
+FGB,P02675,Fibrinogen beta chain,quantified,24.4793,24.1107,0.368586,0.638889,exact,12,12,68.3514
+FGG,P02679,Fibrinogen gamma chain,quantified,25.016,24.8965,0.119564,1,exact,12,15,52.6474
+FN1,P02751,Fibronectin,quantified,23.7352,23.5451,0.190057,0.0732323,exact,12,6,56.438
+FBLN1,P23142,Fibulin-1,quantified,20.0433,19.0349,1.00844,0.0479798,exact,12,1,93.3213
+FLNA,P21333,Filamin-A,quantified,27.1401,26.637,0.503131,0.00252525,exact,12,59,76.2335
+FLNB,O75369,Filamin-B,quantified,21.3378,20.925,0.412747,0.0479798,exact,12,4,71.2395
+BLVRB,P30043,Flavin reductase,quantified,23.1678,23.3453,-0.177503,0.638889,exact,12,4,38.6883
+FLOT2,Q14254,Flotillin-2,quantified,20.1845,20.3871,-0.20264,0.431818,exact,12,1,37.485
+FSTL5,Q8N475,Follistatin-related protein 5,quantified,22.8941,23.3187,-0.424599,0.876263,exact,12,1,26.6546
+FTCD,O95954,Formimidoyltransferase-cyclodeaminase,quantified,22.8916,22.9105,-0.0189256,0.638889,exact,12,8,45.006
+FHL1,Q13642,Four and a half LIM domains protein 1,quantified,19.0626,18.0419,1.02079,0.010101,exact,12,1,93.5018
+FZD3,Q9NPG1,Frizzled-3,quantified,21.5179,22.8934,-1.37555,0.0479798,exact,12,1,2.40674
+FN3K,Q9H479,Fructosamine-3-kinase,quantified,19.414,19.9037,-0.489717,0.0479798,exact,12,2,23.5259
+FBP1,P09467,"Fructose-1,6-bisphosphatase 1",quantified,24.4206,25.3995,-0.978887,0.0479798,exact,12,15,6.07702
+FBP2,O00757,"Fructose-1,6-bisphosphatase isozyme 2",quantified,18.8349,19.5407,-0.705793,0.010101,exact,12,1,13.7786
+ALDOA,P04075,Fructose-bisphosphate aldolase A,quantified,25.6275,25.8349,-0.207357,0.14899,exact,12,15,37.2443
+ALDOB,P05062,Fructose-bisphosphate aldolase B,quantified,26.5886,27.6392,-1.0506,0.14899,exact,12,27,4.87365
+ALDOC,P09972,Fructose-bisphosphate aldolase C,quantified,19.7243,19.4604,0.263868,1,exact,12,1,61.1913
+FH,P07954,"Fumarate hydratase, mitochondrial",quantified,23.2319,23.9372,-0.705241,0.0176768,exact,12,10,13.8387
+FAH,P16930,Fumarylacetoacetase,quantified,23.0649,23.4558,-0.390988,0.431818,exact,12,6,28.5199
+FAHD1,Q6P587,Fumarylacetoacetate hydrolase domain-containing protein 1,quantified,21.0138,22.1535,-1.1397,0.0176768,exact,12,3,3.79061
+FYCO1,Q9BQS8,FYVE and coiled-coil domain-containing protein 1,quantified,21.8323,21.8001,0.032133,0.876263,exact,12,1,47.2323
+LGALS1,P09382,Galectin-1,quantified,23.2478,22.5205,0.727251,0.010101,exact,12,5,86.5824
+LGALS3,P17931,Galectin-3,quantified,22.5444,21.7783,0.76616,0.0479798,exact,12,3,88.0265
+LGALS3BP,Q08380,Galectin-3-binding protein,quantified,23.4737,21.21,2.26373,0.00252525,exact,12,8,99.0975
+ADD3,Q9UEY8,Gamma-adducin,quantified,19.6407,19.7442,-0.103451,0.876263,exact,12,1,41.2756
+BBOX1,O75936,Gamma-butyrobetaine dioxygenase,quantified,22.8362,22.9069,-0.0706556,0.755051,exact,12,7,42.84
+GGH,Q92820,Gamma-glutamyl hydrolase,quantified,20.7218,20.8027,-0.0808696,0.755051,exact,12,2,42.4789
+GGACT,Q9BVM4,Gamma-glutamylaminecyclotransferase,quantified,19.7126,20.8485,-1.1359,0.0176768,exact,12,1,3.91095
+GGT5,P36269,Gamma-glutamyltransferase 5,quantified,24.4347,23.6181,0.816641,0.00252525,exact,12,12,89.4705
+GGT1,P19440,Gamma-glutamyltranspeptidase 1,quantified,23.2047,23.7372,-0.532443,0.14899,exact,12,7,21.42
+NAPG,Q99747,Gamma-soluble NSF attachment protein,quantified,22.5887,23.0747,-0.486039,0.343434,exact,12,2,23.7665
+GM2A,P17900,Ganglioside GM2 activator,quantified,20.2549,20.6632,-0.408338,0.431818,exact,12,3,27.7377
+GSDMC,Q9BYG8,Gasdermin-C,quantified,21.3801,21.0505,0.329609,0.343434,exact,12,1,65.1625
+GFUS,Q13630,GDP-L-fucose synthase,quantified,19.0188,18.6464,0.372361,0.530303,exact,12,1,68.4116
+GSN,P06396,Gelsolin,quantified,25.0026,24.6182,0.384452,0.030303,exact,12,17,69.2539
+GTF3C2,Q8WUA4,General transcription factor 3C polypeptide 2,quantified,21.8576,21.5201,0.337451,0.876263,exact,12,1,65.4633
+RABGGTA,Q92696,Geranylgeranyl transferase type-2 subunit alpha,quantified,23.8504,23.1926,0.657817,0.00505051,exact,12,1,83.9952
+GFAP,P14136,Glial fibrillary acidic protein,quantified,24.7076,23.827,0.880698,0.0176768,exact,12,3,90.9146
+GNPDA2,Q8TDQ7,Glucosamine-6-phosphate isomerase 2,quantified,20.0134,20.6932,-0.67989,0.530303,exact,12,1,15.343
+GPI,P06744,Glucose-6-phosphate isomerase,quantified,24.9764,24.9841,-0.00764404,1,exact,12,14,45.3069
+GLUD1,P00367,"Glutamate dehydrogenase 1, mitochondrial",quantified,25.8874,26.8506,-0.96327,0.030303,exact,12,27,6.6787
+GRID1,Q9ULK0,Glutamate receptor delta-1 subunit,quantified,20.4141,19.7903,0.623788,0.267677,exact,12,1,82.13
+GLS,O94925,"Glutaminase kidney isoform, mitochondrial",quantified,22.8647,23.6454,-0.780669,0.106061,exact,12,11,11.3718
+GLS2,Q9UI32,"Glutaminase liver isoform, mitochondrial",quantified,18.7151,20.2552,-1.54009,0.0092426,exact,12,1,1.74489
+QARS1,P47897,Glutaminyl-tRNA synthetase,quantified,19.1473,18.5312,0.616137,0.0732323,exact,12,1,81.8893
+ENPEP,Q07075,Glutamyl aminopeptidase,quantified,21.3349,21.3421,-0.00716579,0.755051,exact,12,2,45.367
+GLRX,P35754,Glutaredoxin-1,quantified,21.7543,22.4779,-0.723642,0.0732323,exact,12,2,13.1769
+GLRX5,Q86SX6,"Glutaredoxin-related protein 5, mitochondrial",quantified,18.8216,18.9598,-0.138193,0.20202,exact,12,1,39.9519
+GCDH,Q92947,"Glutaryl-CoA dehydrogenase, mitochondrial",quantified,20.9845,20.674,0.310553,0.343434,exact,12,3,64.3201
+GPX1,P07203,Glutathione peroxidase 1,quantified,21.3928,21.0863,0.306525,0.14899,exact,12,2,64.0193
+GPX3,P22352,Glutathione peroxidase 3,quantified,24.5077,24.7235,-0.215776,0.14899,exact,12,9,36.6426
+GSR,P00390,"Glutathione reductase, mitochondrial",quantified,21.1677,21.1265,0.041227,0.431818,exact,12,1,47.6534
+GSTA1,P08263,Glutathione S-transferase A1,quantified,26.7215,26.7569,-0.0354138,0.876263,exact,12,14,44.284
+GSTA2,P09210,Glutathione S-transferase A2,quantified,22.4343,23.1389,-0.704508,0.0176768,exact,12,3,13.8989
+GSTA3,Q16772,Glutathione S-transferase A3,quantified,22.9785,22.232,0.746458,0.530303,exact,12,2,87.3045
+GSTK1,Q9Y2Q3,Glutathione S-transferase kappa 1,quantified,23.0459,23.4157,-0.369823,0.14899,exact,12,5,29.1215
+GSTM1,P09488,Glutathione S-transferase Mu 1,quantified,22.311,22.237,0.0739304,0.530303,exact,12,4,49.6992
+GSTM2,P28161,Glutathione S-transferase Mu 2,quantified,20.7536,21.3113,-0.557684,0.20202,exact,12,1,20.3369
+GSTM3,P21266,Glutathione S-transferase Mu 3,quantified,21.6249,23.0576,-1.43278,0.030303,exact,12,8,2.1059
+GSTO1,P78417,Glutathione S-transferase omega-1,quantified,21.7944,22.4057,-0.611276,0.00505051,exact,12,3,18.0505
+GSTP1,P09211,Glutathione S-transferase P,quantified,25.1634,25.1936,-0.0302064,1,exact,12,13,44.5247
+GSTT1,P30711,Glutathione S-transferase theta-1,quantified,21.3032,21.2353,0.0679407,0.638889,exact,12,2,49.3983
+GSS,P48637,Glutathione synthetase,quantified,21.6993,22.0081,-0.308775,0.106061,exact,12,2,31.9495
+GAPDH,P04406,Glyceraldehyde-3-phosphate dehydrogenase,quantified,27.9715,28.2108,-0.239293,0.106061,exact,12,56,35.3189
+GAPDHS,O14556,"Glyceraldehyde-3-phosphate dehydrogenase, testis-specific",quantified,24.1476,24.3603,-0.212633,0.20202,exact,12,1,36.9434
+GPD1,P21695,"Glycerol-3-phosphate dehydrogenase [NAD+], cytoplasmic",quantified,24.5314,24.8686,-0.337215,0.343434,exact,12,12,30.9868
+GPD1L,Q8N335,Glycerol-3-phosphate dehydrogenase 1-like protein,quantified,18.5505,18.6963,-0.145784,0.431818,exact,12,1,39.7112
+GATM,P50440,"Glycine amidinotransferase, mitochondrial",quantified,26.9414,27.9775,-1.03619,0.20202,exact,12,35,5.11432
+GLDC,P23378,"Glycine dehydrogenase [decarboxylating], mitochondrial",quantified,18.9557,19.1867,-0.231043,0.267677,exact,12,1,35.9807
+GLYAT,Q6IB77,Glycine N-acyltransferase,quantified,23.9285,25.1891,-1.26057,0.030303,exact,12,10,2.88809
+GLYATL1,Q969I3,Glycine N-acyltransferase-like protein 1,quantified,20.5774,21.4574,-0.880005,0.14899,exact,12,2,8.54392
+GLYATL3,Q5SZD4,Glycine N-acyltransferase-like protein 3,quantified,21.5854,21.3546,0.230745,0.0479798,exact,12,1,59.0854
+PYGB,P11216,"Glycogen phosphorylase, brain form",quantified,21.8948,21.6528,0.242046,0.267677,exact,12,4,59.7473
+GLOD4,Q9HC38,Glyoxalase domain-containing protein 4,quantified,21.9851,22.3281,-0.343054,0.14899,exact,12,3,30.5656
+GRHPR,Q9UBQ7,Glyoxylate reductase/hydroxypyruvate reductase,quantified,24.2646,24.6134,-0.348762,0.14899,exact,12,8,30.4452
+GMPR,P36959,GMP reductase 1,quantified,19.9391,20.7706,-0.831457,0.010101,exact,12,1,9.62696
+GMPS,P49915,GMP synthase [glutamine-hydrolyzing],quantified,18.2518,18.1925,0.059317,0.876263,exact,12,1,48.917
+GOLGA4,Q13439,Golgin subfamily A member 4,quantified,20.4524,21.3665,-0.914162,0.267677,exact,12,1,7.6414
+GBF1,Q92538,Golgi-specific brefeldin A-resistance guanine nucleotide exchange factor 1,quantified,22.7173,22.3969,0.320389,0.106061,exact,12,1,64.8014
+GZMA,P12544,Granzyme A,quantified,23.0633,22.4723,0.591022,0.00252525,exact,12,1,80.6258
+GRTP1,Q5TC63,Growth hormone-regulated TBC protein 1,quantified,20.516,21.0476,-0.531562,0.20202,exact,12,1,21.5403
+GRPEL1,Q9HAV7,"GrpE protein homolog 1, mitochondrial",quantified,19.8656,20.3911,-0.525526,0.530303,exact,12,1,21.9615
+AK3,Q9UIJ7,"GTP:AMP phosphotransferase, mitochondrial",quantified,21.6119,21.9761,-0.36425,0.0479798,exact,12,3,29.4826
+RAN,P62826,GTP-binding nuclear protein Ran,quantified,22.0793,21.7673,0.311955,0.14899,exact,12,3,64.3803
+DIRAS1,O95057,GTP-binding protein Di-Ras1,quantified,20.9291,19.8872,1.04189,0.00505051,exact,12,1,93.923
+SAR1A,Q9NR31,GTP-binding protein SAR1a,quantified,19.2743,19.1939,0.080357,0.343434,exact,12,1,50.361
+GAMT,Q14353,Guanidinoacetate N-methyltransferase,quantified,20.1255,20.2209,-0.095436,0.0732323,exact,12,1,41.5162
+GDA,Q9Y2T3,Guanine deaminase,quantified,21.1126,22.1065,-0.993919,0.755051,exact,12,3,5.83634
+GNAI1,P63096,Guanine nucleotide-binding protein G(i) subunit alpha-1,quantified,20.9208,20.3366,0.58421,0.0176768,exact,12,1,80.4452
+GNG8,Q9UK08,Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit gamma-8,quantified,20.9489,20.9552,-0.006281,1,exact,12,1,45.4874
+GNB1,P62873,Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit beta-1,quantified,23.5404,23.1582,0.382164,0.00252525,exact,12,6,69.1336
+GNB2,P62879,Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit beta-2,quantified,19.6179,19.5141,0.103783,0.530303,exact,12,1,51.6847
+GNA11,P29992,Guanine nucleotide-binding protein subunit alpha-11,quantified,19.9891,18.9586,1.03049,0.00252525,exact,12,1,93.6823
+GNA12,Q03113,Guanine nucleotide-binding protein subunit alpha-12,quantified,22.3214,21.7202,0.601122,0.00252525,exact,12,1,80.9868
+RACK1,P63244,Guanine nucleotide-binding protein subunit beta-2-like 1,quantified,22.8945,22.7323,0.16216,0.530303,exact,12,4,55.1143
+HP,P00738,Haptoglobin,quantified,24.9168,24.4826,0.434206,0.876263,exact,12,11,72.0818
+HPR,P00739,Haptoglobin-related protein,quantified,23.5483,23.7763,-0.228047,0.876263,exact,12,4,36.2214
+HAUS7,Q99871,HAUS augmin-like complex subunit 7,quantified,19.5234,20.9103,-1.38689,0.030303,exact,12,1,2.34657
+HEATR1,Q9H583,HEAT repeat-containing protein 1,quantified,20.3271,19.3572,0.969892,0.267677,exact,12,1,92.5993
+HEATR4,Q86WZ0,HEAT repeat-containing protein 4,quantified,23.9916,24.192,-0.200409,0.431818,exact,12,1,37.6053
+HSPA12A,O43301,Heat shock 70 kDa protein 12A,quantified,19.2776,19.0041,0.273453,0.431818,exact,12,1,61.8532
+,P08107,Heat shock 70 kDa protein 1A/1B,quantified,24.2271,24.2159,0.0112328,0.343434,exact,12,10,46.2696
+HSPA1L,P34931,Heat shock 70 kDa protein 1-like,quantified,23.564,23.543,0.0210367,0.431818,exact,12,8,46.6306
+HSPA4L,O95757,Heat shock 70 kDa protein 4L,quantified,20.5875,20.0684,0.519035,0.010101,exact,12,1,77.3767
+HSPA8,P11142,Heat shock cognate 71 kDa protein,quantified,24.5632,24.5559,0.00731829,0.638889,exact,12,9,46.0289
+HSPH1,Q92598,Heat shock protein 105 kDa,quantified,22.1874,21.6768,0.510527,0.0732323,exact,12,1,76.8953
+TRAP1,Q12931,"Heat shock protein 75 kDa, mitochondrial",quantified,22.8148,22.5065,0.308326,0.20202,exact,12,2,64.1396
+HSPB1,P04792,Heat shock protein beta-1,quantified,26.1274,25.8714,0.255927,0.343434,exact,12,13,60.7702
+HSPB6,O14558,Heat shock protein beta-6,quantified,20.5285,19.2474,1.28108,0.00252525,exact,12,2,96.6306
+HSP90AA1,P07900,Heat shock protein HSP 90-alpha,quantified,24.1576,24.1566,0.000999161,0.431818,exact,12,11,45.7882
+HSP90AB1,P08238,Heat shock protein HSP 90-beta,quantified,24.0102,23.7005,0.30976,0.14899,exact,12,7,64.2599
+HSPA2,P54652,Heat shock-related 70 kDa protein 2,quantified,23.25,23.3745,-0.124454,0.638889,exact,12,7,40.5535
+SKIC2,Q15477,Helicase SKI2W,quantified,19.9045,20.657,-0.752403,0.030303,exact,12,1,11.9735
+HEBP1,Q9NRV9,Heme-binding protein 1,quantified,20.0939,20.3343,-0.240393,0.0479798,exact,12,2,35.1986
+HBA1;,P69905,Hemoglobin subunit alpha,quantified,30.0048,31.0115,-1.00672,0.343434,exact,12,62,5.65584
+HBB,P68871,Hemoglobin subunit beta,quantified,30.759,31.3118,-0.552832,0.530303,exact,12,72,20.5174
+HBD,P02042,Hemoglobin subunit delta,quantified,25.2486,25.8684,-0.619824,0.431818,exact,12,7,17.87
+HBG1,P69891,Hemoglobin subunit gamma-1,quantified,19.5673,20.8339,-1.26659,0.0479798,exact,12,1,2.82792
+HBZ,P02008,Hemoglobin subunit zeta,quantified,26.9751,27.1726,-0.197532,1,exact,12,2,37.7256
+HPX,P02790,Hemopexin,quantified,24.3735,24.1224,0.2511,1,exact,12,10,60.4091
+HS3ST5,Q8IZT8,Heparan sulfate glucosamine 3-O-sulfotransferase 5,quantified,23.2073,22.1092,1.09807,0.00252525,exact,12,1,94.7052
+SERPIND1,P05546,Heparin cofactor 2,quantified,20.0951,19.6777,0.417386,0.14899,exact,12,1,71.4801
+HP1BP3,Q5SSJ5,Heterochromatin protein 1-binding protein 3,quantified,21.6355,20.9286,0.706936,0.00252525,exact,12,2,85.8604
+HNRNPAB,Q99729,Heterogeneous nuclear ribonucleoprotein A/B,quantified,23.5103,25.8929,-2.38261,0.030303,exact,12,2,0.361011
+HNRNPA1,P09651,Heterogeneous nuclear ribonucleoprotein A1,quantified,20.5639,20.0524,0.511482,0.00252525,exact,12,1,76.9555
+HNRNPA1L2,Q32P51,Heterogeneous nuclear ribonucleoprotein A1-like 2,quantified,24.2482,24.0158,0.2324,0.0479798,exact,12,8,59.2659
+HNRNPA3,P51991,Heterogeneous nuclear ribonucleoprotein A3,quantified,22.7219,22.3979,0.324003,0.0176768,exact,12,4,64.9819
+HNRNPCL1,O60812,Heterogeneous nuclear ribonucleoprotein C-like 1,quantified,22.8725,22.4437,0.428834,0.106061,exact,12,3,71.9013
+HNRNPD,Q14103,Heterogeneous nuclear ribonucleoprotein D0,quantified,22.2913,21.7457,0.5456,0.00252525,exact,12,3,78.8809
+HNRNPDL,O14979,Heterogeneous nuclear ribonucleoprotein D-like,quantified,21.5436,21.0364,0.50716,0.00252525,exact,12,1,76.7148
+HNRNPF,P52597,Heterogeneous nuclear ribonucleoprotein F,quantified,19.2766,18.983,0.29355,0.14899,exact,12,1,62.9964
+RBMX,P38159,Heterogeneous nuclear ribonucleoprotein G,quantified,20.785,20.141,0.643969,0.00252525,exact,12,2,83.3333
+HNRNPH1,P31943,Heterogeneous nuclear ribonucleoprotein H,quantified,22.0499,21.6747,0.375286,0.00252525,exact,12,3,68.6522
+HNRNPH3,P31942,Heterogeneous nuclear ribonucleoprotein H3,quantified,21.5684,20.9194,0.64898,0.00505051,exact,12,3,83.6342
+HNRNPK,P61978,Heterogeneous nuclear ribonucleoprotein K,quantified,25.1281,24.9216,0.206589,0.030303,exact,12,12,57.5211
+HNRNPL,P14866,Heterogeneous nuclear ribonucleoprotein L,quantified,21.779,21.6082,0.170739,0.267677,exact,12,4,55.4753
+HNRNPLL,Q8WVV9,Heterogeneous nuclear ribonucleoprotein L-like,quantified,19.7053,19.2642,0.441114,0.0732323,exact,12,1,72.3827
+HNRNPM,P52272,Heterogeneous nuclear ribonucleoprotein M,quantified,23.3916,22.7609,0.630706,0.00252525,exact,12,9,82.6113
+SYNCRIP,O60506,Heterogeneous nuclear ribonucleoprotein Q,quantified,19.6426,20.1138,-0.471273,0.431818,exact,12,1,24.6691
+HNRNPR,O43390,Heterogeneous nuclear ribonucleoprotein R,quantified,20.3129,19.7071,0.605804,0.0732323,exact,12,1,81.2274
+HNRNPU,Q00839,Heterogeneous nuclear ribonucleoprotein U,quantified,23.1375,22.9107,0.226718,0.14899,exact,12,7,58.7846
+HNRNPUL2,Q1KMD3,Heterogeneous nuclear ribonucleoprotein U-like protein 2,quantified,23.6807,22.3186,1.36205,0.00252525,exact,12,1,97.1721
+HNRNPA2B1,P22626,Heterogeneous nuclear ribonucleoproteins A2/B1,quantified,25.2313,24.656,0.575292,0.00252525,exact,12,18,80.0241
+HNRNPC,P07910,Heterogeneous nuclear ribonucleoproteins C1/C2,quantified,22.5321,22.4517,0.0804235,0.267677,exact,12,4,50.4212
+HK1,P19367,Hexokinase-1,quantified,19.077,18.9277,0.149367,0.267677,exact,12,1,54.0313
+HMGN4,O00479,High mobility group nucleosome-binding domain-containing protein 4,quantified,20.401,20.1913,0.209734,0.20202,exact,12,1,57.7016
+HMGB1,P09429,High mobility group protein B1,quantified,20.2717,20.3948,-0.123158,0.267677,exact,12,1,40.6137
+HNMT,P50135,Histamine N-methyltransferase,quantified,17.5284,18.3181,-0.789677,0.14899,exact,12,1,11.071
+HINT1,P49773,Histidine triad nucleotide-binding protein 1,quantified,23.0007,23.1892,-0.18852,0.20202,exact,12,5,38.0265
+HINT2,Q9BX68,"Histidine triad nucleotide-binding protein 2, mitochondrial",quantified,21.3429,21.9417,-0.598759,0.00252525,exact,12,2,18.7726
+HRG,P04196,Histidine-rich glycoprotein,quantified,21.2154,21.1768,0.0385377,1,exact,12,2,47.4729
+KAT2A,Q92830,Histone acetyltransferase KAT2A,quantified,23.6539,24.6651,-1.01126,0.20202,exact,12,1,5.5355
+H1-0,P07305,Histone H1.0,quantified,24.1583,23.8846,0.273671,0.343434,exact,12,4,61.9134
+H1-1,Q02539,Histone H1.1,quantified,24.3593,24.1153,0.244039,0.0479798,exact,12,7,59.9278
+H1-2,P16403,Histone H1.2,quantified,25.5101,25.049,0.461099,0.00505051,exact,12,3,73.6462
+H1-5,P16401,Histone H1.5,quantified,22.1025,20.9819,1.12056,0.00252525,exact,12,1,95.1264
+H2AC1,Q96QV6,Histone H2A type 1-A,quantified,28.2359,27.1955,1.04033,0.00252525,exact,12,12,93.8628
+H2AC4;,P04908,Histone H2A type 1-B/E,quantified,26.604,26.0747,0.529275,0.010101,exact,12,7,77.858
+H2AC7,P20671,Histone H2A type 1-D,quantified,24.013,23.5357,0.477308,0.106061,exact,12,5,74.8496
+H2AC21,Q8IUE6,Histone H2A type 2-B,quantified,21.8597,20.7703,1.08938,0.00505051,exact,12,1,94.5848
+H2AZ2,Q71UI9,Histone H2A.V,quantified,22.6619,22.1774,0.484511,0.267677,exact,12,2,75.4513
+H2BC1,Q96A08,Histone H2B type 1-A,quantified,28.4318,27.6589,0.772902,0.00252525,exact,12,7,88.207
+H2BC3,P33778,Histone H2B type 1-B,quantified,27.4056,26.6134,0.792152,0.00252525,exact,12,13,88.8688
+H2BC4;,P62807,Histone H2B type 1-C/E/F/G/I,quantified,22.9049,22.7183,0.186613,0.0479798,exact,12,3,56.1974
+H3C1;,P68431,Histone H3.1,quantified,20.7078,19.1769,1.53097,0.010101,exact,12,1,98.0144
+H3-4,Q16695,Histone H3.1t,quantified,28.7213,27.8498,0.871476,0.00252525,exact,12,11,90.7942
+H3-3A;,P84243,Histone H3.3,quantified,23.7477,23.5155,0.232133,0.14899,exact,12,4,59.2058
+CENPA,P49450,Histone H3-like centromeric protein A,quantified,21.8875,19.7566,2.13098,0.00252525,exact,12,1,98.8568
+H4C1;,P62805,Histone H4,quantified,28.7345,27.6962,1.03835,0.00252525,exact,12,22,93.8026
+EZH1,Q92800,Histone-lysine N-methyltransferase EZH1,quantified,21.9407,21.4764,0.464302,0.530303,exact,12,1,73.8267
+KMT2A,Q03164,Histone-lysine N-methyltransferase MLL,quantified,22.4568,21.603,0.853785,0.431818,exact,12,1,90.4934
+DOT1L,Q8TEK3,"Histone-lysine N-methyltransferase, H3 lysine-79 specific",quantified,23.3662,22.8407,0.525487,0.638889,exact,12,1,77.7377
+,P30443,"HLA class I histocompatibility antigen, A-1 alpha chain",quantified,21.433,20.4776,0.955417,0.030303,exact,12,2,92.1781
+HLA-G,P17693,"HLA class I histocompatibility antigen, alpha chain G",quantified,19.9149,19.3406,0.574215,0.0479798,exact,12,1,79.9639
+HLA-DQA2,P01906,"HLA class II histocompatibility antigen, DQ alpha 2 chain",quantified,23.1274,23.6007,-0.473265,0.343434,exact,12,1,24.5487
+HLA-DRA,P01903,"HLA class II histocompatibility antigen, DR alpha chain",quantified,20.3706,19.628,0.742542,0.010101,exact,12,1,87.1841
+NKX2-6,A6NCS4,Homeobox protein Nkx-2.6,quantified,19.7424,20.7304,-0.988041,0.00505051,exact,12,1,6.01685
+HERPUD1,Q15011,Homocysteine-responsive endoplasmic reticulum-resident ubiquitin-like domain member 1 protein,quantified,21.1706,20.8744,0.29618,0.267677,exact,12,1,63.1769
+HGD,Q93099,"Homogentisate 1,2-dioxygenase",quantified,20.762,21.267,-0.504991,0.20202,exact,12,3,22.864
+ST13,P50502,Hsc70-interacting protein,quantified,22.2398,22.1818,0.0579901,0.755051,exact,12,4,48.7365
+HAS1,Q92839,Hyaluronan synthase 1,quantified,20.6374,20.6749,-0.037445,1,exact,12,1,44.0433
+HAO2,Q9NYQ3,Hydroxyacid oxidase 2,quantified,20.9901,21.0481,-0.0579594,0.876263,exact,12,2,43.2611
+HADH,Q16836,"Hydroxyacyl-coenzyme A dehydrogenase, mitochondrial",quantified,24.2019,25.0887,-0.886828,0.010101,exact,12,9,8.30325
+HAGH,Q16775,"Hydroxyacylglutathione hydrolase, mitochondrial",quantified,20.3203,21.0456,-0.72529,0.0479798,exact,12,2,13.0566
+HMGCL,P35914,"Hydroxymethylglutaryl-CoA lyase, mitochondrial",quantified,21.7473,22.3488,-0.601506,0.14899,exact,12,4,18.6522
+HSDL2,Q6YN16,Hydroxysteroid dehydrogenase-like protein 2,quantified,22.0593,22.6797,-0.620464,0.106061,exact,12,6,17.8099
+IGHA1,P01876,Ig alpha-1 chain C region,quantified,27.0214,25.0302,1.99129,0.00252525,exact,12,19,98.6763
+IGHG1,P01857,Ig gamma-1 chain C region,quantified,26.7955,27.6768,-0.881287,0.755051,exact,12,22,8.48375
+IGHG2,P01859,Ig gamma-2 chain C region,quantified,24.1313,23.8112,0.320092,0.876263,exact,12,7,64.7413
+IGHG3,P01860,Ig gamma-3 chain C region,quantified,21.2578,20.6874,0.570333,0.267677,exact,12,2,79.8436
+IGHV3-23,P01764,Ig heavy chain V-III region VH26,quantified,19.9662,18.8446,1.12159,0.267677,exact,12,1,95.1865
+IGKC,P01834,Ig kappa chain C region,quantified,25.6944,25.4837,0.210712,0.343434,exact,12,8,57.7617
+IGKV1D-33,P01593,Ig kappa chain V-I region AG,quantified,20.0782,19.6799,0.398232,0.20202,exact,12,1,70.2166
+IGKV1-39,P01597,Ig kappa chain V-I region DEE,quantified,23.7325,22.9205,0.812044,0.20202,exact,12,1,89.29
+IGKV1-17,P01599,Ig kappa chain V-I region Gal,quantified,19.9697,19.8788,0.090874,1,exact,12,1,51.083
+,P01605,Ig kappa chain V-I region Lay,quantified,22.9166,21.6533,1.26332,0.14899,exact,12,1,96.4501
+IGKV2D-40,P01614,Ig kappa chain V-II region Cum,quantified,20.9547,20.2348,0.719857,0.14899,exact,12,2,86.3418
+,P01620,Ig kappa chain V-III region SIE,quantified,23.5771,22.903,0.674016,0.343434,exact,12,4,84.7172
+IGKV3-11,P04433,Ig kappa chain V-III region VG (Fragment),quantified,20.7909,19.7907,1.00021,0.14899,exact,12,1,93.1408
+IGKV4-1,P06312,Ig kappa chain V-IV region (Fragment),quantified,19.8087,19.4403,0.368362,0.343434,exact,12,1,68.2912
+IGLC1,P0CG04,Ig lambda-1 chain C regions,quantified,23.6513,23.4521,0.199172,0.755051,exact,12,5,57.0397
+,P0CG05,Ig lambda-2 chain C regions,quantified,24.6882,24.0611,0.627134,0.14899,exact,12,3,82.4308
+IGHM,P01871,Ig mu chain C region,quantified,23.6403,22.6841,0.956111,0.0732323,exact,12,6,92.2383
+JCHAIN,P01591,Immunoglobulin J chain,quantified,23.2922,20.8514,2.44081,0.00252525,exact,12,4,99.3381
+KPNB1,Q14974,Importin subunit beta-1,quantified,19.6228,19.2663,0.356489,0.267677,exact,12,1,67.2082
+PAMR1,Q6UXH9,Inactive serine protease PAMR1,quantified,20.7449,19.2656,1.47922,0.0479798,exact,12,1,97.7136
+INHBE,P58166,Inhibin beta E chain,quantified,20.4998,19.056,1.44383,0.00505051,exact,12,1,97.5331
+PPA1,Q15181,Inorganic pyrophosphatase,quantified,20.7686,21.1822,-0.413584,0.530303,exact,12,2,27.3767
+PPA2,Q9H2U2,"Inorganic pyrophosphatase 2, mitochondrial",quantified,21.4269,22.086,-0.659058,0.0176768,exact,12,5,15.9446
+ITPRIP,Q8IWB1,"Inositol 1,4,5-triphosphate receptor-interacting protein",quantified,20.7235,20.3211,0.402406,0.00505051,exact,12,1,70.3971
+ITGA6,P23229,Integrin alpha-6,quantified,23.3935,22.5705,0.822946,0.010101,exact,12,2,89.5909
+ITGAE,P38570,Integrin alpha-E,quantified,22.6618,23.323,-0.661226,0.0479798,exact,12,1,15.8845
+ITGAM,P11215,Integrin alpha-M,quantified,21.6536,21.8377,-0.184157,0.755051,exact,12,1,38.2671
+ITGB1,P05556,Integrin beta-1,quantified,20.864,20.4561,0.407948,0.010101,exact,12,2,70.8785
+ITGB8,P26012,Integrin beta-8,quantified,21.6593,22.4083,-0.749007,0.20202,exact,12,1,12.2142
+ILK,Q13418,Integrin-linked protein kinase,quantified,21.8544,21.3307,0.523768,0.010101,exact,12,3,77.5572
+ITIH1,P19827,Inter-alpha-trypsin inhibitor heavy chain H1,quantified,18.1671,18.0206,0.146457,0.755051,exact,12,1,53.7906
+ITIH4,Q14624,Inter-alpha-trypsin inhibitor heavy chain H4,quantified,21.4732,20.6492,0.823989,0.638889,exact,12,2,89.651
+IFNG,P01579,Interferon gamma,quantified,21.8147,21.9376,-0.122887,0.267677,exact,12,1,40.6739
+AIM2,O14862,Interferon-inducible protein AIM2,quantified,21.8164,22.6035,-0.787131,0.431818,exact,12,1,11.1312
+ILF2,Q12905,Interleukin enhancer-binding factor 2,quantified,21.6545,21.0465,0.607961,0.00252525,exact,12,3,81.4079
+ILF3,Q12906,Interleukin enhancer-binding factor 3,quantified,23.1437,22.7339,0.409813,0.530303,exact,12,3,70.9988
+ALPI,P09923,Intestinal-type alkaline phosphatase,quantified,21.0967,21.5204,-0.423695,0.755051,exact,12,1,26.7148
+HABP4,Q5JVS0,Intracellular hyaluronan-binding protein 4,quantified,19.351,20.1326,-0.781656,0.0479798,exact,12,1,11.3117
+IQCC,Q4KMZ1,IQ domain-containing protein C,quantified,22.8101,22.5633,0.246876,0.431818,exact,12,1,60.1083
+NUBPL,Q8TB37,Iron-sulfur protein NUBPL,quantified,22.0896,22.2808,-0.191249,0.755051,exact,12,1,37.9061
+ISOC2,Q96AB3,"Isochorismatase domain-containing protein 2, mitochondrial",quantified,21.9469,22.4814,-0.534455,0.343434,exact,12,2,21.1793
+IDH3A,P50213,"Isocitrate dehydrogenase [NAD] subunit alpha, mitochondrial",quantified,19.7449,20.4562,-0.711237,0.0479798,exact,12,1,13.5379
+IDH1,O75874,Isocitrate dehydrogenase [NADP] cytoplasmic,quantified,24.8649,25.2209,-0.355955,0.876263,exact,12,14,30.0842
+IDH2,P48735,"Isocitrate dehydrogenase [NADP], mitochondrial",quantified,25.8571,26.9379,-1.08089,0.00252525,exact,12,21,4.51264
+IARS1,P41252,"Isoleucyl-tRNA synthetase, cytoplasmic",quantified,18.8464,17.7734,1.07301,0.00505051,exact,12,1,94.284
+IARS2,Q9NSE4,"Isoleucyl-tRNA synthetase, mitochondrial",quantified,18.733,19.1518,-0.418761,0.0479798,exact,12,1,27.0758
+IVD,P26440,"Isovaleryl-CoA dehydrogenase, mitochondrial",quantified,23.7326,23.4322,0.300468,0.0176768,exact,12,5,63.7184
+JRKL,Q9Y4A0,Jerky protein homolog-like,quantified,22.9243,20.7401,2.18419,0.00505051,exact,12,1,98.917
+JUP,P14923,Junction plakoglobin,quantified,19.5351,19.7953,-0.260233,0.431818,exact,12,2,33.9952
+KLHL30,Q0D2K2,Kelch-like protein 30,quantified,21.5626,20.821,0.741648,0.00252525,exact,12,1,87.0036
+KRT10,P13645,"Keratin, type I cytoskeletal 10",quantified,22.2327,21.4498,0.782903,0.267677,exact,12,2,88.3875
+KRT12,Q99456,"Keratin, type I cytoskeletal 12",quantified,21.7446,20.8211,0.923412,0.431818,exact,12,1,91.8773
+KRT13,P13646,"Keratin, type I cytoskeletal 13",quantified,23.364,23.6256,-0.261619,1,exact,12,3,33.8748
+KRT14,P02533,"Keratin, type I cytoskeletal 14",quantified,20.4532,20.0668,0.386335,0.431818,exact,12,1,69.4344
+KRT17,Q04695,"Keratin, type I cytoskeletal 17",quantified,21.3711,20.6287,0.742353,0.267677,exact,12,1,87.1239
+KRT18,P05783,"Keratin, type I cytoskeletal 18",quantified,26.5504,26.1389,0.411567,0.343434,exact,12,29,71.1191
+KRT19,P08727,"Keratin, type I cytoskeletal 19",quantified,24.5572,24.3018,0.255349,0.638889,exact,12,14,60.5295
+KRT1,P04264,"Keratin, type II cytoskeletal 1",quantified,23.5996,24.0096,-0.409972,0.20202,exact,12,3,27.6173
+KRT2,P35908,"Keratin, type II cytoskeletal 2 epidermal",quantified,22.9537,22.5243,0.4294,0.530303,exact,12,2,71.9615
+KRT6A,P02538,"Keratin, type II cytoskeletal 6A",quantified,21.6858,21.6641,0.021652,0.638889,exact,12,1,46.6907
+KRT7,P08729,"Keratin, type II cytoskeletal 7",quantified,22.7469,21.7801,0.966842,0.0732323,exact,12,7,92.4789
+KRT71,Q3SY84,"Keratin, type II cytoskeletal 71",quantified,23.6025,22.4956,1.10688,0.00252525,exact,12,1,94.8857
+KRT75,O95678,"Keratin, type II cytoskeletal 75",quantified,20.5315,20.0903,0.441253,0.755051,exact,12,1,72.4428
+KRT79,Q5XKE5,"Keratin, type II cytoskeletal 79",quantified,21.3904,21.3998,-0.009455,1,exact,12,1,45.2467
+KRT8,P05787,"Keratin, type II cytoskeletal 8",quantified,26.3424,26.0804,0.262071,0.638889,exact,12,25,61.1312
+KHK,P50053,Ketohexokinase,quantified,23.6092,23.8762,-0.266998,0.14899,exact,12,7,33.574
+KHDRBS1,Q07666,"KH domain-containing, RNA-binding, signal transduction-associated protein 1",quantified,20.2186,19.9575,0.261142,0.0479798,exact,12,2,61.071
+KAAG1,Q9UBP8,Kidney-associated antigen 1,quantified,20.4023,20.6172,-0.214894,0.755051,exact,12,1,36.7028
+KIFBP,Q96EK5,KIF1-binding protein,quantified,19.9786,21.7401,-1.76145,0.00252525,exact,12,1,0.962696
+KLC4,Q9NSK0,Kinesin light chain 4,quantified,21.1607,20.6743,0.486376,0.343434,exact,12,1,75.5716
+KIF3B,O15066,Kinesin-like protein KIF3B,quantified,22.2168,22.1189,0.09787,0.20202,exact,12,1,51.3839
+NUF2,Q9BZD4,Kinetochore protein Nuf2,quantified,20.0839,20.673,-0.589068,0.267677,exact,12,1,19.3742
+KNG1,P01042,Kininogen-1,quantified,21.6608,21.5717,0.0890748,0.530303,exact,12,3,50.9627
+KLF8,O95600,Krueppel-like factor 8,quantified,20.0572,20.9292,-0.871996,0.030303,exact,12,1,8.66426
+KYNU,Q16719,Kynureninase,quantified,21.1178,22.5435,-1.42568,0.343434,exact,12,1,2.16606
+MFGE8,Q08431,Lactadherin,quantified,21.5067,19.9581,1.54863,0.010101,exact,12,2,98.1949
+AFG1L,Q8WV93,Lactation elevated protein 1,quantified,20.5298,21.1994,-0.669567,0.343434,exact,12,1,15.5235
+LTF,P02788,Lactotransferrin,quantified,22.0257,19.4428,2.58286,0.00252525,exact,12,2,99.3983
+GLO1,Q04760,Lactoylglutathione lyase,quantified,20.465,22.1901,-1.72504,0.343434,exact,12,1,1.02286
+CRYL1,Q9Y2S2,Lambda-crystallin homolog,quantified,24.331,24.7665,-0.435525,0.14899,exact,12,13,26.2335
+LMNB1,P20700,Lamin-B1,quantified,18.9829,18.0966,0.886303,0.00505051,exact,12,1,91.0951
+LMNB2,Q03252,Lamin-B2,quantified,22.9443,23.286,-0.341678,0.638889,exact,12,2,30.6258
+LAMA5,O15230,Laminin subunit alpha-5,quantified,24.8624,24.4779,0.384493,0.20202,exact,12,22,69.3141
+LAMB1,P07942,Laminin subunit beta-1,quantified,20.5555,20.3494,0.206022,0.876263,exact,12,2,57.4007
+LAMB2,P55268,Laminin subunit beta-2,quantified,22.7654,22.5413,0.224121,0.20202,exact,12,6,58.6041
+LAMC1,P11047,Laminin subunit gamma-1,quantified,23.6573,22.9361,0.721199,0.0176768,exact,12,7,86.4019
+SLC7A8,Q9UHI5,Large neutral amino acids transporter small subunit 2,quantified,18.7675,18.9959,-0.228363,0.431818,exact,12,1,36.1613
+MESD,Q14696,LDLR chaperone MESD,quantified,20.8957,20.8552,0.0404425,0.20202,exact,12,2,47.5933
+LZTFL1,Q9NQ48,Leucine zipper transcription factor-like protein 1,quantified,24.4791,23.8324,0.646683,0.00252525,exact,12,1,83.5138
+LRPPRC,P42704,"Leucine-rich PPR motif-containing protein, mitochondrial",quantified,23.407,23.5036,-0.0966369,0.876263,exact,12,11,41.4561
+LRRFIP2,Q9Y608,Leucine-rich repeat flightless-interacting protein 2,quantified,22.1722,21.7574,0.414772,0.00505051,exact,12,1,71.2996
+LGI2,Q8N0V4,Leucine-rich repeat LGI family member 2,quantified,23.0801,22.9657,0.11445,0.638889,exact,12,1,52.2864
+LGR6,Q9HBX8,Leucine-rich repeat-containing G-protein coupled receptor 6,quantified,20.5918,20.0417,0.55007,0.20202,exact,12,1,79.2419
+LRRC37B,Q96QE4,Leucine-rich repeat-containing protein 37B,quantified,19.0034,19.9268,-0.923397,0.343434,exact,12,1,7.28039
+LRRC47,Q8N1G4,Leucine-rich repeat-containing protein 47,quantified,18.9346,19.5741,-0.639423,0.876263,exact,12,1,17.0878
+LRRC7,Q96NW7,Leucine-rich repeat-containing protein 7,quantified,21.2612,21.8541,-0.592894,0.106061,exact,12,1,19.1937
+LRRC8E,Q6NSJ5,Leucine-rich repeat-containing protein 8E,quantified,21.318,20.9685,0.34952,0.530303,exact,12,1,66.6065
+CEP295,Q9C0D2,Leucine-rich repeat-containing protein KIAA1731,quantified,18.8059,19.7197,-0.913788,0.0732323,exact,12,1,7.70156
+SERPINB1,P30740,Leukocyte elastase inhibitor,quantified,20.1861,19.5124,0.673682,0.00252525,exact,12,1,84.657
+LENG8,Q96PV6,Leukocyte receptor cluster member 8,quantified,25.5989,24.6882,0.910672,0.00505051,exact,12,1,91.6968
+LTA4H,P09960,Leukotriene A-4 hydrolase,quantified,22.1579,21.878,0.279916,0.106061,exact,12,3,62.2142
+LIMS1,P48059,LIM and senescent cell antigen-like-containing domain protein 1,quantified,20.0533,19.478,0.575292,0.00252525,exact,12,1,80.1143
+LASP1,Q14847,LIM and SH3 domain protein 1,quantified,20.2604,19.6336,0.626861,0.343434,exact,12,2,82.3706
+DBT,P11182,"Lipoamide acyltransferase component of branched-chain alpha-keto acid dehydrogenase complex, mitochondrial",quantified,20.3677,21.3327,-0.965012,0.00505051,exact,12,3,6.61853
+LPP,Q93052,Lipoma-preferred partner,quantified,20.9466,20.0541,0.892512,0.20202,exact,12,1,91.2154
+LDHA,P00338,L-lactate dehydrogenase A chain,quantified,25.4843,25.6687,-0.184391,0.20202,exact,12,16,38.1468
+LDHAL6A,Q6ZMR3,L-lactate dehydrogenase A-like 6A,quantified,22.2346,22.5245,-0.28999,0.343434,exact,12,2,32.852
+LDHAL6B,Q9BYZ2,L-lactate dehydrogenase A-like 6B,quantified,24.5701,24.4876,0.0825005,1,exact,12,3,50.5415
+LDHB,P07195,L-lactate dehydrogenase B chain,quantified,26.6458,27.2637,-0.617852,0.0732323,exact,12,21,17.9904
+LONP1,P36776,"Lon protease homolog, mitochondrial",quantified,21.2849,21.5196,-0.234696,0.876263,exact,12,4,35.5596
+ACSL1,P33121,Long-chain-fatty-acid--CoA ligase 1,quantified,23.2665,23.5883,-0.32177,0.030303,exact,12,10,31.4681
+ACSL4,O60488,Long-chain-fatty-acid--CoA ligase 4,quantified,20.0533,19.478,0.575292,0.00252525,exact,12,1,80.1143
+ACP1,P24666,Low molecular weight phosphotyrosine protein phosphatase,quantified,20.4479,19.6251,0.822815,0.106061,exact,12,1,89.5307
+LRP2,P98164,Low-density lipoprotein receptor-related protein 2,quantified,24.9349,25.2172,-0.282308,0.530303,exact,12,27,33.213
+LUM,P51884,Lumican,quantified,22.8266,22.3757,0.450904,0.343434,exact,12,4,72.9844
+DCXR,Q7Z4W1,L-xylulose reductase,quantified,24.3738,25.1774,-0.803606,0.106061,exact,12,9,10.71
+XCL1,P47992,Lymphotactin,quantified,20.6223,19.8366,0.785763,0.030303,exact,12,1,88.568
+LYRM1,O43325,LYR motif-containing protein 1,quantified,23.1715,21.1091,2.06237,0.00252525,exact,12,1,98.7365
+KDM3A,Q9Y4C1,Lysine-specific demethylase 3A,quantified,20.7329,20.2667,0.466213,0.106061,exact,12,1,73.9471
+LYPLAL1,Q5VWZ2,Lysophospholipase-like protein 1,quantified,19.1074,19.3195,-0.212078,0.343434,exact,12,1,37.0036
+GAA,P10253,Lysosomal alpha-glucosidase,quantified,20.2464,19.9576,0.288816,0.14899,exact,12,2,62.6955
+CTSA,P10619,Lysosomal protective protein,quantified,19.6576,19.9517,-0.294096,0.431818,exact,12,1,32.6113
+PRCP,P42785,Lysosomal Pro-X carboxypeptidase,quantified,20.9092,20.4451,0.464113,0.14899,exact,12,3,73.7665
+LYST,Q99698,Lysosomal-trafficking regulator,quantified,21.5354,22.4318,-0.896357,0.530303,exact,12,1,8.00241
+LAMP1,P11279,Lysosome-associated membrane glycoprotein 1,quantified,19.7179,18.8223,0.895618,0.00252525,exact,12,1,91.3357
+LAMP2,P13473,Lysosome-associated membrane glycoprotein 2,quantified,21.6595,20.6694,0.990017,0.00252525,exact,12,1,93.0806
+LYZ,P61626,Lysozyme C,quantified,24.1545,23.6346,0.519855,0.20202,exact,12,7,77.497
+KARS1,Q15046,Lysyl-tRNA synthetase,quantified,18.5826,18.4155,0.167128,0.0732323,exact,12,1,55.355
+MIF,P14174,Macrophage migration inhibitory factor,quantified,25.0025,25.1335,-0.131037,0.431818,exact,12,3,40.3129
+CAPG,P40121,Macrophage-capping protein,quantified,21.2259,20.7422,0.483726,0.20202,exact,12,2,75.3309
+MPP4,Q96JB8,MAGUK p55 subfamily member 4,quantified,21.089,21.1568,-0.067761,0.638889,exact,12,1,43.0205
+MVP,Q14764,Major vault protein,quantified,23.6159,23.3559,0.260033,0.431818,exact,12,11,61.0108
+MDH1,P40925,"Malate dehydrogenase, cytoplasmic",quantified,24.1987,24.6113,-0.412623,0.14899,exact,12,15,27.497
+MDH2,P40926,"Malate dehydrogenase, mitochondrial",quantified,25.6202,26.0884,-0.468192,0.00252525,exact,12,15,24.8496
+GSTZ1,O43708,Maleylacetoacetate isomerase,quantified,20.152,20.241,-0.0890122,1,exact,12,2,41.8773
+MGAM,O43451,"Maltase-glucoamylase, intestinal",quantified,19.3061,19.7825,-0.476354,0.267677,exact,12,1,24.3682
+MPDU1,O75352,Mannose-P-dolichol utilization defect 1 protein,quantified,18.7575,18.6224,0.135098,0.876263,exact,12,1,53.1288
+MOGS,Q13724,Mannosyl-oligosaccharide glucosidase,quantified,18.7964,18.8659,-0.06951,0.876263,exact,12,1,42.9001
+MMP7,P09237,Matrilysin,quantified,22.9423,18.2742,4.66812,0.00252525,exact,12,2,99.8797
+MATR3,P43243,Matrin-3,quantified,22.1665,21.9999,0.166564,0.010101,exact,12,6,55.2347
+MMP23B,O75900,Matrix metalloproteinase-23,quantified,20.1752,19.6414,0.533721,0.00252525,exact,12,1,78.3995
+MXRA5,Q9NR99,Matrix-remodeling-associated protein 5,quantified,22.2113,21.7571,0.454269,0.010101,exact,12,1,73.225
+MGA,Q8IWI9,MAX gene-associated protein,quantified,20.9489,20.9623,-0.013412,1,exact,12,1,45.0662
+MED13L,Q71F56,Mediator of RNA polymerase II transcription subunit 13-like,quantified,22.5709,23.0643,-0.493431,0.530303,exact,12,1,23.4055
+ACADM,P11310,"Medium-chain specific acyl-CoA dehydrogenase, mitochondrial",quantified,23.8711,25.5029,-1.63178,0.0479798,exact,12,17,1.38387
+MAGEE1,Q9HCI5,Melanoma-associated antigen E1,quantified,23.1103,23.3962,-0.285866,0.20202,exact,12,1,33.0325
+AOC3,Q16853,Membrane primary amine oxidase,quantified,23.151,22.0152,1.13586,0.00252525,exact,12,4,95.5475
+PGRMC1,O00264,Membrane-associated progesterone receptor component 1,quantified,21.1075,20.9525,0.155083,0.755051,exact,12,1,54.5728
+MIER2,Q8N344,Mesoderm induction early response protein 2,quantified,21.0683,21.3767,-0.308379,0.530303,exact,12,1,32.0096
+CNNM4,Q6P4Q7,Metal transporter CNNM4,quantified,19.6779,20.3741,-0.696144,0.267677,exact,12,1,14.3201
+MT1A,P04731,Metallothionein-1A,quantified,19.119,19.831,-0.712,0.030303,exact,12,1,13.4777
+MACC1,Q6ZN28,Metastasis-associated in colon cancer protein 1,quantified,19.9295,20.8172,-0.887767,0.010101,exact,12,1,8.24308
+MTX1,Q13505,Metaxin-1,quantified,18.5123,19.3204,-0.808069,0.010101,exact,12,1,10.4693
+MAT2B,Q9NZL9,Methionine adenosyltransferase 2 subunit beta,quantified,20.0065,20.0926,-0.086048,1,exact,12,1,42.2383
+MCCC2,Q9HCC0,"Methylcrotonoyl-CoA carboxylase beta chain, mitochondrial",quantified,21.8668,21.902,-0.0352059,0.530303,exact,12,4,44.3442
+MCCC1,Q96RQ3,"Methylcrotonoyl-CoA carboxylase subunit alpha, mitochondrial",quantified,19.5038,20.5113,-1.00746,0.030303,exact,12,2,5.59567
+AUH,Q13825,"Methylglutaconyl-CoA hydratase, mitochondrial",quantified,20.7087,21.0654,-0.356707,0.20202,exact,12,2,29.9037
+ALDH6A1,Q02252,"Methylmalonate-semialdehyde dehydrogenase [acylating], mitochondrial",quantified,26.3974,27.3593,-0.961878,0.0732323,exact,12,36,6.85921
+MCEE,Q96PE7,"Methylmalonyl-CoA epimerase, mitochondrial",quantified,19.4115,19.6582,-0.246735,0.267677,exact,12,1,35.0181
+MMUT,P22033,"Methylmalonyl-CoA mutase, mitochondrial",quantified,20.1112,20.4894,-0.37824,0.20202,exact,12,2,28.8207
+TMT1A,Q9H8H3,Methyltransferase-like protein 7A,quantified,20.7187,20.6687,0.050005,1,exact,12,1,48.2551
+MFAP4,P55083,Microfibril-associated glycoprotein 4,quantified,20.0988,17.9071,2.19172,0.00252525,exact,12,1,98.9771
+MFAP2,P55001,Microfibrillar-associated protein 2,quantified,21.2427,19.8767,1.36598,0.14899,exact,12,1,97.2924
+MFAP5,Q13361,Microfibrillar-associated protein 5,quantified,20.5598,18.2638,2.29597,0.010101,exact,12,1,99.2178
+MGST1,P10620,Microsomal glutathione S-transferase 1,quantified,19.6702,19.1998,0.470415,0.431818,exact,12,1,74.1877
+MGST3,O14880,Microsomal glutathione S-transferase 3,quantified,20.9869,21.814,-0.827062,0.14899,exact,12,3,9.86763
+MAPRE1,Q15691,Microtubule-associated protein RP/EB family member 1,quantified,18.7012,18.5727,0.12856,0.343434,exact,12,1,52.9483
+OGN,P20774,Mimecan,quantified,20.9334,21.0819,-0.148501,0.530303,exact,12,2,39.651
+SLC25A11,Q02978,Mitochondrial 2-oxoglutarate/malate carrier protein,quantified,20.6299,21.2653,-0.635366,0.106061,exact,12,3,17.2684
+MTCH2,Q9Y6C9,Mitochondrial carrier homolog 2,quantified,22.0458,22.5215,-0.475672,0.20202,exact,12,2,24.4284
+SLC25A10,Q9UBX3,Mitochondrial dicarboxylate carrier,quantified,19.9464,20.9141,-0.967674,0.267677,exact,12,2,6.49819
+ENOSF1,Q7L5Y1,Mitochondrial enolase superfamily member 1,quantified,19.3115,19.3028,0.008662,0.876263,exact,12,1,46.1492
+FIS1,Q9Y3D6,Mitochondrial fission 1 protein,quantified,19.2814,19.7502,-0.468837,0.14899,exact,12,1,24.7292
+TIMM50,Q3ZCQ8,Mitochondrial import inner membrane translocase subunit TIM50,quantified,18.092,18.315,-0.222948,0.431818,exact,12,1,36.4621
+IMMT,Q16891,Mitochondrial inner membrane protein,quantified,21.7253,21.9769,-0.251533,0.030303,exact,12,3,34.7172
+CHCHD4,Q8N4Q1,Mitochondrial intermembrane space import and assembly protein 40,quantified,18.2866,19.451,-1.16444,0.030303,exact,12,1,3.61011
+MUL1,Q969V5,Mitochondrial ubiquitin ligase activator of NFKB 1,quantified,21.837,18.4509,3.38615,0.20202,exact,12,1,99.6992
+MAP3K8,P41279,Mitogen-activated protein kinase kinase kinase 8,quantified,21.4828,21.5409,-0.058011,1,exact,12,1,43.201
+MSN,P26038,Moesin,quantified,25.3,24.7818,0.518216,0.106061,exact,12,15,77.3165
+MORF4L1,Q9UBU8,Mortality factor 4-like protein 1,quantified,20.1289,20.13,-0.001099,0.530303,exact,12,1,45.728
+MTARC2,Q969Z3,"MOSC domain-containing protein 2, mitochondrial",quantified,22.219,22.6579,-0.438896,0.106061,exact,12,5,26.1733
+DCP1A,Q9NPI6,mRNA-decapping enzyme 1A,quantified,21.6325,21.4391,0.193469,0.030303,exact,12,1,56.7389
+SPEN,Q96T58,Msx2-interacting protein,quantified,22.2237,22.9044,-0.68074,0.14899,exact,12,1,15.2226
+MTERF4,Q7Z6M4,mTERF domain-containing protein 2,quantified,21.0007,20.1463,0.854347,0.00252525,exact,12,1,90.5535
+CRYM,Q14894,Mu-crystallin homolog,quantified,20.3545,20.6926,-0.338103,0.343434,exact,12,2,30.9266
+ABCC1,P33527,Multidrug resistance-associated protein 1,quantified,24.4125,23.3061,1.1064,0.00252525,exact,12,1,94.8255
+PAICS,P22234,Multifunctional protein ADE2,quantified,19.2913,19.2412,0.050131,0.530303,exact,12,1,48.3153
+MEGF8,Q7Z7M0,Multiple epidermal growth factor-like domains protein 8,quantified,20.8801,20.6786,0.201535,0.530303,exact,12,1,57.0999
+MYBL1,P10243,Myb-related protein A,quantified,22.5102,22.1315,0.378778,0.638889,exact,12,1,68.7726
+MYOF,Q9NZM1,Myoferlin,quantified,19.473,18.033,1.43996,0.0176768,exact,12,1,97.4729
+MYOM1,P52179,Myomesin-1,quantified,17.4789,20.2913,-2.8124,0.14899,exact,12,1,0.240674
+MYL6B,P14649,Myosin light chain 6B,quantified,23.3655,22.8001,0.565339,0.010101,exact,12,3,79.4826
+MYLK2,Q9H1R3,"Myosin light chain kinase 2, skeletal/cardiac muscle",quantified,20.5783,19.5225,1.05574,0.00252525,exact,12,1,94.1035
+MYL6,P60660,Myosin light polypeptide 6,quantified,24.6476,24.1676,0.480012,0.106061,exact,12,5,75.0903
+MYL12A,P19105,Myosin regulatory light chain 12A,quantified,23.6439,22.9379,0.70591,0.030303,exact,12,4,85.7401
+MYL9,P24844,Myosin regulatory light polypeptide 9,quantified,20.4338,20.1454,0.288401,0.343434,exact,12,1,62.6354
+MYH10,P35580,Myosin-10,quantified,25.5017,25.2544,0.247272,0.00505051,exact,12,15,60.2286
+MYH11,P35749,Myosin-11,quantified,24.7485,24.6903,0.0582455,0.343434,exact,12,21,48.7966
+MYH6,P13533,Myosin-6,quantified,21.1496,19.8056,1.344,0.0732323,exact,12,2,96.9916
+MYH7,P12883,Myosin-7,quantified,20.2623,20.341,-0.0786915,0.755051,exact,12,2,42.5391
+MYH7B,A7E2Y1,Myosin-7B,quantified,19.8437,20.4527,-0.609019,0.343434,exact,12,1,18.2912
+MYH9,P35579,Myosin-9,quantified,26.5899,26.0996,0.490233,0.00505051,exact,12,42,75.7521
+MYO1C,O00159,Myosin-Ic,quantified,23.6452,21.3563,2.2889,0.00252525,exact,12,3,99.1576
+MYO1G,B0I1T2,Myosin-Ig,quantified,21.1486,21.6208,-0.472112,0.431818,exact,12,1,24.6089
+MYO5A,Q9Y4I1,Myosin-Va,quantified,19.8,19.162,0.638015,0.0732323,exact,12,1,82.9723
+MYO6,Q9UM54,Myosin-VI,quantified,22.1225,22.1706,-0.0480838,0.638889,exact,12,2,43.6221
+MYO7B,Q6PIF6,Myosin-VIIb,quantified,21.2226,20.904,0.318588,0.106061,exact,12,1,64.6811
+DDAH1,O94760,"N(G),N(G)-dimethylarginine dimethylaminohydrolase 1",quantified,23.8612,24.2624,-0.401159,0.0732323,exact,12,10,27.9783
+NHERF1,O14745,Na(+)/H(+) exchange regulatory cofactor NHE-RF1,quantified,24.5046,25.579,-1.07437,0.0732323,exact,12,16,4.69314
+NHERF2,Q15599,Na(+)/H(+) exchange regulatory cofactor NHE-RF2,quantified,19.8578,20.285,-0.427202,0.14899,exact,12,1,26.5945
+PDZK1,Q5T2W1,Na(+)/H(+) exchange regulatory cofactor NHE-RF3,quantified,23.0997,24.2087,-1.10899,0.030303,exact,12,9,4.27196
+NAGK,Q9UJ70,N-acetyl-D-glucosamine kinase,quantified,20.9856,20.0849,0.900669,0.0176768,exact,12,2,91.4561
+GNS,P15586,N-acetylglucosamine-6-sulfatase,quantified,20.5612,20.1655,0.395725,0.106061,exact,12,1,69.9759
+ASMTL,O95671,N-acetylserotonin O-methyltransferase-like protein,quantified,22.6746,22.8089,-0.134242,0.267677,exact,12,1,40.1324
+NLRP9,Q7RTR0,"NACHT, LRR and PYD domains-containing protein 9",quantified,22.7861,23.1469,-0.360783,0.267677,exact,12,1,29.6631
+RENBP,P51606,N-acylglucosamine 2-epimerase,quantified,18.4568,19.1047,-0.647818,0.267677,exact,12,1,16.4862
+NNT,Q13423,"NAD(P) transhydrogenase, mitochondrial",quantified,23.0309,23.7182,-0.687346,0.00505051,exact,12,8,14.8616
+NQO1,P15559,NAD(P)H dehydrogenase [quinone] 1,quantified,20.0336,18.6736,1.35995,0.030303,exact,12,1,97.1119
+NDUFA10,O95299,"NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 10, mitochondrial",quantified,21.5298,21.9251,-0.395329,0.267677,exact,12,4,28.3394
+NDUFA12,Q9UI09,NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 12,quantified,20.5188,21.1255,-0.606681,0.0479798,exact,12,2,18.4717
+NDUFA13,Q9P0J0,NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 13,quantified,21.8474,22.386,-0.538652,0.343434,exact,12,3,21.059
+NDUFA2,O43678,NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 2,quantified,21.1968,21.4541,-0.25734,0.530303,exact,12,2,34.1757
+COXFA4,O00483,NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 4,quantified,21.0625,21.9454,-0.882836,0.010101,exact,12,3,8.42359
+NDUFA5,Q16718,NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 5,quantified,20.9684,21.7172,-0.748785,0.00252525,exact,12,2,12.2744
+NDUFA6,P56556,NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 6,quantified,20.1022,20.7451,-0.642933,0.20202,exact,12,1,16.8171
+NDUFA8,P51970,NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 8,quantified,19.4925,20.6295,-1.13692,0.00252525,exact,12,1,3.85078
+NDUFA9,Q16795,"NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 9, mitochondrial",quantified,21.8815,22.5097,-0.628192,0.0732323,exact,12,5,17.509
+NDUFB10,O96000,NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 10,quantified,20.5863,21.2228,-0.636547,0.0479798,exact,12,1,17.148
+NDUFB11,Q9NX14,"NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 11, mitochondrial",quantified,19.8608,20.2943,-0.433455,0.431818,exact,12,1,26.2936
+NDUFB4,O95168,NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 4,quantified,19.6072,20.2947,-0.687543,0.638889,exact,12,2,14.8014
+NDUFB9,Q9Y6M9,NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 9,quantified,19.3112,19.9766,-0.66544,0.0479798,exact,12,1,15.704
+NDUFV1,P49821,"NADH dehydrogenase [ubiquinone] flavoprotein 1, mitochondrial",quantified,21.4013,22.1153,-0.714092,0.106061,exact,12,4,13.4176
+NDUFV2,P19404,"NADH dehydrogenase [ubiquinone] flavoprotein 2, mitochondrial",quantified,20.0151,20.8155,-0.800478,0.0479798,exact,12,1,10.7702
+NDUFS2,O75306,"NADH dehydrogenase [ubiquinone] iron-sulfur protein 2, mitochondrial",quantified,22.4928,22.8622,-0.369386,0.14899,exact,12,7,29.1817
+NDUFS3,O75489,"NADH dehydrogenase [ubiquinone] iron-sulfur protein 3, mitochondrial",quantified,21.425,21.844,-0.419026,0.431818,exact,12,3,27.0156
+NDUFS4,O43181,"NADH dehydrogenase [ubiquinone] iron-sulfur protein 4, mitochondrial",quantified,20.4053,21.1014,-0.69619,0.343434,exact,12,1,14.2599
+NDUFS7,O75251,"NADH dehydrogenase [ubiquinone] iron-sulfur protein 7, mitochondrial",quantified,19.9813,19.4762,0.505024,0.267677,exact,12,1,76.414
+NDUFS8,O00217,"NADH dehydrogenase [ubiquinone] iron-sulfur protein 8, mitochondrial",quantified,19.8112,20.5299,-0.71872,0.14899,exact,12,1,13.2972
+CYB5R1,Q9UHQ9,NADH-cytochrome b5 reductase 1,quantified,21.4839,21.7218,-0.23792,0.267677,exact,12,2,35.4392
+CYB5R3,P00387,NADH-cytochrome b5 reductase 3,quantified,23.3938,22.7696,0.624272,0.00505051,exact,12,5,82.1901
+NDUFS1,P28331,"NADH-ubiquinone oxidoreductase 75 kDa subunit, mitochondrial",quantified,24.3691,24.6651,-0.296056,0.0732323,exact,12,11,32.5511
+FDXR,P22570,"NADPH:adrenodoxin oxidoreductase, mitochondrial",quantified,19.7923,18.7189,1.07344,0.0732323,exact,12,2,94.3442
+POR,P16435,NADPH--cytochrome P450 reductase,quantified,20.4548,20.2587,0.196062,0.755051,exact,12,1,56.9194
+NEB,P20929,Nebulin,quantified,22.5819,23.0355,-0.453576,0.267677,exact,12,2,25.4513
+NEDD8,Q15843,NEDD8,quantified,19.8427,20.1569,-0.314184,0.14899,exact,12,1,31.769
+MME,P08473,Neprilysin,quantified,24.0579,24.8481,-0.790191,0.0479798,exact,12,10,10.9507
+SYNE1,Q8NF91,Nesprin-1,quantified,23.8841,23.2736,0.610471,0.638889,exact,12,2,81.5884
+NES,P48681,Nestin,quantified,22.0141,21.0318,0.982301,0.00252525,exact,12,1,92.9603
+NEURL2,Q9BR09,Neuralized-like protein 2,quantified,20.9885,20.7687,0.21987,0.638889,exact,12,1,58.1829
+AHNAK,Q09666,Neuroblast differentiation-associated protein AHNAK,quantified,22.7371,22.395,0.342107,0.20202,exact,12,6,66.3057
+NAV1,Q8NEY1,Neuron navigator 1,quantified,20.7663,20.71,0.056208,0.431818,exact,12,1,48.6763
+NEGR1,Q7Z3B1,Neuronal growth regulator 1,quantified,24.6103,25.1541,-0.543828,0.876263,exact,12,1,20.8785
+GANAB,Q14697,Neutral alpha-glucosidase AB,quantified,24.4955,24.1923,0.30317,0.267677,exact,12,14,63.8387
+NCEH1,Q6PIU2,Neutral cholesterol ester hydrolase 1,quantified,19.3373,20.585,-1.24776,0.010101,exact,12,1,2.94826
+NFKBIB,Q15653,NF-kappa-B inhibitor beta,quantified,22.7364,23.3337,-0.597343,0.14899,exact,12,1,18.9531
+NAPRT,Q6XQN6,Nicotinate phosphoribosyltransferase,quantified,18.4862,18.4193,0.066878,0.638889,exact,12,1,49.278
+QPRT,Q15274,Nicotinate-nucleotide pyrophosphorylase [carboxylating],quantified,23.5508,23.9008,-0.349993,0.431818,exact,12,7,30.3249
+NID1,P14543,Nidogen-1,quantified,23.9499,23.5252,0.424701,0.106061,exact,12,10,71.6606
+NIT1,Q86X76,Nitrilase homolog 1,quantified,19.2223,20.1083,-0.885976,0.106061,exact,12,2,8.36342
+HMGN2,P05204,Non-histone chromosomal protein HMG-17,quantified,22.0171,21.9363,0.0807909,0.755051,exact,12,3,50.4813
+NONO,Q15233,Non-POU domain-containing octamer-binding protein,quantified,23.2765,22.7271,0.549415,0.030303,exact,12,5,79.1817
+RNASE2,P10153,Non-secretory ribonuclease,quantified,21.7229,21.2795,0.443381,0.876263,exact,12,1,72.6233
+SCP2,P22307,Non-specific lipid-transfer protein,quantified,19.9666,20.3058,-0.339255,0.431818,exact,12,1,30.8664
+NSFL1C,Q9UNZ2,NSFL1 cofactor p47,quantified,21.9673,22.5741,-0.606799,0.343434,exact,12,2,18.4116
+C1D,Q13901,Nuclear nucleic acid-binding protein C1D,quantified,21.0451,20.2526,0.792444,0.20202,exact,12,1,88.929
+NUP155,O75694,Nuclear pore complex protein Nup155,quantified,18.8263,17.5391,1.28716,0.010101,exact,12,1,96.7509
+NRIP1,P48552,Nuclear receptor-interacting protein 1,quantified,21.8703,23.3535,-1.48318,0.343434,exact,12,1,1.92539
+NUTF2,P61970,Nuclear transport factor 2,quantified,20.4821,20.0247,0.457388,0.530303,exact,12,1,73.4657
+NUCKS1,Q9H1E3,Nuclear ubiquitous casein and cyclin-dependent kinases substrate,quantified,20.2792,20.2043,0.0748981,0.638889,exact,12,2,49.8195
+NCL,P19338,Nucleolin,quantified,21.3789,20.8314,0.547547,0.00252525,exact,12,2,79.0012
+NPM1,P06748,Nucleophosmin,quantified,22.6639,22.6413,0.0226632,0.530303,exact,12,4,46.7509
+NME1,P15531,Nucleoside diphosphate kinase A,quantified,22.9459,22.9389,0.00707635,0.755051,exact,12,4,45.9687
+NME2,P22392,Nucleoside diphosphate kinase B,quantified,20.1963,20.305,-0.108767,0.431818,exact,12,1,41.0349
+NAP1L4,Q99733,Nucleosome assembly protein 1-like 4,quantified,19.5041,18.9993,0.504805,0.0479798,exact,12,1,76.3538
+OLA1,Q9NTK5,Obg-like ATPase 1,quantified,19.1995,19.1704,0.02911,0.638889,exact,12,1,47.1119
+OBSCN,Q5VST9,Obscurin,quantified,21.7943,22.4253,-0.63107,0.267677,exact,12,2,17.3285
+OCIAD2,Q56VL3,OCIA domain-containing protein 2,quantified,19.8343,20.0276,-0.19331,0.343434,exact,12,1,37.846
+OR4D6,Q8NGJ1,Olfactory receptor 4D6,quantified,21.6298,21.8112,-0.18134,0.876263,exact,12,1,38.5078
+NIT2,Q9NQR4,Omega-amidase NIT2,quantified,22.2178,21.9743,0.243404,0.343434,exact,12,2,59.8676
+OAT,P04181,"Ornithine aminotransferase, mitochondrial",quantified,19.9086,20.8685,-0.959915,0.343434,exact,12,1,6.91937
+OSCAR,Q8IYS5,Osteoclast-associated immunoglobulin-like receptor,quantified,21.8165,22.5679,-0.751387,0.343434,exact,12,1,12.0337
+OTOF,Q9HC10,Otoferlin,quantified,20.4786,20.0345,0.44413,0.530303,exact,12,1,72.6835
+OTOG,Q6ZRI0,Otogelin,quantified,21.1156,21.6097,-0.494116,1,exact,12,1,23.3454
+OTOP2,Q7RTS6,Otopetrin-2,quantified,19.3969,18.9761,0.420797,0.0732323,exact,12,1,71.6005
+OVCH1,Q7RTY7,Ovochymase-1,quantified,21.3614,21.7219,-0.360456,0.00252525,exact,12,1,29.7232
+RP1,P56715,Oxygen-regulated protein 1,quantified,18.2165,18.3768,-0.160318,1,exact,12,1,39.2298
+PAX3,P23760,Paired box protein Pax-3,quantified,20.9995,20.8265,0.173071,0.755051,exact,12,1,55.5957
+PALLD,Q8WX93,Palladin,quantified,19.8125,19.2999,0.512567,0.030303,exact,12,1,77.0156
+PANK3,Q9H999,Pantothenate kinase 3,quantified,19.996,19.9876,0.008359,0.755051,exact,12,1,46.089
+PANK4,Q9NVE7,Pantothenate kinase 4,quantified,19.8299,20.7512,-0.921364,0.20202,exact,12,1,7.34055
+PTMS,P20962,Parathymosin,quantified,22.0149,22.083,-0.0681846,1,exact,12,2,42.9603
+PDLIM2,Q96JY6,PDZ and LIM domain protein 2,quantified,19.5903,19.41,0.1803,0.876263,exact,12,1,55.9567
+PDLIM5,Q96HC4,PDZ and LIM domain protein 5,quantified,21.0753,20.4342,0.641141,0.00252525,exact,12,2,83.1528
+GIPC2,Q8TF65,PDZ domain-containing protein GIPC2,quantified,19.6342,18.9744,0.659847,0.0176768,exact,12,1,84.1757
+R3HDML,Q9H3Y0,Peptidase inhibitor R3HDML,quantified,20.1909,21.5332,-1.34234,0.0176768,exact,12,1,2.46691
+MTRF1L,Q9UGC7,"Peptide chain release factor 1-like, mitochondrial",quantified,20.641,20.2991,0.341877,0.530303,exact,12,1,66.2455
+MSRA,Q9UJ68,Peptide methionine sulfoxide reductase,quantified,20.9607,21.4499,-0.489144,0.106061,exact,12,3,23.586
+PPIA,P62937,Peptidyl-prolyl cis-trans isomerase A,quantified,25.4109,25.6173,-0.206368,0.343434,exact,12,12,37.3045
+PPIAL4A,Q9Y536,Peptidylprolyl cis-trans isomerase A-like 4A/B/C,quantified,24.1063,24.2426,-0.136298,0.638889,exact,12,5,40.0722
+PPIB,P23284,Peptidyl-prolyl cis-trans isomerase B,quantified,23.5527,22.915,0.637702,0.010101,exact,12,6,82.9122
+PPIL6,Q8IXY8,Peptidyl-prolyl cis-trans isomerase-like 6,quantified,20.2681,20.6816,-0.413521,0.755051,exact,12,1,27.4368
+PWP1,Q13610,Periodic tryptophan protein 1 homolog,quantified,18.1633,19.4372,-1.2739,0.106061,exact,12,1,2.76775
+POSTN,Q15063,Periostin,quantified,20.8798,18.1134,2.76645,0.00252525,exact,12,1,99.5788
+TSPOAP1,O95153,Peripheral-type benzodiazepine receptor-associated protein 1,quantified,23.2247,22.677,0.547735,0.0732323,exact,12,1,79.0614
+PRPH,P41219,Peripherin,quantified,24.1694,23.0382,1.13116,0.00252525,exact,12,3,95.4272
+PRDX1,Q06830,Peroxiredoxin-1,quantified,25.8663,26.0395,-0.17317,0.876263,exact,12,14,38.7485
+PRDX2,P32119,Peroxiredoxin-2,quantified,25.3496,25.4548,-0.105231,0.20202,exact,12,14,41.2154
+PRDX4,Q13162,Peroxiredoxin-4,quantified,21.0292,22.1065,-1.07738,0.00252525,exact,12,1,4.63297
+PRDX5,P30044,"Peroxiredoxin-5, mitochondrial",quantified,24.0629,24.0076,0.0552347,0.431818,exact,12,7,48.6161
+PRDX6,P30041,Peroxiredoxin-6,quantified,25.4557,25.5925,-0.136804,0.431818,exact,12,12,40.012
+ECI2,O75521,"Peroxisomal 3,2-trans-enoyl-CoA isomerase",quantified,20.774,21.4539,-0.679905,0.0732323,exact,12,2,15.2828
+ACOX1,Q15067,Peroxisomal acyl-coenzyme A oxidase 1,quantified,22.9388,22.8239,0.114857,1,exact,12,2,52.3466
+EHHADH,Q08426,Peroxisomal bifunctional enzyme,quantified,25.0305,25.2912,-0.260697,0.638889,exact,12,16,33.935
+HSD17B4,P51659,Peroxisomal multifunctional enzyme type 2,quantified,22.2727,21.7571,0.515634,0.14899,exact,12,3,77.1961
+PIPOX,Q9P0Z9,Peroxisomal sarcosine oxidase,quantified,22.0376,21.6694,0.368156,0.638889,exact,12,4,68.231
+PHF13,Q86YI8,PHD finger protein 13,quantified,23.1127,22.3538,0.758924,0.14899,exact,12,1,87.846
+PBLD,P30039,Phenazine biosynthesis-like domain-containing protein,quantified,23.2127,23.7978,-0.585077,0.20202,exact,12,9,19.4344
+PAH,P00439,Phenylalanine-4-hydroxylase,quantified,20.016,20.326,-0.309971,1,exact,12,1,31.8291
+SLC25A3,Q00325,"Phosphate carrier protein, mitochondrial",quantified,23.6834,23.8442,-0.160828,0.106061,exact,12,7,39.1697
+PEBP1,P30086,Phosphatidylethanolamine-binding protein 1,quantified,26.3632,26.8678,-0.504616,0.00252525,exact,12,18,22.9242
+PREX1,Q8TCU6,"Phosphatidylinositol 3,4,5-trisphosphate-dependent Rac exchanger 1 protein",quantified,22.9407,22.3323,0.608388,0.267677,exact,12,2,81.4681
+PIP5K1A,Q99755,Phosphatidylinositol-4-phosphate 5-kinase type-1 alpha,quantified,23.8188,23.1757,0.643074,0.00505051,exact,12,1,83.2732
+PIP4K2A,P48426,Phosphatidylinositol-5-phosphate 4-kinase type-2 alpha,quantified,20.0074,20.2275,-0.220158,0.14899,exact,12,1,36.5223
+PCK2,Q16822,"Phosphoenolpyruvate carboxykinase [GTP], mitochondrial",quantified,25.3151,26.2496,-0.934535,0.267677,exact,12,25,7.22022
+PCK1,P35558,"Phosphoenolpyruvate carboxykinase, cytosolic [GTP]",quantified,25.4635,26.0134,-0.54992,0.010101,exact,12,11,20.698
+PGM1,P36871,Phosphoglucomutase-1,quantified,21.304,21.5357,-0.231709,0.530303,exact,12,4,35.8604
+PGK1,P00558,Phosphoglycerate kinase 1,quantified,25.8445,26.2046,-0.360173,0.0479798,exact,12,24,29.7834
+PGAM1,P18669,Phosphoglycerate mutase 1,quantified,24.4397,24.5348,-0.0951485,0.343434,exact,12,10,41.5764
+PLB1,Q6P1J6,"Phospholipase B1, membrane-associated",quantified,18.1156,17.4235,0.692166,0.530303,exact,12,1,85.2587
+LHPP,Q9H008,Phospholysine phosphohistidine inorganic pyrophosphate phosphatase,quantified,19.2907,18.565,0.72571,0.106061,exact,12,1,86.4621
+PMVK,Q15126,Phosphomevalonate kinase,quantified,18.398,18.7297,-0.331659,1,exact,12,1,31.1673
+PSAT1,Q9Y617,Phosphoserine aminotransferase,quantified,22.861,22.9768,-0.115813,0.267677,exact,12,9,40.9747
+PTER,Q96BW5,Phosphotriesterase-related protein,quantified,23.011,23.6522,-0.641181,0.0479798,exact,12,4,17.0277
+PPP1R18,Q6NYC8,Phostensin,quantified,21.0434,19.9698,1.07357,0.0479798,exact,12,1,94.4043
+PHYHIP,Q92561,Phytanoyl-CoA hydroxylase-interacting protein,quantified,18.3248,18.1828,0.142003,0.876263,exact,12,1,53.6703
+SERPINF1,P36955,Pigment epithelium-derived factor,quantified,18.4228,17.9826,0.440223,0.20202,exact,12,1,72.3225
+PIWIL4,Q7Z3Z4,Piwi-like protein 4,quantified,24.4202,23.9779,0.44231,0.00505051,exact,12,2,72.5632
+CPQ,Q9Y646,Plasma glutamate carboxypeptidase,quantified,22.205,22.0005,0.204467,0.343434,exact,12,3,57.2202
+SERPING1,P05155,Plasma protease C1 inhibitor,quantified,22.237,21.8872,0.349836,0.530303,exact,12,3,66.7268
+PLG,P00747,Plasminogen,quantified,22.1292,21.7823,0.34695,0.267677,exact,12,3,66.4862
+PLS1,Q14651,Plastin-1,quantified,21.8565,21.7775,0.0789598,0.530303,exact,12,2,50.1805
+LCP1,P13796,Plastin-2,quantified,22.1617,21.9819,0.179737,0.876263,exact,12,6,55.8965
+PLS3,P13797,Plastin-3,quantified,19.4815,19.7695,-0.288012,0.106061,exact,12,2,32.9723
+PAFAH1B2,P68402,Platelet-activating factor acetylhydrolase IB subunit beta,quantified,21.1074,20.7292,0.378202,0.030303,exact,12,1,68.7124
+PAFAH1B3,Q15102,Platelet-activating factor acetylhydrolase IB subunit gamma,quantified,24.4894,23.7631,0.726316,0.267677,exact,12,2,86.5223
+PLEC,Q15149,Plectin,quantified,23.325,23.3017,0.0232541,0.106061,exact,12,9,46.8111
+PMS1,P54277,PMS1 protein homolog 1,quantified,19.6029,19.3443,0.258541,0.343434,exact,12,1,60.8905
+PNMA8B,Q9ULN7,PNMA-like protein 2,quantified,22.0817,22.3527,-0.271054,0.14899,exact,12,1,33.4537
+PODXL,O00592,Podocalyxin,quantified,19.9141,20.0013,-0.087195,0.876263,exact,12,1,42.0578
+NECTIN3,Q9NQS3,Poliovirus receptor-related protein 3,quantified,21.1817,20.8582,0.323499,0.030303,exact,12,1,64.9218
+PCBP1,Q15365,Poly(rC)-binding protein 1,quantified,23.5681,23.4171,0.151088,0.267677,exact,12,9,54.1516
+PCBP2,Q15366,Poly(rC)-binding protein 2,quantified,22.0627,21.8386,0.224113,0.343434,exact,12,3,58.5439
+CAVIN1,Q6NZI2,Polymerase I and transcript release factor,quantified,21.5129,20.9065,0.606451,0.530303,exact,12,2,81.2876
+PIGR,P01833,Polymeric immunoglobulin receptor,quantified,24.5522,21.8828,2.66941,0.00252525,exact,12,8,99.4585
+PTBP1,P26599,Polypyrimidine tract-binding protein 1,quantified,22.8957,22.8669,0.028789,0.267677,exact,12,7,47.0517
+PTBP2,Q9UKA9,Polypyrimidine tract-binding protein 2,quantified,20.6058,20.5992,0.006533,0.343434,exact,12,1,45.9085
+KCNK15,Q9H427,Potassium channel subfamily K member 15,quantified,21.1189,20.7725,0.346399,0.010101,exact,12,1,66.426
+ATP12A,P54707,Potassium-transporting ATPase alpha chain 2,quantified,23.5788,24.7332,-1.15436,0.00252525,exact,12,5,3.67028
+,Q6S5H4,POTE ankyrin domain family member B,quantified,21.0932,20.8061,0.287081,0.530303,exact,12,1,62.515
+DESI2,Q9BSY9,PPPDE peptidase domain-containing protein 1,quantified,22.8875,22.6604,0.227028,0.343434,exact,12,1,58.8448
+ARL6IP5,O75915,PRA1 family protein 3,quantified,21.2799,20.3098,0.97012,0.00252525,exact,12,2,92.6594
+PRAMEF1,O95521,PRAME family member 1,quantified,21.6333,21.4021,0.231209,0.267677,exact,12,1,59.1456
+PFDN5,Q99471,Prefoldin subunit 5,quantified,21.6939,18.9907,2.70326,0.00252525,exact,12,1,99.5187
+LMNA,P02545,Prelamin-A/C,quantified,26.5441,26.1636,0.380496,0.00252525,exact,12,30,69.0132
+XAB2,Q9HCS7,Pre-mRNA-splicing factor SYF1,quantified,19.6532,20.5461,-0.892944,0.20202,exact,12,1,8.06258
+PCYOX1,Q9UHG3,Prenylcysteine oxidase 1,quantified,22.1749,22.0664,0.108454,0.14899,exact,12,2,52.1059
+PSAP,P07602,Proactivator polypeptide,quantified,22.8503,22.3783,0.472037,0.0176768,exact,12,4,74.4284
+ALDH1L2,Q3SY69,Probable 10-formyltetrahydrofolate dehydrogenase ALDH1L2,quantified,20.8285,21.7417,-0.913192,0.0732323,exact,12,2,7.8219
+HMGCLL1,Q8TB92,Probable 3-hydroxymethyl-3-methylglutaryl-CoA lyase 2,quantified,20.9146,21.2706,-0.355996,0.14899,exact,12,1,30.0241
+DDX17,Q92841,Probable ATP-dependent RNA helicase DDX17,quantified,21.6469,21.1398,0.507075,0.343434,exact,12,2,76.5945
+DDX4,Q9NQI0,Probable ATP-dependent RNA helicase DDX4,quantified,19.4122,19.5426,-0.130402,0.876263,exact,12,1,40.373
+DDX5,P17844,Probable ATP-dependent RNA helicase DDX5,quantified,20.0483,20.5887,-0.540409,0.530303,exact,12,1,20.9988
+DDX56,Q9NY93,Probable ATP-dependent RNA helicase DDX56,quantified,19.5936,21.8396,-2.246,0.0176768,exact,12,1,0.481348
+YTHDC2,Q9H6S0,Probable ATP-dependent RNA helicase YTHDC2,quantified,20.9658,21.1658,-0.199991,0.20202,exact,12,1,37.6655
+ATP13A3,Q9H7F0,Probable cation-transporting ATPase 13A3,quantified,19.5762,19.9268,-0.350596,1,exact,12,1,30.2647
+LDHD,Q86WU2,"Probable D-lactate dehydrogenase, mitochondrial",quantified,20.0747,20.9117,-0.836957,0.010101,exact,12,2,9.50662
+ADGRG7,Q96K78,Probable G-protein coupled receptor 128,quantified,18.5113,18.6835,-0.172191,0.431818,exact,12,1,38.8087
+SETX,Q7Z333,Probable helicase senataxin,quantified,19.1224,18.8247,0.297662,0.343434,exact,12,1,63.3574
+KAT8,Q9H7Z6,Probable histone acetyltransferase MYST1,quantified,20.1916,19.3168,0.874799,0.431818,exact,12,1,90.8544
+NAT8,Q9UHE5,Probable N-acetyltransferase 8,quantified,22.5634,23.0731,-0.509768,0.343434,exact,12,5,22.7437
+NAT8B,Q9UHF3,Probable N-acetyltransferase 8B,quantified,20.5921,21.3191,-0.727091,0.267677,exact,12,1,12.8761
+ATP10A,O60312,Probable phospholipid-transporting ATPase VA,quantified,18.515,20.6536,-2.13865,0.030303,exact,12,1,0.541516
+ATP10B,O94823,Probable phospholipid-transporting ATPase VB,quantified,21.7666,23.4694,-1.70286,0.030303,exact,12,1,1.1432
+GALNT8,Q9NY28,Probable polypeptide N-acetylgalactosaminyltransferase 8,quantified,21.2586,22.2356,-0.977047,0.267677,exact,12,1,6.13718
+PRODH2,Q9UF12,Probable proline dehydrogenase 2,quantified,20.763,21.3729,-0.609888,0.106061,exact,12,3,18.1709
+SCCPDH,Q8NBX0,Probable saccharopine dehydrogenase,quantified,19.4303,19.1519,0.27841,0.530303,exact,12,1,62.154
+CPVL,Q9H3G5,Probable serine carboxypeptidase CPVL,quantified,19.9977,20.2229,-0.225268,1,exact,12,1,36.3418
+PML,P29590,Probable transcription factor PML,quantified,19.5764,18.5494,1.02693,0.00252525,exact,12,1,93.6221
+XPNPEP3,Q9NQH7,Probable Xaa-Pro aminopeptidase 3,quantified,23.0673,22.7053,0.361914,0.14899,exact,12,1,67.509
+PCOLCE2,Q9UKZ9,Procollagen C-endopeptidase enhancer 2,quantified,21.2172,22.2512,-1.03396,0.530303,exact,12,1,5.17449
+PFN1,P07737,Profilin-1,quantified,24.9565,24.7201,0.236405,0.0732323,exact,12,11,59.3863
+PFN2,P35080,Profilin-2,quantified,19.2538,19.6591,-0.405319,0.20202,exact,12,1,27.7978
+PDCD6,O75340,Programmed cell death protein 6,quantified,20.9609,20.1472,0.81373,0.00252525,exact,12,2,89.3502
+PHB1,P35232,Prohibitin,quantified,23.8408,23.9979,-0.157134,0.755051,exact,12,11,39.29
+PHB2,Q99623,Prohibitin-2,quantified,23.8801,23.89,-0.00990117,1,exact,12,12,45.1865
+PRELP,P51888,Prolargin,quantified,23.4541,23.9375,-0.483465,0.343434,exact,12,8,24.0072
+PCCA,P05165,"Propionyl-CoA carboxylase alpha chain, mitochondrial",quantified,23.9692,24.2343,-0.265116,0.14899,exact,12,13,33.6342
+PCCB,P05166,"Propionyl-CoA carboxylase beta chain, mitochondrial",quantified,23.2682,23.7776,-0.509434,0.14899,exact,12,8,22.8039
+PTGR1,Q14914,Prostaglandin reductase 1,quantified,22.0176,22.8422,-0.8246,0.106061,exact,12,6,9.98797
+PSME1,Q06323,Proteasome activator complex subunit 1,quantified,23.1864,22.8864,0.299986,0.0479798,exact,12,5,63.6582
+PSME2,Q9UL46,Proteasome activator complex subunit 2,quantified,22.4215,22.1659,0.255569,0.0732323,exact,12,5,60.6498
+PSMA1,P25786,Proteasome subunit alpha type-1,quantified,22.9717,22.5203,0.451345,0.0176768,exact,12,2,73.0445
+PSMA2,P25787,Proteasome subunit alpha type-2,quantified,19.0625,19.1472,-0.084751,0.755051,exact,12,1,42.2984
+PSMA3,P25788,Proteasome subunit alpha type-3,quantified,21.9595,21.8064,0.153077,0.267677,exact,12,3,54.272
+PSMA5,P28066,Proteasome subunit alpha type-5,quantified,19.1636,19.2932,-0.129539,0.876263,exact,12,1,40.4332
+PSMA6,P60900,Proteasome subunit alpha type-6,quantified,21.9366,21.5748,0.361816,0.030303,exact,12,4,67.4489
+PSMA8,Q8TAA3,Proteasome subunit alpha type-7-like,quantified,20.0428,20.7453,-0.702511,0.106061,exact,12,1,14.0794
+PSMB1,P20618,Proteasome subunit beta type-1,quantified,19.9528,20.1866,-0.233847,0.431818,exact,12,1,35.6197
+PSMB2,P49721,Proteasome subunit beta type-2,quantified,20.7124,20.2074,0.505047,0.0479798,exact,12,1,76.4741
+PSMB4,P28070,Proteasome subunit beta type-4,quantified,20.1039,19.9495,0.154473,0.343434,exact,12,1,54.3923
+PSMB6,P28072,Proteasome subunit beta type-6,quantified,20.1042,19.834,0.270223,0.14899,exact,12,1,61.7329
+PSMB7,Q99436,Proteasome subunit beta type-7,quantified,19.874,19.4822,0.391758,0.20202,exact,12,1,69.7954
+AHNAK2,Q8IVF2,Protein AHNAK2,quantified,19.1379,19.2256,-0.087694,0.876263,exact,12,1,41.9374
+AMBP,P02760,Protein AMBP,quantified,24.4113,23.5292,0.882062,0.00505051,exact,12,8,90.9747
+DDI1,Q8WTU0,Protein DDI1 homolog 1,quantified,19.568,19.0348,0.533252,0.106061,exact,12,1,78.3394
+P4HB,P07237,Protein disulfide-isomerase,quantified,23.2743,22.8899,0.384402,0.431818,exact,12,6,69.1937
+PDIA2,Q13087,Protein disulfide-isomerase A2,quantified,21.4429,22.4018,-0.958894,0.343434,exact,12,1,6.97954
+PDIA3,P30101,Protein disulfide-isomerase A3,quantified,23.2276,22.8106,0.41698,0.14899,exact,12,7,71.3598
+PDIA4,P13667,Protein disulfide-isomerase A4,quantified,20.3578,20.252,0.10585,0.343434,exact,12,1,51.9254
+PDIA6,Q15084,Protein disulfide-isomerase A6,quantified,22.7587,22.5116,0.247066,0.106061,exact,12,5,60.1685
+PARK7,Q99497,Protein DJ-1,quantified,24.8118,25.0657,-0.253985,0.030303,exact,12,11,34.4164
+DOP1A,Q5JWR5,Protein dopey-1,quantified,20.8975,21.1485,-0.251,0.106061,exact,12,2,34.7774
+AHCTF1,Q8WYP5,Protein ELYS,quantified,20.1554,20.9842,-0.828822,0.343434,exact,12,1,9.80746
+LMAN1,P49257,Protein ERGIC-53,quantified,18.9555,19.5358,-0.580293,0.030303,exact,12,1,19.4946
+EYS,Q5T1H1,Protein eyes shut homolog,quantified,20.5246,20.608,-0.083425,0.876263,exact,12,1,42.4188
+FAM117B,Q6P1L5,Protein FAM117B,quantified,19.7626,20.6273,-0.864691,0.20202,exact,12,1,8.9651
+FAM135A,Q9P2D6,Protein FAM135A,quantified,18.6603,18.1552,0.505183,0.0732323,exact,12,1,76.5343
+FAM151A,Q8WW52,Protein FAM151A,quantified,22.0308,22.118,-0.0872956,0.876263,exact,12,3,41.9976
+FAM162A,Q96A26,Protein FAM162A,quantified,19.318,19.8699,-0.551884,0.106061,exact,12,1,20.5776
+FAM171A2,A8MVW0,Protein FAM171A2,quantified,19.5631,19.7934,-0.230224,0.755051,exact,12,1,36.0409
+TOGARAM2,Q6ZUX3,Protein FAM179A,quantified,20.0214,19.2609,0.760438,0.20202,exact,12,1,87.9061
+DENND10,Q8TCE6,Protein FAM45A,quantified,23.4448,23.7141,-0.269348,0.530303,exact,12,1,33.5138
+FAM47A,Q5JRC9,Protein FAM47A,quantified,22.1764,21.6525,0.523905,0.0732323,exact,12,1,77.6173
+MINDY2,Q8NBR6,Protein FAM63B,quantified,20.8094,21.4529,-0.643572,0.267677,exact,12,1,16.7268
+FEM1C,Q96JP0,Protein fem-1 homolog C,quantified,24.9859,24.1794,0.806499,0.00252525,exact,12,1,89.1697
+HR,O43593,Protein hairless,quantified,18.9943,19.1399,-0.145568,0.343434,exact,12,1,39.7714
+,O75698,Protein HUG-1,quantified,20.7522,21.1522,-0.399992,0.755051,exact,12,1,28.0385
+JAG2,Q9Y219,Protein jagged-2,quantified,23.3887,23.3719,0.016775,0.755051,exact,12,1,46.3899
+CCAR2,Q8N163,Protein KIAA1967,quantified,18.8586,18.0706,0.788017,0.00252525,exact,12,1,88.6883
+PRKCG,P05129,Protein kinase C gamma type,quantified,20.0832,19.7628,0.320396,0.0479798,exact,12,1,64.8616
+LSM14A,Q8ND56,Protein LSM14 homolog A,quantified,21.3665,21.657,-0.290547,0.530303,exact,12,1,32.7918
+MAL2,Q969L2,Protein MAL2,quantified,19.9148,18.7672,1.14759,0.106061,exact,12,1,95.7882
+NIPSNAP1,Q9BPW8,Protein NipSnap homolog 1,quantified,22.7875,23.1997,-0.412232,0.20202,exact,12,3,27.5572
+NIPSNAP2,O75323,Protein NipSnap homolog 2,quantified,20.8319,20.732,0.099962,0.431818,exact,12,1,51.5042
+POMT2,Q9UKY4,Protein O-mannosyl-transferase 2,quantified,21.6994,18.8308,2.86857,0.030303,exact,12,1,99.639
+PPM1E,Q8WY54,Protein phosphatase 1E,quantified,23.5939,23.7438,-0.149935,0.343434,exact,12,1,39.5909
+PPME1,Q9Y570,Protein phosphatase methylesterase 1,quantified,18.9164,18.8861,0.030293,0.267677,exact,12,1,47.1721
+S100A11,P31949,Protein S100-A11,quantified,23.0821,22.2434,0.83866,0.0176768,exact,12,5,90.2527
+S100A4,P26447,Protein S100-A4,quantified,21.466,20.7546,0.711376,0.106061,exact,12,1,86.1011
+S100A6,P06703,Protein S100-A6,quantified,24.1058,23.2802,0.825667,0.0732323,exact,12,3,89.8315
+S100A8,P05109,Protein S100-A8,quantified,22.0834,19.9865,2.09687,0.00505051,exact,12,2,98.7966
+S100A9,P06702,Protein S100-A9,quantified,22.7442,21.5157,1.2285,0.0176768,exact,12,4,96.3297
+SCRIB,Q14160,Protein scribble homolog,quantified,19.6859,19.1062,0.579706,0.00252525,exact,12,1,80.3249
+SEL1L3,Q68CR1,Protein sel-1 homolog 3,quantified,21.1257,22.3325,-1.20687,0.530303,exact,12,1,3.4296
+SET,Q01105,Protein SET,quantified,21.0199,20.6393,0.380624,0.14899,exact,12,2,69.0734
+SHISA6,Q6ZSJ9,Protein shisa-6 homolog,quantified,22.3962,22.9161,-0.519928,0.267677,exact,12,1,22.2623
+TFG,Q92734,Protein TFG,quantified,20.4966,21.0596,-0.562958,0.0479798,exact,12,1,20.0361
+SEC31B,Q9NQW1,Protein transport protein Sec31B,quantified,21.5976,20.8283,0.769291,0.00252525,exact,12,1,88.1468
+UNC13A,Q9UPW8,Protein unc-13 homolog A,quantified,21.3916,21.2095,0.182188,0.638889,exact,12,1,56.077
+UNC13B,O14795,Protein unc-13 homolog B,quantified,18.5798,19.7234,-1.14356,0.267677,exact,12,1,3.73045
+KNDC1,Q76NI1,Protein very KIND,quantified,19.6285,19.5401,0.088384,0.343434,exact,12,1,50.9025
+WLS,Q5T9L3,Protein wntless homolog,quantified,23.526,23.9295,-0.403446,0.530303,exact,12,1,27.9182
+TGM2,P21980,Protein-glutamine gamma-glutamyltransferase 2,quantified,23.83,23.3532,0.476812,0.14899,exact,12,8,74.7894
+F2,P00734,Prothrombin,quantified,20.5271,19.7449,0.78217,0.106061,exact,12,1,88.3273
+FAT2,Q9NYQ8,Protocadherin Fat 2,quantified,21.1687,21.3317,-0.163029,1,exact,12,1,39.1095
+PCDHGA5,Q9Y5G8,Protocadherin gamma-A5,quantified,21.2187,17.4843,3.73441,0.0176768,exact,12,1,99.7593
+GULP1,Q9UBP9,PTB domain-containing engulfment adapter protein 1,quantified,22.51,22.5809,-0.070924,0.638889,exact,12,1,42.7798
+PID1,Q7Z2X4,"PTB-containing, cubilin and LRP1-interacting protein",quantified,24.4106,24.1649,0.245701,0.20202,exact,12,1,60.0481
+PCBD1,P61457,Pterin-4-alpha-carbinolamine dehydratase,quantified,19.719,20.2719,-0.552993,0.20202,exact,12,2,20.4573
+PCBD2,Q9H0N5,Pterin-4-alpha-carbinolamine dehydratase 2,quantified,21.7259,22.208,-0.482096,0.00252525,exact,12,1,24.1877
+PNP,P00491,Purine nucleoside phosphorylase,quantified,23.4067,23.9295,-0.522896,0.0732323,exact,12,10,22.0217
+RPS26P11,Q5JNZ5,Putative 40S ribosomal protein S26-like 1,quantified,22.3926,21.6573,0.735266,0.00252525,exact,12,2,86.8231
+RPL13AP3,Q6NVV1,Putative 60S ribosomal protein L13a-like MGC87657,quantified,20.9212,20.4668,0.454403,0.00505051,exact,12,1,73.2852
+AHCYL1,O43865,Putative adenosylhomocysteinase 2,quantified,25.5699,24.9116,0.65825,0.00252525,exact,12,3,84.0554
+SERPINA2,P20848,Putative alpha-1-antitrypsin-related protein,quantified,21.7172,22.2017,-0.484564,0.20202,exact,12,1,23.9471
+,Q9NSE7,Putative ATP-binding cassette sub-family C member 13,quantified,24.0202,25.3069,-1.28674,0.267677,exact,12,1,2.70758
+POTEKP,Q9BYX7,Putative beta-actin-like protein 3,quantified,26.4604,26.221,0.239366,0.00505051,exact,12,6,59.6871
+UQCRFS1P1,P0C7P4,Putative cytochrome b-c1 complex subunit Rieske-like protein 1,quantified,22.552,22.4486,0.103343,0.431818,exact,12,5,51.6245
+,A6NCC7,Putative cytochrome P450 21-like protein ENSP00000364438,quantified,20.1647,19.505,0.659725,0.00252525,exact,12,1,84.1155
+HSP90B2P,Q58FF3,Putative endoplasmin-like protein,quantified,22.4756,21.9601,0.515451,0.106061,exact,12,3,77.136
+,Q6ZU82,Putative fatty acyl-CoA reductase 2-like protein FLJ43933,quantified,23.0947,22.0445,1.0502,0.00505051,exact,12,1,93.9832
+HSP90AA2P,Q14568,Putative heat shock protein HSP 90-alpha A2,quantified,21.0747,21.3037,-0.229042,0.14899,exact,12,1,36.1011
+HSP90AA4P,Q58FG1,Putative heat shock protein HSP 90-alpha A4,quantified,21.6397,21.5187,0.12101,0.638889,exact,12,1,52.7076
+HSP90AA5P,Q58FG0,Putative heat shock protein HSP 90-alpha A5,quantified,20.7066,21.1846,-0.477998,0.00252525,exact,12,2,24.3081
+HSP90AB2P,Q58FF8,Putative heat shock protein HSP 90-beta 2,quantified,22.6508,22.5322,0.118556,1,exact,12,4,52.5872
+HSP90AB3P,Q58FF7,Putative heat shock protein HSP 90-beta-3,quantified,22.8784,22.9386,-0.0601705,0.20202,exact,12,4,43.1408
+,P0C7M2,Putative heterogeneous nuclear ribonucleoprotein A1-like 3,quantified,20.7468,20.6075,0.139332,0.267677,exact,12,2,53.4296
+HKDC1,Q2TB90,Putative hexokinase HKDC1,quantified,20.0274,19.7007,0.326756,0.106061,exact,12,1,65.1023
+HMGB1P1,B2RPK0,Putative high mobility group protein B1-like 1,quantified,23.3845,22.6707,0.713837,0.00505051,exact,12,2,86.2214
+HYI,Q5T013,Putative hydroxypyruvate isomerase,quantified,22.236,22.1823,0.053654,1,exact,12,1,48.4958
+,Q6ZN80,Putative maltase-glucoamylase-like protein FLJ16351,quantified,20.3108,20.3139,-0.003038,1,exact,12,1,45.5475
+,O60361,Putative nucleoside diphosphate kinase,quantified,22.9412,23.1766,-0.23544,0.343434,exact,12,6,35.4994
+,A6NIQ7,Putative PGM5-like protein 2,quantified,20.093,19.3462,0.746879,0.00252525,exact,12,1,87.3646
+DHX15,O43143,Putative pre-mRNA-splicing factor ATP-dependent RNA helicase DHX15,quantified,19.5577,19.299,0.258732,0.0732323,exact,12,1,60.9507
+RBM15,Q96T37,Putative RNA-binding protein 15,quantified,24.5689,22.3437,2.22515,0.00252525,exact,12,1,99.0373
+,Q5VYJ4,Putative small nuclear ribonucleoprotein polypeptide E-like protein 1,quantified,20.4514,20.0867,0.364738,0.010101,exact,12,1,67.87
+,Q13892,Putative transcription factor BTF3 homolog 3,quantified,18.9843,18.7286,0.255623,0.0176768,exact,12,1,60.71
+,Q7Z6K2,Putative triosephosphate isomerase-like protein LOC286016,quantified,23.0297,23.4697,-0.440002,0.0176768,exact,12,2,26.0529
+,A6NL28,Putative tropomyosin alpha-3 chain-like protein,quantified,20.571,20.2956,0.2754,0.010101,exact,12,2,62.0337
+TUBA4B,Q9H853,Putative tubulin-like protein alpha-4B,quantified,22.9856,22.8464,0.139147,0.106061,exact,12,1,53.3694
+,Q8N1Y9,Putative uncharacterized protein FLJ37218,quantified,23.7604,23.5546,0.205833,0.343434,exact,12,1,57.3406
+,A6NJ16,Putative V-set and immunoglobulin domain-containing protein 6,quantified,21.75,20.9121,0.837944,0.00252525,exact,12,1,90.0722
+PDXK,O00764,Pyridoxal kinase,quantified,21.5368,22.1305,-0.593754,0.343434,exact,12,3,19.1336
+PC,P11498,"Pyruvate carboxylase, mitochondrial",quantified,24.2244,24.7104,-0.485972,0.343434,exact,12,19,23.8267
+PDHA1,P08559,"Pyruvate dehydrogenase E1 component subunit alpha, somatic form, mitochondrial",quantified,22.4158,22.8373,-0.421486,0.20202,exact,12,3,26.775
+PDHB,P11177,"Pyruvate dehydrogenase E1 component subunit beta, mitochondrial",quantified,22.8577,23.2294,-0.371667,0.0176768,exact,12,7,28.941
+PKM,P14618,Pyruvate kinase isozymes M1/M2,quantified,26.5987,26.7269,-0.128224,0.530303,exact,12,27,40.4934
+PKLR,P30613,Pyruvate kinase isozymes R/L,quantified,21.4857,21.1339,0.3518,0.755051,exact,12,3,66.8472
+CRYZ,Q08257,Quinone oxidoreductase,quantified,25.4988,26.0156,-0.51678,0.106061,exact,12,19,22.503
+R3HDM1,Q15032,R3H domain-containing protein 1,quantified,19.6192,19.7099,-0.090693,0.343434,exact,12,1,41.7569
+GDI1,P31150,Rab GDP dissociation inhibitor alpha,quantified,22.5663,22.4612,0.105112,0.530303,exact,12,5,51.8652
+GDI2,P50395,Rab GDP dissociation inhibitor beta,quantified,22.1679,21.9405,0.227372,0.638889,exact,12,4,58.9049
+,Q68DN6,RANBP2-like and GRIP domain-containing protein 1/2,quantified,19.3041,18.3372,0.966912,0.431818,exact,12,1,92.5391
+RAPGEF6,Q8TEU7,Rap guanine nucleotide exchange factor 6,quantified,19.5653,19.3073,0.25797,0.106061,exact,12,1,60.8303
+RINL,Q6ZS11,Ras and Rab interactor-like protein,quantified,20.8134,22.8539,-2.04054,0.0479798,exact,12,1,0.661853
+IQGAP1,P46940,Ras GTPase-activating-like protein IQGAP1,quantified,24.0887,23.19,0.898681,0.00252525,exact,12,8,91.3959
+RSU1,Q15404,Ras suppressor protein 1,quantified,20.4435,19.9873,0.456183,0.00252525,exact,12,2,73.4055
+RASAL1,O95294,RasGAP-activating-like protein 1,quantified,21.1724,22.3443,-1.17184,0.20202,exact,12,1,3.54994
+RASGEF1B,Q0VAM2,Ras-GEF domain-containing family member 1B,quantified,21.6087,22.6305,-1.02177,0.20202,exact,12,1,5.47533
+RRAGA,Q7L523,Ras-related GTP-binding protein A,quantified,21.0571,20.9434,0.113676,0.876263,exact,12,1,52.2262
+RRAGC,Q9HB90,Ras-related GTP-binding protein C,quantified,19.6812,19.0799,0.601259,0.00252525,exact,12,1,81.1071
+RAB10,P61026,Ras-related protein Rab-10,quantified,20.0761,19.6721,0.404003,0.0479798,exact,12,1,70.4573
+RAB11A,P62491,Ras-related protein Rab-11A,quantified,22.3161,22.1765,0.139627,0.530303,exact,12,2,53.4898
+RAB15,P59190,Ras-related protein Rab-15,quantified,20.567,20.0376,0.529324,0.010101,exact,12,1,77.9182
+RAB1A,P62820,Ras-related protein Rab-1A,quantified,21.927,21.6418,0.285137,0.010101,exact,12,4,62.3345
+RAB25,P57735,Ras-related protein Rab-25,quantified,19.782,18.8352,0.946776,0.030303,exact,12,1,92.1179
+RAB7A,P51149,Ras-related protein Rab-7a,quantified,21.0046,20.5921,0.41252,0.00252525,exact,12,2,71.1793
+RALA,P11233,Ras-related protein Ral-A,quantified,20.9996,21.0774,-0.0777452,1,exact,12,2,42.5993
+RAP1A,P62834,Ras-related protein Rap-1A,quantified,22.8592,22.4619,0.397286,0.00252525,exact,12,4,70.1564
+REEP5,Q00765,Receptor expression-enhancing protein 5,quantified,21.6909,21.6926,-0.001691,0.876263,exact,12,1,45.6077
+REEP6,Q96HR9,Receptor expression-enhancing protein 6,quantified,19.6965,19.3574,0.339086,0.638889,exact,12,1,65.5836
+PTPRA,P18433,Receptor-type tyrosine-protein phosphatase alpha,quantified,20.8369,20.3223,0.514563,0.00252525,exact,12,1,77.0758
+PTPRE,P23469,Receptor-type tyrosine-protein phosphatase epsilon,quantified,21.7775,22.1071,-0.329588,0.00252525,exact,12,1,31.2274
+RELN,P78509,Reelin,quantified,19.2074,20.6325,-1.42515,0.14899,exact,12,1,2.22623
+UPF1,Q92900,Regulator of nonsense transcripts 1,quantified,19.3018,19.0829,0.218935,0.010101,exact,12,1,58.1227
+RLN3,Q8WXF3,Relaxin-3,quantified,20.8876,21.2111,-0.323464,0.431818,exact,12,1,31.4079
+RTN2,O75298,Reticulon-2,quantified,21.3141,22.3039,-0.989795,0.030303,exact,12,1,5.95668
+RTN3,O95197,Reticulon-3,quantified,20.2326,20.1697,0.06284,0.876263,exact,12,1,49.1276
+RTN4,Q9NQC3,Reticulon-4,quantified,21.0339,20.2923,0.741618,0.00505051,exact,12,1,86.8833
+ALDH1A1,P00352,Retinal dehydrogenase 1,quantified,25.922,25.9343,-0.0122353,0.638889,exact,12,14,45.1264
+ALDH1A2,O94788,Retinal dehydrogenase 2,quantified,19.9241,20.7918,-0.867717,0.343434,exact,12,1,8.7846
+GUCY2F,P51841,Retinal guanylyl cyclase 2,quantified,21.0006,19.423,1.57765,0.010101,exact,12,1,98.3153
+AOC2,O75106,Retina-specific copper amine oxidase,quantified,22.8027,22.7543,0.0484159,0.755051,exact,12,4,48.1348
+RBP1,P09455,Retinol-binding protein 1,quantified,20.8438,20.669,0.174763,0.267677,exact,12,1,55.716
+RBP4,P02753,Retinol-binding protein 4,quantified,22.2604,21.1317,1.1287,0.267677,exact,12,4,95.367
+RBP5,P82980,Retinol-binding protein 5,quantified,20.3385,20.9186,-0.580097,0.343434,exact,12,2,19.5548
+ARHGDIA,P52565,Rho GDP-dissociation inhibitor 1,quantified,20.5684,20.3462,0.22223,0.267677,exact,12,2,58.4838
+ARHGDIB,P52566,Rho GDP-dissociation inhibitor 2,quantified,22.0183,21.2635,0.754793,0.030303,exact,12,2,87.7858
+ARHGAP32,A7KAX9,Rho GTPase-activating protein 32,quantified,20.9511,22.5579,-1.60682,0.030303,exact,12,1,1.44404
+ARHGEF15,O94989,Rho guanine nucleotide exchange factor 15,quantified,19.6604,19.9081,-0.247732,1,exact,12,1,34.9579
+RHOG,P84095,Rho-related GTP-binding protein RhoG,quantified,19.4907,18.3141,1.17663,0.00505051,exact,12,1,95.9687
+RTKN2,Q8IZC4,Rhotekin-2,quantified,23.4916,24.7374,-1.2458,0.20202,exact,12,1,3.00842
+RNH1,P13489,Ribonuclease inhibitor,quantified,21.4148,21.5317,-0.11688,0.20202,exact,12,3,40.9146
+RNASE6,Q93091,Ribonuclease K6,quantified,19.9388,19.542,0.396786,1,exact,12,1,70.0963
+RIDA,P52758,Ribonuclease UK114,quantified,23.4145,24.3835,-0.969027,0.0479798,exact,12,7,6.31769
+RRM1,P23921,Ribonucleoside-diphosphate reductase large subunit,quantified,20.4982,20.983,-0.484804,0.14899,exact,12,1,23.8869
+PRPS1,P60891,Ribose-phosphate pyrophosphokinase 1,quantified,21.2188,20.889,0.329809,0.0732323,exact,12,3,65.2226
+SBDS,Q9Y3A5,Ribosome maturation protein SBDS,quantified,19.3983,19.1782,0.220108,0.106061,exact,12,1,58.2431
+NQO2,P16083,Ribosyldihydronicotinamide dehydrogenase [quinone],quantified,21.7097,22.3644,-0.654669,0.0732323,exact,12,4,16.3057
+RNF214,Q8ND24,RING finger protein 214,quantified,21.5518,21.4193,0.132547,0.20202,exact,12,1,53.0084
+CTR9,Q6PD62,RNA polymerase-associated protein CTR9 homolog,quantified,22.4334,21.9341,0.499306,0.106061,exact,12,1,76.0529
+RBMXL2,O75526,"RNA-binding motif protein, X-linked-like-2",quantified,20.9322,20.546,0.38625,0.00252525,exact,12,1,69.3742
+FUS,P35637,RNA-binding protein FUS,quantified,20.3088,19.6319,0.676924,0.00252525,exact,12,1,84.8375
+RALY,Q9UKM9,RNA-binding protein Raly,quantified,21.527,20.4436,1.0834,0.010101,exact,12,2,94.5247
+FBLL1,A6NHQ2,rRNA/tRNA 2'-O-methyltransferase fibrillarin-like protein 1,quantified,19.1849,19.4469,-0.26202,1,exact,12,1,33.8147
+RUFY1,Q96T51,RUN and FYVE domain-containing protein 1,quantified,21.9568,22.5592,-0.602462,0.431818,exact,12,1,18.5921
+MAT1A,Q00266,S-adenosylmethionine synthase isoform type-1,quantified,19.7536,19.4895,0.264028,0.638889,exact,12,1,61.2515
+SAMHD1,Q9Y3Z3,SAM domain and HD domain-containing protein 1,quantified,21.2835,20.0731,1.21041,0.00252525,exact,12,2,96.2094
+SARDH,Q9UL12,"Sarcosine dehydrogenase, mitochondrial",quantified,19.7772,20.6473,-0.870079,0.030303,exact,12,1,8.72443
+SLFN5,Q08AF3,Schlafen family member 5,quantified,20.1045,18.582,1.52251,0.0176768,exact,12,1,97.9543
+SCEL,O95171,Sciellin,quantified,24.9389,26.1552,-1.21628,0.20202,exact,12,1,3.30927
+SCRN1,Q12765,Secernin-1,quantified,18.9663,19.1366,-0.170296,0.638889,exact,12,1,38.929
+SEPHS2,Q99611,"Selenide, water dikinase 2",quantified,18.8422,18.9484,-0.106228,1,exact,12,1,41.1552
+SELENBP1,Q13228,Selenium-binding protein 1,quantified,24.2333,24.4165,-0.183204,0.638889,exact,12,11,38.3875
+SEMA3C,Q99985,Semaphorin-3C,quantified,23.1672,23.3749,-0.207696,0.530303,exact,12,1,37.1841
+SPR,P35270,Sepiapterin reductase,quantified,18.8486,19.3817,-0.533113,0.20202,exact,12,1,21.3598
+SEPTIN11,Q9NVA2,Septin-11,quantified,20.07,19.5919,0.478138,0.0176768,exact,12,1,74.9097
+SEPTIN2,Q15019,Septin-2,quantified,22.5134,22.2469,0.266531,0.030303,exact,12,5,61.3117
+SEPTIN7,Q16181,Septin-7,quantified,19.5324,18.0193,1.5131,0.010101,exact,12,1,97.8339
+SEPTIN9,Q9UHD8,Septin-9,quantified,20.378,19.792,0.585989,0.0176768,exact,12,2,80.5054
+SHMT1,P34896,"Serine hydroxymethyltransferase, cytosolic",quantified,24.4626,25.0393,-0.576641,0.267677,exact,12,14,19.6751
+SHMT2,P34897,"Serine hydroxymethyltransferase, mitochondrial",quantified,24.3335,25.0187,-0.685195,0.0176768,exact,12,3,14.9819
+PRSS23,O95084,Serine protease 23,quantified,19.4242,19.4806,-0.056414,0.638889,exact,12,1,43.4416
+SRSF1,Q07955,Serine/arginine-rich splicing factor 1,quantified,20.1713,19.6642,0.507086,0.0479798,exact,12,1,76.6546
+SRSF2,Q01130,Serine/arginine-rich splicing factor 2,quantified,21.3867,20.8241,0.562537,0.00252525,exact,12,2,79.3622
+SRSF3,P84103,Serine/arginine-rich splicing factor 3,quantified,21.0259,20.5227,0.503236,0.010101,exact,12,2,76.2936
+SRSF4,Q08170,Serine/arginine-rich splicing factor 4,quantified,21.5912,21.2564,0.334753,0.0732323,exact,12,2,65.343
+SRSF7,Q16629,Serine/arginine-rich splicing factor 7,quantified,18.8217,18.1444,0.677334,0.010101,exact,12,1,84.8977
+STYXL1,Q9Y6J8,Serine/threonine/tyrosine-interacting-like protein 1,quantified,22.0389,21.2139,0.824999,0.00505051,exact,12,1,89.7714
+STK32B,Q9NY57,Serine/threonine-protein kinase 32B,quantified,22.3557,21.3054,1.05027,0.876263,exact,12,1,94.0433
+PRKD1,Q15139,Serine/threonine-protein kinase D1,quantified,20.2946,21.7277,-1.43309,0.0479798,exact,12,1,2.04573
+STK26,Q9P289,Serine/threonine-protein kinase MST4,quantified,18.7282,18.5817,0.146474,0.106061,exact,12,1,53.8508
+PLK2,Q9NYY3,Serine/threonine-protein kinase PLK2,quantified,20.9868,21.2369,-0.250168,0.20202,exact,12,1,34.8375
+SMG1,Q96Q15,Serine/threonine-protein kinase SMG1,quantified,21.2763,21.9069,-0.630627,0.106061,exact,12,1,17.3887
+PPP2R2A,P63151,Serine/threonine-protein phosphatase 2A 55 kDa regulatory subunit B alpha isoform,quantified,17.9639,17.5583,0.405534,0.20202,exact,12,1,70.5174
+PPP2R1A,P30153,Serine/threonine-protein phosphatase 2A 65 kDa regulatory subunit A alpha isoform,quantified,22.0048,20.8113,1.19345,0.0176768,exact,12,3,96.1492
+PPP1CA,P62136,Serine/threonine-protein phosphatase PP1-alpha catalytic subunit,quantified,20.5977,20.5322,0.0655037,0.431818,exact,12,2,49.2178
+PPP1CB,P62140,Serine/threonine-protein phosphatase PP1-beta catalytic subunit,quantified,19.5065,18.8975,0.60899,0.20202,exact,12,1,81.5283
+ATM,Q13315,Serine-protein kinase ATM,quantified,20.0835,19.6101,0.473382,0.0732323,exact,12,1,74.6691
+NEMF,O60524,Serologically defined colon cancer antigen 1,quantified,23.2012,23.7423,-0.541014,0.20202,exact,12,3,20.9386
+TF,P02787,Serotransferrin,quantified,25.6158,26.2443,-0.628478,0.343434,exact,12,24,17.4489
+SERPINB13,Q9UIV8,Serpin B13,quantified,21.4248,19.0068,2.41798,0.030303,exact,12,1,99.278
+SERPINB5,P36952,Serpin B5,quantified,19.9998,19.2364,0.763365,0.0176768,exact,12,1,87.9663
+SERPINB8,P50452,Serpin B8,quantified,22.9329,23.448,-0.515117,0.106061,exact,12,1,22.6233
+SERPINH1,P50454,Serpin H1,quantified,21.9262,21.5064,0.419809,0.876263,exact,12,3,71.5403
+ALB,P02768,Serum albumin,quantified,30.7301,31.2784,-0.548235,0.106061,exact,12,118,20.7581
+APCS,P02743,Serum amyloid P-component,quantified,23.8323,22.1946,1.6377,0.00505051,exact,12,6,98.4356
+PON2,Q15165,Serum paraoxonase/arylesterase 2,quantified,18.3793,17.8352,0.54413,0.267677,exact,12,1,78.8207
+SARS1,P49591,"Seryl-tRNA synthetase, cytoplasmic",quantified,19.9784,19.817,0.161327,0.530303,exact,12,2,54.9338
+SMYD2,Q9NRG4,SET and MYND domain-containing protein 2,quantified,24.9963,25.405,-0.408743,0.343434,exact,12,1,27.6775
+ESD,P10768,S-formylglutathione hydrolase,quantified,23.0685,23.2747,-0.206226,0.638889,exact,12,7,37.3646
+SH3BGRL3,Q9H299,SH3 domain-binding glutamic acid-rich-like protein 3,quantified,20.538,19.805,0.733041,0.0176768,exact,12,2,86.7028
+TRPC3,Q13507,Short transient receptor potential channel 3,quantified,21.0599,20.8773,0.182575,1,exact,12,1,56.1372
+ACADSB,P45954,"Short/branched chain specific acyl-CoA dehydrogenase, mitochondrial",quantified,22.4607,23.2169,-0.756269,0.106061,exact,12,3,11.793
+ACADS,P16219,"Short-chain specific acyl-CoA dehydrogenase, mitochondrial",quantified,23.2627,22.9634,0.299266,0.343434,exact,12,4,63.4176
+SIGLEC15,Q6ZMC9,Sialic acid-binding Ig-like lectin 15,quantified,21.561,21.3228,0.238165,0.431818,exact,12,1,59.5668
+SFXN1,Q9H9B4,Sideroflexin-1,quantified,21.4868,22.4796,-0.99281,0.0176768,exact,12,5,5.89651
+SFXN2,Q96NB2,Sideroflexin-2,quantified,19.5382,20.5793,-1.0411,0.14899,exact,12,1,5.05415
+SRP9,P49458,Signal recognition particle 9 kDa protein,quantified,19.06,19.0113,0.048776,0.431818,exact,12,1,48.1949
+STAT3,P40763,Signal transducer and activator of transcription 3,quantified,19.4729,19.1683,0.304571,0.106061,exact,12,1,63.8989
+SSBP1,Q04837,"Single-stranded DNA-binding protein, mitochondrial",quantified,22.2107,22.7111,-0.500417,0.0479798,exact,12,1,23.1047
+PDS5A,Q29RF7,Sister chromatid cohesion protein PDS5 homolog A,quantified,21.562,21.0319,0.530155,0.0732323,exact,12,1,78.0385
+SNRPGP15,A8MWD9,Small nuclear ribonucleoprotein G-like protein,quantified,19.953,19.5007,0.452303,0.010101,exact,12,1,73.1047
+SNRPD2,P62316,Small nuclear ribonucleoprotein Sm D2,quantified,19.9113,19.0227,0.888647,0.00252525,exact,12,1,91.1552
+SNRPD3,P62318,Small nuclear ribonucleoprotein Sm D3,quantified,22.7672,23.1377,-0.370484,0.0479798,exact,12,2,29.0614
+SNRPB,P14678,Small nuclear ribonucleoprotein-associated proteins B and B',quantified,22.1469,21.4769,0.670017,0.00252525,exact,12,3,84.5367
+SUMO2,P61956,Small ubiquitin-related modifier 2,quantified,21.1243,20.4957,0.62858,0.00505051,exact,12,2,82.5511
+SMO,Q99835,Smoothened homolog,quantified,21.1329,20.6995,0.433353,1,exact,12,1,72.0217
+SNAPIN,O95295,SNARE-associated protein Snapin,quantified,20.4884,21.4057,-0.917361,0.0479798,exact,12,1,7.52106
+SCN11A,Q9UI33,Sodium channel protein type 11 subunit alpha,quantified,19.5478,19.2797,0.268101,0.755051,exact,12,1,61.5523
+SLC5A2,P31639,Sodium/glucose cotransporter 2,quantified,19.8222,20.5449,-0.722642,0.14899,exact,12,1,13.2371
+ATP1A1,P05023,Sodium/potassium-transporting ATPase subunit alpha-1,quantified,25.2572,26.2569,-0.999667,0.010101,exact,12,29,5.716
+ATP1A4,Q13733,Sodium/potassium-transporting ATPase subunit alpha-4,quantified,18.7322,18.6904,0.041851,0.638889,exact,12,1,47.7738
+ATP1B1,P05026,Sodium/potassium-transporting ATPase subunit beta-1,quantified,23.0423,23.811,-0.768739,0.010101,exact,12,4,11.6727
+SLC12A1,Q13621,Solute carrier family 12 member 1,quantified,21.7754,21.2159,0.559421,0.00505051,exact,12,2,79.302
+SLC13A2,Q13183,Solute carrier family 13 member 2,quantified,21.532,20.518,1.01402,0.106061,exact,12,1,93.4416
+SORD,Q00796,Sorbitol dehydrogenase,quantified,24.2034,24.2501,-0.046714,0.876263,exact,12,11,43.7425
+SNX2,O60749,Sorting nexin-2,quantified,22.1427,21.464,0.678707,0.0176768,exact,12,2,85.0181
+SNX3,O60493,Sorting nexin-3,quantified,20.9219,20.8305,0.0914281,0.755051,exact,12,2,51.1432
+SPOPL,Q6IQ16,Speckle-type POZ protein-like,quantified,20.9704,20.8874,0.082999,0.755051,exact,12,1,50.6619
+SPTAN1,Q13813,"Spectrin alpha chain, brain",quantified,24.7272,24.7637,-0.0364955,0.755051,exact,12,24,44.1035
+SPTBN1,Q01082,"Spectrin beta chain, brain 1",quantified,25.0375,25.0389,-0.00144027,0.876263,exact,12,21,45.6679
+SPTB,P11277,"Spectrin beta chain, erythrocyte",quantified,19.8455,19.7913,0.054158,1,exact,12,1,48.556
+SMS,P52788,Spermine synthase,quantified,20.435,20.0457,0.389288,0.530303,exact,12,1,69.6751
+SAMD8,Q96LT4,Sphingomyelin synthase-related protein 1,quantified,23.1906,23.444,-0.253392,0.755051,exact,12,1,34.5367
+SFPQ,P23246,"Splicing factor, proline- and glutamine-rich",quantified,23.142,22.6179,0.524144,0.00505051,exact,12,5,77.6775
+CYP17A1,P05093,"Steroid 17-alpha-hydroxylase/17,20 lyase",quantified,21.0139,20.2291,0.784748,0.00252525,exact,12,1,88.4477
+CYP27A1,Q02318,"Sterol 26-hydroxylase, mitochondrial",quantified,18.5379,19.2139,-0.676001,0.254791,exact,12,1,15.4633
+STOML2,Q9UJZ1,Stomatin-like protein 2,quantified,19.7644,20.1261,-0.361681,0.530303,exact,12,1,29.6029
+STOML3,Q8TAV4,Stomatin-like protein 3,quantified,21.6823,20.8767,0.805591,0.106061,exact,12,1,89.1095
+HSPA9,P38646,"Stress-70 protein, mitochondrial",quantified,26.0417,26.0029,0.0388881,0.267677,exact,12,18,47.5331
+STIP1,P31948,Stress-induced-phosphoprotein 1,quantified,19.2985,19.3322,-0.033676,0.876263,exact,12,1,44.4043
+SMC4,Q9NTJ3,Structural maintenance of chromosomes protein 4,quantified,18.4157,18.598,-0.182215,1,exact,12,1,38.4477
+SDHA,P31040,"Succinate dehydrogenase [ubiquinone] flavoprotein subunit, mitochondrial",quantified,24.0682,24.5363,-0.468077,0.0732323,exact,12,10,24.9097
+SDHB,P21912,"Succinate dehydrogenase [ubiquinone] iron-sulfur subunit, mitochondrial",quantified,22.4865,23.201,-0.714515,0.106061,exact,12,7,13.3574
+SDHC,Q99643,"Succinate dehydrogenase cytochrome b560 subunit, mitochondrial",quantified,19.4189,21.1263,-1.70739,0.00252525,exact,12,3,1.08303
+ALDH5A1,P51649,"Succinate-semialdehyde dehydrogenase, mitochondrial",quantified,21.6314,22.0899,-0.458449,0.14899,exact,12,4,25.0903
+SUCLA2,Q9P2R7,"Succinyl-CoA ligase [ADP-forming] subunit beta, mitochondrial",quantified,22.6999,23.4504,-0.750443,0.0732323,exact,12,4,12.0939
+SUCLG1,P53597,"Succinyl-CoA ligase [GDP-forming] subunit alpha, mitochondrial",quantified,23.0273,23.807,-0.779623,0.00252525,exact,12,5,11.432
+SUCLG2,Q96I99,"Succinyl-CoA ligase [GDP-forming] subunit beta, mitochondrial",quantified,24.2539,25.041,-0.787037,0.0479798,exact,12,14,11.1913
+OXCT1,P55809,"Succinyl-CoA:3-ketoacid-coenzyme A transferase 1, mitochondrial",quantified,19.9479,20.9768,-1.02893,0.00505051,exact,12,1,5.41516
+SUOX,P51687,"Sulfite oxidase, mitochondrial",quantified,19.2484,19.8253,-0.576872,0.0176768,exact,12,1,19.6149
+SULT1A1,P50225,Sulfotransferase 1A1,quantified,19.3042,19.2287,0.075564,0.267677,exact,12,1,49.9097
+SULT1C2,O00338,Sulfotransferase 1C2,quantified,18.5899,18.9311,-0.341187,0.14899,exact,12,1,30.6859
+SAE1,Q9UBE0,SUMO-activating enzyme subunit 1,quantified,19.2773,18.5917,0.685557,0.00252525,exact,12,1,85.0782
+MTREX,P42285,Superkiller viralicidic activity 2-like 2,quantified,20.3376,20.2633,0.074276,0.343434,exact,12,1,49.7593
+SOD1,P00441,Superoxide dismutase [Cu-Zn],quantified,24.2079,25.0588,-0.850965,0.00252525,exact,12,6,9.32611
+SOD2,P04179,"Superoxide dismutase [Mn], mitochondrial",quantified,24.0693,24.2565,-0.187238,0.20202,exact,12,10,38.0866
+SBSN,Q6UWP8,Suprabasin,quantified,23.099,24.061,-0.961956,0.106061,exact,12,1,6.79904
+SMARCAL1,Q9NZC9,SWI/SNF-related matrix-associated actin-dependent regulator of chromatin subfamily A-like protein 1,quantified,21.5018,22.2488,-0.746984,0.20202,exact,12,2,12.3345
+VAT1,Q99536,Synaptic vesicle membrane protein VAT-1 homolog,quantified,23.087,22.1684,0.918573,0.0732323,exact,12,5,91.8171
+RIC8A,Q9NPQ8,Synembryn-A,quantified,20.7086,20.129,0.579655,0.00252525,exact,12,1,80.2647
+TLN1,Q9Y490,Talin-1,quantified,26.1854,25.7319,0.45353,0.00505051,exact,12,27,73.1649
+TNKS2,Q9H2K2,Tankyrase-2,quantified,22.8566,23.54,-0.683415,0.00505051,exact,12,1,15.1023
+TPX2,Q9ULW0,Targeting protein for Xklp2,quantified,21.8424,20.8624,0.980036,0.010101,exact,12,1,92.84
+TAS2R20,P59543,Taste receptor type 2 member 20,quantified,21.6629,23.5433,-1.88043,0.0176768,exact,12,1,0.842359
+TBC1D8B,Q0IIM8,TBC1 domain family member 8B,quantified,20.9615,20.7745,0.187033,0.638889,exact,12,1,56.2575
+TCP1,P17987,T-complex protein 1 subunit alpha,quantified,21.8414,21.4991,0.342296,0.638889,exact,12,4,66.3658
+CCT2,P78371,T-complex protein 1 subunit beta,quantified,25.8117,26.1139,-0.302226,0.876263,exact,12,6,32.1901
+CCT4,P50991,T-complex protein 1 subunit delta,quantified,23.512,22.8489,0.663194,0.00252525,exact,12,6,84.296
+CCT5,P48643,T-complex protein 1 subunit epsilon,quantified,22.6446,22.2554,0.389234,0.0176768,exact,12,4,69.6149
+CCT7,Q99832,T-complex protein 1 subunit eta,quantified,22.1192,21.9297,0.189534,0.638889,exact,12,4,56.3779
+CCT3,P49368,T-complex protein 1 subunit gamma,quantified,21.9465,21.7848,0.161711,0.530303,exact,12,4,54.994
+CCT8,P50990,T-complex protein 1 subunit theta,quantified,22.2517,21.6298,0.621842,0.0732323,exact,12,5,82.0698
+CCT6A,P40227,T-complex protein 1 subunit zeta,quantified,21.5482,21.4886,0.0595761,0.343434,exact,12,4,48.9771
+TNC,P24821,Tenascin,quantified,21.5418,22.0621,-0.520247,1,exact,12,5,22.2022
+TNS1,Q9HBL0,Tensin-1,quantified,20.6103,20.2573,0.353076,0.0176768,exact,12,2,66.9073
+TUT4,Q5TAX3,Terminal uridylyltransferase 4,quantified,20.0461,20.6171,-0.570996,0.343434,exact,12,1,19.8556
+TUT7,Q5VYS8,Terminal uridylyltransferase 7,quantified,20.3524,19.6007,0.751683,0.0479798,exact,12,1,87.6053
+TSPY26P,Q9H489,Testis-specific Y-encoded-like protein 3,quantified,21.569,20.821,0.747995,0.00252525,exact,12,1,87.4248
+TSPAN14,Q8NG11,Tetraspanin-14,quantified,19.9398,20.8028,-0.863038,0.20202,exact,12,1,9.02527
+TTC24,A2A3L6,Tetratricopeptide repeat protein 24,quantified,19.6996,19.7286,-0.028952,0.638889,exact,12,1,44.5848
+TTC28,Q96AY4,Tetratricopeptide repeat protein 28,quantified,21.2008,20.7745,0.426288,0.20202,exact,12,1,71.781
+SKIC3,Q6PGP7,Tetratricopeptide repeat protein 37,quantified,21.272,21.916,-0.644083,0.20202,exact,12,1,16.6667
+TTC38,Q5R3I4,Tetratricopeptide repeat protein 38,quantified,20.9762,20.9553,0.0208848,1,exact,12,2,46.5704
+TXN,P10599,Thioredoxin,quantified,23.37,24.2866,-0.916591,0.00252525,exact,12,5,7.58123
+TXNDC15,Q96J42,Thioredoxin domain-containing protein 15,quantified,22.002,21.2833,0.718647,0.638889,exact,12,1,86.2816
+TXNDC17,Q9BRA2,Thioredoxin domain-containing protein 17,quantified,20.2027,20.7199,-0.51717,0.106061,exact,12,1,22.3827
+TXNDC5,Q8NBS9,Thioredoxin domain-containing protein 5,quantified,20.8061,19.9725,0.833594,0.00252525,exact,12,2,89.9519
+PRDX3,P30048,"Thioredoxin-dependent peroxide reductase, mitochondrial",quantified,24.7687,25.197,-0.428299,0.14899,exact,12,10,26.4741
+TMX4,Q9H1E5,Thioredoxin-related transmembrane protein 4,quantified,18.7959,19.0087,-0.212834,0.106061,exact,12,1,36.8833
+TST,Q16762,Thiosulfate sulfurtransferase,quantified,23.4619,23.8542,-0.392285,0.638889,exact,12,8,28.3995
+THBS1,P07996,Thrombospondin-1,quantified,18.3839,18.1778,0.206124,0.431818,exact,12,1,57.4609
+THY1,P04216,Thy-1 membrane glycoprotein,quantified,19.404,19.8538,-0.449771,0.0732323,exact,12,1,25.5716
+TYMP,P19971,Thymidine phosphorylase,quantified,19.9392,18.6564,1.28279,0.030303,exact,12,1,96.6907
+TIGD2,Q4W5G0,Tigger transposable element-derived protein 2,quantified,21.7785,21.3067,0.4718,0.755051,exact,12,1,74.3682
+TIGD7,Q6NT04,Tigger transposable element-derived protein 7,quantified,19.8806,20.4088,-0.528181,0.530303,exact,12,1,21.7208
+TJP1,Q07157,Tight junction protein ZO-1,quantified,19.6422,18.3543,1.28787,0.20202,exact,12,1,96.8111
+TTN,Q8WZ42,Titin,quantified,21.7094,21.4877,0.22177,0.106061,exact,12,3,58.4236
+TIAM2,Q8IVF5,T-lymphoma invasion and metastasis-inducing protein 2,quantified,19.5859,20.4236,-0.837731,0.14899,exact,12,1,9.44645
+TECR,Q9NZ01,"Trans-2,3-enoyl-CoA reductase",quantified,18.7015,18.2214,0.480147,0.20202,exact,12,1,75.1504
+TALDO1,P37837,Transaldolase,quantified,22.5307,22.5552,-0.0244631,1,exact,12,5,44.8857
+ELOB,Q15370,Transcription elongation factor B polypeptide 2,quantified,19.548,19.3876,0.160438,0.20202,exact,12,1,54.8736
+SUPT6H,Q7KZ85,Transcription elongation factor SPT6,quantified,19.1667,19.4207,-0.254047,0.755051,exact,12,1,34.3562
+TCERG1,O14776,Transcription elongation regulator 1,quantified,18.3814,17.9396,0.441787,0.431818,exact,12,1,72.503
+GTF2B,Q00403,Transcription initiation factor IIB,quantified,20.8284,20.7049,0.123537,0.876263,exact,12,1,52.8881
+TRIM28,Q13263,Transcription intermediary factor 1-beta,quantified,19.8421,19.2739,0.568272,0.030303,exact,12,2,79.6029
+PURA,Q00577,Transcriptional activator protein Pur-alpha,quantified,19.0021,18.5655,0.436567,0.0732323,exact,12,1,72.2022
+TBL3,Q12788,Transducin beta-like protein 3,quantified,20.8853,20.4774,0.407941,0.431818,exact,12,1,70.8183
+TRA2B,P62995,Transformer-2 protein homolog beta,quantified,19.6004,18.6194,0.980991,0.106061,exact,12,1,92.9001
+TGFB1I1,O43294,Transforming growth factor beta-1-induced transcript 1 protein,quantified,19.1626,18.0537,1.1089,0.010101,exact,12,1,94.9458
+TGFBI,Q15582,Transforming growth factor-beta-induced protein ig-h3,quantified,21.7275,21.8446,-0.117116,1,exact,12,4,40.8544
+RHOA,P61586,Transforming protein RhoA,quantified,22.9205,22.6282,0.292343,0.00252525,exact,12,4,62.9362
+TAGLN,Q01995,Transgelin,quantified,25.9795,25.8379,0.141545,0.431818,exact,12,15,53.6101
+TAGLN2,P37802,Transgelin-2,quantified,24.7394,23.641,1.09837,0.00252525,exact,12,10,94.7653
+TAGLN3,Q9UI15,Transgelin-3,quantified,21.3996,21.175,0.224598,0.431818,exact,12,1,58.6643
+VCP,P55072,Transitional endoplasmic reticulum ATPase,quantified,24.2417,23.8341,0.407518,0.0732323,exact,12,15,70.698
+TKT,P29401,Transketolase,quantified,25.0183,24.5321,0.48623,0.0479798,exact,12,17,75.5114
+TSN,Q15631,Translin,quantified,18.582,18.4879,0.094124,0.343434,exact,12,1,51.3237
+TSPO,P30536,Translocator protein,quantified,19.998,19.5969,0.401025,0.030303,exact,12,1,70.3369
+TM9SF2,Q99805,Transmembrane 9 superfamily member 2,quantified,20.5549,19.6092,0.945694,0.00252525,exact,12,1,92.0578
+TM9SF4,Q92544,Transmembrane 9 superfamily member 4,quantified,19.078,19.5951,-0.517166,0.00505051,exact,12,1,22.4428
+TMED10,P49755,Transmembrane emp24 domain-containing protein 10,quantified,21.2675,20.9739,0.293571,0.14899,exact,12,2,63.0566
+GPNMB,Q14956,Transmembrane glycoprotein NMB,quantified,20.1409,19.3021,0.838842,0.00252525,exact,12,1,90.3129
+TMEM109,Q9BVC6,Transmembrane protein 109,quantified,20.8791,19.6292,1.2499,0.00252525,exact,12,1,96.3899
+TMEM185A,Q8NFB2,Transmembrane protein 185A,quantified,19.2548,19.0984,0.156437,0.876263,exact,12,1,54.7533
+TMEM201,Q5SNT2,Transmembrane protein 201,quantified,21.0969,20.2273,0.869591,0.14899,exact,12,1,90.7341
+TMEM33,P57088,Transmembrane protein 33,quantified,19.4569,19.1825,0.274424,0.106061,exact,12,1,61.9735
+TMEM41A,Q96HV5,Transmembrane protein 41A,quantified,22.255,22.62,-0.364988,0.431818,exact,12,1,29.4224
+TMEM43,Q9BTV4,Transmembrane protein 43,quantified,22.9016,23.1797,-0.278092,0.14899,exact,12,2,33.3935
+TTR,P02766,Transthyretin,quantified,25.1906,24.7453,0.445232,0.14899,exact,12,9,72.8039
+SLC25A1,P53007,"Tricarboxylate transport protein, mitochondrial",quantified,21.9166,22.0166,-0.0999746,0.106061,exact,12,5,41.3357
+HADHA,P40939,"Trifunctional enzyme subunit alpha, mitochondrial",quantified,25.0342,25.4522,-0.41801,0.0732323,exact,12,21,27.2563
+HADHB,P55084,"Trifunctional enzyme subunit beta, mitochondrial",quantified,25.1972,25.5051,-0.30792,0.267677,exact,12,15,32.0698
+TRIOBP,Q9H2D6,TRIO and F-actin-binding protein,quantified,20.896,20.5026,0.39333,0.876263,exact,12,1,69.8556
+TPI1,P60174,Triosephosphate isomerase,quantified,25.7059,26.1268,-0.42084,0.0176768,exact,12,15,26.8953
+TPP1,O14773,Tripeptidyl-peptidase 1,quantified,23.0742,22.7731,0.301072,0.343434,exact,12,5,63.7786
+TRMT5,Q32P41,tRNA (guanine-N(1)-)-methyltransferase,quantified,23.7473,24.1443,-0.396984,0.267677,exact,12,1,28.219
+DUS1L,Q6P1R4,tRNA-dihydrouridine synthase 1-like,quantified,21.5384,22.5012,-0.96279,0.010101,exact,12,1,6.73887
+TPM1,P09493,Tropomyosin alpha-1 chain,quantified,26.4305,25.6616,0.768957,0.00252525,exact,12,15,88.0866
+TPM3,P06753,Tropomyosin alpha-3 chain,quantified,22.06,21.8528,0.207229,0.20202,exact,12,4,57.5812
+TPM4,P67936,Tropomyosin alpha-4 chain,quantified,22.6175,22.1924,0.425151,0.14899,exact,12,6,71.7208
+TPM2,P07951,Tropomyosin beta chain,quantified,23.7987,23.1737,0.625041,0.00505051,exact,12,3,82.2503
+,P15157,Tryptase alpha-1,quantified,21.7441,20.4508,1.2933,0.00252525,exact,12,2,96.8712
+WARS1,P23381,"Tryptophanyl-tRNA synthetase, cytoplasmic",quantified,20.2772,20.229,0.048226,0.876263,exact,12,1,48.0746
+TUBA1A,Q71U36,Tubulin alpha-1A chain,quantified,27.3412,27.0005,0.340697,0.106061,exact,12,27,65.8845
+TUBA1B,P68363,Tubulin alpha-1B chain,quantified,25.0944,24.9733,0.121181,0.431818,exact,12,2,52.7677
+TUBA4A,P68366,Tubulin alpha-4A chain,quantified,21.2276,21.6461,-0.418501,0.343434,exact,12,2,27.1961
+TUBB,P07437,Tubulin beta chain,quantified,24.2603,23.8865,0.373857,0.0732323,exact,12,5,68.5921
+TUBB1,Q9H4B7,Tubulin beta-1 chain,quantified,25.0222,24.8043,0.217868,0.14899,exact,12,4,58.0626
+TUBB2A,Q13885,Tubulin beta-2A chain,quantified,26.617,26.3914,0.225569,0.267677,exact,12,18,58.7244
+TUBB4B,P68371,Tubulin beta-2C chain,quantified,25.6878,25.7262,-0.0383907,0.755051,exact,12,7,43.8628
+TUBB4A,P04350,Tubulin beta-4 chain,quantified,20.9338,22.0062,-1.07244,0.0479798,exact,12,1,4.75331
+TUBB6,Q9BUF5,Tubulin beta-6 chain,quantified,21.5846,21.659,-0.074461,0.530303,exact,12,1,42.6594
+TBCA,O75347,Tubulin-specific chaperone A,quantified,19.6875,19.5208,0.166757,0.267677,exact,12,1,55.2948
+TINAG,Q9UJW2,Tubulointerstitial nephritis antigen,quantified,20.2467,20.9735,-0.726777,0.106061,exact,12,2,12.9362
+TINAGL1,Q9GZM7,Tubulointerstitial nephritis antigen-like,quantified,24.2178,23.985,0.232732,0.638889,exact,12,8,59.3261
+TDRD6,O60522,Tudor domain-containing protein 6,quantified,22.4822,21.0449,1.43736,0.00252525,exact,12,2,97.4128
+TUFT1,Q9NNX1,Tuftelin,quantified,19.4514,21.0435,-1.59213,0.14899,exact,12,1,1.56438
+TP63,Q9H3D4,Tumor protein 63,quantified,23.2327,22.7506,0.482094,0.106061,exact,12,1,75.2708
+TPD52L2,O43399,Tumor protein D54,quantified,19.6307,19.164,0.466719,0.030303,exact,12,1,74.0072
+TACSTD2,P09758,Tumor-associated calcium signal transducer 2,quantified,18.3161,18.579,-0.262961,0.755051,exact,12,1,33.7545
+TWF1,Q12792,Twinfilin-1,quantified,21.3146,20.511,0.803512,0.0732323,exact,12,1,89.0493
+BLK,P51451,Tyrosine-protein kinase Blk,quantified,21.262,20.1486,1.11333,0.00505051,exact,12,1,95.006
+PTPN6,P29350,Tyrosine-protein phosphatase non-receptor type 6,quantified,20.2897,20.7908,-0.501135,0.20202,exact,12,1,23.0445
+SNRNP70,P08621,U1 small nuclear ribonucleoprotein 70 kDa,quantified,20.2393,19.7071,0.532246,0.010101,exact,12,1,78.219
+COQ9,O75208,"Ubiquinone biosynthesis protein COQ9, mitochondrial",quantified,20.0019,20.5368,-0.534884,0.010101,exact,12,1,21.1191
+USP29,Q9HBJ7,Ubiquitin carboxyl-terminal hydrolase 29,quantified,20.4296,20.0642,0.365374,0.755051,exact,12,1,67.9302
+USP5,P45974,Ubiquitin carboxyl-terminal hydrolase 5,quantified,19.1691,18.9193,0.249735,0.0176768,exact,12,1,60.349
+USP7,Q93009,Ubiquitin carboxyl-terminal hydrolase 7,quantified,19.8223,21.3674,-1.54506,0.106061,exact,12,2,1.62455
+YOD1,Q5VVQ6,Ubiquitin thioesterase OTU1,quantified,21.3728,21.6561,-0.283272,0.530303,exact,12,1,33.0927
+UBA52,P62987,Ubiquitin-60S ribosomal protein L40,quantified,26.2212,25.6271,0.594109,0.00252525,exact,12,7,80.6859
+UBAP2L,Q14157,Ubiquitin-associated protein 2-like,quantified,21.8328,21.9004,-0.067616,1,exact,12,1,43.0806
+UBE2N,P61088,Ubiquitin-conjugating enzyme E2 N,quantified,22.3352,22.3606,-0.0254018,0.638889,exact,12,4,44.8255
+UBE3D,Q7Z6J8,Ubiquitin-conjugating enzyme E2C-binding protein,quantified,18.9367,18.0298,0.906935,0.00252525,exact,12,1,91.5162
+UBA1,P22314,Ubiquitin-like modifier-activating enzyme 1,quantified,24.1365,24.0023,0.134222,0.267677,exact,12,13,53.0686
+UBXN7,O94888,UBX domain-containing protein 7,quantified,21.3059,21.7222,-0.416261,0.876263,exact,12,1,27.3165
+B3GNT7,Q8NFL0,"UDP-GlcNAc:betaGal beta-1,3-N-acetylglucosaminyltransferase 7",quantified,21.4621,22.3638,-0.901623,0.106061,exact,12,1,7.88207
+GALE,Q14376,UDP-glucose 4-epimerase,quantified,18.8391,18.8647,-0.025625,0.530303,exact,12,1,44.7653
+UGDH,O60701,UDP-glucose 6-dehydrogenase,quantified,19.6726,19.8428,-0.170174,0.638889,exact,12,2,38.9892
+UGT1A10,Q9HAW8,UDP-glucuronosyltransferase 1-10,quantified,22.6036,22.8555,-0.251895,0.638889,exact,12,4,34.657
+UGT1A7,Q9HAW7,UDP-glucuronosyltransferase 1-7,quantified,20.1297,20.0969,0.032878,0.755051,exact,12,1,47.3526
+UGT1A8,Q9HAW9,UDP-glucuronosyltransferase 1-8,quantified,21.0816,21.2953,-0.21371,0.343434,exact,12,1,36.8231
+UGT1A9,O60656,UDP-glucuronosyltransferase 1-9,quantified,21.7842,22.439,-0.654785,0.20202,exact,12,4,16.2455
+,Q9Y4X1,UDP-glucuronosyltransferase 2A1,quantified,19.4485,19.7726,-0.324095,1,exact,12,1,31.3478
+UGT2B4,P06133,UDP-glucuronosyltransferase 2B4,quantified,19.5838,20.1098,-0.52607,0.431818,exact,12,1,21.9013
+UGT2B7,P16662,UDP-glucuronosyltransferase 2B7,quantified,23.4906,23.8883,-0.397614,0.267677,exact,12,8,28.1588
+CMPK1,P30085,UMP-CMP kinase,quantified,20.6171,20.8501,-0.233044,0.0479798,exact,12,3,35.7401
+MYORG,Q6NSJ0,Uncharacterized family 31 glucosidase KIAA1161,quantified,20.0517,21.3599,-1.30815,0.00252525,exact,12,1,2.58724
+TASOR2,Q5VWN6,Uncharacterized protein C10orf18,quantified,20.7165,20.86,-0.143545,0.638889,exact,12,2,39.8315
+PROSER2,Q86WR7,Uncharacterized protein C10orf47,quantified,20.9045,20.9476,-0.043165,0.876263,exact,12,1,43.8026
+FAM222A,Q5U5X8,Uncharacterized protein C12orf34,quantified,18.8375,19.5902,-0.752688,0.20202,exact,12,1,11.8532
+LRTM3,Q8NDH2,Uncharacterized protein C13orf40,quantified,19.5293,20.0205,-0.491182,0.010101,exact,12,1,23.4657
+CDIN1,Q9Y2V0,Uncharacterized protein C15orf41,quantified,20.7889,21.5942,-0.805383,0.343434,exact,12,1,10.5897
+MROH7,Q68CQ1,Uncharacterized protein C1orf175,quantified,23.6312,23.0143,0.616932,0.343434,exact,12,1,81.9495
+PRR14L,Q5THK1,Uncharacterized protein C22orf30,quantified,21.488,22.5172,-1.02925,0.106061,exact,12,1,5.29483
+CLHC1,Q8NHS4,Uncharacterized protein C2orf63,quantified,19.8164,20.1842,-0.367795,0.755051,exact,12,1,29.302
+SPATA6L,Q8N4H0,Uncharacterized protein C9orf68,quantified,22.4361,23.5702,-1.13404,0.14899,exact,12,1,3.97112
+PRR32,B1ATL7,Uncharacterized protein CXorf64,quantified,19.9926,20.0761,-0.083472,1,exact,12,1,42.3586
+EMC1,Q8N766,Uncharacterized protein KIAA0090,quantified,19.7608,19.882,-0.121213,1,exact,12,1,40.7341
+,Q9UPP5,Uncharacterized protein KIAA1107,quantified,22.0514,21.5032,0.54821,0.0479798,exact,12,1,79.1215
+BLTP1,Q2LD37,Uncharacterized protein KIAA1109,quantified,19.8263,19.4875,0.338776,0.638889,exact,12,1,65.5235
+KIAA1614,Q5VZ46,Uncharacterized protein KIAA1614,quantified,24.0928,23.7413,0.35152,0.00505051,exact,12,1,66.787
+RTRAF,Q9Y224,UPF0568 protein C14orf166,quantified,20.1795,19.6455,0.534033,0.030303,exact,12,1,78.4597
+C8orf82,Q6P1X6,UPF0598 protein C8orf82,quantified,18.5567,19.0105,-0.453745,0.20202,exact,12,1,25.3911
+DIPK2A,Q8NDZ4,UPF0672 protein C3orf58,quantified,23.4555,24.4512,-0.995728,0.14899,exact,12,1,5.77617
+ABRACL,Q9P1F3,UPF0727 protein C6orf115,quantified,19.2418,18.8813,0.360522,0.14899,exact,12,1,67.3887
+UMOD,P07911,Uromodulin,quantified,24.6853,22.9996,1.68576,0.010101,exact,12,10,98.556
+UTS2,O95399,Urotensin-2,quantified,18.5492,19.1255,-0.576299,0.0732323,exact,12,1,19.7353
+UGP2,Q16851,UTP--glucose-1-phosphate uridylyltransferase,quantified,20.9509,20.7131,0.237824,0.755051,exact,12,2,59.5066
+VPS13D,Q5THJ4,Vacuolar protein sorting-associated protein 13D,quantified,19.1392,20.6528,-1.51356,0.010101,exact,12,1,1.86522
+VPS29,Q9UBQ0,Vacuolar protein sorting-associated protein 29,quantified,21.2311,21.0766,0.154555,0.530303,exact,12,3,54.5126
+VPS35,Q96QK1,Vacuolar protein sorting-associated protein 35,quantified,22.3568,22.0317,0.32514,0.030303,exact,12,5,65.0421
+BPHL,Q86WA6,Valacyclovir hydrolase,quantified,21.7625,22.4184,-0.655906,0.20202,exact,12,5,16.1853
+VARS1,P26640,Valyl-tRNA synthetase,quantified,20.0863,20.3654,-0.27914,0.755051,exact,12,2,33.3333
+VCAN,P13611,Versican core protein,quantified,21.9696,21.6037,0.365877,0.530303,exact,12,3,67.9904
+SLC27A2,O14975,Very long-chain acyl-CoA synthetase,quantified,19.0601,19.7226,-0.662465,0.14899,exact,12,1,15.8243
+ACADVL,P49748,"Very long-chain specific acyl-CoA dehydrogenase, mitochondrial",quantified,23.8491,23.835,0.0140627,1,exact,12,12,46.3297
+SEC22B,O75396,Vesicle-trafficking protein SEC22b,quantified,21.6764,21.2973,0.379065,0.010101,exact,12,3,68.8929
+SLC18A3,Q16572,Vesicular acetylcholine transporter,quantified,21.1218,21.8319,-0.710067,0.267677,exact,12,1,13.6582
+SLC32A1,Q9H598,Vesicular inhibitory amino acid transporter,quantified,20.0336,19.7893,0.244288,0.030303,exact,12,1,59.988
+VIL1,P09327,Villin-1,quantified,19.5482,20.0038,-0.455654,0.106061,exact,12,1,25.2106
+VIM,P08670,Vimentin,quantified,28.1891,27.0501,1.13902,0.00252525,exact,12,45,95.6679
+VCL,P18206,Vinculin,quantified,25.5066,24.8753,0.631229,0.00252525,exact,12,24,82.7316
+GC,P02774,Vitamin D-binding protein,quantified,21.1845,21.474,-0.289527,0.431818,exact,12,2,32.9122
+VTN,P04004,Vitronectin,quantified,25.2411,23.7627,1.47842,0.0176768,exact,12,9,97.6534
+VDAC1,P21796,Voltage-dependent anion-selective channel protein 1,quantified,22.7415,23.3007,-0.559183,0.00252525,exact,12,6,20.2166
+VDAC2,P45880,Voltage-dependent anion-selective channel protein 2,quantified,20.8929,21.5737,-0.680795,0.00252525,exact,12,3,15.1625
+VDAC3,Q9Y277,Voltage-dependent anion-selective channel protein 3,quantified,20.7898,21.4542,-0.664344,0.00252525,exact,12,1,15.7641
+VWA1,Q6PCB0,von Willebrand factor A domain-containing protein 1,quantified,22.8659,22.8043,0.0615801,1,exact,12,3,49.0373
+ATP6V0A1,Q93050,V-type proton ATPase 116 kDa subunit a isoform 1,quantified,20.4671,21.1926,-0.725525,0.14899,exact,12,1,12.9964
+ATP6V1A,P38606,V-type proton ATPase catalytic subunit A,quantified,24.0714,24.6331,-0.561698,0.14899,exact,12,16,20.0963
+ATP6V1B2,P21281,"V-type proton ATPase subunit B, brain isoform",quantified,21.9396,22.2793,-0.339738,0.530303,exact,12,4,30.8063
+ATP6V1B1,P15313,"V-type proton ATPase subunit B, kidney isoform",quantified,22.5241,23.1156,-0.591589,0.0479798,exact,12,4,19.2539
+ATP6V1D,Q9Y5K8,V-type proton ATPase subunit D,quantified,19.2097,19.6371,-0.427325,0.20202,exact,12,1,26.5343
+ATP6V1E1,P36543,V-type proton ATPase subunit E 1,quantified,21.9766,22.4346,-0.458001,0.20202,exact,12,2,25.1504
+ATP6V1G1,O75348,V-type proton ATPase subunit G 1,quantified,21.4507,22.1097,-0.658977,0.0732323,exact,12,4,16.0048
+ATP6V1H,Q9UI12,V-type proton ATPase subunit H,quantified,21.0659,21.5086,-0.442754,0.267677,exact,12,3,25.9928
+WIPI2,Q9Y4P8,WD repeat domain phosphoinositide-interacting protein 2,quantified,20.0012,19.5209,0.480341,0.00505051,exact,12,1,75.2106
+WDR1,O75083,WD repeat-containing protein 1,quantified,23.7347,23.0946,0.640128,0.010101,exact,12,5,83.0927
+XPNPEP2,O43895,Xaa-Pro aminopeptidase 2,quantified,19.4073,19.7051,-0.297772,0.431818,exact,12,1,32.491
+PEPD,P12955,Xaa-Pro dipeptidase,quantified,23.528,23.0896,0.438447,0.530303,exact,12,6,72.2623
+XRCC5,P13010,X-ray repair cross-complementing protein 5,quantified,22.7497,22.6907,0.0590435,0.106061,exact,12,6,48.8568
+XRCC6,P12956,X-ray repair cross-complementing protein 6,quantified,22.7029,22.3629,0.339961,0.0479798,exact,12,7,65.7641
+ZSCAN22,P10073,Zinc finger and SCAN domain-containing protein 22,quantified,19.7912,18.6068,1.18442,0.343434,exact,12,1,96.0289
+ZFYVE26,Q68DK2,Zinc finger FYVE domain-containing protein 26,quantified,18.1076,18.9832,-0.875583,0.20202,exact,12,1,8.60409
+ZMYM2,Q9UBW7,Zinc finger MYM-type protein 2,quantified,20.531,21.2242,-0.69323,0.267677,exact,12,1,14.5006
+ZNF154,Q13106,Zinc finger protein 154,quantified,18.3546,19.1769,-0.822249,0.030303,exact,12,1,10.1083
+ZBTB14,O43829,Zinc finger protein 161 homolog,quantified,21.9026,23.1168,-1.2142,0.0732323,exact,12,1,3.36943
+ZNF276,Q8N554,Zinc finger protein 276,quantified,20.73,21.7621,-1.03211,0.14899,exact,12,1,5.23466
+ZNF311,Q5JNZ3,Zinc finger protein 311,quantified,19.878,21.1115,-1.23354,0.267677,exact,12,1,3.12876
+ZSCAN31,Q96LW9,Zinc finger protein 323,quantified,22.4513,21.6756,0.775697,0.343434,exact,12,1,88.2671
+ZNF480,Q8WV37,Zinc finger protein 480,quantified,19.3808,21.29,-1.90917,0.14899,exact,12,1,0.78219
+ZNF528,Q3MIS6,Zinc finger protein 528,quantified,22.5269,22.313,0.213866,0.638889,exact,12,1,57.9422
+,Q9NPA5,"Zinc finger protein 64 homolog, isoforms 1 and 2",quantified,22.9972,23.8544,-0.857199,0.431818,exact,12,1,9.14561
+ZNF711,Q9Y462,Zinc finger protein 711,quantified,21.4786,21.9609,-0.482274,0.343434,exact,12,1,24.1276
+,P0C7X5,Zinc finger protein 806,quantified,18.3436,18.9376,-0.593954,0.106061,exact,12,1,19.0734
+ZNF843,Q8N446,Zinc finger protein 843,quantified,18.7595,18.5966,0.162973,1,exact,12,1,55.1745
+ZNF90,Q03938,Zinc finger protein 90,quantified,22.1787,22.0251,0.153586,0.431818,exact,12,1,54.3321
+ZRANB2,O95218,Zinc finger Ran-binding domain-containing protein 2,quantified,24.4802,25.175,-0.694727,0.267677,exact,12,1,14.4404
+AZGP1,P25311,Zinc-alpha-2-glycoprotein,quantified,21.7656,21.4242,0.341437,0.20202,exact,12,4,66.065
