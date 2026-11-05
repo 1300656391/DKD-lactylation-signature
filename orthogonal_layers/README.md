@@ -5,7 +5,7 @@ DKD kidney proteomes (PRIDE PXD041884; iProX IPX0003092000/PXD040617), proximal-
 DNA methylomes (GEO GSE233758 primary, GSE145745 replication), and perturbational
 connectivity (iLINCS/L1000; queried 3 November 2026, saved API responses included for
 the LIB_2 library). Python 3.12 with pandas/NumPy/SciPy; additionally openpyxl (B1),
-requests (B3), rdata (B4).
+requests (B3), rdata (B4); see requirements.txt. Licensed under MIT (LICENSE).
 
 Each module folder holds the analysis scripts together with the frozen output tables
 they produced. `assemble_esm_tables.py` (package root) rebuilds the submission

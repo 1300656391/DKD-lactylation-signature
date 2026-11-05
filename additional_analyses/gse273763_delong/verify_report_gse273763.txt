@@ -17,5 +17,4 @@ trail (see the root README.md pipeline table):
 Pipeline scripts and per-step outputs: evidence_gain/ within this archive (flattened; see README pipeline table).
 GSE294519 (tubular-region DSP, not a validation cohort): scoring in
 evidence_gain/score_gse294519.py + Table S15c.
-Note: the public GitHub mirror is pending resync; this archive is the authoritative
-code deposit accompanying the submission.
+Note: the full analysis is publicly mirrored at https://github.com/1300656391/DKD-lactylation-signature.

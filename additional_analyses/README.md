@@ -12,7 +12,7 @@ analysis script together with its frozen output table.
 | `cytokine_podocyte_S15b/` | Table S15b - cytokine-axis and podocyte-module correlations | `26c_s15b_complete.R` | `TableS15b_cytokine_podocyte_module.csv` |
 | `gse273763_immune_nnls_S17/` | Table S17 - GSE273763 ssGSEA (two normalizations) and NNLS B-cell fractions | `step1_immune_gse273763.R`, `step1b_immune_nnls_gate.py`, `step1c_s17_corr_full.py` | `TableS17_gse273763_immune.csv` + intermediate CSVs |
 | `gse273763_delong/` | GSE273763 DeLong comparisons (PDK2/PDK4 versus signature) | `46_gse273763_score.py`, `47_gse273763_nnls.py`, `48_gse273763_s17.py` | `verify_report_gse273763.txt` |
-| `head_to_head_bootstrap/` | Head-to-head paired bootstrap (signature versus PTGS2, B = 2000) | `head_to_head.py`, `49_head_to_head.py` | `signature_vs_PTGS2_bootstrap.csv` |
+| `head_to_head_bootstrap/` | Head-to-head paired bootstrap (signature versus PTGS2, B = 2000) | `head_to_head.py` | `signature_vs_PTGS2_bootstrap.csv` |
 | `2x_myeloid_ref/` | NNLS reference rebuild (section 2.7 sensitivity): combined GSE131882 kidney + GSE209781 disease-derived immune reference | `step1_annotate.R`, `step2_build_ref.R` | `ref_marker_list_combined.csv`, `ref_type_counts_combined.csv` |
 | `2_cross_deconv/` | Reference-constrained NNLS deconvolution re-run on the bulk cohorts (section 2.7 cross-method sensitivity; B-cell fraction proxy) | `step1_extract.R`, `step2_deconv.py`, `step3_secondary.py` | `deconv_fractions_all.csv`, `deconv_group_tests.csv`, `deconv_pdk_correlations.csv` |
 
