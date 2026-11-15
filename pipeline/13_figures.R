@@ -334,7 +334,7 @@ best_df <- data.frame(gene = present, fpr = 1 - best_pts$specificity,
 best_df$auc <- sapply(present, function(g) as.numeric(auc(rocs[[g]])))
 lab_ord <- best_df[order(-best_df$auc), ]
 rows_y <- c(0.30, 0.235, 0.17, 0.105, 0.04)[seq_len(nrow(lab_ord))]
-x0 <- 0.50
+x0 <- 0.46
 lab_df <- data.frame(gene = lab_ord$gene, auc = lab_ord$auc,
                      lx = x0, ly = rows_y)
 mp5 <- ggplot(roc_df, aes(fpr, tpr, color = gene, linetype = gene)) +
@@ -415,7 +415,7 @@ lts <- setNames(rep(lt8, length.out = length(roc_list)), names(roc_list))
 p7 <- ggroc(roc_list, linewidth = .65) +
   geom_abline(slope = 1, intercept = 1, linetype = 3) +
   scale_color_manual(values = cols) + scale_linetype_manual(values = lts) +
-  guides(linetype = "none", color = guide_legend(nrow = 2, byrow = TRUE)) +
+  guides(linetype = "none", color = guide_legend(nrow = 3, byrow = TRUE)) +
   theme_bw(base_size = 9) + coord_equal() +
   ggtitle("PDK2+PDK4 signature ROC across cohorts") +
   labs(color = NULL, tag = "A") +
