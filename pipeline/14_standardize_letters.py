@@ -31,50 +31,50 @@ TARGET_MM = 2.2
 #   x    : final x per letter; xh: x-height px at the submitted display width
 FIGS = {
     "Fig2_pca_volcano_heatmap.tif": dict(
-        xh=40,
-        zones={"a": (0, 220, 0, 160), "b": (900, 1400, 0, 160), "c": (0, 220, 962, 1150)},
-        rows={"ab": 62}, singles={"c": (34, 984)},
-        x={"a": 34, "b": 1084, "c": 34}),
+        xh=80,
+        zones={"a": (0, 440, 0, 320), "b": (1800, 2800, 0, 320), "c": (0, 440, 1924, 2300)},
+        rows={"ab": 124}, singles={"c": (68, 1968)},
+        x={"a": 68, "b": 2168, "c": 68}),
     "Fig3_wgcna.tif": dict(
-        xh=38, scale=(2544 / 2100, 1210 / 999),
+        xh=76, scale=(5088 / 4200, 2420 / 1998),
         zones={},  # renderer draws no panel tags; letters are added only
-        rows={}, singles={"a": (21, 21), "b": (1099, 21)},
-        x={"a": 21, "b": 1099}),
+        rows={}, singles={"a": (42, 42), "b": (2198, 42)},
+        x={"a": 42, "b": 2198}),
     "Fig4_candidates.tif": dict(
-        xh=35,
-        zones={"a": (0, 220, 0, 260), "b": (0, 280, 1870, 2300)},
-        rows={}, singles={"a": (19, 19), "b": (19, 1876)},
-        x={"a": 19, "b": 19}),
+        xh=70,
+        zones={"a": (0, 440, 0, 520), "b": (0, 560, 3740, 4600)},
+        rows={}, singles={"a": (38, 38), "b": (38, 3752)},
+        x={"a": 38, "b": 38}),
     "Fig5_enrichment.tif": dict(
-        xh=32,
-        zones={"a": (15, 130, 25, 130), "b": (15, 140, 1065, 1170),
-               "c": (15, 130, 2105, 2205)},
-        rows={}, singles={"a": (45, 73), "b": (45, 1104), "c": (45, 2168)},
-        x={"a": 45, "b": 45, "c": 45}),
+        xh=64,
+        zones={"a": (30, 260, 50, 260), "b": (30, 280, 2130, 2340),
+               "c": (30, 260, 4210, 4410)},
+        rows={}, singles={"a": (90, 146), "b": (90, 2208), "c": (90, 4336)},
+        x={"a": 90, "b": 90, "c": 90}),
     "Fig6_ml_screening.tif": dict(
-        xh=32,
-        zones={"a": (15, 130, 20, 120), "b": (665, 790, 20, 120),
-               "c": (1340, 1480, 20, 120), "d": (15, 130, 820, 920),
-               "e": (1290, 1400, 820, 920)},
-        rows={"abc": 88, "de": 891}, singles={},
-        x={"a": 44, "b": 708, "c": 1382, "d": 44, "e": 1331}),
+        xh=64,
+        zones={"a": (30, 260, 40, 240), "b": (1330, 1580, 40, 240),
+               "c": (2680, 2960, 40, 240), "d": (30, 260, 1640, 1840),
+               "e": (2580, 2800, 1640, 1840)},
+        rows={"abc": 176, "de": 1782}, singles={},
+        x={"a": 88, "b": 1416, "c": 2764, "d": 88, "e": 2662}),
     "Fig7_validation.tif": dict(
-        xh=32,
-        zones={"a": (240, 350, 5, 90), "b": (0, 90, 1880, 1980),
-               "c": (1040, 1180, 1880, 1980)},
-        rows={"bc": 1949}, singles={"a": (17, 17)},
-        x={"a": 17, "b": 17, "c": 1087}),
+        xh=64,
+        zones={"a": (480, 700, 10, 180), "b": (0, 180, 3760, 3960),
+               "c": (2080, 2360, 3760, 3960)},
+        rows={"bc": 3898}, singles={"a": (34, 34)},
+        x={"a": 34, "b": 34, "c": 2174}),
     "Fig8_immune.tif": dict(
-        xh=32,
-        zones={"a": (0, 200, 0, 150), "b": (0, 280, 1150, 1850)},
-        rows={}, singles={"a": (19, 22), "b": (19, 1242)},
-        x={"a": 19, "b": 19}),
+        xh=64,
+        zones={"a": (0, 400, 0, 300), "b": (0, 560, 2300, 3700)},
+        rows={}, singles={"a": (38, 44), "b": (38, 2484)},
+        x={"a": 38, "b": 38}),
     "Fig9_scrna_localization.tif": dict(
-        xh=32,
-        zones={"a": (0, 220, 0, 170), "b": (1050, 1260, 0, 170),
-               "c": (0, 160, 780, 940), "d": (950, 1200, 780, 940)},
-        rows={"ab": 85, "cd": 832}, singles={},
-        x={"a": 41, "b": 1121, "c": 41, "d": 1041}),
+        xh=64,
+        zones={"a": (0, 440, 0, 340), "b": (2100, 2520, 0, 340),
+               "c": (0, 320, 1560, 1880), "d": (1900, 2400, 1560, 1880)},
+        rows={"ab": 170, "cd": 1664}, singles={},
+        x={"a": 82, "b": 2242, "c": 82, "d": 2082}),
 }
 
 
@@ -110,16 +110,16 @@ def render_letter(ch, xh, asc, fbold):
         arr = np.array(img)
         ys, xs = np.where(arr < 150)
         h = ys.max() - ys.min() + 1
-        if abs(h - want) <= 1:
+        if abs(h - want) <= max(1, xh // 32):
             break
         size = max(8, int(size * want / h))
     return arr[ys.min():ys.max() + 1, xs.min():xs.max() + 1]
 
 
 def clean(gray, wx, wy, gh, gw):
-    if wx < 3 or wy < 3 or wy + gh + 2 >= gray.shape[0] or wx + gw + 2 >= gray.shape[1]:
+    if wx < 5 or wy < 5 or wy + gh + 4 >= gray.shape[0] or wx + gw + 4 >= gray.shape[1]:
         return False
-    return gray[wy - 2:wy + gh + 2, wx - 2:wx + gw + 2].min() >= 245
+    return gray[wy - 4:wy + gh + 4, wx - 4:wx + gw + 4].min() >= 245
 
 
 def remove_tag(gray, rgb, zx0, zx1, zy0, zy1):
@@ -131,9 +131,9 @@ def remove_tag(gray, rgb, zx0, zx1, zy0, zy1):
         comp = lab == i
         ys, xs = np.where(comp)
         h, w = ys.max() - ys.min() + 1, xs.max() - xs.min() + 1
-        if not (14 <= h <= 80 and 8 <= w <= 90) or comp.sum() / (h * w) < 0.08:
+        if not (28 <= h <= 160 and 16 <= w <= 180) or comp.sum() / (h * w) < 0.08:
             continue
-        if (dark & ndimage.binary_dilation(comp, iterations=3) & ~comp).sum() > 0:
+        if (dark & ndimage.binary_dilation(comp, iterations=6) & ~comp).sum() > 0:
             continue
         cands.append((int(xs.min()), int(ys.min()), comp, h))
     if not cands:
@@ -144,9 +144,9 @@ def remove_tag(gray, rgb, zx0, zx1, zy0, zy1):
     # of the tag, and the other-ink guard keeps shared-edge pixels intact
     ys0, xs0 = np.where(comp)
     box = np.zeros(win.shape, bool)
-    box[max(0, ys0.min() - 2):ys0.max() + 3, max(0, xs0.min() - 2):xs0.max() + 3] = True
+    box[max(0, ys0.min() - 4):ys0.max() + 5, max(0, xs0.min() - 4):xs0.max() + 5] = True
     removal = box & (win < 250)
-    removal &= ~(ndimage.binary_dilation(dark & ~comp, iterations=1))
+    removal &= ~(ndimage.binary_dilation(dark & ~comp, iterations=2))
     full = np.zeros(gray.shape, bool)
     full[zy0:zy1, zx0:zx1] = removal
     rgb[full] = 255
@@ -181,9 +181,9 @@ def process(fname, spec, asc, fbold):
 
     for row, baseline in spec["rows"].items():
         shift = 0
-        while shift <= 40 and not all(clean(gray, pos[t][0], pos[t][1] + shift,
+        while shift <= 80 and not all(clean(gray, pos[t][0], pos[t][1] + shift,
                                             *crops[t].shape) for t in row):
-            shift += 4
+            shift += 8
         if shift > 40:
             raise SystemExit(f"{fname}: no clean baseline for row {row}")
         for t in row:
@@ -192,7 +192,7 @@ def process(fname, spec, asc, fbold):
         x, y = pos[t]
         gh, gw = crops[t].shape
         if not clean(gray, x, y, gh, gw):
-            for dx in list(range(-24, 25, 4)) + list(range(24, -25, -4)):
+            for dx in list(range(-48, 49, 8)) + list(range(48, -49, -8)):
                 if clean(gray, x + dx, y, gh, gw):
                     pos[t][0] = x + dx
                     break

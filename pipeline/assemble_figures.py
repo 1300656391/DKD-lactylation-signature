@@ -21,13 +21,13 @@ def flatten_rgb(im):
 def load(name):
     return flatten_rgb(Image.open(os.path.join(SRC, name)))
 
-def save_tif(im, name, dpi=(300, 300)):
+def save_tif(im, name, dpi=(600, 600)):
     out = os.path.join(SRC, name)
     im.save(out, format="TIFF", dpi=dpi, compression="tiff_lzw")
     w_in = im.size[0] / dpi[0]
     print(f"{name}: {im.size[0]}x{im.size[1]} px, {w_in * 25.4:.0f} mm @ {dpi[0]} dpi")
 
-def stack(ims, target_w=None, gap=40, resize_after=False):
+def stack(ims, target_w=None, gap=80, resize_after=False):
     # target_w = None aligns all panels to the narrowest one; an explicit
     # width (2108 px = 179 mm at 300 dpi) matches the submission figures.
     # resize_after=True stacks at native width first and rescales the whole
@@ -52,20 +52,20 @@ def stack(ims, target_w=None, gap=40, resize_after=False):
     return canvas
 
 # Fig 1: flowchart (source rendered at 600 dpi)
-save_tif(load("Fig1_flowchart.png"), "Fig1_flowchart.tif", dpi=(600, 600))
+save_tif(load("Fig1_flowchart.png"), "Fig1_flowchart.tif")
 
 # Fig 2: PCA/volcano (A|B) on top, heatmap (C) below; stacked at the panels'
 # native width (1800) and rescaled to the 2100-px submission canvas.
 A = load("Fig2AB_pca_volcano_rev.png")
 C = load("Fig2C_heatmap_rev.png")
-save_tif(stack([A, C], target_w=2100, gap=0, resize_after=True), "Fig2_pca_volcano_heatmap.tif")
+save_tif(stack([A, C], target_w=4200, gap=0, resize_after=True), "Fig2_pca_volcano_heatmap.tif")
 
 # Fig 3: WGCNA panels
 save_tif(load("Fig3_wgcna_rev.png"), "Fig3_wgcna.tif")
 
 # Fig 4: Venn (A) over candidate bar (B)
 save_tif(stack([load("Fig4A_venn_rev.png"), load("Fig4B_bar_rev.png")],
-               target_w=2108, gap=30), "Fig4_candidates.tif")
+               target_w=4216, gap=60), "Fig4_candidates.tif")
 
 # Fig 5: enrichment panels
 save_tif(load("Fig5_enrichment_rev.png"), "Fig5_enrichment.tif")
@@ -80,11 +80,11 @@ A7 = load("Fig7A_validation_roc_rev.png")
 B7 = load("Fig7B_calibration_GSE142025.png")
 C7 = load("Fig7C_dca_GSE142025.png")
 cdraw = ImageDraw.Draw(C7)
-cdraw.rectangle([0, 0, C7.width, 180], fill=(255, 255, 255))
+cdraw.rectangle([0, 0, C7.width, 360], fill=(255, 255, 255))
 bdraw = ImageDraw.Draw(B7)
-bdraw.rectangle([0, 0, 80, 80], fill=(255, 255, 255))
+bdraw.rectangle([0, 0, 160, 160], fill=(255, 255, 255))
 W = A7.width
-gap = 40
+gap = 80
 half = (W - gap) // 2
 B2 = B7.resize((half, round(B7.height * half / B7.width)), Image.LANCZOS)
 C2 = C7.resize((half, round(C7.height * half / C7.width)), Image.LANCZOS)
@@ -109,20 +109,20 @@ def find_font(candidates, size):
                 except OSError:
                     pass
     return ImageFont.load_default()
-c_title_font = find_font(["arialbd.ttf", "Arial_Bold.ttf", "DejaVuSans-Bold.ttf"], 28)
-tag_font = find_font(["arial.ttf", "Arial.ttf", "DejaVuSans.ttf"], 36)
+c_title_font = find_font(["arialbd.ttf", "Arial_Bold.ttf", "DejaVuSans-Bold.ttf"], 56)
+tag_font = find_font(["arial.ttf", "Arial.ttf", "DejaVuSans.ttf"], 72)
 c_title_text = "Decision curve analysis \u2013 GSE142025"
 bbox = c_title_font.getbbox(c_title_text)
 tw = bbox[2] - bbox[0]
 tx = half + gap + (half - tw) // 2
-draw.text((tx, yB + 15), c_title_text, fill=(0, 0, 0), font=c_title_font)
-draw.text((12, yB + 10), "B", fill=(0, 0, 0), font=tag_font)
-draw.text((half + gap + 12, yB + 10), "C", fill=(0, 0, 0), font=tag_font)
+draw.text((tx, yB + 30), c_title_text, fill=(0, 0, 0), font=c_title_font)
+draw.text((24, yB + 20), "B", fill=(0, 0, 0), font=tag_font)
+draw.text((half + gap + 24, yB + 20), "C", fill=(0, 0, 0), font=tag_font)
 save_tif(canvas, "Fig7_validation.tif")
 
 # Fig 8: immune boxplots (A) over correlation heatmap (B)
 save_tif(stack([load("Fig8A_immune_box_rev.png"), load("Fig8B_corr_rev.png")],
-               target_w=2108, resize_after=True), "Fig8_immune.tif")
+               target_w=4216, resize_after=True), "Fig8_immune.tif")
 
 # Fig 9: snRNA localization
 save_tif(load("Fig9_scrna_localization_rev.png"), "Fig9_scrna_localization.tif")

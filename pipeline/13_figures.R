@@ -17,7 +17,7 @@ suppressWarnings(suppressMessages({
 set.seed(42)
 fig_dir <- "figures"
 dir.create(fig_dir, showWarnings = FALSE, recursive = TRUE)
-png_dev <- function(filename, width, height, units = "in", res = 300, ...)
+png_dev <- function(filename, width, height, units = "in", res = 600, ...)
   grDevices::png(filename, width = width, height = height, units = units,
                  res = res, ...)
 
@@ -124,7 +124,7 @@ p2 <- ggplot(vol, aes(logFC, neglog10, color = sig)) +
   theme(legend.position = "bottom") +
   scale_x_continuous(breaks = -4:4, limits = c(-4.5, 4.5))
 ggsave(file.path(fig_dir, "Fig2AB_pca_volcano_rev.png"), p1 | p2,
-       width = 9.6, height = 4.4, dpi = 300, device = png_dev)
+       width = 9.6, height = 4.4, dpi = 600, device = png_dev)
 cat("Fig2AB done\n")
 
 # ============================================================
@@ -140,7 +140,7 @@ ha <- HeatmapAnnotation(Group = train_ph$group,
                         col = list(Group = c(Control = "#2166AC", DN = "#B2182B")))
 col_fun <- colorRamp2(c(-2, 0, 2), c("#2166AC", "white", "#B2182B"))
 png(file.path(fig_dir, "Fig2C_heatmap_rev.png"),
-    width = 1800, height = 2400, res = 250)
+    width = 4320, height = 5760, res = 600)
 draw(Heatmap(mat, name = "z-score", col = col_fun, top_annotation = ha,
              show_column_names = FALSE, row_names_gp = gpar(fontsize = 8),
              column_title = "Top 50 protein-coding DEGs (GSE96804)"))
@@ -183,7 +183,7 @@ fp2 <- ggplot(mt, aes(x = "DN", y = module, fill = r)) +
   theme(axis.text.x = element_text(size = 8), panel.grid = element_blank(),
         plot.title = element_text(size = 9), legend.key.height = unit(0.8, "cm"))
 grDevices::png(file.path(fig_dir, "Fig3_wgcna_rev.png"),
-               width = 7.0, height = 3.33, units = "in", res = 300)
+               width = 7.0, height = 3.33, units = "in", res = 600)
 print(fp1 + fp2 + plot_layout(widths = c(1, 1.15)))
 grDevices::dev.off()
 cat("Fig3 done\n")
@@ -203,7 +203,7 @@ venn_list <- list(
   `Modules (4210)` = mod_genes)
 futile.logger::flog.threshold(futile.logger::ERROR, name = "VennDiagramLogger")
 png(file.path(fig_dir, "Fig4A_venn_rev.png"),
-    width = 1500, height = 1300, res = 250)
+    width = 3600, height = 3120, res = 600)
 v <- venn.diagram(venn_list, filename = NULL,
                   fill = c("#F4B183", "#9DC3E6", "#C5E0B4"), alpha = .55,
                   cex = 1.2, cat.cex = .9, margin = .10,
@@ -226,7 +226,7 @@ p_bar <- ggplot(cd, aes(reorder(gene, logFC), logFC, fill = LRG_sources)) +
   scale_y_continuous(breaks = -3:1, limits = c(-3.5, 1.2)) +
   theme(legend.position = "bottom", legend.text = element_text(size = 7))
 ggsave(file.path(fig_dir, "Fig4B_bar_rev.png"), p_bar,
-       width = 7.0, height = 5.5, dpi = 300, device = png_dev)
+       width = 7.0, height = 5.5, dpi = 600, device = png_dev)
 cat("Fig4 done\n")
 
 # ============================================================
@@ -263,7 +263,7 @@ fp3 <- ggplot(topg, aes(NES, lab)) +
   theme_bw(base_size = 9) + ylab(NULL) +
   ggtitle("GSEA (Reactome, top 4 up- and top 4 down-regulated)") + labs(tag = "C")
 grDevices::png(file.path(fig_dir, "Fig5_enrichment_rev.png"),
-               width = 7.0, height = 10, units = "in", res = 300)
+               width = 7.0, height = 10, units = "in", res = 600)
 print(fp1 / fp2 / fp3 + plot_layout(heights = c(1, 1, .8)))
 grDevices::dev.off()
 cat("Fig5 done\n")
@@ -351,7 +351,7 @@ mp5 <- ggplot(roc_df, aes(fpr, tpr, color = gene, linetype = gene)) +
   ggtitle("Single-gene ROC (training)") + labs(tag = "E") +
   theme(plot.title = element_text(size = 8.5))
 grDevices::png(file.path(fig_dir, "Fig6_ml_screening_rev.png"),
-               width = 7.0, height = 6.0, units = "in", res = 300)
+               width = 7.0, height = 6.0, units = "in", res = 600)
 print((mp1 | mp2 | mp3) / (mp4 | mp5))
 grDevices::dev.off()
 cat("Fig6 done\n")
@@ -406,7 +406,7 @@ p7 <- ggroc(roc_list, linewidth = .65) +
   labs(color = NULL, tag = "A") +
   theme(legend.position = "bottom", legend.text = element_text(size = 6.5))
 grDevices::png(file.path(fig_dir, "Fig7A_validation_roc_rev.png"),
-               width = 7.0, height = 6.2, units = "in", res = 300)
+               width = 7.0, height = 6.2, units = "in", res = 600)
 print(p7)
 grDevices::dev.off()
 cat("Fig7A done\n")
@@ -419,7 +419,7 @@ s3 <- scf(e14[, k3, drop = FALSE])
 g1 <- glm(y3 ~ s3, family = binomial)
 p_hat <- fitted(g1)
 png(file.path(fig_dir, "Fig7B_calibration_GSE142025.png"),
-    width = 1400, height = 1400, res = 240)
+    width = 3500, height = 3500, res = 600)
 vp <- val.prob(p_hat, y3)
 title("Calibration - GSE142025 (recalibrated)")
 dev.off()
@@ -451,7 +451,7 @@ p7c <- ggplot(df_dca, aes(thr, nb, color = curve, linetype = curve)) +
   ggtitle("Decision curve analysis - GSE142025") + labs(tag = "C") +
   theme(legend.position = "bottom", legend.title = element_blank())
 ggsave(file.path(fig_dir, "Fig7C_dca_GSE142025.png"), p7c,
-       width = 7.0, height = 5.5, dpi = 300, device = png_dev)
+       width = 7.0, height = 5.5, dpi = 600, device = png_dev)
 cat("Fig7C done\n")
 
 # ============================================================
@@ -480,7 +480,7 @@ p8a <- ggplot(dfi, aes(cell, score, fill = group)) +
   labs(tag = "A") +
   theme(axis.text.x = element_text(angle = 45, hjust = 1), legend.position = "bottom")
 ggsave(file.path(fig_dir, "Fig8A_immune_box_rev.png"), p8a, width = 9.2, height = 5.2,
-       dpi = 300, device = png_dev)
+       dpi = 600, device = png_dev)
 
 immune_corr <- read.csv("results/immune_gene_corr.csv", stringsAsFactors = FALSE,
                         check.names = FALSE)
@@ -489,7 +489,7 @@ cm <- as.matrix(immune_corr[, setdiff(colnames(immune_corr), c("gene", "Normal_m
 rownames(cm) <- immune_corr$gene
 col_fun2 <- colorRamp2(c(-.6, 0, .6), c("#2166AC", "white", "#B2182B"))
 png(file.path(fig_dir, "Fig8B_corr_rev.png"),
-    width = 2400, height = 1600, res = 250)
+    width = 5760, height = 3840, res = 600)
 draw(Heatmap(cm, name = "Spearman rho", col = col_fun2,
              row_names_gp = gpar(fontsize = 9.5), column_names_gp = gpar(fontsize = 9.5),
              column_title = "Candidate LRGs x immune cells (GSE96804, all samples; 18 cells)"))
@@ -538,7 +538,7 @@ np4 <- ggplot(pdk2_rates, aes(x = type, y = rate)) +
   labs(tag = "D") + theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 6)) +
   ylim(0, 10)
 ggsave(file.path(fig_dir, "Fig9_scrna_localization_rev.png"), (np1 | np2) / (np3 | np4),
-       width = 7.0, height = 5.5, dpi = 300, device = png_dev)
+       width = 7.0, height = 5.5, dpi = 600, device = png_dev)
 cat("Fig9 done\n")
 
 cat("\nFIGURES_DONE\n")
