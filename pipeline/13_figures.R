@@ -28,6 +28,7 @@ deg <- fread("results/A_DEGs.csv")
 hub <- readLines("results/hub_genes.txt")
 cand <- fread("results/A_candidates.csv")
 zrows <- function(m) t(apply(m, 1, function(r) (r - mean(r)) / sd(r)))
+zrow <- function(v) (v - mean(v)) / sd(v)
 genes <- intersect(cand$gene, rownames(train_expr))
 Xdf <- data.frame(t(zrows(train_expr[genes, , drop = FALSE])), check.names = FALSE)
 y <- as.integer(train_ph$group == "DN")
@@ -259,7 +260,7 @@ fp3 <- ggplot(topg, aes(NES, lab)) +
   scale_fill_manual(values = c(`TRUE` = "#0072B2", `FALSE` = "#D55E00")) +
   geom_text(aes(x = xtxt, label = nes_lab, hjust = ifelse(NES < 0, 1, 0)),
             vjust = 0.5, size = 2.4, color = "grey15", show.legend = FALSE) +
-  scale_x_continuous(expand = expansion(mult = 0.02, add = 0.75)) +
+  scale_x_continuous(expand = expansion(mult = 0.02, add = 1.15)) +
   theme_bw(base_size = 9) + ylab(NULL) +
   ggtitle("GSEA (Reactome, top 4 up- and top 4 down-regulated)") + labs(tag = "C")
 grDevices::png(file.path(fig_dir, "Fig5_enrichment_rev.png"),
@@ -333,7 +334,7 @@ best_df <- data.frame(gene = present, fpr = 1 - best_pts$specificity,
 best_df$auc <- sapply(present, function(g) as.numeric(auc(rocs[[g]])))
 lab_ord <- best_df[order(-best_df$auc), ]
 rows_y <- c(0.30, 0.235, 0.17, 0.105, 0.04)[seq_len(nrow(lab_ord))]
-x0 <- 0.56
+x0 <- 0.50
 lab_df <- data.frame(gene = lab_ord$gene, auc = lab_ord$auc,
                      lx = x0, ly = rows_y)
 mp5 <- ggplot(roc_df, aes(fpr, tpr, color = gene, linetype = gene)) +
@@ -391,6 +392,20 @@ roc_list[["GSE142025 (early)"]] <- roc(as.integer(p14$group[k4] == "Early_DN"),
 e10 <- readRDS("data/GSE104948_expr_symbol.rds")
 p10 <- read.csv("data/GSE104948_pheno.csv", stringsAsFactors = FALSE)
 roc_list[["GSE104948"]] <- roc(as.integer(p10$group == "DN"), scf(e10), quiet = TRUE)
+# GSE273763 (7th curve): submitter-normalized FFPE matrix, scoring as 09_validation.R
+M <- read.table(gzfile("data/GSE273763/GSE273763_DKD_GRCH38_forGEO_July2026_v2.txt.gz"),
+                sep = "\t", header = TRUE, row.names = 1, check.names = FALSE)
+colnames(M) <- gsub("\\s+", "", colnames(M))
+M <- as.matrix(M)
+storage.mode(M) <- "numeric"
+stopifnot(ncol(M) == 63)
+y273 <- as.integer(grepl("DKD", colnames(M)))
+stopifnot(sum(y273 == 1) == 50, sum(y273 == 0) == 13)
+BETA <- c(int = bhf[["(Intercept)"]], PDK2 = bhf[["PDK2"]], PDK4 = bhf[["PDK4"]])
+s273 <- BETA[["int"]] + BETA[["PDK2"]] * zrow(as.numeric(M["PDK2", ])) +
+        BETA[["PDK4"]] * zrow(as.numeric(M["PDK4", ]))
+roc_list[["GSE273763"]] <- roc(y273, s273, quiet = TRUE)
+stopifnot(abs(round(as.numeric(auc(roc_list[["GSE273763"]])), 3) - 0.805) < 0.001)
 oi8 <- c("#000000", "#E69F00", "#56B4E9", "#0072B2", "#D55E00", "#AD8A00", "#CC79A7", "#999999")
 lt8 <- c("solid", "solid", "solid", "longdash", "longdash", "dashed", "dashed", "dotdash")
 nm <- names(roc_list)
