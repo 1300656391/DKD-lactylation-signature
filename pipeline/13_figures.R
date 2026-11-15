@@ -238,7 +238,7 @@ gse <- fread("results/gsea_Reactome.csv")
 mk_bar <- function(d, n, ttl, tag) {
   if (!hasName(d, "Count")) d[, Count := lengths(strsplit(geneID, "/"))]
   d <- utils::head(d[order(d$p.adjust)], n)
-  d$lab <- make.names(substr(d$Description, 1, 52))
+  d$lab <- gsub("(.{1,44})\\s", "\\1\n", d$Description)
   d$lab <- factor(d$lab, levels = rev(d$lab))
   d$logFDR <- log10(d$p.adjust)
   ggplot(d, aes(Count, lab, fill = logFDR)) + geom_col(width = .7) +
@@ -249,12 +249,17 @@ mk_bar <- function(d, n, ttl, tag) {
 }
 fp1 <- mk_bar(ego, 10, "GO BP (top DEGs)", "A")
 fp2 <- mk_bar(er, 10, "Reactome (top DEGs)", "B")
-gse2 <- copy(gse)
-gse2$lab <- make.names(paste0(substr(gse2$Description, 1, 48), "  NES=", sprintf("%.2f", gse2$NES)))
-topg <- rbind(head(gse2[order(NES), ], 4), head(gse2[order(-NES), ], 4))
+topg <- rbind(head(gse[order(NES), ], 4), head(gse[order(-NES), ], 4))
+topg$lab <- gsub("(.{1,42})\\s", "\\1\n", topg$Description)
 topg$lab <- factor(topg$lab, levels = topg$lab[order(topg$NES)])
-fp3 <- ggplot(topg, aes(NES, lab, fill = log10(p.adjust))) + geom_col(width = .7) +
-  scale_fill_viridis_c(option = "cividis", name = expression(log[10](FDR))) +
+topg$nes_lab <- sprintf("NES %+.2f", topg$NES)
+topg$xtxt <- topg$NES + ifelse(topg$NES < 0, -0.05, 0.05)
+fp3 <- ggplot(topg, aes(NES, lab)) +
+  geom_col(aes(fill = NES > 0), width = .7, show.legend = FALSE) +
+  scale_fill_manual(values = c(`TRUE` = "#0072B2", `FALSE` = "#D55E00")) +
+  geom_text(aes(x = xtxt, label = nes_lab, hjust = ifelse(NES < 0, 1, 0)),
+            vjust = 0.5, size = 2.4, color = "grey15", show.legend = FALSE) +
+  scale_x_continuous(expand = expansion(mult = 0.02, add = 0.75)) +
   theme_bw(base_size = 9) + ylab(NULL) +
   ggtitle("GSEA (Reactome, top 4 up- and top 4 down-regulated)") + labs(tag = "C")
 grDevices::png(file.path(fig_dir, "Fig5_enrichment_rev.png"),
@@ -327,17 +332,15 @@ best_df <- data.frame(gene = present, fpr = 1 - best_pts$specificity,
                       tpr = best_pts$sensitivity)
 best_df$auc <- sapply(present, function(g) as.numeric(auc(rocs[[g]])))
 lab_ord <- best_df[order(-best_df$auc), ]
-rows_y <- c(0.36, 0.27, 0.18, 0.10, 0.03)[seq_len(nrow(lab_ord))]
-x0 <- 0.42
+rows_y <- c(0.30, 0.235, 0.17, 0.105, 0.04)[seq_len(nrow(lab_ord))]
+x0 <- 0.56
 lab_df <- data.frame(gene = lab_ord$gene, auc = lab_ord$auc,
-                     lx = x0, ly = rows_y, sx = lab_ord$fpr, sy = lab_ord$tpr)
+                     lx = x0, ly = rows_y)
 mp5 <- ggplot(roc_df, aes(fpr, tpr, color = gene, linetype = gene)) +
   geom_line(linewidth = .6) +
   geom_abline(slope = 1, intercept = 0, linetype = 3, color = "grey50") +
   scale_color_manual(values = oi[present], guide = "none") +
   scale_linetype_manual(values = lt[present], guide = "none") +
-  geom_segment(data = lab_df, aes(x = sx, y = sy, xend = lx - 0.012, yend = ly),
-               inherit.aes = FALSE, color = "grey35", linewidth = 0.25, alpha = 0.55) +
   geom_text(data = lab_df, aes(x = lx, y = ly, label = sprintf("%s  AUC=%.3f", gene, auc)),
             hjust = 0, vjust = 0.5, size = 2.35, show.legend = FALSE,
             inherit.aes = FALSE, color = oi[lab_df$gene]) +
@@ -388,7 +391,7 @@ roc_list[["GSE142025 (early)"]] <- roc(as.integer(p14$group[k4] == "Early_DN"),
 e10 <- readRDS("data/GSE104948_expr_symbol.rds")
 p10 <- read.csv("data/GSE104948_pheno.csv", stringsAsFactors = FALSE)
 roc_list[["GSE104948"]] <- roc(as.integer(p10$group == "DN"), scf(e10), quiet = TRUE)
-oi8 <- c("#000000", "#E69F00", "#56B4E9", "#0072B2", "#D55E00", "#F0E442", "#CC79A7", "#999999")
+oi8 <- c("#000000", "#E69F00", "#56B4E9", "#0072B2", "#D55E00", "#AD8A00", "#CC79A7", "#999999")
 lt8 <- c("solid", "solid", "solid", "longdash", "longdash", "dashed", "dashed", "dotdash")
 nm <- names(roc_list)
 names(roc_list) <- sprintf("%s (AUC %.3f)", nm, sapply(roc_list, function(r) as.numeric(auc(r))))
@@ -397,7 +400,7 @@ lts <- setNames(rep(lt8, length.out = length(roc_list)), names(roc_list))
 p7 <- ggroc(roc_list, linewidth = .65) +
   geom_abline(slope = 1, intercept = 1, linetype = 3) +
   scale_color_manual(values = cols) + scale_linetype_manual(values = lts) +
-  guides(linetype = "none") +
+  guides(linetype = "none", color = guide_legend(nrow = 2, byrow = TRUE)) +
   theme_bw(base_size = 9) + coord_equal() +
   ggtitle("PDK2+PDK4 signature ROC across cohorts") +
   labs(color = NULL, tag = "A") +
