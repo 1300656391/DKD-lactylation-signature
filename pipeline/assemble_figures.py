@@ -54,10 +54,11 @@ def stack(ims, target_w=None, gap=40, resize_after=False):
 # Fig 1: flowchart (source rendered at 600 dpi)
 save_tif(load("Fig1_flowchart.png"), "Fig1_flowchart.tif", dpi=(600, 600))
 
-# Fig 2: PCA/volcano (A|B) on top, heatmap (C) below, widths aligned to C
+# Fig 2: PCA/volcano (A|B) on top, heatmap (C) below; stacked at the panels'
+# native width (1800) and rescaled to the 2100-px submission canvas.
 A = load("Fig2AB_pca_volcano_rev.png")
 C = load("Fig2C_heatmap_rev.png")
-save_tif(stack([A, C], gap=0), "Fig2_pca_volcano_heatmap.tif")
+save_tif(stack([A, C], target_w=2100, gap=0, resize_after=True), "Fig2_pca_volcano_heatmap.tif")
 
 # Fig 3: WGCNA panels
 save_tif(load("Fig3_wgcna_rev.png"), "Fig3_wgcna.tif")

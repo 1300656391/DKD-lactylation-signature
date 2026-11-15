@@ -142,7 +142,7 @@ col_fun <- colorRamp2(c(-2, 0, 2), c("#2166AC", "white", "#B2182B"))
 png(file.path(fig_dir, "Fig2C_heatmap_rev.png"),
     width = 1800, height = 2400, res = 250)
 draw(Heatmap(mat, name = "z-score", col = col_fun, top_annotation = ha,
-             show_column_names = FALSE, row_names_gp = gpar(fontsize = 6),
+             show_column_names = FALSE, row_names_gp = gpar(fontsize = 8),
              column_title = "Top 50 protein-coding DEGs (GSE96804)"))
 grid.text("C", x = unit(2.2, "mm"), y = unit(1, "npc") - unit(2.2, "mm"),
           gp = gpar(fontsize = 10, fontface = "bold"))
