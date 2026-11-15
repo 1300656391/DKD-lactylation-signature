@@ -1,6 +1,6 @@
 # code_repo_B — Orthogonal-layer analysis scripts and frozen outputs
 
-Scripts supporting Sections 2.9/2.10 and 3.9/3.10/3.11 of the manuscript: two public
+Scripts supporting Sections 2.9/2.10 and 3.9 of the manuscript: two public
 DKD kidney proteomes (PRIDE PXD041884; iProX IPX0003092000/PXD040617), proximal-tubule
 DNA methylomes (GEO GSE233758 primary, GSE145745 replication), and perturbational
 connectivity (iLINCS/L1000; queried 3 November 2026, saved API responses included for
