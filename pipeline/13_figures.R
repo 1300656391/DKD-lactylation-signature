@@ -125,7 +125,7 @@ p2 <- ggplot(vol, aes(logFC, neglog10, color = sig)) +
   theme(legend.position = "bottom") +
   scale_x_continuous(breaks = -4:4, limits = c(-4.5, 4.5))
 ggsave(file.path(fig_dir, "Fig2AB_pca_volcano_rev.png"), p1 | p2,
-       width = 9.6, height = 4.4, dpi = 600, device = png_dev)
+       width = 9.6, height = 3.2, dpi = 600, device = png_dev)
 cat("Fig2AB done\n")
 
 # ============================================================
@@ -141,7 +141,7 @@ ha <- HeatmapAnnotation(Group = train_ph$group,
                         col = list(Group = c(Control = "#2166AC", DN = "#B2182B")))
 col_fun <- colorRamp2(c(-2, 0, 2), c("#2166AC", "white", "#B2182B"))
 png(file.path(fig_dir, "Fig2C_heatmap_rev.png"),
-    width = 4320, height = 5760, res = 600)
+    width = 4320, height = 4680, res = 600)
 draw(Heatmap(mat, name = "z-score", col = col_fun, top_annotation = ha,
              show_column_names = FALSE, row_names_gp = gpar(fontsize = 8),
              column_title = "Top 50 protein-coding DEGs (GSE96804)"))
@@ -227,7 +227,7 @@ p_bar <- ggplot(cd, aes(reorder(gene, logFC), logFC, fill = LRG_sources)) +
   scale_y_continuous(breaks = -3:1, limits = c(-3.5, 1.2)) +
   theme(legend.position = "bottom", legend.text = element_text(size = 7))
 ggsave(file.path(fig_dir, "Fig4B_bar_rev.png"), p_bar,
-       width = 7.0, height = 5.5, dpi = 600, device = png_dev)
+       width = 7.0, height = 5.0, dpi = 600, device = png_dev)
 cat("Fig4 done\n")
 
 # ============================================================
@@ -260,7 +260,7 @@ fp3 <- ggplot(topg, aes(NES, lab)) +
   scale_fill_manual(values = c(`TRUE` = "#0072B2", `FALSE` = "#D55E00")) +
   geom_text(aes(x = xtxt, label = nes_lab, hjust = ifelse(NES < 0, 1, 0)),
             vjust = 0.5, size = 2.4, color = "grey15", show.legend = FALSE) +
-  scale_x_continuous(expand = expansion(mult = 0.02, add = 1.15)) +
+  scale_x_continuous(expand = expansion(mult = 0.02, add = 1.5)) +
   theme_bw(base_size = 9) + ylab(NULL) +
   ggtitle("GSEA (Reactome, top 4 up- and top 4 down-regulated)") + labs(tag = "C")
 grDevices::png(file.path(fig_dir, "Fig5_enrichment_rev.png"),
@@ -418,7 +418,7 @@ p7 <- ggroc(roc_list, linewidth = .65) +
   guides(linetype = "none", color = guide_legend(nrow = 3, byrow = TRUE)) +
   theme_bw(base_size = 9) + coord_equal() +
   ggtitle("PDK2+PDK4 signature ROC across cohorts") +
-  labs(color = NULL, tag = "A") +
+  labs(color = NULL) +
   theme(legend.position = "bottom", legend.text = element_text(size = 6.5))
 grDevices::png(file.path(fig_dir, "Fig7A_validation_roc_rev.png"),
                width = 7.0, height = 6.2, units = "in", res = 600)

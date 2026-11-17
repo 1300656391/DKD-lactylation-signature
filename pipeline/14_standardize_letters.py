@@ -32,8 +32,8 @@ TARGET_MM = 2.2
 FIGS = {
     "Fig2_pca_volcano_heatmap.tif": dict(
         xh=80,
-        zones={"a": (0, 440, 0, 320), "b": (1800, 2800, 0, 320), "c": (0, 440, 1924, 2300)},
-        rows={"ab": 124}, singles={"c": (68, 1968)},
+        zones={"a": (0, 440, 0, 320), "b": (1800, 2800, 0, 320), "c": (0, 440, 1410, 1620)},
+        rows={"ab": 124}, singles={"c": (68, 1443)},
         x={"a": 68, "b": 2168, "c": 68}),
     "Fig3_wgcna.tif": dict(
         xh=76, scale=(5088 / 4200, 2420 / 1998),
@@ -42,8 +42,8 @@ FIGS = {
         x={"a": 42, "b": 2198}),
     "Fig4_candidates.tif": dict(
         xh=70,
-        zones={"a": (0, 440, 0, 520), "b": (0, 560, 3740, 4600)},
-        rows={}, singles={"a": (38, 38), "b": (38, 3752)},
+        zones={"b": (0, 700, 2400, 2620)},  # 'a' native tag removed at assembly
+        rows={}, singles={"a": (38, 38), "b": (38, 2432)},
         x={"a": 38, "b": 38}),
     "Fig5_enrichment.tif": dict(
         xh=64,
@@ -60,8 +60,8 @@ FIGS = {
         x={"a": 88, "b": 1416, "c": 2764, "d": 88, "e": 2662}),
     "Fig7_validation.tif": dict(
         xh=64,
-        zones={"a": (480, 700, 10, 180), "b": (0, 180, 3760, 3960),
-               "c": (2080, 2360, 3760, 3960)},
+        zones={"b": (0, 180, 3760, 3960),
+               "c": (2080, 2360, 3760, 3960)},  # 'a': renderer tag removed at source
         rows={"bc": 3898}, singles={"a": (34, 34)},
         x={"a": 34, "b": 34, "c": 2174}),
     "Fig8_immune.tif": dict(

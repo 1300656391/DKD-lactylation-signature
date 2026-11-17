@@ -63,8 +63,28 @@ save_tif(stack([A, C], target_w=4200, gap=0, resize_after=True), "Fig2_pca_volca
 # Fig 3: WGCNA panels
 save_tif(load("Fig3_wgcna_rev.png"), "Fig3_wgcna.tif")
 
-# Fig 4: Venn (A) over candidate bar (B)
-save_tif(stack([load("Fig4A_venn_rev.png"), load("Fig4B_bar_rev.png")],
+# Fig 4: Venn (A) over candidate bar (B); panels auto-cropped to content
+# (the renderer leaves large white margins that would otherwise exceed the
+# 247 mm page-height budget at 174 mm width).
+def autocrop(im, pad=24):
+    from PIL import ImageChops
+    bg = Image.new("RGB", im.size, (255, 255, 255))
+    bbox = ImageChops.difference(im, bg).getbbox()
+    if not bbox:
+        return im
+    x0, y0, x1, y1 = bbox
+    x0 = max(0, x0 - pad); y0 = max(0, y0 - pad)
+    x1 = min(im.width, x1 + pad); y1 = min(im.height, y1 + pad)
+    return im.crop((x0, y0, x1, y1))
+
+def fig4a():
+    # drop the native letter tag zone (the lettering pass adds its own 'a')
+    # together with the blank band above the venn body
+    im = load("Fig4A_venn_rev.png")
+    ImageDraw.Draw(im).rectangle([0, 0, 600, 420], fill=(255, 255, 255))
+    return autocrop(im, pad=24)
+
+save_tif(stack([fig4a(), autocrop(load("Fig4B_bar_rev.png"))],
                target_w=4216, gap=60), "Fig4_candidates.tif")
 
 # Fig 5: enrichment panels
