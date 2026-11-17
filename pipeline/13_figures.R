@@ -105,7 +105,7 @@ p2 <- ggplot(vol, aes(logFC, neglog10, color = sig)) +
   geom_hline(yintercept = -log10(.05), linetype = 3) +
   geom_vline(xintercept = 0.5, linetype = 3, color = "grey40", linewidth = 0.5) +
   geom_vline(xintercept = -0.5, linetype = 3, color = "grey40", linewidth = 0.5) +
-  annotate("label", x = 1.5, y = 2.8, label = "adjusted P = 0.05",
+  annotate("label", x = 4.2, y = 0.55, label = "adjusted P = 0.05",
            size = 3.5, hjust = 1, color = "black", fill = "white", alpha = 0.85,
            label.size = 0, label.padding = unit(0.12, "lines")) +
   geom_label_repel(data = lb, aes(label = gene), size = 3.0, max.overlaps = 30,
@@ -116,7 +116,7 @@ p2 <- ggplot(vol, aes(logFC, neglog10, color = sig)) +
   annotate("label", x = 3, y = 14, label = sprintf("Up\nn = %d", sum(vol$sig == "Up")),
            size = 3.2, color = "#B2182B", hjust = 0, fill = "white", alpha = 0.85,
            label.size = 0, label.padding = unit(0.12, "lines")) +
-  annotate("label", x = -3, y = 14, label = sprintf("Down\nn = %d", sum(vol$sig == "Down")),
+  annotate("label", x = -1.9, y = 14, label = sprintf("Down\nn = %d", sum(vol$sig == "Down")),
            size = 3.2, color = "#2166AC", hjust = 1, fill = "white", alpha = 0.85,
            label.size = 0, label.padding = unit(0.12, "lines")) +
   theme_bw(base_size = 12) + labs(tag = "B",
