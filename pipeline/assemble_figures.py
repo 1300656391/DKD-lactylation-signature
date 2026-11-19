@@ -58,7 +58,7 @@ save_tif(load("Fig1_flowchart.png"), "Fig1_flowchart.tif")
 # native width (1800) and rescaled to the 2100-px submission canvas.
 A = load("Fig2AB_pca_volcano_rev.png")
 C = load("Fig2C_heatmap_rev.png")
-save_tif(stack([A, C], target_w=4200, gap=0, resize_after=True), "Fig2_pca_volcano_heatmap.tif")
+save_tif(stack([A, C], target_w=4110, gap=0, resize_after=True), "Fig2_pca_volcano_heatmap.tif")
 
 # Fig 3: WGCNA panels
 save_tif(load("Fig3_wgcna_rev.png"), "Fig3_wgcna.tif")
@@ -85,7 +85,7 @@ def fig4a():
     return autocrop(im, pad=24)
 
 save_tif(stack([fig4a(), autocrop(load("Fig4B_bar_rev.png"))],
-               target_w=4216, gap=60), "Fig4_candidates.tif")
+               target_w=4110, gap=60), "Fig4_candidates.tif")
 
 # Fig 5: enrichment panels
 save_tif(load("Fig5_enrichment_rev.png"), "Fig5_enrichment.tif")
@@ -142,7 +142,7 @@ save_tif(canvas, "Fig7_validation.tif")
 
 # Fig 8: immune boxplots (A) over correlation heatmap (B)
 save_tif(stack([load("Fig8A_immune_box_rev.png"), load("Fig8B_corr_rev.png")],
-               target_w=4216, resize_after=True), "Fig8_immune.tif")
+               target_w=4110, resize_after=True), "Fig8_immune.tif")
 
 # Fig 9: snRNA localization
 save_tif(load("Fig9_scrna_localization_rev.png"), "Fig9_scrna_localization.tif")

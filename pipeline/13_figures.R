@@ -40,7 +40,7 @@ y <- as.integer(train_ph$group == "DN")
 # box (bottom edge at y = -1.5) renders with its full border at unchanged
 # scale - all boxes, arrows, and labels keep their original coordinates.
 png(file.path(fig_dir, "Fig1_flowchart.png"),
-    width = 4216, height = 2720, res = 600, pointsize = 10)
+    width = 4110, height = 2653, res = 600, pointsize = 10)
 par(mar = c(1, 1, 1, 1)); plot.new(); plot.window(c(0, 100), c(-2, 62.5), xaxs = "i", yaxs = "i")
 box_at <- function(x, y, w, h, label, fill = "white", cex = 0.85, ty = 0) {
   symbols(x, y, rectangles = matrix(c(w, h), 1), inches = FALSE, add = TRUE,
@@ -89,11 +89,11 @@ pca_df <- data.frame(PC1 = pca_res$x[, 1], PC2 = pca_res$x[, 2], group = train_p
 p1 <- ggplot(pca_df, aes(PC1, PC2, color = group)) +
   geom_point(size = 2.6, alpha = .9) + stat_ellipse(level = .9, linetype = 2, linewidth = .6) +
   scale_color_manual(values = c(Control = "#2166AC", DN = "#B2182B")) +
-  theme_bw(base_size = 12) +
+  theme_bw(base_size = 8) +
   labs(color = NULL, tag = "A",
        x = sprintf("PC1 (%.1f%%)", var_pct[1]), y = sprintf("PC2 (%.1f%%)", var_pct[2])) +
   ggtitle("Training cohort (GSE96804)") +
-  theme(legend.position = "bottom")
+  theme(legend.position = "bottom", plot.title = element_text(size = 10))
 
 vol <- data.frame(gene = allg$gene, logFC = allg$logFC, neglog10 = -log10(allg$adj.P.Val))
 vol$sig <- ifelse(vol$logFC >= .5 & vol$neglog10 > -log10(.05), "Up",
@@ -119,13 +119,13 @@ p2 <- ggplot(vol, aes(logFC, neglog10, color = sig)) +
   annotate("label", x = -1.9, y = 14, label = sprintf("Down\nn = %d", sum(vol$sig == "Down")),
            size = 3.2, color = "#2166AC", hjust = 1, fill = "white", alpha = 0.85,
            label.size = 0, label.padding = unit(0.12, "lines")) +
-  theme_bw(base_size = 12) + labs(tag = "B",
+  theme_bw(base_size = 8) + labs(tag = "B",
        x = "log2FC", y = expression(-log[10](adjusted~P))) +
   ggtitle(sprintf("Volcano (DEGs n = %d)", nrow(deg))) +
-  theme(legend.position = "bottom") +
+  theme(legend.position = "bottom", plot.title = element_text(size = 10)) +
   scale_x_continuous(breaks = -4:4, limits = c(-4.5, 4.5))
 ggsave(file.path(fig_dir, "Fig2AB_pca_volcano_rev.png"), p1 | p2,
-       width = 9.6, height = 3.2, dpi = 600, device = png_dev)
+       width = 6.85, height = 3.0, dpi = 600, device = png_dev)
 cat("Fig2AB done\n")
 
 # ============================================================
@@ -141,12 +141,12 @@ ha <- HeatmapAnnotation(Group = train_ph$group,
                         col = list(Group = c(Control = "#2166AC", DN = "#B2182B")))
 col_fun <- colorRamp2(c(-2, 0, 2), c("#2166AC", "white", "#B2182B"))
 png(file.path(fig_dir, "Fig2C_heatmap_rev.png"),
-    width = 4320, height = 4680, res = 600)
+    width = 4110, height = 3660, res = 600)
 draw(Heatmap(mat, name = "z-score", col = col_fun, top_annotation = ha,
              show_column_names = FALSE, row_names_gp = gpar(fontsize = 8),
              column_title = "Top 50 protein-coding DEGs (GSE96804)"))
 grid.text("C", x = unit(2.2, "mm"), y = unit(1, "npc") - unit(2.2, "mm"),
-          gp = gpar(fontsize = 10, fontface = "bold"))
+          gp = gpar(fontsize = 11, fontface = "bold"))
 dev.off()
 cat("Fig2C done\n")
 
@@ -165,10 +165,10 @@ fp1 <- ggplot(fi, aes(Power, sft)) +
   geom_hline(yintercept = .85, linetype = 2, color = "red") +
   geom_point(color = "#B2182B", shape = 16, size = 1.4) +
   geom_text(aes(label = Power), cex = 2.2, vjust = -0.9) +
-  theme_bw(base_size = 9) +
+  theme_bw(base_size = 8) +
   xlab("Soft threshold (power)") + ylab("Scale-free fit R2") +
   ggtitle("WGCNA soft threshold") +
-  theme(plot.title = element_text(size = 9))
+  theme(plot.title = element_text(size = 10), axis.title = element_text(size = 9))
 mt <- copy(wgc_p)
 setnames(mt, c("corr_r", "p"), c("r", "pval"))
 mt[, lab := paste0(signif(r, 2), "\n(", signif(pval, 1), ")")]
@@ -179,12 +179,12 @@ fp2 <- ggplot(mt, aes(x = "DN", y = module, fill = r)) +
   geom_text(aes(label = lab), size = 2.4, lineheight = 0.85) +
   scale_fill_gradient2(low = "#2166AC", mid = "white", high = "#B2182B",
                        midpoint = 0, limits = c(rng[1], rng[2]), name = "Pearson r") +
-  theme_bw(base_size = 9) + xlab(NULL) + ylab(NULL) +
+  theme_bw(base_size = 8) + xlab(NULL) + ylab(NULL) +
   ggtitle("Module-trait correlations") +
   theme(axis.text.x = element_text(size = 8), panel.grid = element_blank(),
-        plot.title = element_text(size = 9), legend.key.height = unit(0.8, "cm"))
+        plot.title = element_text(size = 10), legend.key.height = unit(0.8, "cm"))
 grDevices::png(file.path(fig_dir, "Fig3_wgcna_rev.png"),
-               width = 7.0, height = 3.33, units = "in", res = 600)
+               width = 6.85, height = 3.26, units = "in", res = 600)
 print(fp1 + fp2 + plot_layout(widths = c(1, 1.15)))
 grDevices::dev.off()
 cat("Fig3 done\n")
@@ -204,14 +204,14 @@ venn_list <- list(
   `Modules (4210)` = mod_genes)
 futile.logger::flog.threshold(futile.logger::ERROR, name = "VennDiagramLogger")
 png(file.path(fig_dir, "Fig4A_venn_rev.png"),
-    width = 3600, height = 3120, res = 600)
+    width = 4110, height = 2700, res = 600)
 v <- venn.diagram(venn_list, filename = NULL,
                   fill = c("#F4B183", "#9DC3E6", "#C5E0B4"), alpha = .55,
                   cex = 1.2, cat.cex = .9, margin = .10,
                   fontfamily = "sans", cat.fontfamily = "sans")
 grid.draw(v)
 grid.text("A", x = unit(2, "mm"), y = unit(1, "npc") - unit(2, "mm"),
-          gp = gpar(fontsize = 10, fontface = "bold"))
+          gp = gpar(fontsize = 11, fontface = "bold"))
 dev.off()
 
 cd <- cand[!is.na(cand$logFC)]
@@ -219,15 +219,16 @@ cd$lab <- ifelse(cd$adj.P.Val < 0.001, "***", ifelse(cd$adj.P.Val < 0.01, "**",
           ifelse(cd$adj.P.Val < 0.05, "*", "")))
 cd <- cd[order(cd$logFC)]
 p_bar <- ggplot(cd, aes(reorder(gene, logFC), logFC, fill = LRG_sources)) +
-  geom_col(width = .72, color = "grey25", linewidth = .18) +
-  geom_text(aes(label = lab, y = logFC + sign(logFC) * 0.18), size = 5.5, na.rm = TRUE) +
+  geom_col(width = .72, color = "grey25", linewidth = .3) +
+  geom_text(aes(label = lab, y = logFC + sign(logFC) * 0.18), size = 4.2, na.rm = TRUE) +
   coord_flip() + theme_bw(base_size = 11) +
   labs(x = NULL, y = "log2FC (DN versus Control)", fill = "LRG source", tag = "B",
        title = "Differentially expressed candidate LRGs (n = 11)") +
   scale_y_continuous(breaks = -3:1, limits = c(-3.5, 1.2)) +
-  theme(legend.position = "bottom", legend.text = element_text(size = 7))
+  theme(legend.position = "bottom", legend.text = element_text(size = 8),
+        axis.title = element_text(size = 9))
 ggsave(file.path(fig_dir, "Fig4B_bar_rev.png"), p_bar,
-       width = 7.0, height = 5.0, dpi = 600, device = png_dev)
+       width = 6.85, height = 4.6, dpi = 600, device = png_dev)
 cat("Fig4 done\n")
 
 # ============================================================
@@ -245,8 +246,8 @@ mk_bar <- function(d, n, ttl, tag) {
   ggplot(d, aes(Count, lab, fill = logFDR)) + geom_col(width = .7) +
     scale_fill_viridis_c(option = "cividis",
                          name = expression(log[10](adjusted~P))) +
-    theme_bw(base_size = 10) + ylab(NULL) + ggtitle(ttl) + labs(tag = tag) +
-    theme(plot.title = element_text(size = 10.5))
+    theme_bw(base_size = 8) + ylab(NULL) + ggtitle(ttl) + labs(tag = tag) +
+    theme(plot.title = element_text(size = 10), axis.title = element_text(size = 9))
 }
 fp1 <- mk_bar(ego, 10, "GO BP (top DEGs)", "A")
 fp2 <- mk_bar(er, 10, "Reactome (top DEGs)", "B")
@@ -259,12 +260,13 @@ fp3 <- ggplot(topg, aes(NES, lab)) +
   geom_col(aes(fill = NES > 0), width = .7, show.legend = FALSE) +
   scale_fill_manual(values = c(`TRUE` = "#0072B2", `FALSE` = "#D55E00")) +
   geom_text(aes(x = xtxt, label = nes_lab, hjust = ifelse(NES < 0, 1, 0)),
-            vjust = 0.5, size = 2.4, color = "grey15", show.legend = FALSE) +
-  scale_x_continuous(expand = expansion(mult = 0.02, add = 1.5)) +
-  theme_bw(base_size = 9) + ylab(NULL) +
-  ggtitle("GSEA (Reactome, top 4 up- and top 4 down-regulated)") + labs(tag = "C")
+            vjust = 0.5, size = 2.85, color = "grey15", show.legend = FALSE) +
+  scale_x_continuous(expand = expansion(mult = 0.02, add = 1.9)) +
+  theme_bw(base_size = 8) + ylab(NULL) +
+  ggtitle("GSEA (Reactome, top 4 up- and top 4 down-regulated)") + labs(tag = "C") +
+  theme(axis.title = element_text(size = 9))
 grDevices::png(file.path(fig_dir, "Fig5_enrichment_rev.png"),
-               width = 7.0, height = 10, units = "in", res = 600)
+                width = 6.85, height = 9.15, units = "in", res = 600)
 print(fp1 / fp2 / fp3 + plot_layout(heights = c(1, 1, .8)))
 grDevices::dev.off()
 cat("Fig5 done\n")
@@ -281,22 +283,22 @@ mp1 <- ggplot(fl, aes(lambda, cvm)) +
   geom_errorbar(aes(ymin = cvlo, ymax = cvup), color = "grey70") +
   geom_point(color = "#D55E00", size = .9) + scale_x_log10(breaks = brks) +
   geom_vline(xintercept = fl$lambda[fl$is_1se], linetype = 2) +
-  theme_bw(base_size = 9) + ylab("Binomial deviance") + xlab("lambda (log scale)") +
+  theme_bw(base_size = 8) + ylab("Binomial deviance") + xlab("lambda (log scale)") +
   ggtitle("LASSO CV (lambda.1se)") + labs(tag = "A") +
-  theme(plot.title = element_text(size = 8.5))
+  theme(plot.title = element_text(size = 10))
 fs <- fread("results/frozen/svm_rfe_curve.csv")
 mp2 <- ggplot(fs, aes(k, accuracy)) +
   geom_line(color = "#0072B2") + geom_point(size = 1.5) +
   geom_vline(xintercept = fs$k[fs$is_best], linetype = 2) +
-  theme_bw(base_size = 9) + xlab("Number of features") + ylab("CV accuracy") +
+  theme_bw(base_size = 8) + xlab("Number of features") + ylab("CV accuracy") +
   ggtitle(sprintf("SVM-RFE (optimum k = %d)", fs$k[fs$is_best])) + labs(tag = "B") +
-  theme(plot.title = element_text(size = 8.5))
+  theme(plot.title = element_text(size = 10))
 fx <- fread("results/frozen/xgb_importance.csv")
 mp3 <- ggplot(head(fx, 10), aes(reorder(Feature, Gain_pct), Gain_pct)) +
   geom_col(fill = "#E69F00", width = .7) + coord_flip() +
-  theme_bw(base_size = 9) + xlab(NULL) + ylab("Gain (%)") +
+  theme_bw(base_size = 8) + xlab(NULL) + ylab("Gain (%)") +
   ggtitle("XGBoost gain (top 10)") + labs(tag = "C") +
-  theme(plot.title = element_text(size = 8.5))
+  theme(plot.title = element_text(size = 10))
 hubexp <- do.call(rbind, lapply(hub, function(g) {
   v <- as.numeric(train_expr[g, ])
   data.frame(gene = g, expr = v, group = train_ph$group)
@@ -311,7 +313,7 @@ mp4 <- ggplot(hubexp, aes(gene, expr, fill = group)) +
   geom_boxplot(outlier.size = .4, linewidth = .25) +
   geom_text(data = ann, aes(x = gene, y = expr, label = lab), size = 2.8, inherit.aes = FALSE) +
   scale_fill_manual(values = c(Control = "#0072B2", DN = "#D55E00")) +
-  theme_bw(base_size = 9) + xlab(NULL) + ylab("Expression (log2)") +
+  theme_bw(base_size = 8) + xlab(NULL) + ylab("Expression (log2)") +
   ggtitle("Hub gene expression (training)") + labs(tag = "D") +
   theme(legend.position = "bottom", plot.title = element_text(size = 8.5))
 rocs <- lapply(hub, function(g) roc(y, Xdf[[g]], quiet = TRUE))
@@ -334,7 +336,7 @@ best_df <- data.frame(gene = present, fpr = 1 - best_pts$specificity,
 best_df$auc <- sapply(present, function(g) as.numeric(auc(rocs[[g]])))
 lab_ord <- best_df[order(-best_df$auc), ]
 rows_y <- c(0.30, 0.235, 0.17, 0.105, 0.04)[seq_len(nrow(lab_ord))]
-x0 <- 0.46
+x0 <- 0.42
 lab_df <- data.frame(gene = lab_ord$gene, auc = lab_ord$auc,
                      lx = x0, ly = rows_y)
 mp5 <- ggplot(roc_df, aes(fpr, tpr, color = gene, linetype = gene)) +
@@ -343,16 +345,16 @@ mp5 <- ggplot(roc_df, aes(fpr, tpr, color = gene, linetype = gene)) +
   scale_color_manual(values = oi[present], guide = "none") +
   scale_linetype_manual(values = lt[present], guide = "none") +
   geom_text(data = lab_df, aes(x = lx, y = ly, label = sprintf("%s  AUC=%.3f", gene, auc)),
-            hjust = 0, vjust = 0.5, size = 2.35, show.legend = FALSE,
+            hjust = 0, vjust = 0.5, size = 2.85, show.legend = FALSE,
             inherit.aes = FALSE, color = oi[lab_df$gene]) +
   scale_x_continuous(expand = c(0, 0), limits = c(0, 1)) +
   scale_y_continuous(expand = c(0, 0), limits = c(0, 1)) +
   coord_equal() +
-  theme_bw(base_size = 9) + xlab("1 \u2212 Specificity") + ylab("Sensitivity") +
+  theme_bw(base_size = 8) + xlab("1 \u2212 Specificity") + ylab("Sensitivity") +
   ggtitle("Single-gene ROC (training)") + labs(tag = "E") +
-  theme(plot.title = element_text(size = 8.5))
+  theme(plot.title = element_text(size = 10))
 grDevices::png(file.path(fig_dir, "Fig6_ml_screening_rev.png"),
-               width = 7.0, height = 6.0, units = "in", res = 600)
+                width = 6.85, height = 6.0, units = "in", res = 600)
 print((mp1 | mp2 | mp3) / (mp4 | mp5))
 grDevices::dev.off()
 cat("Fig6 done\n")
@@ -416,12 +418,12 @@ p7 <- ggroc(roc_list, linewidth = .65) +
   geom_abline(slope = 1, intercept = 1, linetype = 3) +
   scale_color_manual(values = cols) + scale_linetype_manual(values = lts) +
   guides(linetype = "none", color = guide_legend(nrow = 3, byrow = TRUE)) +
-  theme_bw(base_size = 9) + coord_equal() +
+  theme_bw(base_size = 8) + coord_equal() +
   ggtitle("PDK2+PDK4 signature ROC across cohorts") +
   labs(color = NULL) +
-  theme(legend.position = "bottom", legend.text = element_text(size = 6.5))
+  theme(legend.position = "bottom", legend.text = element_text(size = 8), plot.title = element_text(size = 10))
 grDevices::png(file.path(fig_dir, "Fig7A_validation_roc_rev.png"),
-               width = 7.0, height = 6.2, units = "in", res = 600)
+                width = 6.85, height = 5.6, units = "in", res = 600)
 print(p7)
 grDevices::dev.off()
 cat("Fig7A done\n")
@@ -434,7 +436,7 @@ s3 <- scf(e14[, k3, drop = FALSE])
 g1 <- glm(y3 ~ s3, family = binomial)
 p_hat <- fitted(g1)
 png(file.path(fig_dir, "Fig7B_calibration_GSE142025.png"),
-    width = 3500, height = 3500, res = 600)
+    width = 2060, height = 2060, res = 600, pointsize = 10)
 vp <- val.prob(p_hat, y3)
 title("Calibration - GSE142025 (recalibrated)")
 dev.off()
@@ -461,12 +463,14 @@ p7c <- ggplot(df_dca, aes(thr, nb, color = curve, linetype = curve)) +
                                 `Treat none` = "#000000")) +
   scale_linetype_manual(values = c(Signature = "solid", `Treat all` = "longdash",
                                    `Treat none` = "dashed")) +
-  theme_bw(base_size = 11) +
+  theme_bw(base_size = 8) +
   xlab("Threshold probability") + ylab("Net benefit") +
   ggtitle("Decision curve analysis - GSE142025") + labs(tag = "C") +
-  theme(legend.position = "bottom", legend.title = element_blank())
+  theme(legend.position = "bottom", legend.title = element_blank(),
+        plot.title = element_text(size = 10), axis.title = element_text(size = 9),
+        axis.text = element_text(size = 8))
 ggsave(file.path(fig_dir, "Fig7C_dca_GSE142025.png"), p7c,
-       width = 7.0, height = 5.5, dpi = 600, device = png_dev)
+       width = 3.43, height = 2.75, dpi = 600, device = png_dev)
 cat("Fig7C done\n")
 
 # ============================================================
@@ -489,12 +493,14 @@ p8a <- ggplot(dfi, aes(cell, score, fill = group)) +
   geom_boxplot(outlier.size = .4, linewidth = .3) +
   geom_text(data = ann8, aes(x = cell, y = score, label = lab), size = 2.9, inherit.aes = FALSE) +
   scale_fill_manual(values = c(Control = "#2166AC", DN = "#B2182B")) +
-  theme_bw(base_size = 10) + xlab(NULL) + ylab("ssGSEA score") +
+  theme_bw(base_size = 8) + xlab(NULL) + ylab("ssGSEA score") +
   ggtitle(sprintf("Immune infiltration (significant cells, n = %d of 18; BH across 18 tests)",
                   length(sig_cells))) +
   labs(tag = "A") +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1), legend.position = "bottom")
-ggsave(file.path(fig_dir, "Fig8A_immune_box_rev.png"), p8a, width = 9.2, height = 5.2,
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 8),
+        legend.position = "bottom", legend.title = element_text(size = 8),
+        legend.text = element_text(size = 8), plot.title = element_text(size = 10))
+ggsave(file.path(fig_dir, "Fig8A_immune_box_rev.png"), p8a, width = 6.85, height = 4.5,
        dpi = 600, device = png_dev)
 
 immune_corr <- read.csv("results/immune_gene_corr.csv", stringsAsFactors = FALSE,
@@ -504,12 +510,15 @@ cm <- as.matrix(immune_corr[, setdiff(colnames(immune_corr), c("gene", "Normal_m
 rownames(cm) <- immune_corr$gene
 col_fun2 <- colorRamp2(c(-.6, 0, .6), c("#2166AC", "white", "#B2182B"))
 png(file.path(fig_dir, "Fig8B_corr_rev.png"),
-    width = 5760, height = 3840, res = 600)
+    width = 4110, height = 2640, res = 600)
 draw(Heatmap(cm, name = "Spearman rho", col = col_fun2,
-             row_names_gp = gpar(fontsize = 9.5), column_names_gp = gpar(fontsize = 9.5),
-             column_title = "Candidate LRGs x immune cells (GSE96804, all samples; 18 cells)"))
+             heatmap_legend_param = list(title_gp = gpar(fontsize = 8),
+                                         labels_gp = gpar(fontsize = 8)),
+             row_names_gp = gpar(fontsize = 8), column_names_gp = gpar(fontsize = 8),
+             column_title = "Candidate LRGs x immune cells (GSE96804, all samples; 18 cells)",
+             column_title_gp = gpar(fontsize = 10)))
 grid.text("B", x = unit(2.6, "mm"), y = unit(1, "npc") - unit(2.6, "mm"),
-          gp = gpar(fontsize = 16, fontface = "bold"))
+          gp = gpar(fontsize = 11, fontface = "bold"))
 dev.off()
 cat("Fig8 done; BH18-significant cells:", length(sig_cells), "\n")
 
@@ -536,24 +545,28 @@ np1 <- ggplot(umap_df, aes(UMAP1, UMAP2, color = celltype)) +
     "#F0E442", "#CC79A7", "#009E73", "#999999", "#8B4513",
     "#FF6600", "#32CD32", "#8A2BE2", "#20B2AA", "#DC143C"), name = NULL) +
   theme_bw(base_size = 8) + ggtitle("Cell types") + labs(tag = "A") +
-  theme(legend.position = "right", legend.text = element_text(size = 5.5))
+  theme(legend.position = "right", legend.text = element_text(size = 8),
+        plot.title = element_text(size = 9))
 np2 <- ggplot(umap_df, aes(UMAP1, UMAP2, color = PDK4_expr)) +
   geom_point(size = 0.2, alpha = 0.7) +
   scale_color_gradient(low = "grey92", high = "#E41A1C", name = "PDK4") +
   theme_bw(base_size = 8) + ggtitle("PDK4 expression") + labs(tag = "B") +
-  theme(legend.position = "right", legend.key.width = unit(6, "pt"))
+  theme(legend.position = "right", legend.key.width = unit(6, "pt"),
+        plot.title = element_text(size = 9))
 np3 <- ggplot(pdk4_rates, aes(x = type, y = rate)) +
   geom_col(fill = "#E41A1C", width = 0.7) + theme_bw(base_size = 8) +
   xlab(NULL) + ylab("Detection rate (%)") + ggtitle("PDK4 detection rate") +
-  labs(tag = "C") + theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 6)) +
+  labs(tag = "C") + theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 8),
+        plot.title = element_text(size = 9)) +
   ylim(0, 75)
 np4 <- ggplot(pdk2_rates, aes(x = type, y = rate)) +
   geom_col(fill = "#377EB8", width = 0.7) + theme_bw(base_size = 8) +
   xlab(NULL) + ylab("Detection rate (%)") + ggtitle("PDK2 detection rate") +
-  labs(tag = "D") + theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 6)) +
+  labs(tag = "D") + theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 8),
+        plot.title = element_text(size = 9)) +
   ylim(0, 10)
 ggsave(file.path(fig_dir, "Fig9_scrna_localization_rev.png"), (np1 | np2) / (np3 | np4),
-       width = 7.0, height = 5.5, dpi = 600, device = png_dev)
+       width = 6.85, height = 5.5, dpi = 600, device = png_dev)
 cat("Fig9 done\n")
 
 cat("\nFIGURES_DONE\n")
