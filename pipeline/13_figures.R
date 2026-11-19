@@ -221,7 +221,7 @@ cd <- cd[order(cd$logFC)]
 p_bar <- ggplot(cd, aes(reorder(gene, logFC), logFC, fill = LRG_sources)) +
   geom_col(width = .72, color = "grey25", linewidth = .3) +
   geom_text(aes(label = lab, y = logFC + sign(logFC) * 0.18), size = 4.2, na.rm = TRUE) +
-  coord_flip() + theme_bw(base_size = 11) +
+  coord_flip() + theme_bw(base_size = 8) +
   labs(x = NULL, y = "log2FC (DN versus Control)", fill = "LRG source", tag = "B",
        title = "Differentially expressed candidate LRGs (n = 11)") +
   scale_y_continuous(breaks = -3:1, limits = c(-3.5, 1.2)) +
@@ -310,7 +310,7 @@ hubexp$gene <- factor(hubexp$gene, levels = hub)
 ann <- data.frame(gene = factor(hub, levels = hub), lab = star(pv[hub]),
                   expr = max(hubexp$expr) * 1.06, group = "DN")
 mp4 <- ggplot(hubexp, aes(gene, expr, fill = group)) +
-  geom_boxplot(outlier.size = .4, linewidth = .25) +
+  geom_boxplot(outlier.size = .4, linewidth = .3) +
   geom_text(data = ann, aes(x = gene, y = expr, label = lab), size = 2.8, inherit.aes = FALSE) +
   scale_fill_manual(values = c(Control = "#0072B2", DN = "#D55E00")) +
   theme_bw(base_size = 8) + xlab(NULL) + ylab("Expression (log2)") +
