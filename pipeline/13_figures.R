@@ -37,9 +37,10 @@ y <- as.integer(train_ph$group == "DN")
 # ============================================================
 # Fig 1: study flowchart
 # ============================================================
-# Canvas 4216 x 2720 @600 dpi; the y-range extends to -2 so the conclusion
-# box (bottom edge at y = -1.5) renders with its full border at unchanged
-# scale - all boxes, arrows, and labels keep their original coordinates.
+# Canvas 4110 x 2653 @600 dpi (174 mm); the y-range extends to -2 so the
+# conclusion box (bottom edge at y = -1.5) renders with its full border at
+# unchanged scale - all boxes, arrows, and labels keep their original
+# coordinates.
 png(file.path(fig_dir, "Fig1_flowchart.png"),
     width = 4110, height = 2653, res = 600, pointsize = 10)
 par(mar = c(1, 1, 1, 1)); plot.new(); plot.window(c(0, 100), c(-2, 62.5), xaxs = "i", yaxs = "i")
@@ -337,7 +338,9 @@ best_df <- data.frame(gene = present, fpr = 1 - best_pts$specificity,
 best_df$auc <- sapply(present, function(g) as.numeric(auc(rocs[[g]])))
 lab_ord <- best_df[order(-best_df$auc), ]
 rows_y <- c(0.30, 0.235, 0.17, 0.105, 0.04)[seq_len(nrow(lab_ord))]
-x0 <- 0.42
+# 0.365: clearance to the panel's right border at the 174 mm canvas (the
+# 0.42 slot left the trailing "0" of the longest label under the border)
+x0 <- 0.365
 lab_df <- data.frame(gene = lab_ord$gene, auc = lab_ord$auc,
                      lx = x0, ly = rows_y)
 mp5 <- ggplot(roc_df, aes(fpr, tpr, color = gene, linetype = gene)) +

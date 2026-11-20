@@ -48,9 +48,10 @@ FIGS = {
         x={"a": 38, "b": 38}),
     "Fig5_enrichment.tif": dict(
         xh=64,
-        # only panel a carries a native tag in the current R render; b/c
-        # letters are added on clean panel corners
-        zones={"a": (30, 260, 50, 260)},
+        # native tags: a at (80,89), b at (86,1988), c at (82,3886) on the
+        # 174 mm canvas (panels ride higher than in the 300 dpi layout)
+        zones={"a": (30, 260, 50, 260), "b": (30, 280, 1900, 2120),
+               "c": (30, 280, 3800, 4020)},
         rows={}, singles={"a": (90, 146), "b": (90, 2208), "c": (90, 4336)},
         x={"a": 90, "b": 90, "c": 90}),
     "Fig6_ml_screening.tif": dict(

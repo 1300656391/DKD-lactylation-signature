@@ -29,7 +29,7 @@ def save_tif(im, name, dpi=(600, 600)):
 
 def stack(ims, target_w=None, gap=80, resize_after=False):
     # target_w = None aligns all panels to the narrowest one; an explicit
-    # width (2108 px = 179 mm at 300 dpi) matches the submission figures.
+    # width (4110 px = 174 mm at 600 dpi) matches the submission figures.
     # resize_after=True stacks at native width first and rescales the whole
     # canvas afterwards (reproduces the submission Fig8 assembly).
     if resize_after:
@@ -55,7 +55,7 @@ def stack(ims, target_w=None, gap=80, resize_after=False):
 save_tif(load("Fig1_flowchart.png"), "Fig1_flowchart.tif")
 
 # Fig 2: PCA/volcano (A|B) on top, heatmap (C) below; stacked at the panels'
-# native width (1800) and rescaled to the 2100-px submission canvas.
+# native width (1800) and rescaled to the 4110-px submission canvas.
 A = load("Fig2AB_pca_volcano_rev.png")
 C = load("Fig2C_heatmap_rev.png")
 save_tif(stack([A, C], target_w=4110, gap=0, resize_after=True), "Fig2_pca_volcano_heatmap.tif")
