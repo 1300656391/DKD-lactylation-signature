@@ -107,7 +107,7 @@ p2 <- ggplot(vol, aes(logFC, neglog10, color = sig)) +
   geom_hline(yintercept = -log10(.05), linetype = 3) +
   geom_vline(xintercept = 0.5, linetype = 3, color = "grey40", linewidth = 0.5) +
   geom_vline(xintercept = -0.5, linetype = 3, color = "grey40", linewidth = 0.5) +
-  annotate("label", x = 4.2, y = 0.55, label = "adjusted P = 0.05",
+  annotate("label", x = 4.2, y = 0.32, label = "adjusted P = 0.05",
            size = 3.5, hjust = 1, color = "black", fill = "white", alpha = 0.85,
            label.size = 0, label.padding = unit(0.12, "lines")) +
   geom_label_repel(data = lb, aes(label = gene), size = 3.0, max.overlaps = 30,
