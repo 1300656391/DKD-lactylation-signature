@@ -118,7 +118,7 @@ p2 <- ggplot(vol, aes(logFC, neglog10, color = sig)) +
   annotate("label", x = 3, y = 14, label = sprintf("Up\nn = %d", sum(vol$sig == "Up")),
            size = 3.2, color = "#B2182B", hjust = 0, fill = "white", alpha = 0.85,
            label.size = 0, label.padding = unit(0.12, "lines")) +
-  annotate("label", x = -1.9, y = 14, label = sprintf("Down\nn = %d", sum(vol$sig == "Down")),
+  annotate("label", x = -1.9, y = 15, label = sprintf("Down\nn = %d", sum(vol$sig == "Down")),
            size = 3.2, color = "#2166AC", hjust = 1, fill = "white", alpha = 0.85,
            label.size = 0, label.padding = unit(0.12, "lines")) +
   theme_bw(base_size = 8) + labs(tag = "B",
