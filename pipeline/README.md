@@ -12,7 +12,8 @@ Code for the PDK2/PDK4 lactate-axis signature study in diabetic kidney disease (
 ```bash
 Rscript 00_install_packages.R     # once
 Rscript master.R                  # analysis + figures (~2-4 h)
-python assemble_figures.py        # TIFF assembly (300 dpi, <= 179 mm)
+python assemble_figures.py        # TIFF assembly (600 dpi, 174 mm)
+python 14_standardize_letters.py  # panel lettering on the assembled TIFFs
 ```
 
 Random seed = 42 throughout. Each step checks for its output before running; delete `results/` to force a full re-run.
@@ -34,8 +35,9 @@ Random seed = 42 throughout. Each step checks for its output before running; del
 | 10 | `10_snrna_localization.R` | Single-nucleus RNA-seq cell-type localization |
 | 11 | `11_immune_replication.R` | GSE142025 replication + partial Spearman + MCP-counter (S21) |
 | 12 | `12_supplementary.R` | Fig8B BH corrections (S20) + head-to-head (S18) |
-| 13 | `13_figures.R` | All 9 main figures (PNG panels) |
-| 14 | `assemble_figures.py` | TIFF assembly |
+| 13 | `13_figures.R` | All 9 main figures (600 dpi PNG panels) |
+| — | `assemble_figures.py` | TIFF assembly (174 mm width) |
+| 14 | `14_standardize_letters.py` | Standard panel lettering on the TIFFs |
 
 ## Data
 

@@ -3,8 +3,8 @@
 # renderer's native panel tags and redraw them as uniform Arial Bold
 # lowercase letters (2.2 mm x-height, same-baseline alignment within rows,
 # panel-corner placement), reproducing the submitted figure lettering.
-# Fig 3 is first resampled to the submitted canvas (2100 -> 2544 px wide,
-# the documented 1.2114x LANCZOS step matching the submission figures).
+# All nine canvases are already at the submission width (4110 px = 174 mm
+# at 600 dpi); no resampling happens in this pass.
 # Usage: python pipeline/14_standardize_letters.py   (run 13_figures.R and
 # assemble_figures.py first; operates on pipeline/figures/*.tif in place).
 
@@ -23,7 +23,8 @@ FONT_DIRS = [r"C:\Windows\Fonts", "/usr/share/fonts/truetype/dejavu",
 TARGET_MM = 2.2
 
 # Lettering spec of the submitted figures.
-#   scale: canvas resample applied before lettering (Fig 3 only)
+#   scale: optional canvas resample applied before lettering (unused at the
+#          174 mm canvas, where every figure is rendered natively at width)
 #   zones: native-tag scan boxes (x0, x1, y0, y1); an isolated letter-sized
 #          ink component inside each box is removed
 #   rows : letters sharing a baseline; baseline given in final-canvas px
@@ -32,42 +33,43 @@ TARGET_MM = 2.2
 FIGS = {
     "Fig2_pca_volcano_heatmap.tif": dict(
         xh=80,
-        zones={"a": (0, 440, 0, 320), "b": (1800, 2800, 0, 320), "c": (0, 440, 1410, 1620)},
-        rows={"ab": 124}, singles={"c": (68, 1443)},
+        zones={"a": (0, 440, 0, 320), "b": (1800, 2800, 0, 320), "c": (0, 260, 1740, 1960)},
+        rows={"ab": 124}, singles={"c": (68, 1589)},
         x={"a": 68, "b": 2168, "c": 68}),
     "Fig3_wgcna.tif": dict(
-        xh=76, scale=(5088 / 4200, 2420 / 1998),
+        xh=63,  # native 4110 px canvas; no resample
         zones={},  # renderer draws no panel tags; letters are added only
-        rows={}, singles={"a": (42, 42), "b": (2198, 42)},
-        x={"a": 42, "b": 2198}),
+        rows={}, singles={"a": (35, 35), "b": (1815, 35)},
+        x={"a": 35, "b": 1815}),
     "Fig4_candidates.tif": dict(
         xh=70,
-        zones={"b": (0, 700, 2400, 2620)},  # 'a' native tag removed at assembly
-        rows={}, singles={"a": (38, 38), "b": (38, 2432)},
+        zones={"b": (0, 250, 1820, 2050)},  # 'a' native tag removed at assembly
+        rows={}, singles={"a": (38, 38), "b": (38, 1912)},
         x={"a": 38, "b": 38}),
     "Fig5_enrichment.tif": dict(
         xh=64,
-        zones={"a": (30, 260, 50, 260), "b": (30, 280, 2130, 2340),
-               "c": (30, 260, 4210, 4410)},
+        # only panel a carries a native tag in the current R render; b/c
+        # letters are added on clean panel corners
+        zones={"a": (30, 260, 50, 260)},
         rows={}, singles={"a": (90, 146), "b": (90, 2208), "c": (90, 4336)},
         x={"a": 90, "b": 90, "c": 90}),
     "Fig6_ml_screening.tif": dict(
         xh=64,
         zones={"a": (30, 260, 40, 240), "b": (1330, 1580, 40, 240),
                "c": (2680, 2960, 40, 240), "d": (30, 260, 1640, 1840),
-               "e": (2580, 2800, 1640, 1840)},
+               "e": (2480, 2700, 1640, 1840)},
         rows={"abc": 176, "de": 1782}, singles={},
         x={"a": 88, "b": 1416, "c": 2764, "d": 88, "e": 2662}),
     "Fig7_validation.tif": dict(
         xh=64,
-        zones={"b": (0, 180, 3760, 3960),
-               "c": (2080, 2360, 3760, 3960)},  # 'a': renderer tag removed at source
-        rows={"bc": 3898}, singles={"a": (34, 34)},
+        zones={"b": (0, 200, 3420, 3580),
+               "c": (2060, 2400, 3420, 3580)},  # 'a': renderer tag removed at source
+        rows={"bc": 3560}, singles={"a": (34, 34)},
         x={"a": 34, "b": 34, "c": 2174}),
     "Fig8_immune.tif": dict(
         xh=64,
-        zones={"a": (0, 400, 0, 300), "b": (0, 560, 2300, 3700)},
-        rows={}, singles={"a": (38, 44), "b": (38, 2484)},
+        zones={"a": (0, 400, 0, 300), "b": (0, 250, 2740, 2950)},
+        rows={}, singles={"a": (38, 44), "b": (38, 2815)},
         x={"a": 38, "b": 38}),
     "Fig9_scrna_localization.tif": dict(
         xh=64,
@@ -168,9 +170,14 @@ def process(fname, spec, asc, fbold):
     xh = spec["xh"]
     crops = {t: render_letter(t, xh, asc, fbold) for t in spec["x"]}
 
+    missed = []
     for tag, (zx0, zx1, zy0, zy1) in spec["zones"].items():
         if not remove_tag(gray, rgb, zx0, zx1, zy0, zy1):
-            print(f"  {fname}: native tag '{tag}' not found in zone - skipped")
+            missed.append(tag)
+    if missed:
+        raise SystemExit(
+            f"{fname}: native tag(s) {missed} not found in their zones - "
+            "the lettering table is out of sync with the canvas; refusing to draw")
 
     pos = {}
     for row, baseline in spec["rows"].items():

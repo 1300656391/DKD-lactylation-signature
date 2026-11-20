@@ -1,5 +1,5 @@
 # assemble_figures.py ----
-# Assemble the publication TIFF figures (300 dpi, LZW, <=179 mm width) from
+# Assemble the publication TIFF figures (600 dpi, LZW, 174 mm width) from
 # the PNG panels rendered by 13_figures.R.
 # Outputs (all in figures/): Fig1_flowchart.tif (600 dpi),
 #   Fig2_pca_volcano_heatmap.tif, Fig3_wgcna.tif, Fig4_candidates.tif,

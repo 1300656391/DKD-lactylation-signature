@@ -30,4 +30,5 @@ run_if("12_supplementary.R",       "results/supplementary_summary.csv")
 run_if("13_figures.R",             "figures/Fig9_scrna_localization_rev.png")
 
 cat("\n=== R pipeline complete ===\n")
-cat("Next: python assemble_figures.py  (TIFF assembly)\n")
+cat("Next: python assemble_figures.py      (TIFF assembly)\n")
+cat("      python 14_standardize_letters.py (panel lettering)\n")

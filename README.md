@@ -12,8 +12,9 @@ Analysis code for the PDK2/PDK4 lactate-axis signature study in diabetic kidney 
 
 ## Quick start
 
-See **[pipeline/README.md](pipeline/README.md)** for the four-step guide:
-install packages → download GEO inputs → run `master.R` → run `assemble_figures.py`.
+See **[pipeline/README.md](pipeline/README.md)** for the five-step guide:
+install packages → download GEO inputs → run `master.R` → run `assemble_figures.py`
+→ run `14_standardize_letters.py` (panel lettering).
 All results derive from public GEO datasets under a fixed seed (42); the frozen model
 coefficients reproduce all reported statistics exactly.
 

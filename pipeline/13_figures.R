@@ -1,6 +1,7 @@
 # 13_figures.R ----
-# Render the nine main figures (300 dpi PNG panels) from the frozen results
-# of steps 3-12. TIFF assembly is done afterwards by assemble_figures.py.
+# Render the nine main figures (600 dpi PNG panels, 174 mm width) from the
+# frozen results of steps 3-12. TIFF assembly is done afterwards by
+# assemble_figures.py, panel lettering by 14_standardize_letters.py.
 # Outputs (all in figures/): Fig1_flowchart.png, Fig2AB_pca_volcano_rev.png,
 #   Fig2C_heatmap_rev.png, Fig3_wgcna_rev.png, Fig4A_venn_rev.png,
 #   Fig4B_bar_rev.png, Fig5_enrichment_rev.png, Fig6_ml_screening_rev.png,
