@@ -51,7 +51,7 @@ box_at <- function(x, y, w, h, label, fill = "white", cex = 0.85, ty = 0) {
 }
 arr <- function(x1, y1, x2, y2) arrows(x1, y1, x2, y2, lwd = 1.7, length = 0.06, angle = 25)
 
-box_at(21, 57, 34, 7.5, "GEO cohorts\nTrain: GSE96804 (DN 41/Control 20)\nExternal cohorts: 5 (n=160)", "#DCEEFB")
+box_at(21, 57, 34, 7.5, "GEO cohorts\nTrain: GSE96804 (DN 41/Control 20)\nExternal datasets: 5 (n=160)", "#DCEEFB")
 box_at(76, 57, 30, 7.5, "Lactylation-related genes\nGO + Reactome + literature\n(171 genes)", "#DCEEFB", ty = 0.06)
 box_at(21, 44, 34, 7, "Differential expression & modules\nDEGs: 2,645 (limma)\nWGCNA disease modules", "#DCEEFB")
 box_at(76, 44, 30, 7, "Candidate LRGs: 23\nLRG \u2229 (DEG \u222a modules)", "#FDF2D0")
@@ -66,7 +66,7 @@ box_at(15.5, 13.5, 30, 12.6, paste0(
   "Calibration/DCA: GSE142025+GSE273763"), "#FCE4EC", cex = 0.70, ty = -0.14)
 box_at(50.5, 14, 24, 6, "snRNA-seq localization\n(GSE131882; 29,048 nuclei)", "#FCE4EC")
 box_at(84, 14, 25, 8, "Immune infiltration\nssGSEA (18 cell types)\nGSE142025 replication\nGSE273763 (FFPE): Suppl. S17", "#FCE4EC", cex = 0.75)
-box_at(48.5, 1.5, 55, 6, "Lactylation-related diagnostic signature for DKD", "#D1C4E9", 0.9)
+box_at(48.5, 1.5, 55, 6, "Candidate lactate\u2013lactylation-axis readout for DKD", "#D1C4E9", 0.9)
 
 arr(21, 53.2, 21, 47.6);        text(22.3, 50.4, "training", cex = 0.58, adj = c(0, -0.2))
 arr(76, 53.2, 76, 47.6)
