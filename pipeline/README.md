@@ -1,6 +1,6 @@
 # DKD Lactylation-Signature Analysis Pipeline
 
-Code for the PDK2/PDK4 lactate-axis signature study in diabetic kidney disease (six-cohort validation pipeline).
+Code for the PDK2/PDK4 lactate-axis signature study in diabetic kidney disease (six-dataset (five-series) validation pipeline).
 
 ## Requirements
 
@@ -31,7 +31,7 @@ Random seed = 42 throughout. Each step checks for its output before running; del
 | 6 | `06_immune_ssgsea.R` | ssGSEA immune infiltration (training cohort) |
 | 7 | `07_ml_screening.R` | LASSO + SVM-RFE + XGBoost consensus → 5 hub genes |
 | 8 | `08_model_freeze.R` | Penalized model freeze + 200-sample bootstrap |
-| 9 | `09_validation.R` | Six-cohort AUC / sens / spec / calibration / DCA |
+| 9 | `09_validation.R` | Six-dataset (five-series) AUC / sens / spec / calibration / DCA |
 | 10 | `10_snrna_localization.R` | Single-nucleus RNA-seq cell-type localization |
 | 11 | `11_immune_replication.R` | GSE142025 replication + partial Spearman + MCP-counter (S21) |
 | 12 | `12_supplementary.R` | Fig8B BH corrections (S20) + head-to-head (S18) |
