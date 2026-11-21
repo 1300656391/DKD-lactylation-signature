@@ -1,0 +1,4 @@
+feature,AUC_within_z,AUC_training_z,delta
+PDK2 (single gene),0.075,0.075,0.0
+PDK4 (single gene),0.638,0.638,0.0
+PDK2+PDK4 signature,0.805,0.869,0.065
