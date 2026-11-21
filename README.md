@@ -1,6 +1,6 @@
 # DKD-lactylation-signature
 
-Analysis code for the PDK2/PDK4 lactate-axis signature study in diabetic kidney disease (six-cohort validation with orthogonal protein, DNA-methylation, and perturbation layers).
+Analysis code for the PDK2/PDK4 lactate–lactylation-axis signature study in diabetic kidney disease (validation across six kidney-tissue datasets from five donor series, with orthogonal protein, DNA-methylation, and perturbation layers).
 
 ## Repository layout
 
