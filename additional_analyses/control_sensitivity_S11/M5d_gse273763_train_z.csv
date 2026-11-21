@@ -1,4 +1,4 @@
-feature,AUC_within_z,AUC_training_z,delta
-PDK2 (single gene),0.075,0.075,0.0
-PDK4 (single gene),0.638,0.638,0.0
-PDK2+PDK4 signature,0.805,0.869,0.065
+feature,AUC_within_z,AUC_training_z,delta,note
+PDK4 (single gene),0.638,0.638,0.0,mild inversion in FFPE: raw-z 0.638 = PDK4 higher in DN; ESM_12/S10 as-trained 0.362
+PDK2 (single gene),0.075,0.075,0.0,direction-preserving in FFPE: raw-z 0.075 (as-trained caliber) == oriented 0.925; cf. ESM_12/S10 PDK2_dir=down oriented 0.925; manuscript 3.6 'PDK2 remained direction-preserving'
+PDK2+PDK4 signature,0.805,0.869,0.065,"training anchors re-weight |PDK2|:|PDK4| effective ratio 1.567 (within-z, FFPE SDs 321.4/693.7) -> 3.049 (training SDs 0.438/1.838), i.e. PDK2 relatively up-weighted x1.95; direction facts: PDK2 preserved, PDK4 mildly inverted; net +0.065"
